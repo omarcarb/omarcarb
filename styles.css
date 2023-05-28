@@ -138,8 +138,8 @@ Selector Classes
     margin-left: auto; margin-right: auto;
     min-width: 100px;
     place-items: center;
-    padding: 4rem;
-    margin: 3rem auto;
+    padding: 0rem;
+    margin: 3rem .25rem;
     grid-template-columns: repeat(1,100%);
     row-gap: 1rem;
     border-radius: 8px;
@@ -150,10 +150,11 @@ Selector Classes
     align-items: center;
     overflow: hidden;
     background-color: var(--neutralColor);
-    background-size: cover;
-    max-height: clamp(100px, 70%, 175px);
-    width: clamp(100px, 80%, 100%);
-    padding: 15rem 0rem 0rem 0rem;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: clamp(200px, 70%, 500px);
+    width: clamp(100px, 50%, 70%);
     border-radius: .25rem;
 
     transition: transform 200ms ease-in;
@@ -184,7 +185,7 @@ Selector Classes
         hsl(0 0% 0% / .75)
     );
     width: 100%;
-    padding: 2.75rem;
+    padding: 1.25rem;
 }
 
 .project-name, .project-description{
@@ -192,10 +193,10 @@ Selector Classes
 }
 .project-button{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     max-width: 96px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 1rem 0rem;
     background-color: #565add;
     padding: 1rem 1.5rem;
@@ -210,6 +211,7 @@ Selector Classes
     position: relative;
     padding-bottom: 8px;
     margin-bottom: 1rem;
+    font-size: 1.25rem;
     width: max-content;
 }
 
@@ -219,7 +221,7 @@ Selector Classes
     left: calc(var(--padding) *-1); bottom: 0;
     width: calc(100% + var(--padding));
     background: var(--backgroundColor);
-    height: 4px;
+    height: 3px;
     border-radius: 4px;
 
     transform-origin: left;
@@ -228,6 +230,7 @@ Selector Classes
 
 .project-description{
     margin-bottom: 1.5rem;
+    font-size: 1rem;
 }
 
         /*Other Sections*/
@@ -236,9 +239,9 @@ Selector Classes
 }
 .skillset{
     display: grid;
-    grid-template-columns: repeat(2,45%);
+    grid-template-columns: repeat(1,80);
     width:100%;
-    justify-content: space-between;
+    justify-content: center;
 }
 #skills-heading{
     position: relative;
@@ -290,7 +293,7 @@ Selector Classes
 .contact-links{
     justify-content: center;
     display: flex;
-    gap: 10rem;
+    gap: 1rem;
     list-style: none;
     padding: 0px 24px;
     margin-bottom: 5rem;
@@ -440,7 +443,7 @@ Selector Classes
 /*for devices that have hover capabilities*/
 @media (hover){
     .contentInfo{
-        transform: translateY(2.25rem);
+        transform: translateY(1rem);
         transition: transform 250ms ease-in;
         transition-delay: 300ms;
     }
@@ -548,12 +551,18 @@ Selector Classes
     .grid-projects{
         grid-template-columns: repeat(2,1fr);
         column-gap: 1rem;
+        margin:  2rem auto;
+        padding: 2rem;
 
         width: 80%;
     }
     .project-button{
         margin: 1rem 0rem;
         font-size: 1rem;
+    }
+    .skillset{
+        grid-template-columns: repeat(2,45%);
+        gap: 1rem;
     }
     .contactLinks{
         justify-content: center;
