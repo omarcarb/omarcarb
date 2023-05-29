@@ -20,7 +20,7 @@ Utility Classes
 
 html{
     font-family: "Poppins";
-    font-size: 4px;
+    font-size: 8px;
     color: var(--mainTextColor);
 }
 .sr-only{
@@ -30,7 +30,6 @@ html{
 body{
     background-color: var(--backgroundColor);
     margin: 0px;
-    padding: 0px;
 }
 
 h1{
@@ -41,12 +40,10 @@ h1{
 h2{
     font-size: 2rem;
     font-weight: var(--fontWeightH2);
-    margin: 0px
 }
 
 p{
     font-size: 1.5rem;
-    margin: 0px;
     font-weight: var(--fontWeightP);
 }
 .section{
@@ -138,8 +135,10 @@ Selector Classes
 .container{
     overflow: hidden;
     background-color: var(--neutralColor);
-    background-size: contain;
+    background-size: cover;
     background-position: 50%;
+    width: 70%;
+    height: 100%;
     background-repeat: no-repeat;
 
     border-radius: .25rem;
@@ -177,19 +176,6 @@ Selector Classes
 
 .project-name, .project-description{
     color: var(--backgroundColor);
-}
-.project-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 96px;
-    font-size: 1.25rem;
-    margin: 1rem 0rem;
-    background-color: #565add;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-    color: var(--backgroundColor);
-    border-radius: 4px;
 }
 
 /*gives the project title some padding and a relative position*/
@@ -451,7 +437,7 @@ Selector Classes
         transform: scale(0);
     }
 }
-@media screen and  (max-width: 768px){
+@media screen and  (max-width: 480px){
     .primary-navigation{
         position: fixed;
         gap: 5rem;
@@ -475,7 +461,7 @@ Selector Classes
         background-color: var(--primaryColor);
     }
     .contentInfo{
-        transform: translateY(5rem);
+        transform: translateY(8rem);
     }
     .mobile-toggle{
         position: absolute;
