@@ -250,7 +250,7 @@ Selector Classes
     flex-direction: row;
     align-items: center;
     max-width: 150px;
-    padding: 1rem .5rem;
+    padding: 0rem .5rem;
     gap: 1rem;
 }
 .skill-image{
@@ -419,7 +419,7 @@ Selector Classes
         transition-delay: 300ms;
     }
     .container:hover .contentInfo, .container:focus-within .contentInfo{
-        transform: translateY(0rem);
+        transform: translateY(-1.75rem);
         transition-delay: 300ms;
     }
     .contentInfo > *:not(.project-name){
@@ -513,7 +513,6 @@ Selector Classes
     }
     .container{
         width: 100%;
-        row-gap: 2rem;
     }
     .contentInfo{
         transform: translateY(6.5rem);
@@ -522,9 +521,8 @@ Selector Classes
     .grid-projects{
         grid-template-columns: repeat(2,1fr);
         column-gap: 1rem;
-        margin:  2rem auto;
-        padding: 2rem;
-
+        margin:  1rem auto;
+        padding: 4rem;
         width: 80%;
     }
     .project-button{
@@ -569,22 +567,21 @@ Selector Classes
         font-size: .75rem;
     }
     .gridProjects{
-        padding: 0rem 3rem;
-        row-gap: 1.5rem;
+        row-gap: 2rem;
     }
     .contentInfo{
-        transform: translateY(8rem);
+        transform: translateY(2.25rem);
     }
     .project-button{
         margin: 1rem 0rem;
         font-size: .75rem;
     }
     .container{
-        max-height: 900px;
+        height: 40%;
         padding: 10rem 0rem 0rem 0rem; 
     }
     .contentInfo{
-        padding: 2rem;
+        padding:  2rem .5rem;
     }
     .project-description{
         margin-bottom: 0rem;
