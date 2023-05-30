@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   stroke="#ffffff"
+   stroke-width="2"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="menu.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false" />
+  <line
+     x1="3"
+     y1="12"
+     x2="21"
+     y2="12"
+     id="line2"
+     style="fill:#000000;fill-opacity:1;stroke:#8a58da;stroke-opacity:1" />
+  <line
+     x1="3"
+     y1="6"
+     x2="21"
+     y2="6"
+     id="line4"
+     style="fill:#000000;fill-opacity:1;stroke:#8a58da;stroke-opacity:1" />
+  <line
+     x1="3"
+     y1="18"
+     x2="21"
+     y2="18"
+     id="line6"
+     style="fill:#000000;fill-opacity:1;stroke:#8a58da;stroke-opacity:1" />
+</svg>

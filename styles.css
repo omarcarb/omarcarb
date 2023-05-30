@@ -20,7 +20,7 @@ Utility Classes
 
 html{
     font-family: "Poppins";
-    font-size: 8px;
+    font-size: 16px;
     color: var(--mainTextColor);
 }
 .sr-only{
@@ -33,17 +33,17 @@ body{
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: var(--fontWeightH1);
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: var(--fontWeightH2);
 }
 
 p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: var(--fontWeightP);
 }
 .section{
@@ -61,155 +61,73 @@ Selector Classes
 -----------------------------------*/
 
         /* header objects*/
-.primary-header{
-    position: sticky;
-    top: 0;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 2.5rem;
-    background-color: var(--primaryColor);
-    z-index: 999999;
-}
-.home-link{
-    text-decoration: none;
-    color: var(--backgroundColor);
-}
-.logo{
-    display: flex;
-    flex-direction: column;
-    color: var(--backgroundColor);
-    gap: 0px;
-}
-.name{
-    font-size: 1.25rem;
-    line-height: 8px;
-}
-.title{
-    font-size: 1rem;
-    font-weight: 100;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.primary-navigation{
-    padding: 0;
-    margin: 0;
-    gap: 2rem;
-}
-.primary-navigation li{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-.primary-navigation a{
-    color: var(--backgroundColor);
-    text-decoration: none;
-    font-size: 1rem;
-}
-.contact-button a{
-    background-color: var(--primaryAccentColor);
-    display: flex;
-    gap: .5rem;
-    align-items: center;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    transition: background-color 200ms ease-in;
-}
-.contact-button a:hover{
-    background-color: var(--primaryAccentColor);
-}
 
         /*grid objects*/
-
-.grid-projects{
+#grid-projects{
     display: grid;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 1rem;
+    padding: 1rem;
+    column-gap: 1rem ;
     background-color: white;
-    place-items: center;
-    padding: 0rem;
-    margin: 3rem .25rem;
-    padding: 2rem 0rem;
-    grid-template-columns: repeat(1,80%);
-    row-gap: 1.5rem;
-    border-radius: 8px;
+    border-radius: 3px;
 }
 .container{
-    overflow: hidden;
-    background-color: var(--neutralColor);
-    background-size: cover;
-    background-position: 50%;
-    width: 70%;
+    border-radius: 3px;
+    overflow: hidden ;
+    position: relative;
+}
+.content-info{
+    position: relative;
+    margin: 10rem 0rem 0rem 0rem;
+    background: linear-gradient(hsla(0, 0%, 0%, 0.2),
+                                hsla(0,0%,0%,.8) 10%,
+                                rgb(0, 0, 0));
+    padding: .5rem 0rem;
+}
+.container__link{
+    position: absolute;
+    width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-
-    border-radius: .25rem;
-
-    transition: transform 200ms ease-in;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.project-name{
+    color: var(--backgroundColor);
+    position: relative;
+    text-align: left;
+}
+.project-name::after{
+    content: '';
+    background-color: var(--backgroundColor);
+    position: absolute;
+    width: calc(100% - 3rem);
+    height: 2px;
+    border-radius: 4px;
+    bottom: 0;
+    left: 0;
+    
+}
+.project-description{
+    max-width: 40ch;
+    min-height: 7ch;
+    color: var(--backgroundColor);
+    text-align: left;
 }
 #weatherlerts{
     background-image: url(assests/png/weatherlerts-mockup.png);
+    background-size: cover;
 }
 #shelter-finds{
     background-image: url(assests/png/shelter-finds-mockup.png);
+    background-size: cover;
 }
 #free-roam{
     background-image: url(assests/png/free-roam-mockup.png);
+    background-size: cover;
 }
-
-/*made to increase the size of the child element*/
-.container:hover, .container:focus-within{
-    transform: scale(1.025);
-}
-
-.container:focus-within .contentInfo{
-    transition-duration: 0ms;
-}
-
-.contentInfo{
-    background: linear-gradient(
-        hsl( 0 0% 0% / 0.1),
-        hsl( 255 0% 20% / .4) 30%,
-        hsl(0 0% 0% / .75)
-    );
-    width: 100%;
-    padding: 1.25rem;
-}
-
-.project-name, .project-description{
-    color: var(--backgroundColor);
-}
-
-/*gives the project title some padding and a relative position*/
-.project-name{
-    --padding: 1.5rem;
-    position: relative;
-    padding-bottom: 8px;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    width: max-content;
-}
-
-.project-name::after{
-    content: '';
-    position: absolute;
-    left: calc(var(--padding) *-1); bottom: 0;
-    width: calc(100% + var(--padding));
-    background: var(--backgroundColor);
-    height: 3px;
-    border-radius: 4px;
-
-    transform-origin: left;
-    transition: transform 300ms ease-in;
-}
-
-.project-description{
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-}
-
         /*Other Sections*/
-#skill-section{
-    width: 80vw;
-}
 .skillset{
     display: grid;
     grid-template-columns: repeat(1,90%);
@@ -241,7 +159,8 @@ Selector Classes
 .skill-grid{
     display: flex;
     flex-direction: column;
-    padding: 1rem 4rem;
+    place-items: left;
+    padding: 1rem;
     background-color: white;
     border-radius: 8px;
 }
@@ -249,7 +168,6 @@ Selector Classes
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 150px;
     padding: 0rem .5rem;
     gap: 1rem;
 }
@@ -326,7 +244,7 @@ Selector Classes
 }
 .example-section{
     display: grid;
-    grid-template-columns: repeat(1,100%);
+    grid-template-columns: repeat(1,1fr);
     place-items: center;
     padding: 6rem 4rem;
     row-gap: 2rem;
@@ -414,28 +332,7 @@ Selector Classes
 
 /*for devices that have hover capabilities*/
 @media (hover){
-    .contentInfo{
-        transition: transform 250ms ease-in;
-        transition-delay: 300ms;
-    }
-    .container:hover .contentInfo, .container:focus-within .contentInfo{
-        transform: translateY(-1.75rem);
-        transition-delay: 300ms;
-    }
-    .contentInfo > *:not(.project-name){
-        opacity: 0;
-        transition: opacity 200ms ease-in;
-    }
-    .container:hover .contentInfo > *:not(.project-name),
-    .container:focus-within .contentInfo > *:not(.project-name){
-        opacity: 1;
-    }
-    .container:hover .project-name::after{
-        transform: scaleX(1);
-    }
-    .project-name::after{
-        transform: scale(0);
-    }
+    
 }
 @media screen and  (max-width: 480px){
     .primary-navigation{
@@ -457,16 +354,10 @@ Selector Classes
     .primary-navigation[data-visible = "true"]{
         transform: translateX(0%);
     }
-    .contact-button a{
-        background-color: var(--primaryColor);
-    }
-    .contentInfo{
-        transform: translateY(8rem);
-    }
     .mobile-toggle{
         position: absolute;
         background-color: transparent;
-        background-image:url(assests/svg/menu.svg);
+        background-image: url(assests/svg/color-menu.svg);
         aspect-ratio: 1;
         width: 24px;
         padding: 4px;
@@ -485,11 +376,12 @@ Selector Classes
     }
 
 }
-
-@media screen and (min-width: 768px) {
-    html{
-        font-size: 12px;
+@media screen and (min-width: 480px) {
+    #grid-projects{
+        padding: 3rem 3rem;
     }
+}
+@media screen and (min-width: 640px) {
     h1{
         font-size: 2.25rem;
     }
@@ -504,30 +396,18 @@ Selector Classes
     }
     .primary-header{
         flex-direction: row;
-        padding: 2rem 7rem;
-        top: 0;
-        right: 0;
+        padding: 1.5rem 2rem;
     }
     .mobile-toggle{
         display: none;
     }
-    .container{
-        width: 100%;
-    }
-    .contentInfo{
-        transform: translateY(6.5rem);
-        padding: 2rem;
-    }
-    .grid-projects{
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 1rem;
-        margin:  1rem auto;
-        padding: 4rem;
-        width: 80%;
-    }
     .project-button{
         margin: 1rem 0rem;
         font-size: 1rem;
+    }
+    #grid-projects{
+        grid-template-columns: repeat( 2, 1fr);
+        margin: 2rem 1rem;
     }
     .skillset{
         grid-template-columns: repeat(2,45%);
@@ -561,29 +441,18 @@ Selector Classes
         font-size: .75rem;
     }
     .primary-header{
-        padding: 2.5rem 6.5rem;
+        padding: 1rem 2.75rem;
     }
     .primary-navigation a{
         font-size: .75rem;
-    }
-    .gridProjects{
-        row-gap: 2rem;
-    }
-    .contentInfo{
-        transform: translateY(2.25rem);
     }
     .project-button{
         margin: 1rem 0rem;
         font-size: .75rem;
     }
-    .container{
-        height: 40%;
-        padding: 10rem 0rem 0rem 0rem; 
-    }
-    .contentInfo{
-        padding:  2rem .5rem;
-    }
-    .project-description{
-        margin-bottom: 0rem;
+    #grid-projects{
+        grid-template-columns: repeat( 3, 1fr);
+        column-gap: 3rem;
+        margin: 2rem;
     }
 }
