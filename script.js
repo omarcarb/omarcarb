@@ -19,6 +19,18 @@ window.onload = function(){
         landingImage.src = "assests/png/shelter-finds-mockup.png"
     }
 }
+navToggle.onclick = function() {
+    const visibility = primaryNav.getAttribute('data-visible');
+    
+    if(visibility === "false"){
+        primaryNav.setAttribute("data-visible", true);
+        navToggle.setAttribute('aria-expanded', true);
+    }
+    else if(visibility === "true"){
+        primaryNav.setAttribute("data-visible", false);
+        navToggle.setAttribute('aria-expanded', false);
+    }
+};
 
 const sectionOneOptions = {
     rootMargin: '-100px 0px 20px 0px'
@@ -42,17 +54,4 @@ const sectionOneObserver = new IntersectionObserver(function(
 
 sectionOneObserver.observe(sectionOne);
 
-
-navToggle.onclick = function() {
-    const visibility = primaryNav.getAttribute('data-visible');
-    
-    if(visibility === "false"){
-        primaryNav.setAttribute("data-visible", true);
-        navToggle.setAttribute('aria-expanded', true);
-    }
-    else if(visibility === "true"){
-        primaryNav.setAttribute("data-visible", false);
-        navToggle.setAttribute('aria-expanded', false);
-    }
-};
 
