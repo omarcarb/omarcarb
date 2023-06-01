@@ -82,7 +82,7 @@ header{
     display: flex;
     flex-direction: row;
     background-color: var(--header-background);
-    padding:1rem .5rem;
+    padding:1rem 1rem;
     justify-content: space-between;
     align-items: center;
     box-shadow: 3px 0px 10px;
