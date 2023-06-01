@@ -1,13 +1,13 @@
 :root{
-    --mainTextColor: #2b1c50;
-    --backgroundColor: #f0ecfd;
-    --primaryColor: #565add;
-    --primaryAccentColor: #9f92ec;
+    --mainTextColor: rgb(43, 28, 80);
+    --backgroundColor: rgb(240, 236, 253);
+    --primaryColor: rgb(86, 90, 221);
+    --primaryAccentColor: rgb(159, 146, 236);
     --neutralColor: #d7d2db;
     --secondaryColor: #d1d1f7;
     --darkNeutral: #271f2b;
-    --fontWeightH1: 900;
-    --fontWeightH2: 600;
+    --fontWeightH1: 700;
+    --fontWeightH2: 500;
     --fontWeightP: 300;
 }
 /*---------------------------
@@ -19,32 +19,41 @@ Utility Classes
 }
 
 html{
-    font-family: "Poppins";
+    font-family: "Roboto";
     font-size: 16px;
     color: var(--mainTextColor);
 }
 .sr-only{
     display: none;
 }
-
+a{
+    text-decoration: none;
+}
 body{
     background-color: var(--backgroundColor);
     margin: 0px;
 }
 
 h1{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: var(--fontWeightH1);
 }
 
 h2{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: var(--fontWeightH2);
 }
 
 p{
     font-size: 1rem;
     font-weight: var(--fontWeightP);
+}
+ul{
+    list-style: none;
+}
+li{
+    padding: .5rem 1rem;
+    font-size: 1rem;
 }
 .section{
     display:flex;
@@ -61,6 +70,60 @@ Selector Classes
 -----------------------------------*/
 
         /* header objects*/
+header{
+    --header-background: rgb(240, 236, 253);
+    --button-background: rgb(86, 90, 221);
+    --button-hover: rgb(168, 114, 255);
+    --text-color: rgb(28, 14, 65);
+    --text-color-inverse: rgb(243, 242, 245);
+
+
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--header-background);
+    padding:1rem .5rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 0px 10px;
+
+    position: sticky;
+    top:0; left:0;
+}
+.home-link >*{
+    margin:0;
+    color: var(--text-color);
+}
+#name{
+    font-size: 1rem;
+}
+#title{
+    font-size: .75rem;
+}
+.list-objects >*{
+    color: var(--text-color);
+}
+#contact-button{
+    background-color: var(--button-background);
+    border-radius: 4px;
+}
+#contact-button >*{
+    color: var(--text-color-inverse);
+}
+#contact-button:hover{
+    background-color: var(--button-hover);
+    color:var(--text-color);
+}
+#contact-button:hover a{
+    color:var(--text-color);
+}
+.header-scrolled{
+    --header-background: rgb(86, 90, 221);
+    --button-background: rgb(243, 242, 245);
+    --button-hover: rgb(168, 114, 255);
+    --text-color: rgb(255, 255, 255);
+    --text-color-inverse: rgb(28, 14, 65);
+}
 
         /*grid objects*/
 #grid-projects{
@@ -127,16 +190,17 @@ Selector Classes
     background-image: url(assests/png/free-roam-mockup.png);
     background-size: cover;
 }
+
+
         /*Other Sections*/
 .skillset{
     display: grid;
     grid-template-columns: repeat(1,90%);
-    width:100%;
+    width: clamp(200px, 60%, 900px);
     justify-content: center;
 }
 #skills-heading{
     position: relative;
-    width: 100%;
     text-align: left;
     margin: 2rem 0rem;
 }
@@ -195,11 +259,13 @@ Selector Classes
     color: var(--mainTextColor);
 }
 .landing-image{
-    max-height: 100px;
-    width: 100%;
+    position: relative;
+    max-height: 300px;
     overflow: hidden;
-    background-size: cover;
+    background-image: url();
+    width: 100%;
 }
+
 .section-header{
     font-weight: 500;
     text-decoration: underline;
@@ -337,8 +403,9 @@ Selector Classes
 @media screen and  (max-width: 480px){
     .primary-navigation{
         position: fixed;
-        gap: 5rem;
+        gap: 1rem;
         inset: 0 0 0 40%;
+        justify-content: start;
         align-items: center;
         flex-direction: column;
         padding: min(30vw, 10rem) 2em;
@@ -349,7 +416,6 @@ Selector Classes
     }
     .primary-navigation a{
         color: var(--backgroundColor);
-        font-size: 1.5rem;
     }
     .primary-navigation[data-visible = "true"]{
         transform: translateX(0%);
@@ -380,17 +446,12 @@ Selector Classes
     #grid-projects{
         padding: 3rem 3rem;
     }
+    .mobile-toggle{
+        display:none;
+    }
 }
 @media screen and (min-width: 640px) {
-    h1{
-        font-size: 2.25rem;
-    }
-    h2{
-        font-size: 1.75rem;
-    }
-    p{
-        font-size: 1rem;
-    }
+
     .primary-navigation a{
         font-size: 1rem;
     }
@@ -431,15 +492,7 @@ Selector Classes
     html{
         font-size: 16px;
     }
-    h1{
-        font-size: 1rem;
-    }
-    h2{
-        font-size: 1.25rem;
-    }
-    p{
-        font-size: .75rem;
-    }
+
     .primary-header{
         padding: 1rem 2.75rem;
     }

@@ -3,17 +3,32 @@
     <head>
         <title>About</title>
         <link rel = "stylesheet" href = "styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class = "primary-header flex">
-            <div>
-                <img src="logo.png" alt="Omar Carbajal UI/UX Designer">
+        <header>
+            <div class = "logo">
+                <a class = "home-link" href = "index.html">
+                    <h1 id = "name">Omar Carbajal</h1>
+                    <h2 id = "title">UI/UX Designer</h2>
+                </a>
             </div>
-            <a href = "index.html"><img src = "logo.png"></a>
+
+            <button class = "mobile-toggle" aria-controls ="primary-navigation" aria-expanded ="false">
+                <span class = "sr-only">Menu</span>
+            </button>
             <nav>
-                <ul>
-                    <li id = "contactButton"><a href = #>Contact</a></li>
+                <ul id = "primary-navigation" data-visible = "false" class="primary-navigation flex">
+                    <li class = "list-objects">
+                        <a href = #about>About</a>
+                    </li>
+                    <li class = "list-objects" id ="contact-button">
+                        <a href="contact.html">
+                            Get in Touch
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>

@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel = "stylesheet" href = "styles.css">
     <script src = "script.js" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Roam</title>
 </head>
 <body>
-    <header class = "primary-header flex">
+    <header >
         <div class = "logo">
             <a class = "home-link" href = "index.html">
-                <h1 class = "name">Omar Carbajal</h1>
-                <h2 class = "title">UI/UX Designer</h2>
+                <h1 id = "name">Omar Carbajal</h1>
+                <h2 id = "title">UI/UX Designer</h2>
             </a>
         </div>
 
@@ -23,17 +25,20 @@
         </button>
         <nav>
             <ul id = "primary-navigation" data-visible = "false" class="primary-navigation flex">
-                <li class="contact-button">
+                <li class = "list-objects">
+                    <a href = #about>About</a>
+                </li>
+                <li class = "list-objects" id ="contact-button">
                     <a href="contact.html">
-                        Get in Touch <img src = "assests/svg/arrow-right.svg">
+                        Get in Touch
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section class="landing-image">
-        <img src = "assests/png/free-roam-mockup.png" alt = "image of free roam project">
-    </section>
+    <span>
+        <img class = "landing-image">
+    </span>
     <section class="section">
         <h1 class = section-header>Overview</h1>
         <h2 class="subheading">Project Summary</h2>
