@@ -16,7 +16,7 @@ window.onload = function(){
         landingImage.src = "assests/png/shelter-finds-mockup.png"
     }
     else if(page === "free_roam.html"){
-        landingImage.src = "assests/png/free-roam-mockup.png"
+        landingImage.src = "assests/png/shelter-finds-mockup.png"
     }
 }
 
