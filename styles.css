@@ -105,7 +105,6 @@ header{
 }
 #contact-button{
     background-color: var(--button-background);
-    border-radius: 4px;
 }
 #contact-button >*{
     color: var(--text-color-inverse);
@@ -136,18 +135,22 @@ header{
     border-radius: 3px;
 }
 .container{
-    border-radius: 3px;
     overflow: hidden ;
     position: relative;
+    padding: 10rem 0rem 0rem 0rem;
+    transition: transform 250ms ease-in;
+}
+.container:hover .container:focus-within{
+    transform: scale(1.05);
 }
 .content-info{
-    position: relative;
-    margin: 10rem 0rem 0rem 0rem;
     background: linear-gradient(hsla(0, 0%, 0%, 0.2),
                                 hsla(0,0%,0%,.8) 10%,
                                 rgb(0, 0, 0));
-    padding: .5rem 0rem;
+    padding: 1rem 0rem;
 }
+
+
 .container__link{
     position: absolute;
     width: 100%;
@@ -169,7 +172,7 @@ header{
     height: 2px;
     border-radius: 4px;
     bottom: 0;
-    left: 0;
+    left: calc(.5rem * -1);
     
 }
 .project-description{
@@ -398,15 +401,32 @@ header{
 
 
 /*for devices that have hover capabilities*/
-@media (hover){
-    
+@media (hover) {
+    .content-info{
+        transition: transform 250ms ease-in;
+        transform: translateY(6rem);
+    }
+    .container:hover .content-info, .container:focus-within .content-info{
+        transform: translateY(0);
+    }
+    .container:focus-within .content-info{
+        transition-duration: 0ms;
+    }
+    .project-name::after{
+        transform: scaleX(0);
+        transition: transform 300ms ease-in;
+        transform-origin: left;
+    }
+    .container:hover .project-name::after{
+        transform: scaleX(1);
+    }
 }
 @media screen and  (max-width: 480px){
     .primary-navigation{
         position: fixed;
         gap: 1rem;
         inset: 0 0 0 40%;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         padding: min(30vw, 10rem) 2em;
@@ -433,6 +453,9 @@ header{
         right: 2rem;
         z-index: 999;
         border: none;
+    }
+    #white-menu{
+        background-image: url(assests/svg/menu.svg);
     }
     .mobile-toggle[aria-expanded = "true"]{
         border-radius: 4px;

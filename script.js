@@ -37,6 +37,7 @@ const sectionOneOptions = {
 };
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".landing-image")
+const navIcon = document.querySelector(".mobile-toggle");
 
 const sectionOneObserver = new IntersectionObserver(function(
     entries, 
@@ -45,9 +46,11 @@ const sectionOneObserver = new IntersectionObserver(function(
         entries.forEach(entry => {
             if(!entry.isIntersecting){
                 header.classList.add("header-scrolled");
+                navIcon.setAttribute("id","white-menu");
             }
             else{
                 header.classList.remove("header-scrolled");
+                navIcon.removeAttribute("id","white-menu");
             }
         })
     }, sectionOneOptions)
