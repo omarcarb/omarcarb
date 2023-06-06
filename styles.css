@@ -1,11 +1,11 @@
 :root{
-    --mainTextColor: rgb(43, 28, 80);
-    --backgroundColor: rgb(240, 236, 253);
-    --primaryColor: rgb(86, 90, 221);
-    --primaryAccentColor: rgb(159, 146, 236);
-    --neutralColor: #d7d2db;
-    --secondaryColor: #d1d1f7;
-    --darkNeutral: #271f2b;
+    --mainTextColor: rgb(28, 51, 0);
+    --backgroundColor: rgb(236, 242, 228);
+    --primaryColor: rgb(188, 255, 107);
+    --primaryAccentColor: rgb(125, 207, 25);
+    --neutralColor: rgb(62, 71, 52);
+    --secondaryColor: rgb(78,136,7);
+    --darkNeutral: rgb(0 ,0 ,0);
     --fontWeightH1: 700;
     --fontWeightH2: 400;
     --fontWeightP: 400;
@@ -71,11 +71,11 @@ Selector Classes
 
         /* header objects*/
 header{
-    --header-background: rgb(240, 236, 253);
-    --button-background: rgb(86, 90, 221);
-    --button-hover: rgb(168, 114, 255);
-    --text-color: rgb(28, 14, 65);
-    --text-color-inverse: rgb(243, 242, 245);
+    --header-background: rgb(236, 242, 228);
+    --button-background: rgb(188, 255, 107);
+    --button-hover: rgb(125, 207, 25);
+    --text-color: rgb(28, 51, 0);
+    --text-color-inverse: rgb(28, 51, 0);
 
 
     z-index: 9999;
@@ -107,32 +107,34 @@ header{
     background-color: var(--button-background);
 }
 #contact-button >*{
-    color: var(--text-color-inverse);
+    color: var(--text-color);
 }
 #contact-button:hover{
     background-color: var(--button-hover);
-    color:var(--text-color);
 }
 #contact-button:hover a{
-    color:var(--text-color);
+    color:var(--text-color-inverse);
 }
 .header-scrolled{
-    --header-background: rgb(86, 90, 221);
-    --button-background: rgb(243, 242, 245);
-    --button-hover: rgb(168, 114, 255);
-    --text-color: rgb(255, 255, 255);
-    --text-color-inverse: rgb(28, 14, 65);
+    --header-background: rgb(125, 207, 25);
+    --button-background: rgb(208, 248, 155);
+    --button-hover: rgb(83, 151, 1);
+    --text-color: rgb(1, 2, 0);
+    --text-color-inverse: rgb(182, 223, 133);
 }
 
         /*grid objects*/
 #grid-projects{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    margin: 0rem 1rem;
     row-gap: 1rem;
     padding: 1rem;
     column-gap: 1rem ;
     background-color: white;
     border-radius: 3px;
+
+    animation: loading-animation 1s;
 }
 .container{
     overflow: hidden ;
@@ -208,6 +210,9 @@ header{
     margin: 2rem 0rem;
 }
 #skills-heading::after{
+    --first-color: rgb(12, 37, 16);
+    --second-color: rgba(36, 61, 5, 0.5);
+    --finalcolor: rgba(3, 51, 27, 0.3);
     position: absolute;
     content: '';
     width: 100%;
@@ -217,9 +222,9 @@ header{
     border-radius: 4px;
     background: linear-gradient(
         to right,
-        var(--primaryColor),
-        var(--primaryAccentColor) 30%,
-        var(--primaryColor)
+        var(--first-color),
+        var(--second-color),
+        var(--finalcolor)
     );
 }
 
@@ -270,17 +275,21 @@ header{
 }
 
 .section-header{
+    animation: loading-animation 1s;
     font-weight: 500;
     text-decoration: underline;
 }
 #project-page{
+    animation: loading-animation 1s;
     max-width: 100ch;
 }
 .subheading{
+    animation: loading-animation 1s;
     font-weight: 600;
     margin-top: 2.5rem; margin-bottom: .25rem;
 }
 .subtext{
+    animation: loading-animation 1s;
     margin: 1rem;
     width: 80%;
 }
@@ -426,10 +435,11 @@ header{
         position: fixed;
         gap: 1rem;
         inset: 0 0 0 40%;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         flex-direction: column;
-        padding: min(30vw, 10rem) 2em;
+        padding: min(20vw, 10rem) 1em;
+        margin: 0;
         background-color: var(--primaryAccentColor);
         z-index: 99;
         transform: translateX(100%);
@@ -438,6 +448,7 @@ header{
     .primary-navigation a{
         color: var(--backgroundColor);
     }
+    
     .primary-navigation[data-visible = "true"]{
         transform: translateX(0%);
     }
@@ -510,7 +521,6 @@ header{
     .other-works-box{
         margin-bottom: 1rem;
     }
-    
 }
 @media screen and (min-width: 1200px) {
     html{
@@ -530,6 +540,17 @@ header{
     #grid-projects{
         grid-template-columns: repeat( 3, 1fr);
         column-gap: 3rem;
-        margin: 2rem;
+        margin: 2rem auto;
+        max-width: 80vw;
+    }
+}
+@keyframes loading-animation{
+    from{
+        opacity: 0;
+        transform: translateY(9rem);
+    }
+    to{
+        opacity: 100%;
+        transform: translateY(0);
     }
 }
