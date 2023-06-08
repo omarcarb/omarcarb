@@ -8,7 +8,7 @@
     --darkNeutral: rgb(0 ,0 ,0);
     --fontWeightH1: 700;
     --fontWeightH2: 400;
-    --fontWeightP: 400;
+    --fontWeightP: 300;
 }
 /*---------------------------
 Utility Classes
@@ -20,7 +20,7 @@ Utility Classes
 
 html{
     font-family: "Roboto";
-    font-size: 16px;
+    font-size: 12px;
     color: var(--mainTextColor);
 }
 .sr-only{
@@ -58,13 +58,19 @@ li{
 .section{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin: auto;
-    text-align: center;
+    margin: 0rem auto;
     border-radius: 8px;
+    opacity: 0;
+    transform: translateY(4rem);
+    
+    transition: opacity 250ms ease-in, transform 350ms ease-in;
 }
-
+.section.animation{
+    opacity: 1;
+    transform: translateY(0);
+}
 /*---------------------------------
 Selector Classes
 -----------------------------------*/
@@ -86,7 +92,6 @@ header{
     justify-content: space-between;
     align-items: center;
     box-shadow: 3px 0px 10px;
-
     position: sticky;
     top:0; left:0;
 }
@@ -134,16 +139,13 @@ header{
     background-color: white;
     border-radius: 3px;
 
-    animation: loading-animation 1s;
 }
 .container{
     overflow: hidden ;
     position: relative;
     padding: 10rem 0rem 0rem 0rem;
-    transition: transform 250ms ease-in;
-}
-.container:hover .container:focus-within{
-    transform: scale(1.05);
+    transition: transform 250ms ease-in, box-shadow 250ms ease-in;
+
 }
 .content-info{
     background: linear-gradient(hsla(0, 0%, 0%, 0.2),
@@ -200,8 +202,8 @@ header{
         /*Other Sections*/
 .skillset{
     display: grid;
-    grid-template-columns: repeat(1,90%);
-    width: clamp(200px, 60%, 900px);
+    grid-template-columns: repeat(1,100%);
+    width: clamp(200px, 80%, 900px);
     justify-content: center;
 }
 #skills-heading{
@@ -212,7 +214,7 @@ header{
 #skills-heading::after{
     --first-color: rgb(12, 37, 16);
     --second-color: rgba(36, 61, 5, 0.5);
-    --finalcolor: rgba(3, 51, 27, 0.3);
+    --finalcolor: rgba(3, 51, 27, 0.1);
     position: absolute;
     content: '';
     width: 100%;
@@ -275,22 +277,21 @@ header{
 }
 
 .section-header{
-    animation: loading-animation 1s;
     font-weight: 500;
+    text-align: center;
     text-decoration: underline;
 }
 #project-page{
-    animation: loading-animation 1s;
     max-width: 100ch;
 }
 .subheading{
-    animation: loading-animation 1s;
     font-weight: 600;
+    width: 80%;
+    text-align: left;
     margin-top: 2.5rem; margin-bottom: .25rem;
 }
 .subtext{
-    animation: loading-animation 1s;
-    margin: 1rem;
+    margin: 1rem 0rem;
     width: 80%;
 }
 .grid-image{
@@ -312,12 +313,20 @@ header{
     margin: 2rem 0rem;
 }
 .design-div-image{
-    width: 100%;
-    margin: 1.5rem
+    width: 80%;
+    align-items: center;
+    margin: 1rem auto;
 }
 .user-flow-subheading{
     margin: 2rem 0rem;
     font-weight: 300;
+}
+.image-div{
+    width: 80%;
+}
+.project-images{
+    width: 100%;
+    margin: 1rem 0rem;
 }
 .user-flow-chart{
     margin: 2rem 0rem;
@@ -415,6 +424,10 @@ header{
         transition: transform 250ms ease-in;
         transform: translateY(6rem);
     }
+    .container:hover, .container:active{
+        transform: scale(1.025);
+        box-shadow: 10px 8px 24px rgba(3, 51, 27, 0.3);
+    }
     .container:hover .content-info, .container:focus-within .content-info{
         transform: translateY(0);
     }
@@ -461,6 +474,7 @@ header{
         width: 24px;
         padding: 4px;
         background-repeat: no-repeat;
+        top:1rem;
         right: 2rem;
         z-index: 999;
         border: none;
@@ -486,7 +500,9 @@ header{
     }
 }
 @media screen and (min-width: 640px) {
-
+    html{
+        font-size: 16px;
+    }
     .primary-navigation a{
         font-size: 1rem;
     }
@@ -539,7 +555,7 @@ header{
     }
     #grid-projects{
         grid-template-columns: repeat( 3, 1fr);
-        column-gap: 3rem;
+        column-gap: 1.5rem;
         margin: 2rem auto;
         max-width: 80vw;
     }
