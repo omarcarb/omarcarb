@@ -24,7 +24,7 @@
         </button>
         <nav>
             <ul id = "primary-navigation" data-visible = "false" class="primary-navigation flex">
-                <li class = "list-objects">
+                <li class = "list-objects" id = "about-button">
                     <a href = #about>About</a>
                 </li>
                 <li class = "list-objects" id ="contact-button">
@@ -36,7 +36,7 @@
         </nav>
     </header>
     <span>
-        <img class = "landing-image">
+        <img class = "landing-image" id = "section-crossed">
     </span>
     <main class = "section" id = "project-page">
         <h1 class = section-header>Overview</h1>
@@ -52,17 +52,18 @@
             <p class="subtext">I made some assumptions when going into this project. I was aware  that users wanted quick and easy access to the information that was most  relevant to them. I also assumed most users would prefer to view it through their mobile devices. As such, I went with a mobile  first design philosophy to better allow for smaller screens. This would allow me to provide  things like pop-up notifications or alerts. </p>
             <p class = "subtext"> The process to solving the problem went something like this</p>
             <div class="grid-image">
-                <img src="#.png" alt="UIimages" class="process-ui-images">
-                <img src="#.png" alt="UIimages" class="process-ui-images">
-                <img src="#.png" alt="UIimages" class="process-ui-images">
-                <img src="#.png" alt="UIimages" class="process-ui-images">
+                <img loading = "lazy" loading = "lazy" src="#.png" alt="UIimages" class="process-ui-images">
+                <img loading = "lazy" src="#.png" alt="UIimages" class="process-ui-images">
+                <img loading = "lazy" src="#.png" alt="UIimages" class="process-ui-images">
+                <img loading = "lazy" src="#.png" alt="UIimages" class="process-ui-images">
             </div>
         </main>
     <section class = "section" id = "project-page">
         <h1 class="section-header">Ideation</h1>
         <p class="subtext">I wanted the app to look as neatly organized as possible to reduced information clutter while still delivering all the relevant information needed in any weather app.<br>Several design choices I made during the ideation phase were made with the idea that most people wanted their weather alerts first before they receive any general weather information</p>
         <div class = "image-div">
-            <img src="assests/png/placeholder.png" alt="image of early sketches" class = "project-images" id = "early-sketches">
+            <img loading = "lazy" 
+            src="assests/png/placeholder.png" alt="image of early sketches" class = "project-images" id = "early-sketches">
         </div>
     </section>
     <main class="section" id="project-page">
@@ -73,9 +74,12 @@
     </main>
     <main class="section" id="project-page">
         <div class="image-div" id = "design-div-images">
-            <img src="assests/png/placeholder.png" alt="color pallete of the product" class = "project-images">
-            <img src="assests/png/placeholder.png" alt="the way objects are spaced out in the page" class = "project-images">
-            <img src="assests/png/placeholder.png" alt="the way objects are spaced out in the page" class = "project-images">
+            <img loading = "lazy" 
+            src="assests/png/placeholder.png" alt="color pallete of the product" class = "project-images">
+            <img loading = "lazy" 
+            src="assests/png/placeholder.png" alt="the way objects are spaced out in the page" class = "project-images">
+            <img loading = "lazy" 
+            src="assests/png/placeholder.png" alt="the way objects are spaced out in the page" class = "project-images">
         </div>
     </main>
     <main class="section" id = "project-page">
@@ -84,12 +88,15 @@
         <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti distinctio, dicta neque minima fuga perferendis! Impedit debitis quos culpa officiis fuga autem libero, praesentium quae alias assumenda aut nisi ut.</p>
         <img src="" alt="image of the user user flow" class="user-flow-chart">
     </main>
-    <main class="section">
-        <h2 class = "subheading">Final Product</h2>
+    <main class="section" id = "project-page">
+        <h1 class = "section-header">Final Product</h1>
         <div class = "image-div">
-            <img src="assests/png/placeholder.png" alt="example image" class = "project-images">
-            <img src="assests/png/placeholder.png" alt="example image" class = "project-images">
-            <img src="assests/png/placeholder.png" alt="example image" class = "project-images">
+            <img loading = "lazy" 
+            src="assests/png/placeholder.png" alt="example image" class = "project-images">
+            <img loading = "lazy" 
+            src="assests/png/placeholder.png" alt="example image" class = "project-images">
+            <img loading = "lazy" 
+            src="assests/png/placeholder.png" alt="example image" class = "project-images">
         </div>
     </main>
     <main class="section" id = "project-page">
@@ -100,33 +107,40 @@
             <li class = "list-subtext"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta.</p></li>
         </ul>
     </main>
+    <main class="section">
+        <h1 class="section-header">Other Works to Look at</h1>
+        <div class = "other-works">
+            <div class="other-works-box flex">
+                <img loading = "lazy" 
+                src="assests/png/free-roam-mockup.png" alt="preview image of the project" class="project-image">
+                <p class="project-description-small-form">Free Roam.</p>
+            </div>
+            <div class="other-works-box flex">
+                <img src="assests/png/shelter-finds-mockup.png" alt="preview image of the project" class="project-image">
+                <p class="project-description-small-form" >Shelter Finds</p>
+            </div>
+            <div class="other-works-box flex">
+                <img loading = "lazy" 
+                src="assests/png/placeholder.png" alt="preview image of the project" class="project-image">
+                <p class="project-description-small-form" >Not Avaliable</p>
+            </div>
+        </div> 
+    </main>
     <main class="bottom-form flex">
         <div>   
-            <div class = "other-works flex">
-            <h2 class="other-works-heading">Other works you can check out.</h2>
-            <div class = "project-links-container">
-                <div class="other-works-box flex">
-                    <img src="assests/png/free-roam-mockup.png" alt="preview image of the project" class="project-image">
-                    <p class="project-description-small-form">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, non.</p>
-                </div>
-                <div class="other-works-box flex">
-                    <img src="assests/png/shelter-finds-mockup.png" alt="preview image of the project" class="project-image">
-                    <p class="project-description-small-form" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, non.</p>
-                </div>
-            </div>
-            </div> 
+            
         </div>
         <div>
             <div class = "profile-pic-div">
-                <img src="" alt="image of omar carbajal" class="profile-pic">
+                <img src="assests/png/placeholder.png" alt="image of omar carbajal" class="profile-pic">
                 <div class = "profile-text">
                     <p>Omar Carbajal</p>
                     <p>UI/UX Designer</p>
                 </div>
             </div>
             <div>
-                <a href = "#.html" class = "profile-button">Contact</a>
-                <a href = "#html" class = "profile-button">Resume</a>
+                <a href = "#.html" class = "profile-button" id = "contact-button-form">Contact</a>
+                <a href = "#.html" class = "profile-button" id = "resume-button-form">Resume</a>
             </div>
         </div>
     </main>

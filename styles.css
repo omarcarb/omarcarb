@@ -1,7 +1,7 @@
 :root{
-    --mainTextColor: rgb(28, 51, 0);
-    --backgroundColor: rgb(236, 242, 228);
-    --primaryColor: rgb(188, 255, 107);
+    --mainTextColor: rgb(36, 66, 0);
+    --backgroundColor: rgb(254, 255, 252);
+    --primaryColor: rgb(136, 199, 59);
     --primaryAccentColor: rgb(125, 207, 25);
     --neutralColor: rgb(62, 71, 52);
     --secondaryColor: rgb(78,136,7);
@@ -36,16 +36,19 @@ body{
 
 h1{
     font-size: 1.5rem;
+    color: var(--mainTextColor);
     font-weight: var(--fontWeightH1);
 }
 
 h2{
     font-size: 1.25rem;
+    color: var(--mainTextColor);
     font-weight: var(--fontWeightH2);
 }
 
 p{
     font-size: 1rem;
+    color: var(--mainTextColor);
     font-weight: var(--fontWeightP);
 }
 ul{
@@ -67,6 +70,15 @@ li{
     
     transition: opacity 250ms ease-in, transform 350ms ease-in;
 }
+.section-crossed{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin: 0rem auto;
+    border-radius: 8px;
+    animation: loading-animation 350ms ease-in;
+}
 .section.animation{
     opacity: 1;
     transform: translateY(0);
@@ -77,21 +89,20 @@ Selector Classes
 
         /* header objects*/
 header{
-    --header-background: rgb(236, 242, 228);
+    --header-background: rgb(254, 255, 252);
     --button-background: rgb(188, 255, 107);
     --button-hover: rgb(125, 207, 25);
-    --text-color: rgb(28, 51, 0);
-    --text-color-inverse: rgb(28, 51, 0);
+    --text-color: rgb(36, 66, 0);
+    --text-color-inverse: rgb(2, 3, 0);
 
 
     z-index: 9999;
     display: flex;
     flex-direction: row;
     background-color: var(--header-background);
-    padding:1rem 1rem;
+    padding:1rem 2rem;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 3px 0px 10px;
     position: sticky;
     top:0; left:0;
 }
@@ -108,8 +119,27 @@ header{
 .list-objects >*{
     color: var(--text-color);
 }
+#about-button{
+    position: relative;
+    padding: 1rem 2rem;
+}
+#about-button::after{
+    content: '';
+    position: absolute;
+    background-color: var(--mainTextColor);
+    width: 100%;
+    height: 2px;
+    left:0;
+    bottom:15%;
+    
+    transform: scaleX(0);
+}
+#about-button:hover #about-button::after{
+    transform: scaleX(1);
+}
 #contact-button{
     background-color: var(--button-background);
+    padding: 1rem 2rem;
 }
 #contact-button >*{
     color: var(--text-color);
@@ -121,11 +151,12 @@ header{
     color:var(--text-color-inverse);
 }
 .header-scrolled{
-    --header-background: rgb(125, 207, 25);
-    --button-background: rgb(208, 248, 155);
+    --header-background: rgb(136, 199, 59);
+    --button-background: rgb(254, 255, 252);
     --button-hover: rgb(83, 151, 1);
     --text-color: rgb(1, 2, 0);
-    --text-color-inverse: rgb(182, 223, 133);
+    --text-color-inverse: rgb(254, 255, 252);
+    box-shadow: 0px 4px 24px rgba(0 ,0 , 0, .15);
 }
 
         /*grid objects*/
@@ -138,7 +169,6 @@ header{
     column-gap: 1rem ;
     background-color: white;
     border-radius: 3px;
-
 }
 .container{
     overflow: hidden ;
@@ -202,13 +232,14 @@ header{
         /*Other Sections*/
 .skillset{
     display: grid;
-    grid-template-columns: repeat(1,100%);
+    grid-template-columns: repeat(1,80%);
     width: clamp(200px, 80%, 900px);
     justify-content: center;
 }
 #skills-heading{
     position: relative;
     text-align: left;
+    width: 100%;
     margin: 2rem 0rem;
 }
 #skills-heading::after{
@@ -235,7 +266,7 @@ header{
     flex-direction: column;
     place-items: left;
     padding: 1rem;
-    background-color: white;
+    background-color: rgb(241, 243, 240);
     border-radius: 8px;
 }
 .skill-grid-item{
@@ -256,18 +287,25 @@ header{
     width: 40%;
 }
 .contact-links{
-    justify-content: center;
     display: flex;
     gap: 1rem;
     list-style: none;
     padding: 0px 24px;
     margin-bottom: 5rem;
 }
-.contact-links a{
+.contact-links img{
+    max-width: 24px;
+    max-height: 24px;
+}
+.contact-links li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-decoration: none;
     font-size: 1.25rem;
     color: var(--mainTextColor);
 }
+
 .landing-image{
     position: relative;
     max-height: 300px;
@@ -282,7 +320,7 @@ header{
     text-decoration: underline;
 }
 #project-page{
-    max-width: 100ch;
+    max-width: 125ch;
 }
 .subheading{
     font-weight: 600;
@@ -340,52 +378,18 @@ header{
 }
 .learned-list{
     list-style: circle;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 .learned-list li{
     text-align: left;
 }
-.bottom-form{
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--primaryColor);
-    padding: 2rem 0rem;
-    gap: 5rem;
-}
-.profile-section{
-    flex-direction: column;
-    align-items: center;
-}
-.profile-pic-div{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-.profile-pic{
-    width: 32px;
-    height: 32px;
-}
-.profile-pic::before{
-    content: '';
-    background-color: var(--secondaryColor);
-}
-.profile-button{
-    text-decoration: none;
-    color: var(--mainTextColor);
-    background-color: var(--secondaryColor);
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-    margin: 1rem .5rem;
-}
-.profile-text{
-    color: var(--backgroundColor);
-}
 .other-works{
     width: 80%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    row-gap: 1rem;
+    margin: 2rem 0rem;
 }
 .other-works-heading{
     text-align: left;
@@ -395,22 +399,56 @@ header{
 }
 .other-works-box{
     width: 100%;
+    min-width: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    gap: 1rem;    
+    gap: 1rem;
     background-color: var(--backgroundColor);
-    margin-bottom: 2rem;
-    border-radius: .5rem;
+    box-shadow: 0px 4px 4px rgba(129, 129, 129, 0.3);
     overflow: hidden;
 }
+.bottom-form{
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    background-color: var(--primaryColor);
+    padding: 5rem 0rem;
+}
+.profile-pic-div{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.profile-pic{
+    max-width: 64px;
+    max-height: 64px;
+    aspect-ratio: 1;
+    border-radius: 50px;
+}
+.profile-button{
+    text-decoration: none;
+    color: var(--mainTextColor);
+    background-color: var(--backgroundColor);
+    padding: 1rem 2rem;
+    margin: 1rem 1rem;
+}
+
+.profile-text{
+    color: var(--backgroundColor);
+}
+
 .project-image{
     width: 60px;
     height: 60px;
 }
 .project-description-small-form{
-    width: 40ch;
-    font-size: .75rem;
+    width: 20ch;
+    font-size: 1rem;
 }
 
 /*-------------------------------------
@@ -445,15 +483,16 @@ header{
 }
 @media screen and  (max-width: 480px){
     .primary-navigation{
+        --menu-color: rgba(14, 114, 36, 1);
         position: fixed;
-        gap: 1rem;
+        gap: 3rem;
         inset: 0 0 0 40%;
         justify-content: start;
         align-items: center;
         flex-direction: column;
         padding: min(20vw, 10rem) 1em;
         margin: 0;
-        background-color: var(--primaryAccentColor);
+        background-color: var(--menu-color);
         z-index: 99;
         transform: translateX(100%);
         transition: transform 250ms ease-in;
@@ -486,9 +525,6 @@ header{
         border-radius: 4px;
         background-image: url(assests/svg/x.svg);
     }
-    .other-works{
-        display: none;
-    }
 
 }
 @media screen and (min-width: 480px) {
@@ -498,17 +534,21 @@ header{
     .mobile-toggle{
         display:none;
     }
+    .skillset{
+        grid-template-columns: repeat(2,45%);
+        gap: 1rem;
+    }
 }
 @media screen and (min-width: 640px) {
     html{
-        font-size: 16px;
+        font-size: 14px;
     }
     .primary-navigation a{
         font-size: 1rem;
     }
-    .primary-header{
+    header{
         flex-direction: row;
-        padding: 1.5rem 2rem;
+        padding: 1rem 2.5rem;
     }
     .mobile-toggle{
         display: none;
@@ -521,10 +561,7 @@ header{
         grid-template-columns: repeat( 2, 1fr);
         margin: 2rem 1rem;
     }
-    .skillset{
-        grid-template-columns: repeat(2,45%);
-        gap: 1rem;
-    }
+    
     .contactLinks{
         justify-content: center;
         align-items: center;
@@ -534,20 +571,22 @@ header{
         justify-content: center;
         align-items: center;
     }
+    .other-works{
+        justify-content: center;
+        width: 60%;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
     .other-works-box{
-        margin-bottom: 1rem;
+        max-width: 100%;
     }
 }
 @media screen and (min-width: 1200px) {
     html{
         font-size: 16px;
     }
-
-    .primary-header{
-        padding: 1rem 2.75rem;
-    }
-    .primary-navigation a{
-        font-size: .75rem;
+    header{
+        padding: 1rem 4rem;
     }
     .project-button{
         margin: 1rem 0rem;
@@ -558,6 +597,13 @@ header{
         column-gap: 1.5rem;
         margin: 2rem auto;
         max-width: 80vw;
+    }
+    .other-works{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+    .other-works-box{
+        max-width: 90%;
     }
 }
 @keyframes loading-animation{
