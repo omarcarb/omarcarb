@@ -1,9 +1,14 @@
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.mobile-toggle');
 const homeLink = document.querySelector('.home-link');
+const matchResults = window.matchMedia("(max-width: 480px)")
+var thresholdValue = 1;
+
 var path = window.location.pathname;
 var page = path.split("/").pop();
 console.log( page );
+
+
 
 
 const landingImage = document.querySelector(".landing-image");
@@ -31,18 +36,26 @@ navToggle.onclick = function() {
         navToggle.setAttribute('aria-expanded', false);
     }
 };
-
+if(matchResults == true){
+    thresholdValue = .01;
+}
+else{
+    thresholdValue = .3;
+}
+console.log(thresholdValue);
 const sectionOneOptions = {
-    rootMargin: '-100px 0px 20px 0px'
+    threshold: thresholdValue,
+    rootMargin: '-25px 0px 20px 0px'
 };
 const header = document.querySelector("header");
-const sectionOne = document.querySelector(".landing-image")
+const sectionOne = document.querySelector("#section-crossed")
 const navIcon = document.querySelector(".mobile-toggle");
 
 const faders = document.querySelectorAll(".section");
 
 const appearOptions = {
-    threshold: 0,
+
+    
     rootMargin: '0px 0px -100px 0px'
 };
 const appearOnScroll = new IntersectionObserver(function(
