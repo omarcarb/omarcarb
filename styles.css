@@ -142,7 +142,7 @@ header{
     padding: 1rem 2rem;
 }
 #contact-button >*{
-    color: var(--text-color);
+    color: var(--text-color-inverse);
 }
 #contact-button:hover{
     background-color: var(--button-hover);
@@ -154,8 +154,8 @@ header{
     --header-background: rgb(136, 199, 59);
     --button-background: rgb(254, 255, 252);
     --button-hover: rgb(83, 151, 1);
-    --text-color: rgb(1, 2, 0);
-    --text-color-inverse: rgb(254, 255, 252);
+    --text-color: rgb(254, 255, 252);
+    --text-color-inverse: rgb(7, 7, 7);
     box-shadow: 0px 4px 24px rgba(0 ,0 , 0, .15);
 }
 
@@ -243,9 +243,9 @@ header{
     margin: 2rem 0rem;
 }
 #skills-heading::after{
-    --first-color: rgb(12, 37, 16);
-    --second-color: rgba(36, 61, 5, 0.5);
-    --finalcolor: rgba(3, 51, 27, 0.1);
+    --first-color: rgb(136, 199, 59);
+    --second-color: rgb(125, 207, 25);
+    --finalcolor: rgba(143, 250, 12, 0.2);
     position: absolute;
     content: '';
     width: 100%;
@@ -286,24 +286,11 @@ header{
     text-align: left;
     width: 40%;
 }
-.contact-links{
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    padding: 0px 24px;
-    margin-bottom: 5rem;
-}
-.contact-links img{
-    max-width: 24px;
-    max-height: 24px;
-}
-.contact-links li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 1.25rem;
-    color: var(--mainTextColor);
+.contact-link{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    padding: 2rem 0rem;
 }
 
 .landing-image{
@@ -568,7 +555,8 @@ header{
     }
     .bottom-form{
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 3rem 4rem;
         align-items: center;
     }
     .other-works{
