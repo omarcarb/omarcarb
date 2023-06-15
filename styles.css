@@ -94,7 +94,7 @@ header{
     --button-hover: rgb(125, 207, 25);
     --text-color: rgb(36, 66, 0);
     --text-color-inverse: rgb(2, 3, 0);
-
+    --menu-icon: url("assests/svg/color-menu.svg");
 
     z-index: 9999;
     display: flex;
@@ -116,14 +116,15 @@ header{
 #title{
     font-size: .75rem;
 }
-.list-objects >*{
+.primary-navigation{
+    align-items: center;
+}
+.nav-button >*{
     color: var(--text-color);
-}
-#about-button{
     position: relative;
-    padding: 1rem 2rem;
+    padding: .5rem 1.25rem;
 }
-#about-button::after{
+.nav-button__text::after{
     content: '';
     position: absolute;
     background-color: var(--mainTextColor);
@@ -133,22 +134,27 @@ header{
     bottom:15%;
     
     transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
 }
-#about-button:hover #about-button::after{
+.nav-button:hover .nav-button__text:after{
     transform: scaleX(1);
 }
-#contact-button{
+.nav-button__filled{
     background-color: var(--button-background);
     padding: 1rem 2rem;
+    transition: background-color 200ms ease-in;
 }
-#contact-button >*{
+.nav-button__filled a{
     color: var(--text-color-inverse);
 }
-#contact-button:hover{
+.nav-button__filled:hover{
     background-color: var(--button-hover);
 }
-#contact-button:hover a{
+.nav-button__filled:hover a{
     color:var(--text-color-inverse);
+}
+.mobile-toggle{
+    background-image: var(--menu-icon);
 }
 .header-scrolled{
     --header-background: rgb(136, 199, 59);
@@ -156,6 +162,7 @@ header{
     --button-hover: rgb(83, 151, 1);
     --text-color: rgb(254, 255, 252);
     --text-color-inverse: rgb(7, 7, 7);
+    --menu-icon: url("assest/svg/color-menu.svg")
     box-shadow: 0px 4px 24px rgba(0 ,0 , 0, .15);
 }
 
@@ -216,15 +223,15 @@ header{
     text-align: left;
 }
 #weatherlerts{
-    background-image: url(assests/png/weatherlerts-mockup.png);
+    background-image: url(assests/png/mockup-images/weatherlerts-mockup.png);
     background-size: cover;
 }
 #shelter-finds{
-    background-image: url(assests/png/shelter-finds-mockup.png);
+    background-image: url(assests/png/mockup-images/shelter-finds-mockup.png);
     background-size: cover;
 }
 #free-roam{
-    background-image: url(assests/png/free-roam-mockup.png);
+    background-image: url(assests/png/mockup-images/free-roam-mockup.png);
     background-size: cover;
 }
 
@@ -235,6 +242,7 @@ header{
     grid-template-columns: repeat(1,80%);
     width: clamp(200px, 80%, 900px);
     justify-content: center;
+    margin-bottom: 4rem;
 }
 #skills-heading{
     position: relative;
@@ -289,10 +297,13 @@ header{
 .contact-link{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
+    column-gap: 2rem;
     padding: 2rem 0rem;
 }
-
+.contact-link__link img{
+    max-width: 24px;
+    max-height: 24px;
+}
 .landing-image{
     position: relative;
     max-height: 300px;
@@ -308,6 +319,12 @@ header{
 }
 #project-page{
     max-width: 125ch;
+}
+.image-container{
+    gap: 2rem;
+    max-width: clamp(60%, 90%, 900px);
+    justify-content: center;
+    margin: 0rem \auto;
 }
 .subheading{
     font-weight: 600;
@@ -470,7 +487,7 @@ header{
 }
 @media screen and  (max-width: 480px){
     .primary-navigation{
-        --menu-color: rgba(14, 114, 36, 1);
+        --menu-color: rgb(136, 199, 59);
         position: fixed;
         gap: 3rem;
         inset: 0 0 0 40%;
@@ -484,10 +501,6 @@ header{
         transform: translateX(100%);
         transition: transform 250ms ease-in;
     }
-    .primary-navigation a{
-        color: var(--backgroundColor);
-    }
-    
     .primary-navigation[data-visible = "true"]{
         transform: translateX(0%);
     }
@@ -495,7 +508,6 @@ header{
         position: absolute;
         top: 24px;
         background-color: transparent;
-        background-image: url(assests/svg/color-menu.svg);
         aspect-ratio: 1;
         width: 24px;
         padding: 4px;
@@ -505,12 +517,13 @@ header{
         z-index: 999;
         border: none;
     }
-    #white-menu{
-        background-image: url(assests/svg/menu.svg);
-    }
     .mobile-toggle[aria-expanded = "true"]{
+        background-image: url("assests/svg/x.svg");
         border-radius: 4px;
-        background-image: url(assests/svg/x.svg);
+    }
+    #menu-icon{
+        --menu-icon: url("assests/svg/menu.svg");
+        background-image: var(--menu-icon);
     }
 
 }
@@ -530,6 +543,7 @@ header{
     html{
         font-size: 14px;
     }
+
     .primary-navigation a{
         font-size: 1rem;
     }
@@ -549,10 +563,6 @@ header{
         margin: 2rem 1rem;
     }
     
-    .contactLinks{
-        justify-content: center;
-        align-items: center;
-    }
     .bottom-form{
         flex-direction: row;
         justify-content: space-between;
@@ -575,6 +585,9 @@ header{
     }
     header{
         padding: 1rem 4rem;
+    }
+    .nav-button>*{
+        padding: 1rem 2rem;
     }
     .project-button{
         margin: 1rem 0rem;
