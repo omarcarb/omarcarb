@@ -15,27 +15,15 @@ const landingImage = document.querySelector(".landing-image");
 
 window.onload = function(){
     if(page === "weatherlerts.html"){
-        landingImage.src = "assests/png/weatherlerts-mockup.png"
+        landingImage.src = "assests/png/mockup-images/weatherlerts-mockup.png"
     }
     else if(page === "shelter_finds.html"){
-        landingImage.src = "assests/png/shelter-finds-mockup.png"
+        landingImage.src = "assests/png/mockup-images/shelter-finds-mockup.png"
     }
     else if(page === "free_roam.html"){
-        landingImage.src = "assests/png/shelter-finds-mockup.png"
+        landingImage.src = "assests/png/mockup-images/shelter-finds-mockup.png"
     }
 }
-navToggle.onclick = function() {
-    const visibility = primaryNav.getAttribute('data-visible');
-    
-    if(visibility === "false"){
-        primaryNav.setAttribute("data-visible", true);
-        navToggle.setAttribute('aria-expanded', true);
-    }
-    else if(visibility === "true"){
-        primaryNav.setAttribute("data-visible", false);
-        navToggle.setAttribute('aria-expanded', false);
-    }
-};
 if(matchResults == true){
     thresholdValue = .01;
 }
@@ -54,8 +42,6 @@ const navIcon = document.querySelector(".mobile-toggle");
 const faders = document.querySelectorAll(".section");
 
 const appearOptions = {
-
-    
     rootMargin: '0px 0px -100px 0px'
 };
 const appearOnScroll = new IntersectionObserver(function(
@@ -82,16 +68,48 @@ const sectionOneObserver = new IntersectionObserver(function(
     sectionOneObserver
     ) {
         entries.forEach(entry => {
-            if(!entry.isIntersecting){
-                header.classList.add("header-scrolled");
-                navIcon.setAttribute("id","white-menu");
-            }
-            else{
-                header.classList.remove("header-scrolled");
-                navIcon.removeAttribute("id","white-menu");
-            }
+                if(!entry.isIntersecting){
+                    header.classList.add("header-scrolled");
+                    navIcon.setAttribute('aria-expanded', true);
+                    navIcon.setAttribute("id", "menu-icon");
+                }
+                else{
+                    header.classList.remove("header-scrolled");
+                    navIcon.setAttribute('aria-expanded',false);
+                    navIcon.removeAttribute("id", "menu-icon");
+                }
         })
     }, sectionOneOptions)
 sectionOneObserver.observe(sectionOne);
+navToggle.onclick = function() {
+    const visibility = primaryNav.getAttribute('data-visible');
+    
+    if(visibility === "false"){
+        primaryNav.setAttribute("data-visible", true);
+        navToggle.setAttribute('aria-expanded', true);
+        header.classList.add("header-scrolled");
+        navIcon.setAttribute("id", "close-menu");
+        disableScroll();
+    }
+    else if(visibility === "true"){
+        primaryNav.setAttribute("data-visible", false);
+        navToggle.setAttribute('aria-expanded', false);
+        header.classList.remove("header-scrolled");
+        navIcon.removeAttribute("id", "close-menu")
+        
+        enableScroll();
+    }
+};
+function disableScroll(){
+    scrollTop = window.scrollY || document.documentElement.scrollTop;
+    scrollLeft = window.scrollX || document.documentElement.scrollLeft;
 
-
+    window.onscroll = function (){
+        console.log(scrollLeft + scrollTop)
+        window.scrollTo(scrollLeft, scrollTop);
+    };
+}
+function enableScroll(){
+    window.onscroll = function(){
+    };
+}
