@@ -14,21 +14,23 @@ console.log( page );
 const landingImage = document.querySelector(".landing-image");
 
 window.onload = function(){
-    if(page === "weatherlerts.html"){
-        landingImage.src = "assests/png/mockup-images/weatherlerts-mockup.png"
-    }
-    else if(page === "shelter_finds.html"){
-        landingImage.src = "assests/png/mockup-images/shelter-finds-mockup.png"
-    }
-    else if(page === "free_roam.html"){
-        landingImage.src = "assests/png/mockup-images/shelter-finds-mockup.png"
+    switch(page){
+        case "weatherlerts.html":
+            landingImage.src = "assests/png/mockup-images/weatherlerts-mockup.png"; 
+        break;
+        case "free_roam.html":
+            landingImage.src = "assests/png/mockup-images/free-roam-mockup.png";
+        break;
+        case "shelter_finds.html":
+            landingImage.src = "assests/png/mockup-images/shelter-finds-mockup.png";
+        break;
     }
 }
 if(matchResults == true){
-    thresholdValue = .01;
+    thresholdValue = .2;
 }
 else{
-    thresholdValue = .3;
+    thresholdValue = .5;
 }
 console.log(thresholdValue);
 const sectionOneOptions = {
@@ -62,7 +64,6 @@ const appearOnScroll = new IntersectionObserver(function(
 faders.forEach(fader => {
     appearOnScroll.observe(fader)
 });
-
 const sectionOneObserver = new IntersectionObserver(function(
     entries, 
     sectionOneObserver

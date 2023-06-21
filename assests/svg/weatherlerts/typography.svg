@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="414" viewBox="0 0 1000 414">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-typography);
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-9 {
+        fill: #2c3e50;
+      }
+
+      .cls-2 {
+        font-size: 20px;
+      }
+
+      .cls-2, .cls-3, .cls-8, .cls-9 {
+        font-family: Roboto-Medium, Roboto;
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        font-size: 14px;
+      }
+
+      .cls-4 {
+        font-size: 10px;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-5 {
+        fill: rgba(0,0,0,0.6);
+        font-family: Poppins-Regular, Poppins;
+      }
+
+      .cls-5, .cls-9 {
+        font-size: 40px;
+      }
+
+      .cls-11, .cls-6 {
+        fill: none;
+      }
+
+      .cls-6 {
+        stroke: rgba(0,0,0,0.6);
+        stroke-width: 3px;
+      }
+
+      .cls-7 {
+        fill: #fff;
+        stroke: #010101;
+      }
+
+      .cls-8 {
+        fill: rgba(44,62,80,0.69);
+        font-size: 16px;
+      }
+
+      .cls-10 {
+        stroke: none;
+      }
+
+      .cls-12 {
+        fill: rgba(255,255,255,0);
+      }
+    </style>
+    <clipPath id="clip-typography">
+      <rect width="1000" height="414"/>
+    </clipPath>
+  </defs>
+  <g id="typography" class="cls-1">
+    <rect class="cls-12" width="1000" height="414"/>
+    <text id="Roboto_20px_" data-name="Roboto   20px " class="cls-2" transform="translate(617 214)"><tspan x="0" y="0" xml:space="preserve">Roboto   20px </tspan></text>
+    <text id="Heading_1" data-name="Heading 1" class="cls-2" transform="translate(466 214)"><tspan x="0" y="0">Heading 1</tspan></text>
+    <text id="Roboto_16px_" data-name="Roboto   16px " class="cls-3" transform="translate(617 264)"><tspan x="0" y="0" xml:space="preserve">Roboto   16px </tspan></text>
+    <text id="Heading_2" data-name="Heading 2" class="cls-3" transform="translate(466 264)"><tspan x="0" y="0">Heading 2</tspan></text>
+    <text id="Roboto_14px_" data-name="Roboto   14px " class="cls-4" transform="translate(617 307)"><tspan x="0" y="0" xml:space="preserve">Roboto   14px </tspan></text>
+    <text id="Paragraph_Button" data-name="Paragraph/Button" class="cls-4" transform="translate(466 307)"><tspan x="0" y="0">Paragraph/Button</tspan></text>
+    <text id="Typography-2" data-name="Typography" class="cls-5" transform="translate(97.75 82)"><tspan x="0" y="0">Typography</tspan></text>
+    <line id="Line_16" data-name="Line 16" class="cls-6" x2="804" transform="translate(98.25 108.5)"/>
+    <g id="Typography_Box" data-name="Typography Box" transform="translate(153 -65)">
+      <g id="Rectangle_219" data-name="Rectangle 219" class="cls-7" transform="translate(103 235)">
+        <rect class="cls-10" width="169" height="162" rx="4"/>
+        <rect class="cls-11" x="0.5" y="0.5" width="168" height="161" rx="3.5"/>
+      </g>
+      <text id="Roboto_2C3E50" data-name="Roboto #2C3E50" class="cls-8" transform="translate(127 369)"><tspan x="0" y="0">Roboto #2C3E50</tspan></text>
+      <text id="Aa_Zz" data-name="Aa Zz" class="cls-9" transform="translate(137 301)"><tspan x="0" y="0">Aa Zz</tspan></text>
+    </g>
+  </g>
+</svg>

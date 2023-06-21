@@ -1,0 +1,569 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="695" viewBox="0 0 1000 695">
+  <defs>
+    <style>
+      .cls-1, .cls-10, .cls-13, .cls-29, .cls-30, .cls-31, .cls-37, .cls-38, .cls-39, .cls-40, .cls-41, .cls-44 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-layout-and-heirarchy);
+      }
+
+      .cls-3 {
+        fill: #fbfdff;
+      }
+
+      .cls-4 {
+        isolation: isolate;
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-19, .cls-20, .cls-21, .cls-6 {
+        fill: #2c3e50;
+      }
+
+      .cls-6 {
+        font-size: 14px;
+      }
+
+      .cls-21, .cls-6 {
+        font-family: Roboto-Medium, Roboto;
+        font-weight: 500;
+      }
+
+      .cls-7 {
+        fill: #a5a5a5;
+      }
+
+      .cls-8 {
+        fill: #f9e773;
+      }
+
+      .cls-9 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-10 {
+        stroke: rgba(52,152,219,0.5);
+      }
+
+      .cls-10, .cls-29, .cls-30, .cls-31 {
+        stroke-width: 2px;
+      }
+
+      .cls-11 {
+        opacity: 0.9;
+      }
+
+      .cls-12 {
+        fill: #3498db;
+      }
+
+      .cls-13 {
+        stroke: #3498db;
+        stroke-linecap: round;
+      }
+
+      .cls-13, .cls-22, .cls-23, .cls-24 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-14 {
+        fill: #d93423;
+      }
+
+      .cls-15, .cls-16 {
+        fill: rgba(255,255,255,0.9);
+      }
+
+      .cls-15 {
+        font-size: 16px;
+        font-family: ArialMT, Arial;
+      }
+
+      .cls-17 {
+        fill: rgba(255,255,255,0.95);
+      }
+
+      .cls-18 {
+        fill: #fff;
+      }
+
+      .cls-19 {
+        font-size: 60px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: 700;
+      }
+
+      .cls-21 {
+        font-size: 20px;
+      }
+
+      .cls-22 {
+        fill: rgba(251,0,0,0.1);
+        stroke: #fb0000;
+      }
+
+      .cls-22, .cls-23 {
+        stroke-dasharray: 5;
+      }
+
+      .cls-23 {
+        fill: rgba(251,167,0,0.1);
+        stroke: #fba700;
+      }
+
+      .cls-24 {
+        fill: rgba(0,197,73,0.1);
+        stroke: #00c549;
+        stroke-dasharray: 5 5;
+      }
+
+      .cls-25 {
+        fill: #fba700;
+      }
+
+      .cls-26 {
+        fill: rgba(255,255,255,0.85);
+        font-size: 12px;
+      }
+
+      .cls-26, .cls-42 {
+        font-family: SegoeUI-Semibold, Segoe UI;
+        font-weight: 600;
+      }
+
+      .cls-27 {
+        fill: #fb0000;
+      }
+
+      .cls-28 {
+        fill: #00c549;
+      }
+
+      .cls-29 {
+        stroke: #feadad;
+      }
+
+      .cls-30 {
+        stroke: #fddc99;
+      }
+
+      .cls-31 {
+        stroke: #a8ebc1;
+      }
+
+      .cls-32 {
+        fill: #e0a4f5;
+      }
+
+      .cls-33 {
+        fill: #a4b2f5;
+      }
+
+      .cls-34 {
+        fill: #6e85fb;
+      }
+
+      .cls-35 {
+        fill: #001684;
+      }
+
+      .cls-36 {
+        fill: #2445f2;
+      }
+
+      .cls-37 {
+        stroke: #e0a4f5;
+      }
+
+      .cls-38 {
+        stroke: #a4b2f5;
+      }
+
+      .cls-39 {
+        stroke: #6e85fb;
+      }
+
+      .cls-40 {
+        stroke: #001684;
+      }
+
+      .cls-41 {
+        stroke: #2445f2;
+      }
+
+      .cls-42 {
+        fill: rgba(0,0,0,0.85);
+        font-size: 28px;
+      }
+
+      .cls-43 {
+        fill: rgba(0,0,0,0.6);
+        font-size: 40px;
+        font-family: Poppins-Regular, Poppins;
+      }
+
+      .cls-44 {
+        stroke: rgba(0,0,0,0.6);
+        stroke-width: 3px;
+      }
+
+      .cls-45 {
+        stroke: none;
+      }
+
+      .cls-46 {
+        filter: url(#Rectangle_130);
+      }
+
+      .cls-47 {
+        filter: url(#Rectangle_19);
+      }
+    </style>
+    <filter id="Rectangle_19" x="217.006" y="163.074" width="405.488" height="486.352" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect class="cls-1" x="-4" y="8" width="343.906" height="90"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect class="cls-1" width="649" height="90"/>
+    </clipPath>
+    <filter id="Rectangle_130" x="308.67" y="277.074" width="205.82" height="99.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-layout-and-heirarchy">
+      <rect width="1000" height="695"/>
+    </clipPath>
+  </defs>
+  <g id="layout-and-heirarchy" class="cls-2">
+    <rect class="cls-9" width="1000" height="695"/>
+    <g id="layout-card" transform="translate(232.006 -31.446)">
+      <g id="Current_Day_Forecast_Group" data-name="Current Day Forecast Group" transform="translate(0 -28.001)">
+        <g class="cls-47" transform="matrix(1, 0, 0, 1, -232.01, 59.45)">
+          <rect id="Rectangle_19-2" data-name="Rectangle 19" class="cls-3" width="375.488" height="456.352" transform="translate(232.01 175.07)"/>
+        </g>
+        <g id="Weather_Data" data-name="Weather Data" transform="translate(0 -0.001)">
+          <g id="Group_14" data-name="Group 14" transform="translate(0 -16.999)">
+            <g id="Scroll_Group_2" data-name="Scroll Group 2" class="cls-4" transform="translate(19 585.873)">
+              <g id="Repeat_Grid_1" data-name="Repeat Grid 1" class="cls-5" transform="translate(0 8)">
+                <g transform="translate(-165 -548.146)">
+                  <g id="Weather_Forecast_Component" data-name="Weather Forecast Component" transform="translate(168.744 548.146)">
+                    <text id="_72_" data-name="72°" class="cls-6" transform="translate(0 67)"><tspan x="7.384" y="15">72°</tspan></text>
+                    <g id="WeatherIcon" transform="translate(6 31)">
+                      <g id="partly-sunny" transform="translate(0 -2.25)">
+                        <path id="Path_103" data-name="Path 103" class="cls-7" d="M16.911,28.146H5.272a5.571,5.571,0,0,1-3.657-1.2A4.826,4.826,0,0,1,0,23.119a4.748,4.748,0,0,1,1.449-3.533,5.629,5.629,0,0,1,2.934-1.417s0,0,0,0a8.676,8.676,0,0,1,2.5-5.052,6.747,6.747,0,0,1,4.65-1.864A6.371,6.371,0,0,1,15.6,12.684a7.455,7.455,0,0,1,2.1,2.809.807.807,0,0,0,.557.475,6.357,6.357,0,0,1,3.241,1.8,6.006,6.006,0,0,1,1.579,4.214,6.116,6.116,0,0,1-1.841,4.463A6.18,6.18,0,0,1,16.911,28.146ZM17.856,15.887Z" transform="translate(0 -1.896)"/>
+                        <path id="Path_104" data-name="Path 104" class="cls-8" d="M26.911,14.8a11.686,11.686,0,0,1,2.328.928.282.282,0,0,0,.235.013.258.258,0,0,0,.155-.167,5.793,5.793,0,0,0,.236-1.684,6.279,6.279,0,0,0-6.423-6.014c-2.352.022-3.1.943-4.18,1.658h0a.208.208,0,0,0-.092.209.218.218,0,0,0,.159.17,16.554,16.554,0,0,1,3.926,1.1,11.192,11.192,0,0,1,3.035,3.314,1.063,1.063,0,0,0,.626.47Z" transform="translate(-8.168 -2.145)"/>
+                        <path id="Path_106" data-name="Path 106" class="cls-8" d="M23.367,5.47a.838.838,0,0,1-.867-.8V3.055a.87.87,0,0,1,1.734,0v1.61A.838.838,0,0,1,23.367,5.47Z" transform="translate(-6.086)"/>
+                        <path id="Path_213" data-name="Path 213" class="cls-8" d="M23.339,5.514A.828.828,0,0,1,22.5,4.7V3.066a.84.84,0,0,1,1.678,0V4.7A.828.828,0,0,1,23.339,5.514Z" transform="translate(9.6 -14.523) rotate(50)"/>
+                        <path id="Path_214" data-name="Path 214" class="cls-8" d="M23.136,4.241a.58.58,0,0,1-.636-.5v-1a.655.655,0,0,1,1.272,0v1A.58.58,0,0,1,23.136,4.241Z" transform="translate(18.71 -12.741) rotate(72)"/>
+                        <path id="Path_212" data-name="Path 212" class="cls-8" d="M23.191,5.25A.722.722,0,0,1,22.5,4.5V3a.693.693,0,1,1,1.382,0V4.5A.722.722,0,0,1,23.191,5.25Z" transform="translate(-9.411 12.94) rotate(-31)"/>
+                      </g>
+                    </g>
+                    <text id="_12pm" data-name="12pm" class="cls-6" transform="translate(0 15)"><tspan x="0" y="0">12pm</tspan></text>
+                  </g>
+                </g>
+                <g transform="translate(-105 -548.146)">
+                  <g id="Weather_Forecast_Component-2" data-name="Weather Forecast Component" transform="translate(166.744 548.146)">
+                    <text id="_71_" data-name="71°" class="cls-6" transform="translate(0 67)"><tspan x="7.384" y="15">71°</tspan></text>
+                    <g id="WeatherIcon-2" data-name="WeatherIcon" transform="translate(6 31)">
+                      <rect id="Rectangle_115" data-name="Rectangle 115" class="cls-9" width="24" height="24"/>
+                      <g id="Cloudy" transform="translate(-1491.68 -270.126)">
+                        <path id="Path_141" data-name="Path 141" class="cls-7" d="M20.591,7.866A8.692,8.692,0,0,0,18.214,3.3a7.087,7.087,0,0,0-6.7-1.983A7.882,7.882,0,0,0,6.14,6.19a5.718,5.718,0,0,0-5.015,5.936c0,3.279,2.392,5.947,5.332,5.947H20.515a4.849,4.849,0,0,0,4.609-5.062,4.871,4.871,0,0,0-4.534-5.146Z" transform="translate(1490.555 272.526)"/>
+                      </g>
+                    </g>
+                    <text id="_1pm" data-name="1pm" class="cls-6"><tspan x="3.99" y="15">1pm</tspan></text>
+                  </g>
+                </g>
+                <g transform="translate(-45 -548.146)">
+                  <g id="Weather_Forecast_Component-3" data-name="Weather Forecast Component" transform="translate(166.744 548.146)">
+                    <text id="_69_" data-name="69°" class="cls-6" transform="translate(0 67)"><tspan x="7.384" y="15">69°</tspan></text>
+                    <g id="WeatherIcon-3" data-name="WeatherIcon" transform="translate(6 31)">
+                      <rect id="Rectangle_115-2" data-name="Rectangle 115" class="cls-9" width="24" height="24"/>
+                      <g id="Cloudy-2" data-name="Cloudy" transform="translate(-1491.68 -270.126)">
+                        <path id="Path_141-2" data-name="Path 141" class="cls-7" d="M20.591,7.866A8.692,8.692,0,0,0,18.214,3.3a7.087,7.087,0,0,0-6.7-1.983A7.882,7.882,0,0,0,6.14,6.19a5.718,5.718,0,0,0-5.015,5.936c0,3.279,2.392,5.947,5.332,5.947H20.515a4.849,4.849,0,0,0,4.609-5.062,4.871,4.871,0,0,0-4.534-5.146Z" transform="translate(1490.555 272.526)"/>
+                      </g>
+                    </g>
+                    <text id="_2pm" data-name="2pm" class="cls-6"><tspan x="3.99" y="15">2pm</tspan></text>
+                  </g>
+                </g>
+                <g transform="translate(15 -548.146)">
+                  <g id="Weather_Forecast_Component-4" data-name="Weather Forecast Component" transform="translate(166.744 548.146)">
+                    <text id="_67_" data-name="67°" class="cls-6" transform="translate(0 67)"><tspan x="7.384" y="15">67°</tspan></text>
+                    <g id="WeatherIcon-4" data-name="WeatherIcon" transform="translate(6 31)">
+                      <rect id="Rectangle_115-3" data-name="Rectangle 115" class="cls-9" width="24" height="24"/>
+                      <g id="Cloudy-3" data-name="Cloudy" transform="translate(-1491.68 -270.126)">
+                        <path id="Path_141-3" data-name="Path 141" class="cls-7" d="M20.591,7.866A8.692,8.692,0,0,0,18.214,3.3a7.087,7.087,0,0,0-6.7-1.983A7.882,7.882,0,0,0,6.14,6.19a5.718,5.718,0,0,0-5.015,5.936c0,3.279,2.392,5.947,5.332,5.947H20.515a4.849,4.849,0,0,0,4.609-5.062,4.871,4.871,0,0,0-4.534-5.146Z" transform="translate(1490.555 272.526)"/>
+                      </g>
+                    </g>
+                    <text id="_3pm" data-name="3pm" class="cls-6"><tspan x="3.99" y="15">3pm</tspan></text>
+                  </g>
+                </g>
+                <g transform="translate(75 -548.146)">
+                  <g id="Weather_Forecast_Component-5" data-name="Weather Forecast Component" transform="translate(166.744 548.146)">
+                    <text id="_67_2" data-name="67°" class="cls-6" transform="translate(0 67)"><tspan x="7.384" y="15">67°</tspan></text>
+                    <g id="WeatherIcon-5" data-name="WeatherIcon" transform="translate(6 31)">
+                      <rect id="Rectangle_115-4" data-name="Rectangle 115" class="cls-9" width="24" height="24"/>
+                      <g id="Cloudy-4" data-name="Cloudy" transform="translate(-1491.68 -270.126)">
+                        <path id="Path_141-4" data-name="Path 141" class="cls-7" d="M20.591,7.866A8.692,8.692,0,0,0,18.214,3.3a7.087,7.087,0,0,0-6.7-1.983A7.882,7.882,0,0,0,6.14,6.19a5.718,5.718,0,0,0-5.015,5.936c0,3.279,2.392,5.947,5.332,5.947H20.515a4.849,4.849,0,0,0,4.609-5.062,4.871,4.871,0,0,0-4.534-5.146Z" transform="translate(1490.555 272.526)"/>
+                      </g>
+                    </g>
+                    <text id="_4pm" data-name="4pm" class="cls-6"><tspan x="3.99" y="15">4pm</tspan></text>
+                  </g>
+                </g>
+                <g transform="translate(135 -548.146)">
+                  <g id="Weather_Forecast_Component-6" data-name="Weather Forecast Component" transform="translate(166.744 548.146)">
+                    <text id="_65_" data-name="65°" class="cls-6" transform="translate(0 67)"><tspan x="7.384" y="15">65°</tspan></text>
+                    <g id="WeatherIcon-6" data-name="WeatherIcon" transform="translate(6 31)">
+                      <rect id="Rectangle_115-5" data-name="Rectangle 115" class="cls-9" width="24" height="24"/>
+                      <g id="Cloudy-5" data-name="Cloudy" transform="translate(-1491.68 -270.126)">
+                        <path id="Path_141-5" data-name="Path 141" class="cls-7" d="M20.591,7.866A8.692,8.692,0,0,0,18.214,3.3a7.087,7.087,0,0,0-6.7-1.983A7.882,7.882,0,0,0,6.14,6.19a5.718,5.718,0,0,0-5.015,5.936c0,3.279,2.392,5.947,5.332,5.947H20.515a4.849,4.849,0,0,0,4.609-5.062,4.871,4.871,0,0,0-4.534-5.146Z" transform="translate(1490.555 272.526)"/>
+                      </g>
+                    </g>
+                    <text id="_5pm" data-name="5pm" class="cls-6"><tspan x="3.99" y="15">5pm</tspan></text>
+                  </g>
+                </g>
+                <g transform="translate(195 -548.146)">
+                  <g id="Weather_Forecast_Component-7" data-name="Weather Forecast Component" transform="translate(165 548.146)">
+                    <text id="_64_" data-name="64°" class="cls-6" transform="translate(3 82)"><tspan x="0" y="0">64°</tspan></text>
+                    <g id="WeatherIcon-7" data-name="WeatherIcon" transform="translate(0 31)">
+                      <rect id="Rectangle_115-6" data-name="Rectangle 115" class="cls-9" width="24" height="24"/>
+                      <g id="Cloudy-6" data-name="Cloudy" transform="translate(-1491.68 -270.126)">
+                        <path id="Path_141-6" data-name="Path 141" class="cls-7" d="M20.591,7.866A8.692,8.692,0,0,0,18.214,3.3a7.087,7.087,0,0,0-6.7-1.983A7.882,7.882,0,0,0,6.14,6.19a5.718,5.718,0,0,0-5.015,5.936c0,3.279,2.392,5.947,5.332,5.947H20.515a4.849,4.849,0,0,0,4.609-5.062,4.871,4.871,0,0,0-4.534-5.146Z" transform="translate(1490.555 272.526)"/>
+                      </g>
+                    </g>
+                    <text id="_6pm" data-name="6pm" class="cls-6" transform="translate(0 15)"><tspan x="0" y="0">6pm</tspan></text>
+                  </g>
+                </g>
+                <g transform="translate(255 -548.146)">
+                  <g id="Weather_Forecast_Component-8" data-name="Weather Forecast Component" transform="translate(165 548.146)">
+                    <text id="_63_" data-name="63°" class="cls-6" transform="translate(3 82)"><tspan x="0" y="0">63°</tspan></text>
+                    <g id="WeatherIcon-8" data-name="WeatherIcon" transform="translate(0 31)">
+                      <rect id="Rectangle_115-7" data-name="Rectangle 115" class="cls-9" width="24" height="24"/>
+                      <g id="Cloudy-7" data-name="Cloudy" transform="translate(-1491.68 -270.126)">
+                        <path id="Path_141-7" data-name="Path 141" class="cls-7" d="M20.591,7.866A8.692,8.692,0,0,0,18.214,3.3a7.087,7.087,0,0,0-6.7-1.983A7.882,7.882,0,0,0,6.14,6.19a5.718,5.718,0,0,0-5.015,5.936c0,3.279,2.392,5.947,5.332,5.947H20.515a4.849,4.849,0,0,0,4.609-5.062,4.871,4.871,0,0,0-4.534-5.146Z" transform="translate(1490.555 272.526)"/>
+                      </g>
+                    </g>
+                    <text id="_7pm" data-name="7pm" class="cls-6" transform="translate(0 15)"><tspan x="0" y="0">7pm</tspan></text>
+                  </g>
+                </g>
+                <g transform="translate(315 -548.146)">
+                  <g id="Weather_Forecast_Component-9" data-name="Weather Forecast Component" transform="translate(165 548.146)">
+                    <text id="_58_" data-name="58°" class="cls-6" transform="translate(3 82)"><tspan x="0" y="0">58°</tspan></text>
+                    <g id="WeatherIcon-9" data-name="WeatherIcon" transform="translate(0 31)">
+                      <rect id="Rectangle_115-8" data-name="Rectangle 115" class="cls-9" width="24" height="24"/>
+                      <g id="Cloudy-8" data-name="Cloudy" transform="translate(-1491.68 -270.126)">
+                        <path id="Path_141-8" data-name="Path 141" class="cls-7" d="M20.591,7.866A8.692,8.692,0,0,0,18.214,3.3a7.087,7.087,0,0,0-6.7-1.983A7.882,7.882,0,0,0,6.14,6.19a5.718,5.718,0,0,0-5.015,5.936c0,3.279,2.392,5.947,5.332,5.947H20.515a4.849,4.849,0,0,0,4.609-5.062,4.871,4.871,0,0,0-4.534-5.146Z" transform="translate(1490.555 272.526)"/>
+                      </g>
+                    </g>
+                    <text id="_8pm" data-name="8pm" class="cls-6" transform="translate(0 15)"><tspan x="0" y="0">8pm</tspan></text>
+                  </g>
+                </g>
+                <g transform="translate(375 -548.146)">
+                  <g id="Weather_Forecast_Component-10" data-name="Weather Forecast Component" transform="translate(165 548.146)">
+                    <text id="_58_2" data-name="58°" class="cls-6" transform="translate(3 82)"><tspan x="0" y="0">58°</tspan></text>
+                    <g id="WeatherIcon-10" data-name="WeatherIcon" transform="translate(0 31)">
+                      <rect id="Rectangle_115-9" data-name="Rectangle 115" class="cls-9" width="24" height="24"/>
+                      <g id="Cloudy-9" data-name="Cloudy" transform="translate(-1491.68 -270.126)">
+                        <path id="Path_141-9" data-name="Path 141" class="cls-7" d="M20.591,7.866A8.692,8.692,0,0,0,18.214,3.3a7.087,7.087,0,0,0-6.7-1.983A7.882,7.882,0,0,0,6.14,6.19a5.718,5.718,0,0,0-5.015,5.936c0,3.279,2.392,5.947,5.332,5.947H20.515a4.849,4.849,0,0,0,4.609-5.062,4.871,4.871,0,0,0-4.534-5.146Z" transform="translate(1490.555 272.526)"/>
+                      </g>
+                    </g>
+                    <text id="_9pm" data-name="9pm" class="cls-6" transform="translate(0 15)"><tspan x="0" y="0">9pm</tspan></text>
+                  </g>
+                </g>
+                <g transform="translate(435 -548.146)">
+                  <g id="Weather_Forecast_Component-11" data-name="Weather Forecast Component" transform="translate(165 548.146)">
+                    <text id="_58_3" data-name="58°" class="cls-6" transform="translate(3 82)"><tspan x="0" y="0">58°</tspan></text>
+                    <g id="WeatherIcon-11" data-name="WeatherIcon" transform="translate(0 31)">
+                      <rect id="Rectangle_115-10" data-name="Rectangle 115" class="cls-9" width="24" height="24"/>
+                      <g id="Cloudy-10" data-name="Cloudy" transform="translate(-1491.68 -270.126)">
+                        <path id="Path_141-10" data-name="Path 141" class="cls-7" d="M20.591,7.866A8.692,8.692,0,0,0,18.214,3.3a7.087,7.087,0,0,0-6.7-1.983A7.882,7.882,0,0,0,6.14,6.19a5.718,5.718,0,0,0-5.015,5.936c0,3.279,2.392,5.947,5.332,5.947H20.515a4.849,4.849,0,0,0,4.609-5.062,4.871,4.871,0,0,0-4.534-5.146Z" transform="translate(1490.555 272.526)"/>
+                      </g>
+                    </g>
+                    <text id="_10pm" data-name="10pm" class="cls-6" transform="translate(0 15)"><tspan x="0" y="0">10pm</tspan></text>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g id="Title" transform="translate(15 20633.873)">
+              <text id="Hourly_Forecast" data-name="Hourly Forecast" class="cls-6" transform="translate(0 -20052)"><tspan x="0" y="0">Hourly Forecast</tspan></text>
+              <line id="Line_126" data-name="Line 126" class="cls-10" x2="227.988" y2="0.023" transform="translate(117.5 -20057.5)"/>
+            </g>
+          </g>
+          <g id="Weather_Readings" data-name="Weather Readings" class="cls-11" transform="translate(-25.546 506.725)">
+            <g id="Air_Pressure" data-name="Air Pressure" transform="translate(40.026)">
+              <text id="_753mb" data-name="753mb" class="cls-6" transform="translate(272.251 15)"><tspan x="0" y="0">753mb</tspan></text>
+              <path id="barometer" class="cls-12" d="M0,7.922A7.762,7.762,0,0,1,.629,4.839,7.863,7.863,0,0,1,2.323,2.313,8.077,8.077,0,0,1,4.854.629,7.822,7.822,0,0,1,11,.629a7.8,7.8,0,0,1,4.215,4.215,7.739,7.739,0,0,1,.629,3.079,7.588,7.588,0,0,1-1.557,4.691,7.808,7.808,0,0,1-4.012,2.826V19H5.691V15.48a7.764,7.764,0,0,1-4.1-2.82A7.611,7.611,0,0,1,0,7.922Zm1.745,0a5.863,5.863,0,0,0,1.826,4.321,5.915,5.915,0,0,0,4.352,1.816A6.189,6.189,0,0,0,13.279,11a6.084,6.084,0,0,0,.34-5.467A6.207,6.207,0,0,0,12.3,3.566a6.289,6.289,0,0,0-1.978-1.319,6.061,6.061,0,0,0-4.784,0A6.322,6.322,0,0,0,3.561,3.566,6.183,6.183,0,0,0,2.237,5.534,6,6,0,0,0,1.745,7.922Zm.629.385V7.527H4.717v.781ZM3.551,4.483l.568-.558L5.762,5.569,5.2,6.137ZM6.29,9.819a1.652,1.652,0,0,1,.472-1.177,1.593,1.593,0,0,1,1.151-.517l2.952-4.859.71.375L9.393,8.866a1.72,1.72,0,0,1-.213,2.156,1.648,1.648,0,0,1-1.207.491A1.68,1.68,0,0,1,6.29,9.819ZM7.71,4.767V2.425h.751V4.768H7.71ZM10.885,8.3V7.5h2.343v.8Z" transform="translate(244.406)"/>
+            </g>
+            <g id="Precipitation" transform="translate(26.025)">
+              <text id="_35_" data-name="35%" class="cls-6" transform="translate(200.407 15)"><tspan x="0" y="0">35%</tspan></text>
+              <path id="raindrops" class="cls-12" d="M0,7.718A3.72,3.72,0,0,1,.659,5.959,14.365,14.365,0,0,1,1.921,4.152q.163-.2.407-.481t.277-.318L3.24,4.1A10.669,10.669,0,0,1,4.56,5.959a3.778,3.778,0,0,1,.6,1.758,2.551,2.551,0,0,1-.741,1.84,2.434,2.434,0,0,1-1.816.766,2.5,2.5,0,0,1-1.84-.765A2.516,2.516,0,0,1,0,7.718Zm5.422,7.213a4.6,4.6,0,0,1,.424-1.75,9.207,9.207,0,0,1,1.041-1.848,22.127,22.127,0,0,1,2.28-2.654,5,5,0,0,0,.456-.424l.44.424a23.178,23.178,0,0,1,2.3,2.638,9.069,9.069,0,0,1,1.083,1.872,4.509,4.509,0,0,1,.414,1.742,4.158,4.158,0,0,1-4.233,4.217,4.027,4.027,0,0,1-2.98-1.238A4.089,4.089,0,0,1,5.422,14.931ZM8.06,2.947Q8.06,1.824,9.8,0l.44.489a7.541,7.541,0,0,1,.879,1.278,2.605,2.605,0,0,1,.391,1.181,1.6,1.6,0,0,1-.5,1.2A1.675,1.675,0,0,1,9.8,4.624a1.72,1.72,0,0,1-1.246-.481,1.594,1.594,0,0,1-.5-1.2Z" transform="translate(174.551 0)"/>
+            </g>
+            <g id="WindInfo">
+              <path id="direction-down-right" class="cls-12" d="M0,9.113a1.1,1.1,0,0,1,.283-.787,1.183,1.183,0,0,1,.85-.3,1.064,1.064,0,0,1,.787.3l6.5,6.5V12.733A1.1,1.1,0,0,1,9.554,11.6a1.068,1.068,0,0,1,.8.33,1.106,1.106,0,0,1,.323.8V17.55a1.1,1.1,0,0,1-.323.811,1.081,1.081,0,0,1-.8.323H4.738a1.081,1.081,0,0,1-.8-.323,1.1,1.1,0,0,1-.323-.811,1.053,1.053,0,0,1,.323-.787,1.1,1.1,0,0,1,.8-.314H6.815L.283,9.932A1.214,1.214,0,0,1,0,9.113Z" transform="translate(157.904 -2.789)"/>
+              <text id="_20_mph" data-name="20 mph" class="cls-6" transform="translate(98.904 15)"><tspan x="0" y="0">20 mph</tspan></text>
+              <g id="windy" transform="translate(-1501.267 0.903)">
+                <path id="Path_123" data-name="Path 123" class="cls-13" d="M2481.682-2338.475h.72c3.893,0,7.714.1,9.233,0s2.96-.6,3.466-2.062a2.787,2.787,0,0,0-.879-3.4,4,4,0,0,0-2.587-.5c-1.5.2-2.474,1.22-2.072,2.528s2.3,1.155,3.032.436" transform="translate(-913.353 2344.479)"/>
+                <path id="Path_124" data-name="Path 124" class="cls-13" d="M2471.613-2339.291c19.961-.044,16.782.1,18.11,0s2.64-.771,2.781-1.99.172-1.984-.594-2.828a2.662,2.662,0,0,0-2.187-.6,1.723,1.723,0,0,0-1.562,2.3,1.194,1.194,0,0,0,2.092.571" transform="translate(-904.411 2348.57)"/>
+                <path id="Path_125" data-name="Path 125" class="cls-13" d="M2463.928-2343.784c16.092.074,13.817-.15,15.5-.021a3.878,3.878,0,0,1,2.68,1.1c.141.2.781.8.359,2.563s-2.4,1.833-3.223,1.7a2.141,2.141,0,0,1-1.9-2,1.33,1.33,0,0,1,2.281-.943" transform="translate(-896.727 2355.594)"/>
+              </g>
+            </g>
+          </g>
+          <g id="Group_17" data-name="Group 17">
+            <g id="Warning_Header" data-name="Warning Header" transform="translate(34.453 440.021)">
+              <rect id="Rectangle_141" data-name="Rectangle 141" class="cls-14" width="305" height="42.704" rx="1"/>
+              <g id="Weather_Alerts_Button" data-name="Weather Alerts Button" transform="translate(36.273 12)">
+                <text id="Hurricane_Approaching" data-name="Hurricane Approaching" class="cls-15" transform="translate(42 1)"><tspan x="0" y="14">Hurricane Approaching</tspan></text>
+                <path id="warning-alt-inverted-filled" class="cls-16" d="M24.136,2.586a.815.815,0,0,0-.676-.336H3.035a.816.816,0,0,0-.675.335.611.611,0,0,0-.016.678L12.556,20.418a.884.884,0,0,0,1.382,0L24.151,3.263a.612.612,0,0,0-.015-.678ZM12.363,4.306H14.13v6.852H12.363Zm.885,10.963a1.111,1.111,0,0,1-1.179-1.028,1.111,1.111,0,0,1,1.179-1.028,1.111,1.111,0,0,1,1.179,1.028A1.111,1.111,0,0,1,13.248,15.268Z" transform="translate(-2.249 -2.25)"/>
+              </g>
+              <path id="Polygon_1" data-name="Polygon 1" class="cls-17" d="M6,0l6,8H0Z" transform="translate(268.791 25.652) rotate(180)"/>
+            </g>
+            <g id="Current_Tempeture_and_Weather" data-name="Current Tempeture and Weather" transform="translate(48.549 64.777)">
+              <g class="cls-46" transform="matrix(1, 0, 0, 1, -280.55, -5.33)">
+                <rect id="Rectangle_130-2" data-name="Rectangle 130" class="cls-18" width="187.82" height="81.5" transform="translate(317.67 283.07)"/>
+              </g>
+              <g id="Tempature" transform="translate(128.002 280.244)">
+                <text id="_74" data-name="74" class="cls-19" transform="translate(1.113)"><tspan x="0" y="63">74</tspan></text>
+                <path id="fahrenheit" class="cls-20" d="M0,6.426A3.663,3.663,0,0,1,1.025,3.819,3.269,3.269,0,0,1,3.486,2.733,3.219,3.219,0,0,1,5.921,3.819,3.679,3.679,0,0,1,6.936,6.426,3.723,3.723,0,0,1,5.921,9.044a3.2,3.2,0,0,1-2.435,1.095A3.262,3.262,0,0,1,1.033,9.044,3.688,3.688,0,0,1,0,6.426Zm1.689,0A1.9,1.9,0,0,0,2.21,7.778a1.71,1.71,0,0,0,2.551,0A1.9,1.9,0,0,0,5.3,6.426a1.871,1.871,0,0,0-.539-1.342,1.707,1.707,0,0,0-1.276-.561,1.687,1.687,0,0,0-1.276.552,1.9,1.9,0,0,0-.521,1.352Zm8.464,13.993a1.059,1.059,0,0,0,.3.752.958.958,0,0,0,1.419,0,1.053,1.053,0,0,0,.3-.752V12.729h5.48a.931.931,0,0,0,.71-.324,1.088,1.088,0,0,0,.3-.762,1.066,1.066,0,0,0-.288-.762.947.947,0,0,0-.719-.3h-5.48V5.037H19.5a.873.873,0,0,0,.683-.3,1.1,1.1,0,0,0,.269-.762,1.113,1.113,0,0,0-.269-.762.87.87,0,0,0-.683-.3H10.35q-.2,0-.2.228V20.419Z" transform="translate(76.484 18.014)"/>
+              </g>
+              <g id="Weather_Preview" data-name="Weather Preview" transform="translate(29 271.244)">
+                <text id="Overcast" class="cls-21" transform="translate(8.115 79)"><tspan x="0" y="0">Overcast</tspan></text>
+                <g id="WeatherIcon-12" data-name="WeatherIcon" transform="translate(20.092 6.5)">
+                  <rect id="Rectangle_115-11" data-name="Rectangle 115" class="cls-9" width="56" height="51" transform="translate(1.381)"/>
+                  <g id="partly-sunny-2" data-name="partly-sunny" transform="translate(0 2.191)">
+                    <path id="Path_103-2" data-name="Path 103" class="cls-7" d="M40.359,42.42H12.582a15.988,15.988,0,0,1-8.728-2.205A8.119,8.119,0,0,1,0,33.147a7.907,7.907,0,0,1,3.459-6.518,15.308,15.308,0,0,1,7-2.614c.007,0,.01,0,.01-.006a15.057,15.057,0,0,1,5.971-9.32,18.884,18.884,0,0,1,11.1-3.438,18.171,18.171,0,0,1,9.7,2.646,14.71,14.71,0,0,1,5.007,5.183,1.869,1.869,0,0,0,1.329.877,16.777,16.777,0,0,1,7.735,3.312,9.807,9.807,0,0,1,3.768,7.774,10.186,10.186,0,0,1-4.393,8.233A17.318,17.318,0,0,1,40.359,42.42ZM42.614,19.8Z" transform="translate(0 2.364)"/>
+                    <path id="Path_104-2" data-name="Path 104" class="cls-8" d="M28.6,16.834a14.3,14.3,0,0,1,8.683,3.848.282.282,0,0,0,.235.013.258.258,0,0,0,.155-.167,5.793,5.793,0,0,0,.236-1.684c.4-16.085-14.353-15.865-17.836-14.806a18.593,18.593,0,0,0-6.186,3.356h0a.208.208,0,0,0-.092.209.218.218,0,0,0,.159.17c5.455.475,7.59,1.594,9.963,3.254,1.238.9,3.3,4.053,4.061,5.339a1.062,1.062,0,0,0,.626.47Z" transform="translate(15.213 4.467)"/>
+                    <path id="Path_106-2" data-name="Path 106" class="cls-8" d="M1.8,6.668A1.735,1.735,0,0,1,0,5V1.667A1.735,1.735,0,0,1,1.8,0a1.735,1.735,0,0,1,1.8,1.667V5A1.735,1.735,0,0,1,1.8,6.668Z" transform="translate(41.486 0) rotate(7)"/>
+                    <path id="Path_213-2" data-name="Path 213" class="cls-8" d="M1.63,6.34A1.608,1.608,0,0,1,0,4.755V1.585A1.608,1.608,0,0,1,1.63,0,1.608,1.608,0,0,1,3.26,1.585v3.17A1.608,1.608,0,0,1,1.63,6.34Z" transform="matrix(0.545, 0.839, -0.839, 0.545, 56.184, 6.368)"/>
+                    <path id="Path_214-2" data-name="Path 214" class="cls-8" d="M1.6,6.782A1.648,1.648,0,0,1,0,5.087V1.7A1.648,1.648,0,0,1,1.6,0a1.648,1.648,0,0,1,1.6,1.7V5.087A1.648,1.648,0,0,1,1.6,6.782Z" transform="matrix(0.07, 0.998, -0.998, 0.07, 60.895, 19.013)"/>
+                    <path id="Path_212-2" data-name="Path 212" class="cls-8" d="M1.907,8.276A1.993,1.993,0,0,1,0,6.207V2.069A1.993,1.993,0,0,1,1.907,0,1.993,1.993,0,0,1,3.813,2.069V6.207A1.993,1.993,0,0,1,1.907,8.276Z" transform="translate(26.363 2.369) rotate(-31)"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="Location_Info" data-name="Location Info" transform="translate(16 74.521)">
+            <g id="Time_and_Date" data-name="Time and Date" transform="translate(1.398 26)">
+              <text id="_11:54am" data-name="11:54am" class="cls-21" transform="translate(117.783 213)"><tspan x="0" y="0">11:54am</tspan></text>
+              <text id="Tuesday_27" data-name="Tuesday, 27" class="cls-21" transform="translate(-0.217 213)"><tspan x="0" y="0">Tuesday, 27</tspan></text>
+            </g>
+            <g id="Location" transform="translate(-37 103)">
+              <text id="Pine_Buff_AR" data-name="Pine Buff, AR" class="cls-21" transform="translate(72.777 102)"><tspan x="0" y="0">Pine Buff, AR</tspan></text>
+              <g id="bx-current-location" transform="translate(34 81.545)">
+                <path id="Path_139" data-name="Path 139" class="cls-20" d="M20.4,16.2A4.2,4.2,0,1,1,16.2,12,4.2,4.2,0,0,1,20.4,16.2Z" transform="translate(-1.311 -4.816)"/>
+                <path id="Path_140" data-name="Path 140" class="cls-20" d="M16.078,5.356V3H13.7V5.355a9.328,9.328,0,0,0-8.24,7.89H3v2.277H5.459a9.326,9.326,0,0,0,8.24,7.89v2.355h2.378V23.413a9.325,9.325,0,0,0,8.24-7.89h2.459V13.245H24.318a9.326,9.326,0,0,0-8.24-7.89ZM14.889,21.214a6.994,6.994,0,0,1-7.133-6.83,6.994,6.994,0,0,1,7.133-6.83,6.994,6.994,0,0,1,7.133,6.83A6.994,6.994,0,0,1,14.889,21.214Z" transform="translate(0 -3)"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="heirachy-strips">
+      <g id="Rectangle_198" data-name="Rectangle 198" class="cls-22" transform="translate(182.75 259)">
+        <rect class="cls-45" width="411" height="24"/>
+        <rect class="cls-1" x="0.75" y="0.75" width="409.5" height="22.5"/>
+      </g>
+      <g id="Rectangle_213" data-name="Rectangle 213" class="cls-22" transform="translate(182.75 468)">
+        <rect class="cls-45" width="411" height="24"/>
+        <rect class="cls-1" x="0.75" y="0.75" width="409.5" height="22.5"/>
+      </g>
+      <g id="Rectangle_221" data-name="Rectangle 221" class="cls-22" transform="translate(186.75 423)">
+        <rect class="cls-45" width="411" height="24"/>
+        <rect class="cls-1" x="0.75" y="0.75" width="409.5" height="22.5"/>
+      </g>
+      <g id="Rectangle_214" data-name="Rectangle 214" class="cls-23" transform="translate(182.75 365)">
+        <rect class="cls-45" width="411" height="16"/>
+        <rect class="cls-1" x="0.75" y="0.75" width="409.5" height="14.5"/>
+      </g>
+      <g id="Rectangle_199" data-name="Rectangle 199" class="cls-24" transform="translate(182.75 229)">
+        <rect class="cls-45" width="411" height="8"/>
+        <rect class="cls-1" x="0.75" y="0.75" width="409.5" height="6.5"/>
+      </g>
+      <g id="Group_21" data-name="Group 21" transform="translate(-89.25 -6)">
+        <rect id="Rectangle_220" data-name="Rectangle 220" class="cls-25" width="57" height="32" rx="16" transform="translate(187 363)"/>
+        <text id="_16px" data-name="16px" class="cls-26" transform="translate(203 384)"><tspan x="0" y="0">16px</tspan></text>
+      </g>
+      <g id="Group_22" data-name="Group 22" transform="translate(-89.25 -108)">
+        <rect id="Rectangle_220-2" data-name="Rectangle 220" class="cls-27" width="59" height="32" rx="16" transform="translate(187 363)"/>
+        <text id="_24px" data-name="24px" class="cls-26" transform="translate(203 384)"><tspan x="0" y="0">24px</tspan></text>
+      </g>
+      <g id="Group_25" data-name="Group 25" transform="translate(-89.25 101)">
+        <rect id="Rectangle_220-3" data-name="Rectangle 220" class="cls-27" width="59" height="32" rx="16" transform="translate(187 363)"/>
+        <text id="_24px-2" data-name="24px" class="cls-26" transform="translate(203 384)"><tspan x="0" y="0">24px</tspan></text>
+      </g>
+      <g id="Group_26" data-name="Group 26" transform="translate(-89.25 56)">
+        <rect id="Rectangle_220-4" data-name="Rectangle 220" class="cls-27" width="59" height="32" rx="16" transform="translate(187 363)"/>
+        <text id="_24px-3" data-name="24px" class="cls-26" transform="translate(203 384)"><tspan x="0" y="0">24px</tspan></text>
+      </g>
+      <g id="Group_23" data-name="Group 23" transform="translate(-86.75 -146.25)">
+        <rect id="Rectangle_220-5" data-name="Rectangle 220" class="cls-28" width="52" height="32" rx="16" transform="translate(187 363)"/>
+        <text id="_8px" data-name="8px" class="cls-26" transform="translate(203 384)"><tspan x="0" y="0">8px</tspan></text>
+      </g>
+      <g id="Group_15" data-name="Group 15" transform="translate(-80.25 77)">
+        <line id="Line_139" data-name="Line 139" class="cls-29" x2="10" transform="translate(247.5 205)"/>
+        <line id="Line_140" data-name="Line 140" class="cls-29" y1="23" transform="translate(252.5 182.5)"/>
+        <line id="Line_141" data-name="Line 141" class="cls-29" x2="10" transform="translate(247.5 183.5)"/>
+      </g>
+      <g id="Group_18" data-name="Group 18" transform="translate(-80.25 286)">
+        <line id="Line_139-2" data-name="Line 139" class="cls-29" x2="10" transform="translate(247.5 205)"/>
+        <line id="Line_140-2" data-name="Line 140" class="cls-29" y1="23" transform="translate(252.5 182.5)"/>
+        <line id="Line_141-2" data-name="Line 141" class="cls-29" x2="10" transform="translate(247.5 183.5)"/>
+      </g>
+      <g id="Group_27" data-name="Group 27" transform="translate(-76.25 241)">
+        <line id="Line_139-3" data-name="Line 139" class="cls-29" x2="10" transform="translate(247.5 205)"/>
+        <line id="Line_140-3" data-name="Line 140" class="cls-29" y1="23" transform="translate(252.5 182.5)"/>
+        <line id="Line_141-3" data-name="Line 141" class="cls-29" x2="10" transform="translate(247.5 183.5)"/>
+      </g>
+      <g id="Group_19" data-name="Group 19" transform="translate(-80.25 183)">
+        <line id="Line_139-4" data-name="Line 139" class="cls-30" x2="10" transform="translate(247.5 197.5)"/>
+        <line id="Line_140-4" data-name="Line 140" class="cls-30" y1="15" transform="translate(252.5 182.5)"/>
+        <line id="Line_141-4" data-name="Line 141" class="cls-30" x2="10" transform="translate(247.5 183.5)"/>
+      </g>
+      <g id="Group_16" data-name="Group 16" transform="translate(-80.25 79)">
+        <line id="Line_144" data-name="Line 144" class="cls-31" x2="10" transform="translate(247.5 157.5)"/>
+        <line id="Line_142" data-name="Line 142" class="cls-31" y1="6.5" transform="translate(252.5 150)"/>
+        <line id="Line_143" data-name="Line 143" class="cls-31" x2="10" transform="translate(247.5 151)"/>
+      </g>
+    </g>
+    <g id="layout-info">
+      <rect id="Rectangle_215" data-name="Rectangle 215" class="cls-32" width="17" height="171" transform="translate(811.75 447)"/>
+      <rect id="Rectangle_246" data-name="Rectangle 246" class="cls-32" width="17" height="21" transform="translate(620.75 447)"/>
+      <rect id="Rectangle_247" data-name="Rectangle 247" class="cls-32" width="17" height="139.428" transform="translate(620.75 492)"/>
+      <rect id="Rectangle_216" data-name="Rectangle 216" class="cls-33" width="17" height="42" transform="translate(620.75 381)"/>
+      <rect id="Rectangle_217" data-name="Rectangle 217" class="cls-34" width="17" height="182" transform="translate(811.75 183)"/>
+      <rect id="Rectangle_244" data-name="Rectangle 244" class="cls-35" width="17" height="75" transform="translate(620.75 184)"/>
+      <rect id="Rectangle_245" data-name="Rectangle 245" class="cls-36" width="17" height="82" transform="translate(620.75 283)"/>
+      <line id="Line_145" data-name="Line 145" class="cls-37" x2="12" transform="translate(826 527.5)"/>
+      <line id="Line_151" data-name="Line 151" class="cls-37" x2="12" transform="translate(637 457.5)"/>
+      <line id="Line_152" data-name="Line 152" class="cls-37" x2="12" transform="translate(637.75 561.715)"/>
+      <line id="Line_146" data-name="Line 146" class="cls-38" x2="12" transform="translate(637.75 403.25)"/>
+      <line id="Line_147" data-name="Line 147" class="cls-39" x2="12" transform="translate(828.25 274)"/>
+      <line id="Line_149" data-name="Line 149" class="cls-40" x2="12" transform="translate(637.75 225.5)"/>
+      <line id="Line_150" data-name="Line 150" class="cls-41" x2="12" transform="translate(637.75 324)"/>
+      <text id="Info" class="cls-42" transform="translate(847.75 286)"><tspan x="0" y="0">Info</tspan></text>
+      <text id="Location-2" data-name="Location" class="cls-42" transform="translate(656.494 237)"><tspan x="0" y="0">Location</tspan></text>
+      <text id="Quick_Look" data-name="Quick Look" class="cls-42" transform="translate(656.494 335.5)"><tspan x="0" y="0">Quick Look</tspan></text>
+      <text id="Alert" class="cls-42" transform="translate(656.75 414)"><tspan x="0" y="0">Alert</tspan></text>
+      <text id="Details" class="cls-42" transform="translate(845.5 538)"><tspan x="0" y="0">Details</tspan></text>
+      <text id="Data" class="cls-42" transform="translate(656.494 469)"><tspan x="0" y="0">Data</tspan></text>
+      <text id="Forecast" class="cls-42" transform="translate(657.244 573.215)"><tspan x="0" y="0">Forecast</tspan></text>
+    </g>
+    <g id="layout-title">
+      <text id="Grid_Layout_Hierarchy_" data-name="Grid Layout &amp; Hierarchy " class="cls-43" transform="translate(97.75 93.074)"><tspan x="0" y="0">Grid Layout &amp; Hierarchy </tspan></text>
+      <line id="Line_16" data-name="Line 16" class="cls-44" x2="804" transform="translate(98.25 119.574)"/>
+    </g>
+  </g>
+</svg>
