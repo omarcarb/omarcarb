@@ -126,6 +126,10 @@ header{
 .nav-button >*{
     color: var(--text-color);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: .5rem 1.25rem;
 }
 .nav-button__text::after{
@@ -159,6 +163,32 @@ header{
 }
 .mobile-toggle{
     background-image: var(--menu-icon);
+}
+.dropdown{
+    display: none;
+    width: 100%;
+    background-color: var(--primaryColor);
+    position: relative;
+    top:100%;
+    transform: translateY(-100%);
+    z-index: 99999999;
+    padding: 1.5rem 2rem;
+
+    transition: transform 200ms ease-in-out;
+}
+.dropdown li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--secondaryColor);
+    color: white;
+}
+.nav-button:hover .dropdown, .nav-button:active .dropdown{
+    display: flex;
+    transform: translateY(0%);
+    flex-direction: column;
 }
 .header-scrolled{
     --header-background: rgb(136, 199, 59);
@@ -587,6 +617,15 @@ header{
 
     .primary-navigation a{
         font-size: 1rem;
+    }
+    .dropdown{
+        display: none;
+        width: 170%;
+        background-color: var(--primaryColor);
+        position: absolute;
+        top: 100%;
+        z-index: 99999999;
+        padding: 0rem;
     }
     header{
         flex-direction: row;
