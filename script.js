@@ -88,14 +88,12 @@ navToggle.onclick = function() {
     if(visibility === "false"){
         primaryNav.setAttribute("data-visible", true);
         navToggle.setAttribute('aria-expanded', true);
-        header.classList.add("header-scrolled");
         navIcon.setAttribute("id", "close-menu");
         disableScroll();
     }
     else if(visibility === "true"){
         primaryNav.setAttribute("data-visible", false);
         navToggle.setAttribute('aria-expanded', false);
-        header.classList.remove("header-scrolled");
         navIcon.removeAttribute("id", "close-menu")
         
         enableScroll();
