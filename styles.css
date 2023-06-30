@@ -446,6 +446,7 @@ header{
 }
 #project-images{
     width: 100%;
+    max-width: 1000px;
     margin: 1rem 0rem;
 }
 .user-flow-chart{
@@ -460,10 +461,15 @@ header{
 }
 .learned-list{
     list-style: circle;
+    align-items: center;
     margin-bottom: 2rem;
 }
 .learned-list li{
+    height: auto;
+}
+.learned-list p{
     text-align: left;
+    font-weight: 400;
 }
 .other-works{
     width: 100%;
@@ -535,7 +541,13 @@ header{
 .profile-text{
     color: var(--backgroundColor);
 }
-
+.name-bottom-form{
+    margin: 0;
+    font-weight: 600;
+}
+.subtitle-bottom-form{
+    margin: 4px;
+}
 .project-image{
     width: 60px;
     height: 60px;
