@@ -16,7 +16,7 @@ const landingImage = document.querySelector(".landing-image");
 window.onload = function(){
     switch(page){
         case "weatherlerts.html":
-            landingImage.src = "assests/png/mockup-images/weatherlerts-mockup.png"; 
+            landingImage.src = "assests/png/weatherlerts/landing-image.png"; 
         break;
         case "free_roam.html":
             landingImage.src = "assests/png/mockup-images/free-roam-mockup.png";

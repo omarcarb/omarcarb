@@ -355,15 +355,69 @@ header{
     max-width: 24px;
     max-height: 24px;
 }
-
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    justify-content: space-between;
+    align-items: center;
+}
 .landing-image{
     position: relative;
     overflow: hidden;
+    right: 0%;
     background-image: url();
-    width: 100%;
-    max-height: 300px;
+    width: 80%;
+    min-height: 300px;
+    max-height: 700px;
+    animation: landing-image-fade 500ms ease-out;
+}
+@keyframes landing-image-fade{
+    from{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
+.hero-title{
+    position: relative;
+    left: 20px;
+    animation: hero-title-fade 500ms ease-out;
+
+}
+
+@keyframes hero-title-fade{
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.hero-title >*{
+    color: white;
+}
+.hero-title h1{
+    position: relative;
+    margin-bottom: 24px;
+}
+.hero-title h1::after{
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 0;
+    height: 2px;
+    border-radius: 3px;
+    width: 100%;
+    background-color: white;
+}
 .section-header{
     font-weight: 500;
     text-align: center;
@@ -703,6 +757,12 @@ header{
     .ui-images p{
         font-size: 12px;
     }
+    .landing-image{
+        width: 40%;
+    }
+    .hero-title{
+        left: 50px;
+    }
     .bottom-form{
         flex-direction: row;
         justify-content: space-between;
@@ -738,6 +798,12 @@ header{
         column-gap: 1.5rem;
         margin: 2rem auto;
         max-width: 80vw;
+    }
+    .landing-image{
+        max-width: 600px;
+    }
+    .hero-title{
+        left: 250px;
     }
     .ui-images h2{
         font-size: 16px;
