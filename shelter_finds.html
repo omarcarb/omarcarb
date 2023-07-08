@@ -27,6 +27,16 @@
                 <li class ="nav-button">
                     <a class = "nav-button__text" href = "#.html">Resume</a>
                 </li>
+                <li class="nav-button" id = "dropdown-menu">
+                    <a href="#" class="nav-button__text">Projects<img src="assests/svg/down-arrow.svg" width="12px" height = "12px"></a>
+                    <div class = "dropdown">
+                        <ul>
+                            <li class="dropdown-list-items"><a href = "weatherlerts.html" style: color = "black">WeatherLerts</a></li>
+                            <li class="dropdown-list-items"><a href = "free_roam.html" style: color = "black">Free Roam</a></li>
+                            <li class="dropdown-list-items"><a href = "shelter_finds.html" style: color = "black">Shelter Finds</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li class = "nav-button">
                     <a class = "nav-button__text" href = #about>About</a>
                 </li>
@@ -36,22 +46,32 @@
             </ul>
         </nav>
     </header>
-    <span>
-        <img class = "landing-image" id = "section-crossed">
+    <span class = "hero-section">
+        <div class="hero-title">
+            <h1 class="project-name-hero">Shelter Finds</h1>
+            <h2 class = "project-subtitle">Your one stop for all of your residency needs.</h2>
+        </div>
+        <img loading = "lazy" class = "landing-image" id = "section-crossed">
     </span>
     <main class = "section" id = "project-page">
         <h1 class = section-header>Overview</h1>
         <h2 class="subheading">Project Summary</h2>
-            <p class="subtext">Weatherlerts is a mobile app project. It's designed to deliver early warning alerts to the user of any upcoming disasters. The project time was between August 2022 and September 2022.</p>
+            <p class="subtext">Shelter Finds is a website for people looking to rent property. What makes Shelter Finds unique is the extensive list of rental properties available. From the common apartments to small container homes.</p>
         <h2 class="subheading">Problem That Needs To Be Solved</h2>
-            <p class="subtext">Resources for notifying people of upcoming weather alerts are scarce and often unreliable. As cable news viewership declines, people have less awareness of dangerous weather events. </p>
+            <p class="subtext">Users want to find a property that fits their specific needs and lifestyle. Many websites offer such a service, but their selection is limited. Those that do offer a wide selection suffer from having too much available to the user. This causes stress among rental seekers and wastes valuable time.</p>
         <h2 class="subheading">The Solution</h2>
-            <p class="subtext">Design an app that delivers up to date notifications of upcoming weather  events. It must also provide real time information for users about the local weather. And for the cherry on top, it must provide local resources, such as aide and emergency lines.</p>
+            <p class="subtext">Create a website that offers a ton of filter options and make it easy to navigate.</p>
+        <h2 class="subheading">My Role</h2>
+            <p class="subtext">Wireframing, Prototyping, Ideating, Research</p>
     </main>
     <main class="section" id = "project-page">
             <h1 class="section-header">Process to Product</h1>
-            <p class="subtext">I made some assumptions when going into this project. I was aware  that users wanted quick and easy access to the information that was most  relevant to them. I also assumed most users would prefer to view it through their mobile devices. As such, I went with a mobile  first design philosophy to better allow for smaller screens. This would allow me to provide  things like pop-up notifications or alerts. </p>
-            <p class = "subtext"> The process to solving the problem went something like this</p>
+            <p class="subtext">Most rental websites follow a simple 3 step formula for getting the  property the user wants. </p>
+            <p class = "subtext">1. Search for properties in the immediate area.</p>
+            <p class = "subtext">2. List qualities people in the area generally look for.</p>
+            <p class = "subtext">3. Narrow the search results with filters (such as allowing pets in the rental property).</p>
+            <p class="subtext">To deliver what the users would want, I had to come up with a way for users navigate the website. This also needs to accomplished while providing a wide variety of properties.</p>
+            <p class = "subtext"> To accomplish this goal, I followed this methodology:</p>
             <div class="grid-image">
                 <div class="ui-images">
                     <div class="thumbnail-image">
@@ -81,17 +101,17 @@
         </main>
     <section class = "section" id = "project-page">
         <h1 class="section-header">Ideation</h1>
-        <p class="subtext">I wanted the app to look as neatly organized as possible to reduced information clutter while still delivering all the relevant information needed in any weather app.<br>Several design choices I made during the ideation phase were made with the idea that most people wanted their weather alerts first before they receive any general weather information</p>
+        <p class="subtext">To allow for the display of tons of properties, I came up with several iterations of the website layout. I also wanted the images to be as prominent as possible for faster decision making. A lot of the early designs are inspired by websites such as Rent.com and Zillow.  I decided to go with this simplistic layout with a heavy emphasis on visuals.</p>
         <div class = "image-div">
             <img loading = "lazy" 
-            src="assests/png/placeholder.png" alt="image of early sketches" class = "section" id = "project-images">
+            src="assests/png/shelter-finds/ideation-phase.png" alt="image of early sketches" class = "section" id = "project-images">
         </div>
     </section>
     <main class="section" id="project-page">
         <h1 class="section-header">Design</h1>
         <h2 class="subheading">Laying the Foundation</h2>
-        <p class="subtext">I went with a modern minimalism look to the app since I wanted to convey as much information as possible without creating too much visual noise. I went through several iterations before settling with a soft blue color pallete on an 8 point grid set-up and a Roboto font to display the information.</p>
-        <p class="subtext">I went with a modern minimalism look to the app since I wanted to convey as much information as possible without creating too much visual noise. I went through several iterations before settling with a soft blue color pallete on an 8 point grid set-up and a Roboto font to display the information.</p>
+        <p class="subtext">Other rental websites go for a minimalistic aesthetic to convey a lot of information. While this is effective, its not very distinct from other website. As such, I went with a more Aurora Gradient aesthetic with soft gradients and vibrant colors. This helps the website stand out from others, while also giving visual feedback to the user.</p>
+        
     </main>
     <main class= "section" id = "image-container">
         <div>
@@ -105,59 +125,80 @@
     <main class="section" id = "project-page">
         <h1 class="section-header">Testing and Layout</h1>
         <h2 class="subheading">Wireframes and Low Fidelity Prototypes</h2>
-        <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti distinctio, dicta neque minima fuga perferendis! Impedit debitis quos culpa officiis fuga autem libero, praesentium quae alias assumenda aut nisi ut.</p>
-        <img src="" alt="image of the user user flow" class="user-flow-chart">
+        <p class="subtext">Heirarchy website structure seems like the best way to navigate their user to thier destination. It allows for infinite expansion for individual properties and plenty more room for other sections if they are needed.</p>
+        <p class="subtext">This is how the webiste is structured:</p>
+        <img src="assests/svg/shelter-finds/user-journey.svg" alt="image of the user user flow" class="section" id="project-images">
     </main>
     <main class="section" id = "project-page">
         <h1 class = "section-header">Final Product</h1>
         <div class = "image-div">
-            <img loading = "lazy" src="assests/png/placeholder.png" alt="example image" class = "section" id = "project-images">
-            <img loading = "lazy" src="assests/png/placeholder.png" alt="example image" class = "section" id = "project-images">
-            <img loading = "lazy" src="assests/png/placeholder.png" alt="example image" class = "section" id = "project-images">
+            <img loading = "lazy" src="assests/png/shelter-finds/home-screen.png" alt="example image" class = "section" id = "project-images">
+            <img loading = "lazy" src="assests/png/shelter-finds/search-page.png" alt="example image" class = "section" id = "project-images">
+            <img loading = "lazy" src="assests/png/shelter-finds/rental-property-page.png" alt="example image" class = "section" id = "project-images">
         </div>
     </main>
     <main class="section" id = "project-page">
         <h1 class="section-header">What I have Learned</h1>
         <ul class="learned-list">
-            <li class = "list-subtext"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta.</p></li>
-            <li class = "list-subtext"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta.</p></li>
-            <li class = "list-subtext"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta.</p></li>
+            <li class = "list-subtext"><p>People overwhelmingly seem to prefer properties close to family than having a unique home.</p></li>
+            <li class = "list-subtext"><p>Gradient designs are really liked by many people but do present a challenge to those that are slightly visually impaired.</p></li>
+            <li class = "list-subtext"><p>Having a lot of filters can be overwhelming to some users. Many prefered having the filters hidden over having them all visible while scrolling.</p></li>
         </ul>
     </main>
     <main class="section">
         <h1 class="section-header">Other Works to Look at</h1>
         <div class = "other-works">
-            <div class="other-works-box flex">
-                <img loading = "lazy" 
-                src="assests/png/mockup-images/free-roam-mockup.png" alt="preview image of the project" class = "section" id = "project-images">
+            <a href = "free_roam.html" class="other-works-box flex">
+                <div class = "img-preview">
+                    <img loading = "lazy" 
+                    src="assests/png/placeholder.png" alt="preview image of the project">
+                </div>
                 <p class="project-description-small-form">Free Roam.</p>
-            </div>
-            <div class="other-works-box flex">
-                <img src="assests/png/mockup-images/shelter-finds-mockup.png" alt="preview image of the project" class = "section" id = "project-images">
+            </a>
+            <a href="shelter_finds.html" class="other-works-box flex">
+                <div class = "img-preview">
+                    <img loading = "lazy" 
+                    src="assests/png/placeholder.png" alt="preview image of the project">
+                </div>
                 <p class="project-description-small-form" >Shelter Finds</p>
-            </div>
+            </a>
             <div class="other-works-box flex">
-                <img loading = "lazy" 
-                src="assests/png/placeholder.png" alt="preview image of the project" class = "section" id = "project-images">
+                <div class = "img-preview">
+                    <img loading = "lazy" 
+                    src="assests/png/placeholder.png" alt="preview image of the project">
+                </div>
                 <p class="project-description-small-form" >Not Avaliable</p>
             </div>
         </div> 
     </main>
     <main class="bottom-form flex">
-        <div>   
-            
-        </div>
         <div>
             <div class = "profile-pic-div">
-                <img src="assests/png/placeholder.png" alt="image of omar carbajal" class="profile-pic">
+                <img src="assests/png/placeholder.png" alt= "image of omar carbajal" class="profile-pic">
                 <div class = "profile-text">
-                    <p>Omar Carbajal</p>
-                    <p>UI/UX Designer</p>
+                    <h2 class = "name-bottom-form">Omar Carbajal</h2>
+                    <p class = "subtitle-bottom-form">UI/UX Designer</p>
                 </div>
             </div>
             <div>
-                <a href = "#.html" class = "profile-button" id = "contact-button-form">Contact</a>
-                <a href = "#.html" class = "profile-button" id = "resume-button-form">Resume</a>
+                <a href = "#.html" class = "profile-button" id = "contact-button-form"><img src = "assests/svg/mail.svg">Let's Talk</a>
+            </div>
+        </div>
+        <div class = "contact-div">
+            <h2 class = "contact-link__heading">Find Me Here</h2>
+            <div class = "contact-link">
+                <a class= "contact-links__link" href = "#.html">
+                    <img src = "assests/svg/linkedin.svg">
+                    <p>LinkedIn</p>
+                </a>
+                <a class = "contact-links__link" href = "#.html">
+                    <img src = "assests/svg/dribbble.svg">
+                    <p>Dribbble</p>
+                </a>
+                <a class = "contact-links__link" href = "#.html">
+                    <img src = "assests/svg/behance.svg">
+                    <p>Behance</p>
+                </a>
             </div>
         </div>
     </main>

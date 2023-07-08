@@ -1,11 +1,11 @@
 :root{
-    --mainTextColor: #212C1B;
-    --backgroundColor: rgb(254, 255, 252);
-    --primaryColor: #89c83c;
+    --mainTextColor: hsl(99, 24%, 14%);
+    --backgroundColor: hsl(80, 100%, 99%);
+    --primaryColor: hsl(87, 56%, 51%);
     --primaryAccentColor: hsl(87, 86%, 32%);
-    --neutralColor: rgb(62, 71, 52);
-    --secondaryColor: #4e8807;
-    --darkNeutral: rgb(0 ,0 ,0);
+    --neutralColor: hsl(88, 15%, 24%);
+    --secondaryColor: hsl(87, 90%, 28%);
+    --darkNeutral: hsl(0, 0%, 0%);
     --fontWeightH1: 700;
     --fontWeightH2: 400;
     --fontWeightP: 300;
@@ -96,11 +96,11 @@ Selector Classes
 
         /* header objects*/
 header{
-    --header-background: rgb(254, 255, 252);
-    --button-background: rgb(188, 255, 107);
-    --button-hover: rgb(125, 207, 25);
-    --text-color: #212C1B;
-    --text-color-inverse: rgb(2, 3, 0);
+    --header-background: hsl(80, 100%, 99%);
+    --button-background: hsl(87, 56%, 51%);
+    --button-hover: hsl(87, 84%, 53%);
+    --text-color: hsl(98, 57%, 14%);
+    --text-color-inverse: hsl(0, 0%, 0%);
     --menu-icon: url("assests/svg/color-menu.svg");
 
     z-index: 9999;
@@ -169,7 +169,7 @@ header{
     background-color: var(--button-hover);
 }
 .nav-button__filled:hover a{
-    color:var(--text-color-inverse);
+    color:var(--backgroundColor);
 }
 .mobile-toggle{
     background-image: var(--menu-icon);
@@ -184,8 +184,6 @@ header{
     z-index: 9999;
     max-width: 20px;
     height: auto;
-
-    transition: transform 200ms ease-in-out;
 }
 .dropdown-list-items{
     display: flex;
@@ -199,10 +197,10 @@ header{
     color: var(--mainTextColor);
 }
 .dropdown-list-items:hover, .dropdown-list-items:active{
-    background-color: var(--secondaryColor);
+    background-color: var(--primaryColor);
 }
 .dropdown-list-items:hover a, .dropdown-list-items:active a{
-    color: white;
+    color: rgb(14, 46, 0);
 }
 #dropdown-menu:hover, #dropdown-menu:active{
     margin-bottom: 130px;
@@ -212,13 +210,13 @@ header{
     transform: translateY(80px);
 }
 .header-scrolled{
-    --header-background: #88c73b;
-    --button-background: rgb(254, 255, 252);
-    --button-hover: rgb(83, 151, 1);
-    --text-color: #212C1B;
-    --text-color-inverse: rgb(31, 78, 27);
+    --header-background: hsl(103, 42%, 87%);
+    --button-background: hwb(87 24% 22%);
+    --button-hover: hsl(87, 99%, 30%);
+    --text-color: hsl(103, 100%, 7%);
+    --text-color-inverse: hsl(114, 91%, 5%);
     --menu-icon: url("assests/svg/color-menu.svg");
-    box-shadow: 0px 4px 24px rgba(0 ,0 , 0, .15);
+    box-shadow: 0px 4px 24px hsla(0, 0%, 0%, 0.15);
 }
 
         /*grid objects*/
@@ -375,6 +373,7 @@ header{
     display: flex;
     flex-direction: row;
     width: 100%;
+    max-height: 500px;
     background-color: var(--secondaryColor);
     justify-content: space-between;
     align-items: center;
@@ -385,8 +384,9 @@ header{
     right: 0%;
     background-image: url();
     width: 80%;
-    min-height: 300px;
-    max-height: 700px;
+    min-height: 200px;
+    max-height: 500px;
+    object-fit: cover;
     animation: landing-image-fade 500ms ease-out;
 }
 @keyframes landing-image-fade{
@@ -434,6 +434,16 @@ header{
     width: 100%;
     background-color: white;
 }
+.user-list{
+    text-align: left;
+    margin: 0 auto;
+}
+.user-list li{
+    text-align: left;
+}
+.project-subtitle{
+    width: 20ch;
+}
 .section-header{
     font-weight: 500;
     text-align: center;
@@ -461,10 +471,10 @@ header{
 }
 .grid-image{
     display: grid;
-    grid-template-columns: repeat(2,45%);
+    grid-template-columns: repeat(2,50%);
     justify-content: center;
     align-items: center;
-    margin: 4rem auto;
+    margin: 2rem;
     row-gap: 4rem;
     columns: 3rem;
 }
@@ -704,6 +714,10 @@ header{
         --menu-icon: url("assests/svg/color-menu.svg");
         background-image: var(--menu-icon);
     }
+    .grid-image{
+        grid-template-columns: repeat(1,90%);
+        margin: 1rem;
+    }
     .contact-div{
         display: none;
     }
@@ -726,7 +740,7 @@ header{
         display: none;
         position: absolute;
         flex-direction: column;
-        top: 150%;
+        top: 160%;
         box-shadow: 0px 0px 24px rgba(0 ,0 , 0, .45);
         height: auto;
     }
@@ -790,6 +804,9 @@ header{
     .hero-title{
         left: 50px;
     }
+    .project-subtitle{
+        width: 30ch;
+    }
     .bottom-form{
         flex-direction: row;
         justify-content: space-between;
@@ -834,6 +851,9 @@ header{
     }
     .hero-title{
         left: 250px;
+    }
+    .project-subtitle{
+        width: 60ch;
     }
     .ui-images h2{
         font-size: var(--fontsizeParargraph);

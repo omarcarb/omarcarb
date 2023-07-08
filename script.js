@@ -8,7 +8,8 @@ var path = window.location.pathname;
 var page = path.split("/").pop();
 console.log( page );
 
-
+var screenWidth = window.innerWidth;
+console.log(screenWidth);
 
 
 const landingImage = document.querySelector(".landing-image");
@@ -22,7 +23,7 @@ window.onload = function(){
             landingImage.src = "assests/png/mockup-images/free-roam-mockup.png";
         break;
         case "shelter_finds.html":
-            landingImage.src = "assests/png/mockup-images/shelter-finds-mockup.png";
+            landingImage.src = "assests/png/shelter-finds/landing-image.png";
         break;
     }
 }
