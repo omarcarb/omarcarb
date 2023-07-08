@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1540" height="806" viewBox="0 0 1540 806"><defs><clipPath id="b"><rect width="1540" height="806"/></clipPath></defs><g id="a" clip-path="url(#b)"><rect width="1540" height="806" fill="rgba(255,255,255,0)"/><text transform="translate(138 105)" font-size="42" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Colors</tspan></text><text transform="translate(278 686)" font-size="32" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Primary</tspan></text><text transform="translate(860 686)" font-size="32" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Other Colors</tspan></text><line x2="1198" transform="translate(138.5 134.5)" fill="none" stroke="#030303" stroke-width="3"/><rect width="417" height="397" rx="3" transform="translate(139 209)" fill="#3498db"/><rect width="230" height="190" rx="3" transform="translate(586 209)" fill="#2c3e50"/><rect width="230" height="190" rx="3" transform="translate(846 209)" fill="#bdc3c7"/><text transform="translate(294 587)" fill="#fff" font-size="24" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">#3498DB</tspan></text><text transform="translate(642 386)" fill="#fff" font-size="24" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">#2C3E50</tspan></text><text transform="translate(903 386)" fill="#fff" font-size="24" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">#BDC3C7</tspan></text><rect width="230" height="187" rx="3" transform="translate(586 419)" fill="#fbfdff"/><rect width="230" height="187" rx="3" transform="translate(846 419)" fill="#d93423"/><text transform="translate(644 587)" font-size="24" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">#FBFDFF</tspan></text><text transform="translate(905 587)" fill="#fff" font-size="24" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">#D93423</tspan></text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1327" height="806" viewBox="0 0 1327 806">
+  <defs>
+    <clipPath id="clip-colors">
+      <rect width="1327" height="806"/>
+    </clipPath>
+  </defs>
+  <g id="colors" clip-path="url(#clip-colors)">
+    <rect width="1327" height="806" fill="rgba(255,255,255,0)"/>
+    <text id="Primary" transform="translate(334 680)" font-size="32" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Primary</tspan></text>
+    <text id="Other_Colors" data-name="Other Colors" transform="translate(916 680)" font-size="32" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Other Colors</tspan></text>
+    <g id="colors-title" transform="translate(-74)">
+      <line id="Line_44" data-name="Line 44" x2="1198" transform="translate(138.5 122)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+      <text id="Colors-2" data-name="Colors" transform="translate(691 105)" font-size="32" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Colors</tspan></text>
+    </g>
+    <rect id="Rectangle_205" data-name="Rectangle 205" width="417" height="397" rx="3" transform="translate(195 203)" fill="#3498db"/>
+    <rect id="Rectangle_206" data-name="Rectangle 206" width="230" height="190" rx="3" transform="translate(642 203)" fill="#2c3e50"/>
+    <rect id="Rectangle_209" data-name="Rectangle 209" width="230" height="190" rx="3" transform="translate(902 203)" fill="#bdc3c7"/>
+    <text id="_3498DB" data-name="#3498DB" transform="translate(350 581)" fill="#fff" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#3498DB</tspan></text>
+    <text id="_2C3E50" data-name="#2C3E50" transform="translate(698 380)" fill="#fff" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#2C3E50</tspan></text>
+    <text id="_BDC3C7" data-name="#BDC3C7" transform="translate(959 380)" fill="#fff" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#BDC3C7</tspan></text>
+    <rect id="Rectangle_207" data-name="Rectangle 207" width="230" height="187" rx="3" transform="translate(642 413)" fill="#fbfdff"/>
+    <rect id="Rectangle_208" data-name="Rectangle 208" width="230" height="187" rx="3" transform="translate(902 413)" fill="#d93423"/>
+    <text id="_FBFDFF" data-name="#FBFDFF" transform="translate(700 581)" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#FBFDFF</tspan></text>
+    <text id="_D93423" data-name="#D93423" transform="translate(961 581)" fill="#fff" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#D93423</tspan></text>
+  </g>
+</svg>

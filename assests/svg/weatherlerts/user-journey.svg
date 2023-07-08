@@ -1,11 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="979" height="1089" viewBox="0 0 979 1089">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1526" height="822" viewBox="0 0 1526 822">
   <defs>
     <clipPath id="clip-user-journey">
-      <rect width="979" height="1089"/>
+      <rect width="1526" height="822"/>
     </clipPath>
   </defs>
   <g id="user-journey" clip-path="url(#clip-user-journey)">
-    <rect width="979" height="1089" fill="rgba(255,255,255,0)"/>
+    <rect width="1526" height="822" fill="rgba(255,255,255,0)"/>
+    <line id="Line_46" data-name="Line 46" y2="177" transform="translate(792 156.5)" fill="none" stroke="#9173e6" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_165" data-name="Line 165" y2="146" transform="translate(792 425)" fill="none" stroke="#9173e6" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_166" data-name="Line 166" y2="55" transform="translate(1118 516)" fill="none" stroke="#9173e6" stroke-width="5"/>
+    <line id="Line_167" data-name="Line 167" y2="56" transform="translate(1371 517)" fill="none" stroke="#9173e6" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_168" data-name="Line 168" y2="57" transform="translate(450 516)" fill="none" stroke="#9173e6" stroke-width="5"/>
+    <line id="Line_169" data-name="Line 169" y2="52" transform="translate(188 517)" fill="none" stroke="#9173e6" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_141" data-name="Line 141" y2="19" transform="translate(485 180.5)" fill="none" stroke="#9173e6" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_142" data-name="Line 142" y1="23" transform="translate(484.5 291.5)" fill="none" stroke="#9173e6" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_140" data-name="Line 140" x1="307" transform="translate(485 180.5)" fill="none" stroke="#9173e6" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_143" data-name="Line 143" x1="307" transform="translate(484.5 315)" fill="none" stroke="#9173e6" stroke-linecap="round" stroke-width="5"/>
     <g id="Page_Sitemap_" data-name="Page (Sitemap)" transform="translate(-168.5 -4)">
       <rect id="Rectangle_38" data-name="Rectangle 38" width="258" height="82" rx="4" transform="translate(831 76)" fill="#5d2fdf"/>
       <text id="Open_App" data-name="Open App" transform="translate(903 127)" fill="rgba(248,252,255,0.9)" font-size="26" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Open App</tspan></text>
@@ -19,23 +29,12 @@
       <text id="Home_Screen" data-name="Home Screen" transform="translate(900.178 127)" fill="rgba(248,252,255,0.9)" font-size="26" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Home Screen</tspan></text>
       <path id="home" d="M16.735,2.459a1,1,0,0,0-1.24,0L1.125,13.667l1.24,1.579,1.76-1.38V26.244a2,2,0,0,0,2,2h20a2,2,0,0,0,2-2V13.877l1.76,1.369,1.24-1.569Zm1.39,23.785h-4v-8h4Zm2,0v-8a2,2,0,0,0-2-2h-4a2,2,0,0,0-2,2v8h-6V12.308l10-7.789,10,7.8V26.244Z" transform="translate(861.053 101.756)" fill="rgba(255,255,255,0.9)"/>
     </g>
-    <line id="Line_46" data-name="Line 46" y2="186" transform="translate(792 154.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_144" data-name="Line 144" y2="507" transform="translate(792 423.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_141" data-name="Line 141" y2="27" transform="translate(485 179.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_142" data-name="Line 142" y1="27" transform="translate(484.5 289)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_140" data-name="Line 140" x1="307" transform="translate(485 180.5)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_143" data-name="Line 143" x1="307" transform="translate(484.5 315)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_145" data-name="Line 145" x1="150" transform="translate(641.5 506)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_146" data-name="Line 146" x1="150" transform="translate(641.5 612)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_147" data-name="Line 147" x1="150" transform="translate(641.5 718)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_148" data-name="Line 148" x1="150" transform="translate(641.5 824)" fill="none" stroke="#707070" stroke-width="1"/>
-    <line id="Line_149" data-name="Line 149" x1="150" transform="translate(641.5 930)" fill="none" stroke="#707070" stroke-width="1"/>
-    <g id="Group_258" data-name="Group 258" transform="translate(-383.5 -121)">
+    <g id="Group_258" data-name="Group 258" transform="translate(-742.5 -15)">
       <rect id="Rectangle_252" data-name="Rectangle 252" width="183.182" height="66" transform="translate(839.408 594)" fill="#9f2fdf"/>
       <text id="Search" transform="translate(905.59 637)" fill="rgba(248,252,255,0.9)" font-size="26" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Search</tspan></text>
       <path id="search-2" data-name="search" d="M18.886,18.039l5.967,6.273a1.219,1.219,0,0,1,0,1.663,1.081,1.081,0,0,1-1.582,0L17.3,19.7a8.569,8.569,0,0,1-12.09-1.208A9.679,9.679,0,0,1,5.6,5.732a8.56,8.56,0,0,1,12.138-.4,9.67,9.67,0,0,1,1.149,12.711Zm-7.014,1.284a6.831,6.831,0,0,0,6.654-7,6.831,6.831,0,0,0-6.654-7,6.831,6.831,0,0,0-6.654,7A6.831,6.831,0,0,0,11.872,19.324Z" transform="translate(872.41 612.34)" fill="rgba(255,255,255,0.9)" fill-rule="evenodd"/>
     </g>
-    <g id="Group_259" data-name="Group 259" transform="translate(-384.5 -15)">
+    <g id="Group_259" data-name="Group 259" transform="translate(-449.322 -15)">
       <rect id="Rectangle_252-2" data-name="Rectangle 252" width="252.822" height="66" transform="translate(773.178 594)" fill="#9f2fdf"/>
       <text id="Map_Radar" data-name="Map / Radar" transform="translate(847 637)" fill="rgba(248,252,255,0.9)" font-size="26" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Map / Radar</tspan></text>
       <g id="Map" transform="translate(809.178 614)">
@@ -44,7 +43,7 @@
         <path id="Path_221" data-name="Path 221" d="M28.047,2.771a2.06,2.06,0,0,0-1.969-.053A.763.763,0,0,0,26,2.763l-5.259,3.28a.472.472,0,0,0-.227.4V27.761a.475.475,0,0,0,.266.423.521.521,0,0,0,.516-.027l6.69-4.381a1.9,1.9,0,0,0,1.026-1.67V4.452a1.934,1.934,0,0,0-.967-1.683Z" transform="translate(0.986 -2.268)" fill="rgba(255,255,255,0.9)"/>
       </g>
     </g>
-    <g id="Group_260" data-name="Group 260" transform="translate(-483.5 91)">
+    <g id="Group_260" data-name="Group 260" transform="translate(-156.178 -15)">
       <rect id="Rectangle_252-3" data-name="Rectangle 252" width="352" height="66" transform="translate(772.179 594)" fill="#9f2fdf"/>
       <text id="Alerts_Notifications" data-name="Alerts / Notifications" transform="translate(846.179 637)" fill="rgba(248,252,255,0.9)" font-size="26" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Alerts / Notifications</tspan></text>
       <g id="Notifications" transform="translate(808.18 614)">
@@ -53,19 +52,35 @@
         <rect id="Rectangle_123" data-name="Rectangle 123" width="30" height="26" transform="translate(-0.001)" fill="none"/>
       </g>
     </g>
-    <g id="Group_261" data-name="Group 261" transform="translate(-356.5 197)">
+    <g id="Group_261" data-name="Group 261" transform="translate(226.5 -15)">
       <rect id="Rectangle_252-4" data-name="Rectangle 252" width="212.765" height="66" transform="translate(785.235 594)" fill="#9f2fdf"/>
       <text id="Locations" transform="translate(847 637)" fill="rgba(248,252,255,0.9)" font-size="26" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Locations</tspan></text>
       <path id="Location" d="M14.513,1.857c-4.937,0-8.942,2.988-8.942,6.669,0,5.928,8.942,14.078,8.942,14.078s8.942-8.15,8.942-14.078C23.455,4.845,19.45,1.857,14.513,1.857Zm0,10.373c-1.975,0-3.577-1.327-3.577-2.964S12.538,6.3,14.513,6.3,18.09,7.63,18.09,9.267,16.488,12.229,14.513,12.231Z" transform="translate(815.664 614.77)" fill="rgba(255,255,255,0.9)"/>
     </g>
-    <g id="Group_262" data-name="Group 262" transform="translate(-331.5 303)">
+    <g id="Group_262" data-name="Group 262" transform="translate(478.822 -15)">
       <rect id="Rectangle_252-5" data-name="Rectangle 252" width="162" height="66" transform="translate(811 594)" fill="#9f2fdf"/>
       <text id="Articles" transform="translate(847 637)" fill="rgba(248,252,255,0.9)" font-size="26" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Articles</tspan></text>
     </g>
-    <g id="Group_263" data-name="Group 263" transform="translate(-774.5 303)">
+    <g id="Group_263" data-name="Group 263" transform="translate(452.822 93.5)">
       <rect id="Rectangle_252-6" data-name="Rectangle 252" width="214" height="66" transform="translate(811 594)" fill="#9f2fdf"/>
       <text id="Article_Page" data-name="Article Page" transform="translate(847 637)" fill="rgba(248,252,255,0.9)" font-size="26" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Article Page</tspan></text>
     </g>
-    <line id="Line_150" data-name="Line 150" x1="230" transform="translate(250 930.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_150" data-name="Line 150" y1="32" transform="translate(1370.822 647.5)" fill="none" stroke="#9173e6" stroke-linecap="round" stroke-width="5"/>
+    <line id="Line_170" data-name="Line 170" x2="1182" transform="translate(188.5 516.5)" fill="none" stroke="#9173e6" stroke-linecap="round" stroke-width="5"/>
+    <path id="Polygon_4" data-name="Polygon 4" d="M9,0l9,13H0Z" transform="translate(801 341) rotate(180)" fill="#9173e6"/>
+    <path id="Polygon_7" data-name="Polygon 7" d="M9,0l9,13H0Z" transform="translate(801 474) rotate(180)" fill="#9173e6"/>
+    <path id="Polygon_8" data-name="Polygon 8" d="M9,0l9,13H0Z" transform="translate(801 579) rotate(180)" fill="#9173e6"/>
+    <path id="Polygon_12" data-name="Polygon 12" d="M9,0l9,13H0Z" transform="translate(459 579) rotate(180)" fill="#9173e6"/>
+    <path id="Polygon_13" data-name="Polygon 13" d="M9,0l9,13H0Z" transform="translate(197 579) rotate(180)" fill="#9173e6"/>
+    <path id="Polygon_9" data-name="Polygon 9" d="M9,0l9,13H0Z" transform="translate(1127 579) rotate(180)" fill="#9173e6"/>
+    <path id="Polygon_10" data-name="Polygon 10" d="M9,0l9,13H0Z" transform="translate(1380 579) rotate(180)" fill="#9173e6"/>
+    <path id="Polygon_11" data-name="Polygon 11" d="M9,0l9,13H0Z" transform="translate(1380 688) rotate(180)" fill="#9173e6"/>
+    <path id="Polygon_5" data-name="Polygon 5" d="M9,0l9,13H0Z" transform="translate(655.5 306) rotate(90)" fill="#9173e6"/>
+    <path id="Polygon_14" data-name="Polygon 14" d="M9,0l9,13H0Z" transform="translate(642.5 189.5) rotate(-90)" fill="#9173e6"/>
+    <path id="Polygon_15" data-name="Polygon 15" d="M9,0l9,13H0Z" transform="translate(636 525.5) rotate(-90)" fill="#9173e6"/>
+    <path id="Polygon_17" data-name="Polygon 17" d="M9,0l9,13H0Z" transform="translate(939.678 507.5) rotate(90)" fill="#9173e6"/>
+    <path id="Polygon_18" data-name="Polygon 18" d="M9,0l9,13H0Z" transform="translate(1273.678 507.5) rotate(90)" fill="#9173e6"/>
+    <path id="Polygon_16" data-name="Polygon 16" d="M9,0l9,13H0Z" transform="translate(303.5 525) rotate(-90)" fill="#9173e6"/>
+    <path id="Polygon_6" data-name="Polygon 6" d="M9,0l9,13H0Z" transform="translate(494 207) rotate(180)" fill="#9173e6"/>
   </g>
 </svg>
