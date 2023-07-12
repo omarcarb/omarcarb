@@ -47,15 +47,18 @@
                 </ul>
             </nav>
         </header>
-        <dialog open class = "pop-up">
+        <dialog class = "pop-up">
                 <div class="form-section__header">
                     <h1 class = "form-header">Get in Touch</h1>
                     <div class="close-button"><img src="assests/svg/x.svg" alt="close-button"></div>
                 </div>
                 <form class = "form" action = "https://formsubmit.co/omarcarb34@duck.com" method = "POST">
                     <!---Honeypot-->
-                    <input type="text" name = "some-dude" style = "display: none;">
+                    <input type="text" name = "some-dude" style = "display: none">
                     
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Visitor!">
+
                     <div class="form-section__links">
                         <h2>Find me Here</h2>
                         <div class="form-section__link-div">
@@ -67,15 +70,15 @@
                     <h2>Or Send Me a Message</h2>
                     <div class = "form-section__input">
                         <label for = "full-name">Full Name</label>
-                        <input type = "text" id = "full-name" name = "full-name" placeholder="First and Last Name" required>
+                        <input type = "text" id = "full-name" name = "Full&nbsp;Name" placeholder="First and Last Name" required>
                     </div>
                     <div class="form-section__input">
                         <label for= "contact-email">Email</label>
-                        <input type="text" id="contact-email" name = "contact-email" placeholder="example@email.com" required>
+                        <input type="text" id="contact-email" name = "Contact&nbsp;Email" placeholder="example@email.com" required>
                     </div>
                     <div class="form-section__input">
                         <label for= "message">Message</label>
-                        <textarea name = "message" placeholder = "Send me a message." required></textarea>
+                        <textarea name = "Message" placeholder = "Send me a message." required></textarea>
                     </div>
                     <div class="form-section__buttons">
                         <button class= "form-button" id = "cancel">Back</button>
