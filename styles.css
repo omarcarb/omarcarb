@@ -103,7 +103,7 @@ header{
     --text-color-inverse: hsl(0, 0%, 0%);
     --menu-icon: url("assests/svg/color-menu.svg");
 
-    z-index: 9999;
+    z-index: 10001;
     display: flex;
     flex-direction: row;
     background-color: var(--header-background);
@@ -216,8 +216,9 @@ header{
     box-shadow: 0px 4px 24px hsla(0, 0%, 0%, 0.15);
 }
 .pop-up{
-    z-index: 9999999999;
-    width: clamp(175px, 40vw, 700px);
+    z-index: 10000;
+    width: 70%;
+    max-height: fit-content;
     border: none;
     border-radius: .25rem;
     background-color: hsl(102, 89%, 93%);
@@ -240,11 +241,11 @@ form{
     justify-content: center;
 }               
 .form-section__link-div{
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(3,33%);
+    width: clamp(200px, 30%, 500px);
+    display: flex;
     margin: 0rem auto;
-    column-gap: 1rem;
+    justify-content: center;
+    column-gap: 3rem;
 }
 .form-header{
     width: 100%;
@@ -255,12 +256,21 @@ form{
     display: flex;
     flex-direction: column;
     margin: 1.5rem 0rem;
+    
 }
 .form-section__input label{
     font-weight: 500;
-    font-size: var(--fontsizerHeader2);
+    font-size: 1rem;
     margin-bottom: .5rem;
     text-align: left;
+}
+.required::after{
+    content: "*required";
+    position: relative;
+    font-size: 10px;
+    color: red;
+    right: -8px;
+    top: -4px
 }
 .form-section__input input{
     height: 2rem;
@@ -269,24 +279,29 @@ form{
     border: none;
     border-radius: .25rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 #message, textarea{
     height: 5rem;
     padding-top: .75rem; padding-bottom: .75rem;
     padding-left: 1rem;
     font-family: "Roboto";
+    font-size: 1rem;
     border: none;
     border-radius: .25rem;
     resize: none;
 }
 .form-section__buttons{
     width: 100%;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
     margin-top: 2rem;
 }
 .form-button{
-    padding: 1.5rem 4rem;
-    margin: .5rem 1rem;
+    padding: 1rem 3rem;
     border: none;
+    font-size: 1rem;
 }
 #cancel{
     background-color: hsl(101, 33%, 87%);
@@ -426,6 +441,52 @@ form{
 .skill-grid-item p{
     text-align: left;
     width: 40%;
+}
+.form-setion__page{
+    width: 100%;
+    background-color: hsl(102, 89%, 93%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-section__page-header{
+    text-align: center;
+}
+.form-section__page-form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem auto;
+    row-gap: 2rem;
+}
+.form-section__page-input{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    align-items: flex-start;
+}
+.form-section__page-input label{
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+.form-section__page-input input{
+    width: 100%;
+    height: 30px;
+    border: 2px solid hsla(103, 100%, 7%, 0.5);
+    border-radius: 3px;
+    font-family: "Roboto";
+    padding-left: 1rem;
+}
+.message-form-page{
+    width: 100%;
+    border: 2px solid hsla(103, 100%, 7%, 0.5);
+    border-radius: 3px;
+}
+.form-section__page-buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 .contact-link__heading{
     font-weight: 500;
@@ -675,7 +736,7 @@ form{
     flex-direction: column;
     justify-content: space-between;
     place-items: center;
-    background-color: hsl(103, 42%, 87%);
+    background-color: hsl(103, 80%, 85%);
     padding: 2rem 5rem;
 }
 .profile-pic-div{
@@ -863,6 +924,12 @@ form{
         margin: 1rem 0rem;
         font-size: var(--fontsizeParargraph);
     }
+    .pop-up{
+        max-width: 500px;
+    }
+    .form-section__page-form{
+        width: 40%;
+    }
     #grid-projects{
         grid-template-columns: repeat( 2, 1fr);
         margin: 2rem 1rem;
@@ -915,6 +982,9 @@ form{
     }
     .nav-button>*{
         padding: 1rem 2rem;
+    }
+    .pop-up{
+        width: 40%;
     }
     .project-button{
         margin: 1rem 0rem;
