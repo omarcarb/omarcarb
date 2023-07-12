@@ -58,26 +58,31 @@
                     
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="New Visitor!">
+                    <input type="hidden" name="_template" value="table">
 
                     <div class="form-section__links">
                         <h2>Find me Here</h2>
                         <div class="form-section__link-div">
-                            <a href=""><img src="assests/svg/linkedin.svg" alt=""></a>
-                            <a href=""><img src="assests/svg/dribbble.svg" alt=""></a>
-                            <a href=""><img src="assests/svg/behance.svg" alt=""></a>
+                            <a href=""><img src="assests/svg/linkedin.svg" alt="" width="32px" height="32px"></a>
+                            <a href=""><img src="assests/svg/dribbble.svg" alt="" width="32px" height="32px"></a>
+                            <a href=""><img src="assests/svg/behance.svg" alt="" width="32px" height="32px"></a>
                         </div>
                     </div>
                     <h2>Or Send Me a Message</h2>
                     <div class = "form-section__input">
-                        <label for = "full-name">Full Name</label>
+                        <label for = "full-name" class = "required">Full Name</label>
                         <input type = "text" id = "full-name" name = "Full&nbsp;Name" placeholder="First and Last Name" required>
                     </div>
                     <div class="form-section__input">
-                        <label for= "contact-email">Email</label>
-                        <input type="text" id="contact-email" name = "Contact&nbsp;Email" placeholder="example@email.com" required>
+                        <label for= "contact-email" class = "required">Email</label>
+                        <input type="email" id="contact-email" name = "Contact&nbsp;Email" placeholder="example@email.com" required>
                     </div>
                     <div class="form-section__input">
-                        <label for= "message">Message</label>
+                        <label for= "phone">Phone Number</label>
+                        <input name = "phone" type = "tel" placeholder="(123)-456-7890"></textarea>
+                    </div>
+                    <div class="form-section__input">
+                        <label for= "message" class = "required">Message</label>
                         <textarea name = "Message" placeholder = "Send me a message." required></textarea>
                     </div>
                     <div class="form-section__buttons">
@@ -178,6 +183,39 @@
             </div>
         </main>
 
+        <div class = form-setion__page>
+            <div>
+                <h1 class = "form-section__page-header">Get in Touch</h1>
+            </div>
+            <form class = "form-section__page-form" action = "https://formsubmit.co/omarcarb34@duck.com" method = "POST">
+                <!---Honeypot-->
+                <input type="text" name = "some-dude" style = "display: none">
+                
+                <input type="hidden" name="_captcha" value = "false">
+                <input type="hidden" name="_subject" value = "New Visitor!">
+                <input type="hidden" name="_template" value="table">
+
+                <div class = "form-section__page-input">
+                    <label for = "full-name" class = "required">Full Name</label>
+                    <input type = "text" id = "full-name" name = "Full&nbsp;Name" placeholder="First and Last Name" required>
+                </div>
+                <div class = "form-section__page-input">
+                    <label for= "contact-email" class = "required">Email</label>
+                    <input type="email" id="contact-email" name = "Contact&nbsp;Email" placeholder="example@email.com" required>
+                </div>
+                <div class = "form-section__page-input">
+                    <label for= "phone">Phone Number</label>
+                    <input name = "phone" type = "tel" placeholder="(123)-456-7890"></textarea>
+                </div>
+                <div class = "form-section__page-input">
+                    <label for= "message" class = "required">Message</label>
+                    <textarea name = "Message" placeholder = "Send me a message." class = "message-form-page"required></textarea>
+                </div>
+                <div class = "form-section__page-buttons">
+                    <button class= "form-button" id = "submit">Submit</button>
+                </div> 
+            </form>
+        </div>
         <main class="bottom-form flex">
             <div>
                 <div class = "profile-pic-div">
