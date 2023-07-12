@@ -1,8 +1,13 @@
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.mobile-toggle');
 const homeLink = document.querySelector('.home-link');
-const matchResults = window.matchMedia("(max-width: 480px)")
+const matchResults = window.matchMedia("(max-width: 480px)");
 var thresholdValue = 1;
+const modal = document.querySelector('.pop-up');
+const openModal = document.querySelector('.nav-button__filled');
+const openContactForm = document.querySelector('.profile-button');
+const closeModal = document.querySelector('.close-button');
+const cancelButton = document.querySelector('#cancel');
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
@@ -113,3 +118,15 @@ function enableScroll(){
     window.onscroll = function(){
     };
 }
+openModal.addEventListener('click', () => {
+    modal.showModal();
+})
+openContactForm.addEventListener('click', () => {
+    modal.showModal();
+})
+closeModal.addEventListener('click', () => {
+    modal.close();
+})
+cancelButton.addEventListener('click', () => {
+    modal.close();
+})
