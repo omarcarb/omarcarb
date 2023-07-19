@@ -121,12 +121,14 @@ function enableScroll(){
 openModal.addEventListener('click', () => {
     modal.showModal();
 })
+closeModal.addEventListener('click', () => {
+    modal.close();
+    console.log("closing box");
+})
 openContactForm.addEventListener('click', () => {
     modal.showModal();
 })
-closeModal.addEventListener('click', () => {
-    modal.close();
-})
 cancelButton.addEventListener('click', () => {
     modal.close();
+    console.log("closing box");
 })

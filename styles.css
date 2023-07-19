@@ -383,6 +383,22 @@ form{
     background-image: url(assests/png/mockup-images/free-roam-mockup.png);
     background-size: cover;
 }
+#coming-soon{
+    margin: 3rem auto;
+    height: 48px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: hsl(103, 42%, 87%);
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px hsla(110, 97%, 13%, 1);
+
+    transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+#coming-soon h2{
+    color: hsla(103, 100%, 14%, 0.925);
+}
 
 
         /*Other Sections*/
@@ -400,9 +416,9 @@ form{
     margin: 2rem 0rem;
 }
 #skills-heading::after{
-    --first-color: rgb(136, 199, 59);
-    --second-color: rgb(125, 207, 25);
-    --finalcolor: rgba(143, 250, 12, 0.2);
+    --first-color: hsl(87, 100%, 23%);
+    --second-color: hsl(87, 95%, 32%);
+    --finalcolor: hsla(87, 84%, 47%, 0.836);
     position: absolute;
     content: '';
     width: 100%;
@@ -754,17 +770,14 @@ form{
     aspect-ratio: 1;
     border-radius: 50px;
 }
-.profile-button{
-    text-decoration: none;
-    color: var(--mainTextColor);
-    background-color: var(--backgroundColor);
-    padding: 1rem 2rem;
+.button__resume{
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: .5rem;
+    background-color: var(--primaryAccentColor);
+    padding: 1rem;
+    color: hsla(101, 89%, 93%, 0.8);
+    font-weight: 500;
 }
-
 .profile-text{
     color: var(--backgroundColor);
 }
