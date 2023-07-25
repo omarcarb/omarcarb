@@ -383,24 +383,6 @@ form{
     background-image: url(assests/png/mockup-images/free-roam-mockup.png);
     background-size: cover;
 }
-#coming-soon{
-    margin: 3rem auto;
-    height: 48px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    background-color: hsl(103, 42%, 87%);
-    border-radius: 4px;
-    box-shadow: 0px 0px 0px hsla(110, 97%, 13%, 1);
-
-    transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
-}
-#coming-soon h2{
-    color: hsla(103, 100%, 14%, 0.925);
-}
-
-
         /*Other Sections*/
 .skillset{
     display: grid;
@@ -803,7 +785,7 @@ form{
 
 
 /*for devices that have hover capabilities*/
-@media (hover) {
+@media (hover :hover) {
     .content-info{
         transition: transform 250ms ease-in;
         transform: translateY(6rem);
