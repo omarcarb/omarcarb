@@ -81,8 +81,12 @@
             
         </form>
     </dialog>
-    <span>
-        <img class = "landing-image" id = "section-crossed">
+    <span class = "hero-section">
+        <div class="hero-title">
+            <h1 class="project-name-hero">Free Roam</h1>
+            <h2 class = "project-subtitle">An app with loads of options for those with limited mobility</h2>
+        </div>
+        <img loading = "lazy" class = "landing-image" id = "section-crossed">
     </span>
     <main class = "section" id = "project-page">
         <h1 class = section-header>Overview</h1>
@@ -94,51 +98,79 @@
             <p class="subtext">Design an app that delivers up to date notifications of upcoming weather  events. It must also provide real time information for users about the local weather. And for the cherry on top, it must provide local resources, such as aide and emergency lines.</p>
     </main>
     <main class="section" id = "project-page">
-            <h1 class="section-header">Process to Product</h1>
-            <p class="subtext">I made some assumptions when going into this project. I was aware  that users wanted quick and easy access to the information that was most  relevant to them. I also assumed most users would prefer to view it through their mobile devices. As such, I went with a mobile  first design philosophy to better allow for smaller screens. This would allow me to provide  things like pop-up notifications or alerts. </p>
-            <p class = "subtext"> The process to solving the problem went something like this</p>
-            <div class="grid-image">
-                <img loading = "lazy" loading = "lazy" src="#.png" alt="UIimages" class="process-ui-images">
-                <img loading = "lazy" src="#.png" alt="UIimages" class="process-ui-images">
-                <img loading = "lazy" src="#.png" alt="UIimages" class="process-ui-images">
-                <img loading = "lazy" src="#.png" alt="UIimages" class="process-ui-images">
+        <h1 class="section-header">Process to Product</h1>
+        <p class="subtext">I made some assumptions when going into this project. I was aware  that users wanted quick and easy access to the information that was most  relevant to them. I also assumed most users would prefer to view it through their mobile devices. As such, I went with a mobile  first design philosophy to better allow for smaller screens. This would allow me to provide  things like pop-up notifications or alerts. </p>
+        <h2 class = "subheading">Process</h2>
+        <div class="grid-image">
+            <div class="ui-images">
+                <div class="thumbnail-image">
+                    <img src="assests/svg/ui-images/research-icon.svg" alt="" width="64px" height="64px">
+                </div>
+                <h2>Research</h2>
+                <p>Find out how the competition solves this problem, if they have solved it at all.</p>
             </div>
-        </main>
+            <div class="ui-images">
+                <div class = "thumbnail-image">
+                    <img src="assests/svg/ui-images/idea-icon.svg" alt="" width="64px" height="64px">
+                </div>
+                <h2>Ideation</h2>
+                <p>Come up with as many ideas as possible and pick the best one from the bunch</p>
+            </div>
+            <div class="ui-images">
+                <img src="assests/svg/ui-images/test-icon.svg" alt="" class = "thumbnail-image">
+                <h2>Testing</h2>
+                <p>See if the ideas work in practice and keep testing until it works</p>
+            </div>
+            <div class="ui-images">
+                <img src="assests/svg/ui-images/design-icon.svg" alt="" class = "thumbnail-image">
+                <h2>Design</h2>
+                <p>Finalize the process by coming up with the final look and feel of the product</p>
+            </div>
+        </div>
+    </main>
     <section class = "section" id = "project-page">
         <h1 class="section-header">Ideation</h1>
         <p class="subtext">I wanted the app to look as neatly organized as possible to reduced information clutter while still delivering all the relevant information needed in any weather app.<br>Several design choices I made during the ideation phase were made with the idea that most people wanted their weather alerts first before they receive any general weather information</p>
         <div class = "image-div">
             <img loading = "lazy" 
-            src="assests/png/placeholder.png" alt="image of early sketches" class = "section" id = "project-images">
+            src="assests/png/free-roam/ideation-phase.png" alt="image of early sketches" class = "section" id = "project-images">
         </div>
     </section>
     <main class="section" id="project-page">
         <h1 class="section-header">Design</h1>
         <h2 class="subheading">Laying the Foundation</h2>
         <p class="subtext">I went with a modern minimalism look to the app since I wanted to convey as much information as possible without creating too much visual noise. I went through several iterations before settling with a soft blue color pallete on an 8 point grid set-up and a Roboto font to display the information.</p>
-        <p class="subtext">I went with a modern minimalism look to the app since I wanted to convey as much information as possible without creating too much visual noise. I went through several iterations before settling with a soft blue color pallete on an 8 point grid set-up and a Roboto font to display the information.</p>
     </main>
     <main class= "section" id = "image-container">
-        <div>
-            <img loading = "lazy" 
-            src="assests/svg/weatherlerts/colors.svg" alt="color pallete of the product" class = "section" id = "project-images">
-            <img loading = "lazy" 
-            src="assests/svg/weatherlerts/layout-and-heirarchy.svg" alt="the way objects are spaced out in the page" class = "section" id = "project-images">
-            <img loading = "lazy" 
-            src="assests/svg/weatherlerts/icons-and-components.svg" alt="components and icons used in the page" class = "section" id = "project-images">
-    </main>
-    <main class="section" id = "project-page">
-        <h1 class="section-header">Testing and Layout</h1>
-        <h2 class="subheading">Wireframes and Low Fidelity Prototypes</h2>
-        <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti distinctio, dicta neque minima fuga perferendis! Impedit debitis quos culpa officiis fuga autem libero, praesentium quae alias assumenda aut nisi ut.</p>
-        <img src="" alt="image of the user user flow" class="user-flow-chart">
-    </main>
+        <h1 class = "image-title">Colors</h1>
+        <img loading = "lazy" 
+        src="assests/svg/free-roam/colors.svg" alt="color pallete of the product" class = "section" id = "svg-images">
+        <h1 class = "image-title">Grid and Heirarchy</h1>
+        <img loading = "lazy" 
+        src="assests/svg/free-roam/grid-hierarchy-layout.svg" alt="layout and heirarchy of the design" class = "section" id = "svg-images">
+        <h1 class = "image-title">Icons</h1>
+        <img loading = "lazy" 
+        src="assests/svg/free-roam/icons.svg" alt="icons used in the page" class = "section" id = "svg-images">
+        <h1 class = "image-title">Components</h1>
+        <img loading = "lazy" 
+        src="assests/svg/free-roam/components.svg" alt="icons used in the page" class = "section" id = "svg-images">
+</main>
+<main class="section" id = "project-page">
+    <h1 class="section-header">Testing and Layout</h1>
+    <h2 class="subheading">Layout</h2>
+    <p class="subtext">Unlike my other projects, I went with a linear flow for this project since there is an end goal I want the user to reach. Simplifying the process will make it users, especially elderly users, to better understand where they are in the process of their journey</p>
+    <img src="assests/svg/free-roam/user-journey.svg" alt="image of the user user flow" class="section" id="project-images">
+    <h2 class="subheading">Results</h2>
+    <p class="subtext">I measured success based on the time on a task the user spent. Here we see that the first iteration of the app lead to longer times than later iterations.</p>
+    <img src = # alt="" class="section" id="project-images">
+</main>
     <main class="section" id = "project-page">
         <h1 class = "section-header">Final Product</h1>
         <div class = "image-div">
-            <img loading = "lazy" src="assests/png/placeholder.png" alt="example image" class = "section" id = "project-images">
-            <img loading = "lazy" src="assests/png/placeholder.png" alt="example image" class = "section" id = "project-images">
-            <img loading = "lazy" src="assests/png/placeholder.png" alt="example image" class = "section" id = "project-images">
+            <img loading = "lazy" src="assests/png/free-roam/example-1.png" alt="example image" class = "section" id = "project-images">
+            <img loading = "lazy" src="assests/png/free-roam/example-2.png" alt="example image" class = "section" id = "project-images">
+            <img loading = "lazy" src="assests/png/free-roam/example-3.png" alt="example image" class = "section" id = "project-images">
+            <img loading = "lazy" src="assests/png/free-roam/example-4.png" alt="example image" class = "section" id = "project-images">
         </div>
     </main>
     <main class="section" id = "project-page">
@@ -152,20 +184,20 @@
     <main class="section">
         <h1 class="section-header">Other Works to Look at</h1>
         <div class = "other-works">
-            <div class="other-works-box flex">
-                <img loading = "lazy" 
-                src="assests/png/mockup-images/free-roam-mockup.png" alt="preview image of the project" class = "section" id = "project-images">
+            <a href = "free_roam.html" class="other-works-box flex">
+                <div class = "img-preview">
+                    <img loading = "lazy" 
+                    src="assests/png/placeholder.png" alt="preview image of the project">
+                </div>
                 <p class="project-description-small-form">Free Roam.</p>
-            </div>
-            <div class="other-works-box flex">
-                <img src="assests/png/mockup-images/shelter-finds-mockup.png" alt="preview image of the project" class = "section" id = "project-images">
+            </a>
+            <a href="shelter_finds.html" class="other-works-box flex">
+                <div class = "img-preview">
+                    <img loading = "lazy" 
+                    src="assests/png/placeholder.png" alt="preview image of the project">
+                </div>
                 <p class="project-description-small-form" >Shelter Finds</p>
-            </div>
-            <div class="other-works-box flex">
-                <img loading = "lazy" 
-                src="assests/png/placeholder.png" alt="preview image of the project" class = "section" id = "project-images">
-                <p class="project-description-small-form" >Not Avaliable</p>
-            </div>
+            </a>
         </div> 
     </main>
     <main class="bottom-form flex">
