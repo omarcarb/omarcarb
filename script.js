@@ -7,6 +7,7 @@ const modal = document.querySelector('.pop-up');
 const openModal = document.querySelector('.nav-button__filled');
 const openContactForm = document.querySelector('.profile-button');
 const closeModal = document.querySelector('.close-button');
+
 const cancelButton = document.querySelector('#cancel');
 
 var path = window.location.pathname;
@@ -25,7 +26,7 @@ window.onload = function(){
             landingImage.src = "assests/png/weatherlerts/landing-image.png"; 
         break;
         case "free_roam.html":
-            landingImage.src = "assests/png/mockup-images/free-roam-mockup.png";
+            landingImage.src = "assests/png/free-roam/landing-image.png";
         break;
         case "shelter_finds.html":
             landingImage.src = "assests/png/shelter-finds/landing-image.png";

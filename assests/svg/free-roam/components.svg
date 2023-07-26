@@ -1,0 +1,91 @@
+<svg width="1365" height="569" viewBox="0 0 1365 569" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="208" y="132" width="128" height="32" rx="4" fill="#3D40CC"/>
+<text fill="white" fill-opacity="0.95" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="500" letter-spacing="0em"><tspan x="244.43" y="153.818">Default</tspan></text>
+<rect x="208" y="222" width="128" height="32" rx="4" fill="#36364D"/>
+<text fill="white" fill-opacity="0.7" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="500" letter-spacing="0em"><tspan x="238.688" y="243.818">Disabled</tspan></text>
+<rect x="345" y="132" width="128" height="32" rx="4" fill="#CFCFE6"/>
+<text fill="#3D40CC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="500" letter-spacing="0em"><tspan x="381.43" y="153.818">Default</tspan></text>
+<rect x="482" y="132" width="138" height="32" rx="4" fill="#CC3D3D"/>
+<text fill="white" fill-opacity="0.95" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="500" letter-spacing="0em"><tspan x="506.852" y="153.818">Destructive</tspan></text>
+<rect x="208" y="180" width="128" height="32" rx="4" fill="#3D40CC"/>
+<path d="M238.4 204V198.353H241.6V204H245.6V196.471H248L240 188L232 196.471H234.4V204H238.4Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" fill-opacity="0.95" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="500" letter-spacing="0em"><tspan x="267.703" y="201.818">Icon</tspan></text>
+<rect x="345" y="180" width="128" height="32" rx="4" fill="#CECFE5"/>
+<path d="M375.4 204V198.353H378.6V204H382.6V196.471H385L377 188L369 196.471H371.4V204H375.4Z" fill="#3D40CC"/>
+<text fill="#3D40CC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="500" letter-spacing="0em"><tspan x="404.703" y="201.818">Icon</tspan></text>
+<rect x="343" y="222" width="128" height="32" rx="4" fill="#737380"/>
+<text fill="#1F204D" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="500" letter-spacing="0em"><tspan x="373.688" y="243.818">Disabled</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" letter-spacing="0em"><tspan x="175.094" y="72.0909">Buttons</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" letter-spacing="0em"><tspan x="186.37" y="311.091">Input</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" letter-spacing="0em"><tspan x="871.229" y="311.091">DropDown</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="208.359" y="119.636">Solid</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="723.094" y="119.636">Checkbox</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="1022.23" y="119.636">Radio</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="723.117" y="219.636">Toggle Switch</tspan></text>
+<rect x="723" y="236" width="32" height="8" rx="4" fill="#6E71F0"/>
+<circle cx="747" cy="240" r="8" fill="#3D40CC"/>
+<rect x="811" y="236" width="32" height="8" rx="4" fill="#C2C4FF"/>
+<circle cx="835" cy="240" r="8" fill="#8587FF"/>
+<rect x="767" y="236" width="32" height="8" rx="4" fill="#26274D"/>
+<circle cx="775" cy="240" r="8" fill="#737380"/>
+<rect x="855" y="236" width="32" height="8" rx="4" fill="#656565"/>
+<circle cx="863" cy="240" r="8" fill="#797AA4"/>
+<rect x="723" y="132" width="24" height="24" rx="4" fill="#C2C3F2"/>
+<rect x="725" y="134" width="20" height="20" rx="4" fill="#3D40CC"/>
+<path d="M730 147L733 150L740 138" stroke="#C2C3F2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="817" y="132" width="24" height="24" rx="4" fill="#C2C3F2"/>
+<rect x="819" y="134" width="20" height="20" rx="4" fill="#404180"/>
+<path d="M824 147L827 150L834 138" stroke="#737380" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="771" y="133" width="22" height="22" rx="3" fill="#C2C3F2" stroke="#474AB3" stroke-width="2"/>
+<rect x="865" y="133" width="22" height="22" rx="3" fill="#525266" stroke="#6B6C99" stroke-width="2"/>
+<circle cx="1034" cy="144" r="11" fill="#F5F6FF" stroke="#3D40CC" stroke-width="2"/>
+<circle cx="1082" cy="144" r="11" fill="#F5F6FF" stroke="#3D40CC" stroke-width="2"/>
+<circle cx="1178" cy="144" r="11" fill="#C2C4FF" stroke="#6F72F9" stroke-width="2"/>
+<circle cx="1130" cy="144" r="11" fill="#C2C4FF" stroke="#6F72F9" stroke-width="2"/>
+<circle cx="1082" cy="144" r="8" fill="#3D40CC"/>
+<circle cx="1178" cy="144" r="8" fill="#6F72F9"/>
+<rect x="186" y="461" width="276" height="36" rx="4.26667" fill="#4A4D69"/>
+<path d="M210.197 481.2H209.427L209.153 480.937C210.11 479.824 210.685 478.38 210.685 476.809C210.685 473.306 207.846 470.467 204.343 470.467C200.84 470.467 198 473.306 198 476.809C198 480.312 200.84 483.152 204.343 483.152C205.914 483.152 207.358 482.576 208.47 481.62L208.734 481.893V482.664L213.613 487.533L215.067 486.079L210.197 481.2ZM204.343 481.2C201.913 481.2 199.952 479.239 199.952 476.809C199.952 474.379 201.913 472.418 204.343 472.418C206.772 472.418 208.734 474.379 208.734 476.809C208.734 479.239 206.772 481.2 204.343 481.2Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" fill-opacity="0.8" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="17.0667" font-weight="500" letter-spacing="0em"><tspan x="223.125" y="485.412">Search</tspan></text>
+<path d="M441.467 481.245C442.984 481.245 444.2 480.042 444.2 478.551L444.21 473.161C444.21 471.67 442.984 470.467 441.467 470.467C439.949 470.467 438.724 471.67 438.724 473.161V478.551C438.724 480.042 439.949 481.245 441.467 481.245ZM446.312 478.551C446.312 481.245 443.99 483.132 441.467 483.132C438.943 483.132 436.621 481.245 436.621 478.551H435.067C435.067 481.623 437.554 484.147 440.552 484.587V487.533H442.381V484.587C445.38 484.156 447.867 481.623 447.867 478.551H446.312Z" fill="white" fill-opacity="0.95"/>
+<rect x="186" y="347" width="276" height="36" rx="4.26667" fill="#4A4D69"/>
+<text fill="white" fill-opacity="0.8" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="17.0667" font-weight="500" letter-spacing="0em"><tspan x="198.225" y="371.412">Input Field</tspan></text>
+<rect x="486" y="348" width="274" height="34" rx="3.26667" fill="#4A4D69"/>
+<text fill="white" fill-opacity="0.8" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="17.0667" font-weight="500" letter-spacing="0em"><tspan x="497.417" y="371.412">Success Input</tspan></text>
+<rect x="486" y="348" width="274" height="34" rx="3.26667" stroke="#5BB574" stroke-width="2"/>
+<rect x="486" y="405" width="274" height="34" rx="3.26667" fill="#4A4D69"/>
+<text fill="white" fill-opacity="0.8" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="17.0667" font-weight="500" letter-spacing="0em"><tspan x="497.383" y="428.412">Error Input</tspan></text>
+<rect x="486" y="405" width="274" height="34" rx="3.26667" stroke="#E64C4C" stroke-width="2"/>
+<rect x="186" y="404" width="276" height="36" rx="4.26667" fill="#77798D"/>
+<text fill="white" fill-opacity="0.8" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="17.0667" font-weight="500" letter-spacing="0em"><tspan x="198.183" y="428.412">Focused Input</tspan></text>
+<path d="M450 418L442 426M442 418L450 426" stroke="#DBDBE1" stroke-width="2" stroke-linecap="round"/>
+<mask id="path-59-inside-1_1755_3906" fill="white">
+<path d="M871 351C871 348.791 872.791 347 875 347H1179C1181.21 347 1183 348.791 1183 351V395H871V351Z"/>
+</mask>
+<path d="M871 351C871 348.791 872.791 347 875 347H1179C1181.21 347 1183 348.791 1183 351V395H871V351Z" fill="#1F2133"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="887" y="375.227">Dropdown Closed</tspan></text>
+<path d="M1154.69 377.12L1160.78 371L1154.69 364.88L1156.57 363L1164.54 371L1156.57 379L1154.69 377.12Z" fill="white" fill-opacity="0.95"/>
+<path d="M871 347H1183H871ZM1183 397H871V393H1183V397ZM871 395V347V395ZM1183 347V395V347Z" fill="#2E3099" mask="url(#path-59-inside-1_1755_3906)"/>
+<mask id="path-63-inside-2_1755_3906" fill="white">
+<path d="M871 411C871 408.791 872.791 407 875 407H1179C1181.21 407 1183 408.791 1183 411V455H871V411Z"/>
+</mask>
+<path d="M871 411C871 408.791 872.791 407 875 407H1179C1181.21 407 1183 408.791 1183 411V455H871V411Z" fill="#1F2133"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="887" y="435.227">Dropdown Open</tspan></text>
+<path d="M1152.88 426.692L1159 432.778L1165.12 426.692L1167 428.566L1159 436.539L1151 428.566L1152.88 426.692Z" fill="white" fill-opacity="0.95"/>
+<path d="M871 407H1183H871ZM1183 457H871V453H1183V457ZM871 455V407V455ZM1183 407V455V407Z" fill="#2E3099" mask="url(#path-63-inside-2_1755_3906)"/>
+<mask id="path-67-inside-3_1755_3906" fill="white">
+<path d="M871 455H1183V498H871V455Z"/>
+</mask>
+<path d="M871 455H1183V498H871V455Z" fill="#3B3E54"/>
+<path d="M1183 496H871V500H1183V496Z" fill="#2E3099" mask="url(#path-67-inside-3_1755_3906)"/>
+<mask id="path-69-inside-4_1755_3906" fill="white">
+<path d="M871 498H1183V541H871V498Z"/>
+</mask>
+<path d="M871 498H1183V541H871V498Z" fill="#3B3E54"/>
+<path d="M1183 539H871V543H1183V539Z" fill="#2E3099" mask="url(#path-69-inside-4_1755_3906)"/>
+<circle cx="1159" cy="520" r="7.25" fill="#F5F6FF" stroke="#3D40CC" stroke-width="1.5"/>
+<rect x="1135" y="473" width="32" height="8" rx="4" fill="#6E71F0"/>
+<circle cx="1159" cy="477" r="8" fill="#3D40CC"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="887" y="480.727">Option 1</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="887" y="523.727">Option 2</tspan></text>
+</svg>
