@@ -1,0 +1,172 @@
+<svg width="300" height="1048" viewBox="0 0 300 1048" fill="none" xmlns="http://www.w3.org/2000/svg">
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="124.113" y="519.531">Heirarchy</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="2.30859" y="54.5312">Grid</tspan></text>
+<rect x="28.5" y="38.5" width="53" height="24" rx="3.5" fill="white"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="36.4375" y="54.5312">8-point</tspan></text>
+<rect x="28.5" y="38.5" width="53" height="24" rx="3.5" stroke="black"/>
+<rect x="90" y="38" width="39" height="25" rx="4" fill="#204DE1"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="106.125" y="54.5312">8</tspan></text>
+<rect x="137" y="38" width="46" height="25" rx="4" fill="#5E20E1"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="153.25" y="54.5312">12</tspan></text>
+<rect x="191" y="38" width="46" height="25" rx="4" fill="#8E20E1"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="207.25" y="54.5312">16</tspan></text>
+<rect x="245" y="38" width="46" height="25" rx="4" fill="#E120C1"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="261.25" y="54.5312">24</tspan></text>
+<rect x="24" y="117" width="250" height="359" rx="4" fill="#0B0C0E"/>
+<g clip-path="url(#clip0_1768_2975)">
+<rect x="32" y="141" width="100" height="28" rx="4" fill="#3D40CC"/>
+<path d="M65.7629 150.5H58.2371C57.8686 150.5 57.5429 150.694 57.4229 150.971L56 154.432V159.147C56 159.348 56.1971 159.5 56.4286 159.5H57.2857C57.5257 159.5 57.7143 159.348 57.7143 159.154V158.115H66.2857V159.154C66.2857 159.348 66.4743 159.5 66.7143 159.5H67.5714C67.8114 159.5 68 159.348 68 159.154V154.439L66.5771 150.978C66.4571 150.694 66.1314 150.5 65.7629 150.5ZM58.3829 156.731C57.8 156.731 57.3371 156.357 57.3371 155.886C57.3371 155.415 57.8 155.042 58.3829 155.042C58.9657 155.042 59.4286 155.422 59.4286 155.886C59.4286 156.35 58.9657 156.731 58.3829 156.731ZM65.6171 156.731C65.0429 156.731 64.5714 156.357 64.5714 155.886C64.5714 155.415 65.0343 155.042 65.6171 155.042C66.2 155.042 66.6629 155.415 66.6629 155.886C66.6629 156.357 66.2 156.731 65.6171 156.731ZM57.1057 153.962L58.2457 151.192H65.7714L66.9114 153.962H57.1057Z" fill="white" fill-opacity="0.95"/>
+<ellipse cx="59.3301" cy="152.291" rx="1.06793" ry="0.895735" fill="white" fill-opacity="0.95"/>
+<ellipse cx="59.3302" cy="154.083" rx="2.13586" ry="0.895735" fill="white" fill-opacity="0.95"/>
+<ellipse cx="64.6698" cy="154.083" rx="2.13586" ry="0.895735" fill="white" fill-opacity="0.95"/>
+<ellipse cx="64.6697" cy="152.291" rx="1.06793" ry="0.895735" fill="white" fill-opacity="0.95"/>
+<text fill="white" fill-opacity="0.95" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em"><tspan x="76.1445" y="159.227">Rides</tspan></text>
+<rect x="140" y="141" width="127" height="28" rx="4" fill="#CECFE5"/>
+<path d="M175.667 149L175.56 149.02L172 150.4L168 149L164.24 150.267C164.1 150.313 164 150.433 164 150.587V160.667C164 160.853 164.147 161 164.333 161L164.44 160.98L168 159.6L172 161L175.76 159.733C175.9 159.687 176 159.567 176 159.413V149.333C176 149.147 175.853 149 175.667 149ZM172 159.667L168 158.26V150.333L172 151.74V159.667Z" fill="#3D40CC"/>
+<text fill="#3D40CC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em"><tspan x="184.42" y="159.227">Directions</tspan></text>
+</g>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="32.5996" y="205.591">Whole Foods</tspan></text>
+<text fill="white" fill-opacity="0.8" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="32.5" y="227.636">1423 Milford Path, Manchester, NY, 90782</tspan></text>
+<text fill="white" fill-opacity="0.7" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="32.5" y="241.818">2.5km away</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="33.4023" y="275.273">4.4</tspan></text>
+<path d="M58.0352 266L59.1577 269.455H62.7904L59.8515 271.59L60.9741 275.045L58.0352 272.91L55.0962 275.045L56.2188 271.59L53.2799 269.455H56.9126L58.0352 266Z" fill="#5C5FE6"/>
+<path d="M70.0352 266L71.1577 269.455H74.7904L71.8515 271.59L72.9741 275.045L70.0352 272.91L67.0962 275.045L68.2188 271.59L65.2799 269.455H68.9126L70.0352 266Z" fill="#5C5FE6"/>
+<path d="M82.0352 266L83.1577 269.455H86.7904L83.8515 271.59L84.9741 275.045L82.0352 272.91L79.0962 275.045L80.2188 271.59L77.2799 269.455H80.9126L82.0352 266Z" fill="#5C5FE6"/>
+<path d="M94.0352 266L95.1577 269.455H98.7904L95.8515 271.59L96.9741 275.045L94.0352 272.91L91.0962 275.045L92.2188 271.59L89.2799 269.455H92.9126L94.0352 266Z" fill="#5C5FE6"/>
+<path d="M106.035 266L107.158 269.455H110.79L107.852 271.59L108.974 275.045L106.035 272.91L103.096 275.045L104.219 271.59L101.28 269.455H104.913L106.035 266Z" fill="#D9D9D9"/>
+<path d="M106.035 266L106.035 270.583L106.035 272.91L103.096 275.045L104.219 271.59L101.28 269.455H104.912L106.035 266Z" fill="#5C5FE5"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="183.035" y="274.273">Open until </tspan></text>
+<text fill="#5C5FE5" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="237.598" y="274.273">10pm</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="32.5" y="310.182">Accessibility Options</tspan></text>
+<rect x="32.5" y="326" width="233" height="100" rx="4" fill="#1F2133"/>
+<path d="M43 330.8C43 330.356 43.445 330 44 330C44.555 330 45 330.356 45 330.8C45 331.244 44.555 331.6 44 331.6C43.445 331.6 43 331.244 43 330.8ZM46.5 334.4C46.495 333.864 46.085 333.396 45.5 333.2C45.5 332.536 44.83 332 44 332C43.17 332 42.5 332.536 42.5 333.2V336H43.5V338H45V336H46.5V334.4Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="52.5" y="336.818">Pregnant Seating</tspan></text>
+<path d="M138.5 341H40.5V343H138.5V341Z" fill="#2E3099" mask="url(#path-38-inside-1_1768_2975)"/>
+<path d="M150.654 330H148.5V338H149.731V335.333H150.654C151.672 335.333 152.5 334.138 152.5 332.667C152.5 331.196 151.672 330 150.654 330ZM150.715 333.556H149.731V331.778H150.715C151.054 331.778 151.331 332.178 151.331 332.667C151.331 333.156 151.054 333.556 150.715 333.556Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="158.5" y="336.818">Disabled Parking</tspan></text>
+<path d="M244.5 341H146.5V343H244.5V341Z" fill="#2E3099" mask="url(#path-42-inside-2_1768_2975)"/>
+<path d="M47.5 359.846C46.976 359.846 46.552 360.209 46.508 360.672C45.756 360.492 45.372 360.026 44.5 360.026C43.624 360.026 43.244 360.492 42.492 360.672C42.448 360.212 42.024 359.846 41.5 359.846C40.948 359.846 40.5 360.248 40.5 360.744V360.923C40.5 363.077 41.94 363.727 43.108 363.788C43.512 364.017 43.988 364.154 44.5 364.154C45.012 364.154 45.488 364.017 45.892 363.788C47.06 363.727 48.5 363.077 48.5 360.923V360.744C48.5 360.248 48.052 359.846 47.5 359.846ZM41.1 360.923V360.744C41.1 360.546 41.28 360.385 41.5 360.385C41.72 360.385 41.9 360.546 41.9 360.744V361.821C41.9 362.28 42.052 362.707 42.304 363.07C41.696 362.815 41.1 362.233 41.1 360.923ZM47.9 360.923C47.9 362.233 47.304 362.815 46.696 363.07C46.952 362.707 47.1 362.28 47.1 361.821V360.744C47.1 360.546 47.28 360.385 47.5 360.385C47.72 360.385 47.9 360.546 47.9 360.744V360.923ZM43.976 361.454C43.8 361.548 43.592 361.655 43.3 361.727V361.354C43.492 361.293 43.636 361.217 43.772 361.146C43.988 361.031 44.192 360.923 44.5 360.923C44.808 360.923 45.008 361.031 45.22 361.146C45.356 361.217 45.504 361.296 45.7 361.357V361.731C45.4 361.655 45.196 361.548 45.016 361.451C44.832 361.354 44.696 361.282 44.5 361.282C44.304 361.282 44.164 361.354 43.976 361.454Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="52.5" y="364.818">Mask Available</tspan></text>
+<path d="M138.5 369H40.5V371H138.5V369Z" fill="#2E3099" mask="url(#path-46-inside-3_1768_2975)"/>
+<g clip-path="url(#clip1_1768_2975)">
+<path d="M148 362C148.46 362 148.833 361.627 148.833 361.167C148.833 360.706 148.46 360.333 148 360.333C147.54 360.333 147.167 360.706 147.167 361.167C147.167 361.627 147.54 362 148 362Z" fill="white" fill-opacity="0.95"/>
+<path d="M149.5 360.667C149.96 360.667 150.333 360.294 150.333 359.833C150.333 359.373 149.96 359 149.5 359C149.04 359 148.667 359.373 148.667 359.833C148.667 360.294 149.04 360.667 149.5 360.667Z" fill="white" fill-opacity="0.95"/>
+<path d="M151.5 360.667C151.96 360.667 152.333 360.294 152.333 359.833C152.333 359.373 151.96 359 151.5 359C151.04 359 150.667 359.373 150.667 359.833C150.667 360.294 151.04 360.667 151.5 360.667Z" fill="white" fill-opacity="0.95"/>
+<path d="M153 362C153.46 362 153.833 361.627 153.833 361.167C153.833 360.706 153.46 360.333 153 360.333C152.54 360.333 152.167 360.706 152.167 361.167C152.167 361.627 152.54 362 153 362Z" fill="white" fill-opacity="0.95"/>
+<path d="M152.28 362.953C151.99 362.613 151.747 362.323 151.453 361.983C151.3 361.803 151.103 361.623 150.87 361.543C150.833 361.53 150.797 361.52 150.76 361.513C150.677 361.5 150.587 361.5 150.5 361.5C150.413 361.5 150.323 361.5 150.237 361.517C150.2 361.523 150.163 361.533 150.127 361.547C149.893 361.627 149.7 361.807 149.543 361.987C149.253 362.327 149.01 362.617 148.717 362.957C148.28 363.393 147.743 363.877 147.843 364.553C147.94 364.893 148.183 365.23 148.62 365.327C148.863 365.377 149.64 365.18 150.467 365.18H150.527C151.353 365.18 152.13 365.373 152.373 365.327C152.81 365.23 153.053 364.89 153.15 364.553C153.253 363.873 152.717 363.39 152.28 362.953Z" fill="white" fill-opacity="0.95"/>
+</g>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="158.5" y="364.818">Service Pets Allowed</tspan></text>
+<path d="M244.5 369H146.5V371H244.5V369Z" fill="#2E3099" mask="url(#path-50-inside-4_1768_2975)"/>
+<path d="M42 387.333C42 386.963 42.2967 386.667 42.6667 386.667C43.0367 386.667 43.3333 386.963 43.3333 387.333C43.3333 387.703 43.0367 388 42.6667 388C42.2967 388 42 387.703 42 387.333ZM43.8333 389.65V389C43.8333 388.633 43.5333 388.333 43.1667 388.333H42.1667C41.8 388.333 41.5 388.633 41.5 389V391H42.1667V393.333H43.3333V393.297C42.92 392.877 42.6667 392.3 42.6667 391.667C42.6667 390.807 43.1367 390.053 43.8333 389.65ZM46 391.667C46 392.217 45.55 392.667 45 392.667C44.45 392.667 44 392.217 44 391.667C44 391.297 44.2033 390.98 44.5 390.807V390.087C43.8267 390.3 43.336 390.9 43.3333 391.667C43.3302 392.587 44.08 393.333 45 393.333C45.92 393.333 46.6667 392.587 46.6667 391.667H46ZM47.0133 390.667H45.5V388.667H44.8333V391.333H46.6533L47.4767 392.57L48.03 392.2L47.0133 390.667Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="52.5" y="392.818">Wheelchair Accessible</tspan></text>
+<path d="M138.5 397H40.5V399H138.5V397Z" fill="#2E3099" mask="url(#path-58-inside-5_1768_2975)"/>
+<path d="M152.591 387.2L152.831 387.748L153.353 388L152.831 388.252L152.591 388.8L152.351 388.252L151.83 388L152.351 387.748L152.591 387.2ZM150.31 387.652V386.8H151.071C151.289 386.8 151.49 386.868 151.662 386.98L152.207 386.408C151.89 386.156 151.502 386 151.071 386C150.508 386 148.976 386 148.976 386V386.8H149.548V387.656C148.873 387.804 148.332 388.32 148.123 389H149.639L151.833 389.86V389.612C151.833 388.644 151.178 387.836 150.31 387.652ZM146.5 394H148.024V389.6H146.5V394ZM153.738 392H151.071L150.275 391.708L150.401 391.332L151.071 391.6H152.146C152.393 391.6 152.595 391.388 152.595 391.128C152.595 390.932 152.477 390.756 152.302 390.684L149.536 389.6H148.786V393.208L151.452 394L154.5 392.8C154.496 392.36 154.161 392 153.738 392ZM153.738 390.8C154.157 390.8 154.5 390.44 154.5 390C154.5 389.56 153.738 388.4 153.738 388.4C153.738 388.4 152.976 389.56 152.976 390C152.976 390.44 153.319 390.8 153.738 390.8Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="158.5" y="392.818">Sanitation Station</tspan></text>
+<path d="M244.5 397H146.5V399H244.5V397Z" fill="#2E3099" mask="url(#path-62-inside-6_1768_2975)"/>
+<path d="M47.7 415.6H46.1V414.8C46.1 414.36 45.74 414 45.3 414H43.7C43.26 414 42.9 414.36 42.9 414.8V415.6H41.3C40.86 415.6 40.5 415.96 40.5 416.4V421.2C40.5 421.64 40.86 422 41.3 422H47.7C48.14 422 48.5 421.64 48.5 421.2V416.4C48.5 415.96 48.14 415.6 47.7 415.6ZM43.7 414.8H45.3V415.6H43.7V414.8ZM46.1 419.2H44.9V420.4H44.1V419.2H42.9V418.4H44.1V417.2H44.9V418.4H46.1V419.2Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="52.5" y="420.818">Medical Services</tspan></text>
+<text fill="white" fill-opacity="0.8" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="36.125" y="455.818">Accessibility Rating</tspan></text>
+<text fill="#3DCC49" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="191.625" y="455.818">Very Accessible</tspan></text>
+<path d="M258.875 450C257.219 450 255.875 451.12 255.875 452.5C255.875 453.88 257.219 455 258.875 455C260.531 455 261.875 453.88 261.875 452.5C261.875 451.12 260.531 450 258.875 450ZM259.175 454.25H258.575V453.75H259.175V454.25ZM259.796 452.312L259.526 452.543C259.31 452.725 259.175 452.875 259.175 453.25H258.575V453.125C258.575 452.85 258.71 452.6 258.926 452.418L259.298 452.102C259.409 452.012 259.475 451.888 259.475 451.75C259.475 451.475 259.205 451.25 258.875 451.25C258.545 451.25 258.275 451.475 258.275 451.75H257.675C257.675 451.197 258.212 450.75 258.875 450.75C259.538 450.75 260.075 451.197 260.075 451.75C260.075 451.97 259.967 452.17 259.796 452.312Z" fill="#B8B8CC"/>
+<rect x="25" y="170" width="249" height="22" fill="#E120C1" fill-opacity="0.3" stroke="#E120C1" stroke-width="2" stroke-dasharray="2 2"/>
+<rect x="25" y="243" width="248" height="22" fill="#E120C1" fill-opacity="0.3" stroke="#E120C1" stroke-width="2" stroke-dasharray="2 2"/>
+<rect x="25" y="276" width="248" height="22" fill="#E120C1" fill-opacity="0.3" stroke="#E120C1" stroke-width="2" stroke-dasharray="2 2"/>
+<rect x="26" y="427" width="247" height="22" fill="#E120C1" fill-opacity="0.3" stroke="#E120C1" stroke-width="2" stroke-dasharray="2 2"/>
+<rect x="34" y="311" width="239" height="14" fill="#8E20E1" fill-opacity="0.3" stroke="#8E20E1" stroke-width="2" stroke-dasharray="2 2"/>
+<rect x="42" y="343" width="202" height="10" fill="#5E20E1" fill-opacity="0.3" stroke="#5E20E1" stroke-width="2" stroke-dasharray="2 2"/>
+<rect x="42" y="371" width="202" height="10" fill="#5E20E1" fill-opacity="0.3" stroke="#5E20E1" stroke-width="2" stroke-dasharray="2 2"/>
+<rect x="42" y="399" width="202" height="10" fill="#5E20E1" fill-opacity="0.3" stroke="#5E20E1" stroke-width="2" stroke-dasharray="2 2"/>
+<rect x="34" y="229" width="239" height="6" fill="#204DE1" fill-opacity="0.3" stroke="#204DE1" stroke-width="2" stroke-dasharray="2 2"/>
+<rect x="34" y="209" width="239" height="6" fill="#204DE1" fill-opacity="0.3" stroke="#204DE1" stroke-width="2" stroke-dasharray="2 2"/>
+<rect x="24" y="646" width="250" height="379" rx="4" fill="#0B0C0E"/>
+<g clip-path="url(#clip2_1768_2975)">
+<rect x="32" y="670" width="100" height="28" rx="4" fill="#3D40CC"/>
+<path d="M65.7629 679.5H58.2371C57.8686 679.5 57.5429 679.694 57.4229 679.971L56 683.432V688.147C56 688.348 56.1971 688.5 56.4286 688.5H57.2857C57.5257 688.5 57.7143 688.348 57.7143 688.154V687.115H66.2857V688.154C66.2857 688.348 66.4743 688.5 66.7143 688.5H67.5714C67.8114 688.5 68 688.348 68 688.154V683.439L66.5771 679.978C66.4571 679.694 66.1314 679.5 65.7629 679.5ZM58.3829 685.731C57.8 685.731 57.3371 685.357 57.3371 684.886C57.3371 684.415 57.8 684.042 58.3829 684.042C58.9657 684.042 59.4286 684.422 59.4286 684.886C59.4286 685.35 58.9657 685.731 58.3829 685.731ZM65.6171 685.731C65.0429 685.731 64.5714 685.357 64.5714 684.886C64.5714 684.415 65.0343 684.042 65.6171 684.042C66.2 684.042 66.6629 684.415 66.6629 684.886C66.6629 685.357 66.2 685.731 65.6171 685.731ZM57.1057 682.962L58.2457 680.192H65.7714L66.9114 682.962H57.1057Z" fill="white" fill-opacity="0.95"/>
+<ellipse cx="59.3301" cy="681.292" rx="1.06793" ry="0.895735" fill="white" fill-opacity="0.95"/>
+<ellipse cx="59.3302" cy="683.083" rx="2.13586" ry="0.895735" fill="white" fill-opacity="0.95"/>
+<ellipse cx="64.6698" cy="683.083" rx="2.13586" ry="0.895735" fill="white" fill-opacity="0.95"/>
+<ellipse cx="64.6697" cy="681.292" rx="1.06793" ry="0.895735" fill="white" fill-opacity="0.95"/>
+<text fill="white" fill-opacity="0.95" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em"><tspan x="76.1445" y="688.227">Rides</tspan></text>
+<rect x="140" y="670" width="127" height="28" rx="4" fill="#CECFE5"/>
+<path d="M175.667 678L175.56 678.02L172 679.4L168 678L164.24 679.267C164.1 679.313 164 679.433 164 679.587V689.667C164 689.853 164.147 690 164.333 690L164.44 689.98L168 688.6L172 690L175.76 688.733C175.9 688.687 176 688.567 176 688.413V678.333C176 678.147 175.853 678 175.667 678ZM172 688.667L168 687.26V679.333L172 680.74V688.667Z" fill="#3D40CC"/>
+<text fill="#3D40CC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em"><tspan x="184.42" y="688.227">Directions</tspan></text>
+</g>
+<rect x="25.5" y="671.5" width="247" height="25" stroke="#DD1C1C" stroke-width="3"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="32.5996" y="734.591">Whole Foods</tspan></text>
+<text fill="white" fill-opacity="0.8" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="32.5" y="756.636">1423 Milford Path, Manchester, NY, 90782</tspan></text>
+<text fill="white" fill-opacity="0.7" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="32.5" y="770.818">2.5km away</tspan></text>
+<rect x="26" y="723.5" width="246" height="46" stroke="#DD781C" stroke-width="3"/>
+<rect x="34.9023" y="796.5" width="228.195" height="7" fill="#DDA71C"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="33.4023" y="804.273">4.4</tspan></text>
+<path d="M58.0352 795L59.1577 798.455H62.7904L59.8515 800.59L60.9741 804.045L58.0352 801.91L55.0962 804.045L56.2188 800.59L53.2799 798.455H56.9126L58.0352 795Z" fill="#5C5FE6"/>
+<path d="M70.0352 795L71.1577 798.455H74.7904L71.8515 800.59L72.9741 804.045L70.0352 801.91L67.0962 804.045L68.2188 800.59L65.2799 798.455H68.9126L70.0352 795Z" fill="#5C5FE6"/>
+<path d="M82.0352 795L83.1577 798.455H86.7904L83.8515 800.59L84.9741 804.045L82.0352 801.91L79.0962 804.045L80.2188 800.59L77.2799 798.455H80.9126L82.0352 795Z" fill="#5C5FE6"/>
+<path d="M94.0352 795L95.1577 798.455H98.7904L95.8515 800.59L96.9741 804.045L94.0352 801.91L91.0962 804.045L92.2188 800.59L89.2799 798.455H92.9126L94.0352 795Z" fill="#5C5FE6"/>
+<path d="M106.035 795L107.158 798.455H110.79L107.852 800.59L108.974 804.045L106.035 801.91L103.096 804.045L104.219 800.59L101.28 798.455H104.913L106.035 795Z" fill="#D9D9D9"/>
+<path d="M106.035 795L106.035 799.583L106.035 801.91L103.096 804.045L104.219 800.59L101.28 798.455H104.912L106.035 795Z" fill="#5C5FE5"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="183.035" y="803.773">Open until </tspan></text>
+<text fill="#5C5FE5" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="237.598" y="803.773">10pm</tspan></text>
+<rect x="34.9023" y="796.5" width="228.195" height="7" stroke="#DDA71C" stroke-width="3"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="32.5" y="839.182">Accessibility Options</tspan></text>
+<rect x="32.5" y="855" width="233" height="100" rx="4" fill="#1F2133"/>
+<path d="M43 859.8C43 859.356 43.445 859 44 859C44.555 859 45 859.356 45 859.8C45 860.244 44.555 860.6 44 860.6C43.445 860.6 43 860.244 43 859.8ZM46.5 863.4C46.495 862.864 46.085 862.396 45.5 862.2C45.5 861.536 44.83 861 44 861C43.17 861 42.5 861.536 42.5 862.2V865H43.5V867H45V865H46.5V863.4Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="52.5" y="865.818">Pregnant Seating</tspan></text>
+<path d="M138.5 870H40.5V872H138.5V870Z" fill="#2E3099" mask="url(#path-111-inside-7_1768_2975)"/>
+<path d="M150.654 859H148.5V867H149.731V864.333H150.654C151.672 864.333 152.5 863.138 152.5 861.667C152.5 860.196 151.672 859 150.654 859ZM150.715 862.556H149.731V860.778H150.715C151.054 860.778 151.331 861.178 151.331 861.667C151.331 862.156 151.054 862.556 150.715 862.556Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="158.5" y="865.818">Disabled Parking</tspan></text>
+<path d="M244.5 870H146.5V872H244.5V870Z" fill="#2E3099" mask="url(#path-115-inside-8_1768_2975)"/>
+<path d="M47.5 888.846C46.976 888.846 46.552 889.209 46.508 889.672C45.756 889.492 45.372 889.026 44.5 889.026C43.624 889.026 43.244 889.492 42.492 889.672C42.448 889.212 42.024 888.846 41.5 888.846C40.948 888.846 40.5 889.248 40.5 889.744V889.923C40.5 892.077 41.94 892.727 43.108 892.788C43.512 893.017 43.988 893.154 44.5 893.154C45.012 893.154 45.488 893.017 45.892 892.788C47.06 892.727 48.5 892.077 48.5 889.923V889.744C48.5 889.248 48.052 888.846 47.5 888.846ZM41.1 889.923V889.744C41.1 889.546 41.28 889.385 41.5 889.385C41.72 889.385 41.9 889.546 41.9 889.744V890.821C41.9 891.28 42.052 891.707 42.304 892.07C41.696 891.815 41.1 891.233 41.1 889.923ZM47.9 889.923C47.9 891.233 47.304 891.815 46.696 892.07C46.952 891.707 47.1 891.28 47.1 890.821V889.744C47.1 889.546 47.28 889.385 47.5 889.385C47.72 889.385 47.9 889.546 47.9 889.744V889.923ZM43.976 890.454C43.8 890.548 43.592 890.655 43.3 890.727V890.354C43.492 890.293 43.636 890.217 43.772 890.146C43.988 890.031 44.192 889.923 44.5 889.923C44.808 889.923 45.008 890.031 45.22 890.146C45.356 890.217 45.504 890.296 45.7 890.357V890.731C45.4 890.655 45.196 890.548 45.016 890.451C44.832 890.354 44.696 890.282 44.5 890.282C44.304 890.282 44.164 890.354 43.976 890.454Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="52.5" y="893.818">Mask Available</tspan></text>
+<path d="M138.5 898H40.5V900H138.5V898Z" fill="#2E3099" mask="url(#path-119-inside-9_1768_2975)"/>
+<g clip-path="url(#clip3_1768_2975)">
+<path d="M148 891C148.46 891 148.833 890.627 148.833 890.167C148.833 889.706 148.46 889.333 148 889.333C147.54 889.333 147.167 889.706 147.167 890.167C147.167 890.627 147.54 891 148 891Z" fill="white" fill-opacity="0.95"/>
+<path d="M149.5 889.667C149.96 889.667 150.333 889.294 150.333 888.833C150.333 888.373 149.96 888 149.5 888C149.04 888 148.667 888.373 148.667 888.833C148.667 889.294 149.04 889.667 149.5 889.667Z" fill="white" fill-opacity="0.95"/>
+<path d="M151.5 889.667C151.96 889.667 152.333 889.294 152.333 888.833C152.333 888.373 151.96 888 151.5 888C151.04 888 150.667 888.373 150.667 888.833C150.667 889.294 151.04 889.667 151.5 889.667Z" fill="white" fill-opacity="0.95"/>
+<path d="M153 891C153.46 891 153.833 890.627 153.833 890.167C153.833 889.706 153.46 889.333 153 889.333C152.54 889.333 152.167 889.706 152.167 890.167C152.167 890.627 152.54 891 153 891Z" fill="white" fill-opacity="0.95"/>
+<path d="M152.28 891.953C151.99 891.613 151.747 891.323 151.453 890.983C151.3 890.803 151.103 890.623 150.87 890.543C150.833 890.53 150.797 890.52 150.76 890.513C150.677 890.5 150.587 890.5 150.5 890.5C150.413 890.5 150.323 890.5 150.237 890.517C150.2 890.523 150.163 890.533 150.127 890.547C149.893 890.627 149.7 890.807 149.543 890.987C149.253 891.327 149.01 891.617 148.717 891.957C148.28 892.393 147.743 892.877 147.843 893.553C147.94 893.893 148.183 894.23 148.62 894.327C148.863 894.377 149.64 894.18 150.467 894.18H150.527C151.353 894.18 152.13 894.373 152.373 894.327C152.81 894.23 153.053 893.89 153.15 893.553C153.253 892.873 152.717 892.39 152.28 891.953Z" fill="white" fill-opacity="0.95"/>
+</g>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="158.5" y="893.818">Service Pets Allowed</tspan></text>
+<path d="M244.5 898H146.5V900H244.5V898Z" fill="#2E3099" mask="url(#path-123-inside-10_1768_2975)"/>
+<path d="M42 916.333C42 915.963 42.2967 915.667 42.6667 915.667C43.0367 915.667 43.3333 915.963 43.3333 916.333C43.3333 916.703 43.0367 917 42.6667 917C42.2967 917 42 916.703 42 916.333ZM43.8333 918.65V918C43.8333 917.633 43.5333 917.333 43.1667 917.333H42.1667C41.8 917.333 41.5 917.633 41.5 918V920H42.1667V922.333H43.3333V922.297C42.92 921.877 42.6667 921.3 42.6667 920.667C42.6667 919.807 43.1367 919.053 43.8333 918.65ZM46 920.667C46 921.217 45.55 921.667 45 921.667C44.45 921.667 44 921.217 44 920.667C44 920.297 44.2033 919.98 44.5 919.807V919.087C43.8267 919.3 43.336 919.9 43.3333 920.667C43.3302 921.587 44.08 922.333 45 922.333C45.92 922.333 46.6667 921.587 46.6667 920.667H46ZM47.0133 919.667H45.5V917.667H44.8333V920.333H46.6533L47.4767 921.57L48.03 921.2L47.0133 919.667Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="52.5" y="921.818">Wheelchair Accessible</tspan></text>
+<path d="M138.5 926H40.5V928H138.5V926Z" fill="#2E3099" mask="url(#path-131-inside-11_1768_2975)"/>
+<path d="M152.591 916.2L152.831 916.748L153.353 917L152.831 917.252L152.591 917.8L152.351 917.252L151.83 917L152.351 916.748L152.591 916.2ZM150.31 916.652V915.8H151.071C151.289 915.8 151.49 915.868 151.662 915.98L152.207 915.408C151.89 915.156 151.502 915 151.071 915C150.508 915 148.976 915 148.976 915V915.8H149.548V916.656C148.873 916.804 148.332 917.32 148.123 918H149.639L151.833 918.86V918.612C151.833 917.644 151.178 916.836 150.31 916.652ZM146.5 923H148.024V918.6H146.5V923ZM153.738 921H151.071L150.275 920.708L150.401 920.332L151.071 920.6H152.146C152.393 920.6 152.595 920.388 152.595 920.128C152.595 919.932 152.477 919.756 152.302 919.684L149.536 918.6H148.786V922.208L151.452 923L154.5 921.8C154.496 921.36 154.161 921 153.738 921ZM153.738 919.8C154.157 919.8 154.5 919.44 154.5 919C154.5 918.56 153.738 917.4 153.738 917.4C153.738 917.4 152.976 918.56 152.976 919C152.976 919.44 153.319 919.8 153.738 919.8Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="158.5" y="921.818">Sanitation Station</tspan></text>
+<path d="M244.5 926H146.5V928H244.5V926Z" fill="#2E3099" mask="url(#path-135-inside-12_1768_2975)"/>
+<path d="M47.7 944.6H46.1V943.8C46.1 943.36 45.74 943 45.3 943H43.7C43.26 943 42.9 943.36 42.9 943.8V944.6H41.3C40.86 944.6 40.5 944.96 40.5 945.4V950.2C40.5 950.64 40.86 951 41.3 951H47.7C48.14 951 48.5 950.64 48.5 950.2V945.4C48.5 944.96 48.14 944.6 47.7 944.6ZM43.7 943.8H45.3V944.6H43.7V943.8ZM46.1 948.2H44.9V949.4H44.1V948.2H42.9V947.4H44.1V946.2H44.9V947.4H46.1V948.2Z" fill="white" fill-opacity="0.95"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="52.5" y="949.818">Medical Services</tspan></text>
+<rect x="31" y="827.5" width="236" height="129" stroke="#71DD1C" stroke-width="3"/>
+<text fill="white" fill-opacity="0.8" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="36" y="992.818">Accessibility Rating</tspan></text>
+<text fill="#3DCC49" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em"><tspan x="187.75" y="992.818">Very Accessible</tspan></text>
+<path d="M259 987.5C257.344 987.5 256 988.62 256 990C256 991.38 257.344 992.5 259 992.5C260.656 992.5 262 991.38 262 990C262 988.62 260.656 987.5 259 987.5ZM259.3 991.75H258.7V991.25H259.3V991.75ZM259.921 989.812L259.651 990.043C259.435 990.225 259.3 990.375 259.3 990.75H258.7V990.625C258.7 990.35 258.835 990.1 259.051 989.918L259.423 989.602C259.534 989.512 259.6 989.388 259.6 989.25C259.6 988.975 259.33 988.75 259 988.75C258.67 988.75 258.4 988.975 258.4 989.25H257.8C257.8 988.697 258.337 988.25 259 988.25C259.663 988.25 260.2 988.697 260.2 989.25C260.2 989.47 260.092 989.67 259.921 989.812Z" fill="#B8B8CC"/>
+<rect x="37.5" y="980.5" width="223" height="19" stroke="#1CDD97" stroke-width="3"/>
+<rect width="52" height="9" transform="matrix(-1 0 0 1 268 536)" fill="#DD1C1C"/>
+<rect x="216" y="557" width="52" height="9" fill="#DD781C"/>
+<rect x="216" y="578" width="52" height="9" fill="#DDA71C"/>
+<rect x="216" y="599" width="52" height="9" fill="#71DD1C"/>
+<rect x="216" y="621" width="52" height="9" fill="#1CDD97"/>
+<line y1="-1" x2="105" y2="-1" transform="matrix(-1 0 0 1 216 542)" stroke="#DD1C1C" stroke-width="2"/>
+<line x1="84" y1="562" x2="216" y2="562" stroke="#DD781C" stroke-width="2"/>
+<line x1="145" y1="584" x2="216" y2="584" stroke="#DDA71C" stroke-width="2"/>
+<line x1="150" y1="603" x2="216" y2="603" stroke="#71DD1C" stroke-width="2"/>
+<line x1="143" y1="625" x2="216" y2="625" stroke="#1CDD97" stroke-width="2"/>
+<text fill="#1A1B1C" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="31.3926" y="544.531">Call to Action</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="31.457" y="565.531">Address</tspan></text>
+<text fill="#1A1B1C" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="31.4121" y="586.531">Reviews and Hours</tspan></text>
+<text fill="#1A1B1C" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="31.166" y="607.531">Accessibility Options</tspan></text>
+<text fill="#1A1B1C" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="31.3574" y="628.531">Accessibility Rating</tspan></text>
+<defs>
+<clipPath id="clip0_1768_2975">
+<rect width="250" height="28" fill="white" transform="translate(24 141)"/>
+</clipPath>
+<clipPath id="clip1_1768_2975">
+<rect width="8" height="8" fill="white" transform="translate(146.5 358)"/>
+</clipPath>
+<clipPath id="clip2_1768_2975">
+<rect x="24" y="670" width="250" height="28" fill="white"/>
+</clipPath>
+<clipPath id="clip3_1768_2975">
+<rect width="8" height="8" fill="white" transform="translate(146.5 887)"/>
+</clipPath>
+</defs>
+</svg>

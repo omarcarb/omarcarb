@@ -77,6 +77,7 @@ li{
     
     transition: opacity 250ms ease-in-out, transform 350ms ease-in-out;
 }
+/* Animation transition. Applied after intersection observer crosses element*/
 .section-crossed{
     display:flex;
     flex-direction: column;
@@ -603,6 +604,17 @@ form{
     text-align: left;
     margin: 1rem 0rem;
 }
+.role-list{
+    display: flex;
+    flex-direction: column;
+
+}
+.role-list__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
 .subtext{
     margin: .5rem 0rem;
     width: 80%;
@@ -612,7 +624,7 @@ form{
     display: grid;
     grid-template-columns: repeat(2,50%);
     justify-content: center;
-    align-items: center;
+    place-items: center;
     margin: 2rem;
     row-gap: 4rem;
     columns: 3rem;
@@ -634,6 +646,7 @@ form{
 }
 .ui-images p{
     font-size: var(--fontsizeParargraph);
+    text-align: center;
     height: 80px;
     width: 80%;
 }
@@ -685,9 +698,9 @@ form{
     row-gap: 2rem;
 }
 .learned-list{
-    list-style: circle;
+    list-style:decimal;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .learned-list li{
     height: auto;
@@ -730,46 +743,7 @@ form{
     width: 100%;
     object-fit: cover;
 }
-.bottom-form{
-    flex-direction: column;
-    justify-content: space-between;
-    place-items: center;
-    background-color: hsl(103, 80%, 85%);
-    padding: 2rem 5rem;
-}
-.profile-pic-div{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-.profile-pic{
-    max-width: 64px;
-    max-height: 64px;
-    aspect-ratio: 1;
-    border-radius: 50px;
-}
-.button__resume{
-    display: flex;
-    justify-content: center;
-    background-color: var(--primaryAccentColor);
-    padding: 1rem;
-    color: hsla(101, 89%, 93%, 0.8);
-    font-weight: 500;
-}
-.profile-text{
-    color: var(--backgroundColor);
-}
-.name-bottom-form{
-    margin: 0;
-    font-weight: 600;
-}
-.subtitle-bottom-form{
-    margin: 4px;
-}
+
 .project-image{
     width: 60px;
     height: 60px;
@@ -778,7 +752,16 @@ form{
     width: 20ch;
     font-size: var(--fontsizeParargraph);
 }
-
+@keyframes loading-animation{
+    from{
+        opacity: 0;
+        transform: translateY(9rem);
+    }
+    to{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
 /*-------------------------------------
         Media Queries
 ----------------------------------------*/
@@ -809,7 +792,7 @@ form{
         transform: scaleX(1);
     }
 }
-@media screen and  (max-width: 480px){
+@media screen and  (max-width: 672px){
     .primary-navigation{
         --menu-color: rgb(136, 199, 59);
         --button-background: rgb(254, 255, 252);
@@ -858,7 +841,7 @@ form{
         display: none;
     }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 672px) {
     #grid-projects{
         padding: 3rem 3rem;
     }
@@ -899,7 +882,7 @@ form{
         display: none;
     }
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 672px) {
     html{
         font-size: 12px;
     }
@@ -1012,15 +995,5 @@ form{
     }
     .other-works-box{
         max-width: 90%;
-    }
-}
-@keyframes loading-animation{
-    from{
-        opacity: 0;
-        transform: translateY(9rem);
-    }
-    to{
-        opacity: 100%;
-        transform: translateY(0);
     }
 }

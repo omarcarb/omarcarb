@@ -11,31 +11,53 @@
     <title>WeatherLerts</title>
 </head>
 <body>
-    <header >
+    <header>
+        <!---Logo and Subtitle-->
         <div class = "logo">
             <a class = "home-link" href = "index.html">
                 <h1 id = "name">Omar Carbajal</h1>
                 <h2 id = "title">UI/UX Designer</h2>
             </a>
         </div>
+        <!--Might need to find better logo later-->
 
+        <!--Hamburger menu controls. Will hide when screen size is below a set amount (672px)-->
         <button class = "mobile-toggle" aria-controls ="primary-navigation" aria-expanded ="false">
             <span class = "sr-only">Menu</span>
         </button>
         <nav>
             <ul id = "primary-navigation" data-visible = "false" class="primary-navigation flex">
+                <!--Resume Button-->
                 <li class ="nav-button">
                     <a class = "nav-button__text" href = "#.html">Resume</a>
                 </li>
+                
+                <!--Project Dropdown Menu-->
+                <li class="nav-button" id = "dropdown-menu">
+                    <a href="#" class="nav-button__text">Projects<img src="assests/svg/down-arrow.svg" width="12px" height = "12px"></a>
+                    <div class = "dropdown">
+                        <ul>
+                            <li class="dropdown-list-items"><a href = "weatherlerts.html" style: color = "black">WeatherLerts</a></li>
+                            <li class="dropdown-list-items"><a href = "free_roam.html" style: color = "black">Free Roam</a></li>
+                            <li class="dropdown-list-items"><a href = "shelter_finds.html" style: color = "black">Shelter Finds</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!--About Button-->
                 <li class = "nav-button">
                     <a class = "nav-button__text" href = #about>About</a>
                 </li>
+
+                <!--Contact Button-->
                 <li class = "nav-button__filled">
                     <a class = "nav-button__dark">Contact Me</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <!--Pop-up Contact Form-->
     <dialog class = "pop-up">
         <div class="form-section__header">
             <h1 class = "form-header">Get in Touch</h1>
@@ -44,11 +66,12 @@
         <form class = "form" action = "https://formsubmit.co/omarcarb34@duck.com" method = "POST">
             <!---Honeypot-->
             <input type="text" name = "some-dude" style = "display: none">
-            
+            <!---Honeypot End-->
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_subject" value="New Visitor!">
             <input type="hidden" name="_template" value="table">
 
+            <!--Outside Links-->
             <div class="form-section__links">
                 <h2>Find me Here</h2>
                 <div class="form-section__link-div">
@@ -57,6 +80,8 @@
                     <a href=""><img src="assests/svg/behance.svg" alt="" width="32px" height="32px"></a>
                 </div>
             </div>
+
+            <!--Contact Section-->
             <h2>Or Send Me a Message</h2>
             <div class = "form-section__input">
                 <label for = "full-name" class = "required">Full Name</label>
@@ -91,15 +116,15 @@
     <main class = "section" id = "project-page">
         <h1 class = section-header>Overview</h1>
         <h2 class="subheading">Project Summary</h2>
-            <p class="subtext">Weatherlerts is a mobile app project. It's designed to deliver early warning alerts to the user of any upcoming disasters. The project time was between August 2022 and September 2022.</p>
+            <p class="subtext">Free Roam is a mobile app project. It's designed with the sole purpose of providing easy access to para-transit services and information about accessibility service at any destination. The project time was between July 2022 and August 2022.</p>
         <h2 class="subheading">Problem That Needs To Be Solved</h2>
-            <p class="subtext">Resources for notifying people of upcoming weather alerts are scarce and often unreliable. As cable news viewership declines, people have less awareness of dangerous weather events. </p>
+            <p class="subtext">The elderly and people with mobility disadvantages have trouble finding places to travel to that accomedate their every need. Even worse, they have no proper way of getting there since most apps heavily focus on able bodied people. The problem is the lack of accessibiltity to such services that bring para-transit service and information about a locations accessibility service in the palm of their hand. </p>
         <h2 class="subheading">The Solution</h2>
-            <p class="subtext">Design an app that delivers up to date notifications of upcoming weather  events. It must also provide real time information for users about the local weather. And for the cherry on top, it must provide local resources, such as aide and emergency lines.</p>
+            <p class="subtext">Create an app that allows for users to select any destination and order any means of transportation to get there as well as preview a locations accessibility services for easier planning.</p>
     </main>
     <main class="section" id = "project-page">
         <h1 class="section-header">Process to Product</h1>
-        <p class="subtext">I made some assumptions when going into this project. I was aware  that users wanted quick and easy access to the information that was most  relevant to them. I also assumed most users would prefer to view it through their mobile devices. As such, I went with a mobile  first design philosophy to better allow for smaller screens. This would allow me to provide  things like pop-up notifications or alerts. </p>
+        <p class="subtext">I ran into the first challenge when designing this app. I am an able bodied person and I have no clue what the experience of a person with limited mobility is like. As such, I had to reach out to friends and family who have experienced or are currently expereincing issues with their mobility. <br> Here is the process I went though. </p>
         <h2 class = "subheading">Process</h2>
         <div class="grid-image">
             <div class="ui-images">
@@ -107,7 +132,7 @@
                     <img src="assests/svg/ui-images/research-icon.svg" alt="" width="64px" height="64px">
                 </div>
                 <h2>Research</h2>
-                <p>Find out how the competition solves this problem, if they have solved it at all.</p>
+                <p>Engage with people who currently have issues with mobility and how they travel.</p>
             </div>
             <div class="ui-images">
                 <div class = "thumbnail-image">
@@ -119,7 +144,7 @@
             <div class="ui-images">
                 <img src="assests/svg/ui-images/test-icon.svg" alt="" class = "thumbnail-image">
                 <h2>Testing</h2>
-                <p>See if the ideas work in practice and keep testing until it works</p>
+                <p>Conduct a series of test with a wide variety of background and disabilities to get as much feedback.</p>
             </div>
             <div class="ui-images">
                 <img src="assests/svg/ui-images/design-icon.svg" alt="" class = "thumbnail-image">
@@ -130,7 +155,7 @@
     </main>
     <section class = "section" id = "project-page">
         <h1 class="section-header">Ideation</h1>
-        <p class="subtext">I wanted the app to look as neatly organized as possible to reduced information clutter while still delivering all the relevant information needed in any weather app.<br>Several design choices I made during the ideation phase were made with the idea that most people wanted their weather alerts first before they receive any general weather information</p>
+        <p class="subtext">To make the process of ordering para transport as simple and hassle free as possible, I thought of a simple 5 page ordering process allowing for quick and easy access to a variety of travel options.</p>
         <div class = "image-div">
             <img loading = "lazy" 
             src="assests/png/free-roam/ideation-phase.png" alt="image of early sketches" class = "section" id = "project-images">
@@ -139,46 +164,80 @@
     <main class="section" id="project-page">
         <h1 class="section-header">Design</h1>
         <h2 class="subheading">Laying the Foundation</h2>
-        <p class="subtext">I went with a modern minimalism look to the app since I wanted to convey as much information as possible without creating too much visual noise. I went through several iterations before settling with a soft blue color pallete on an 8 point grid set-up and a Roboto font to display the information.</p>
+        <p class="subtext">It has been proven that dark mode is much easier on the eyes and allows for greater accessibility than using a light background. As such, I came to the decision to make the entire app designed soley in a dark mode aesthetic. </p>
     </main>
     <main class= "section" id = "image-container">
         <h1 class = "image-title">Colors</h1>
-        <img loading = "lazy" 
-        src="assests/svg/free-roam/colors.svg" alt="color pallete of the product" class = "section" id = "svg-images">
-        <h1 class = "image-title">Grid and Heirarchy</h1>
-        <img loading = "lazy" 
-        src="assests/svg/free-roam/grid-hierarchy-layout.svg" alt="layout and heirarchy of the design" class = "section" id = "svg-images">
-        <h1 class = "image-title">Icons</h1>
-        <img loading = "lazy" 
-        src="assests/svg/free-roam/icons.svg" alt="icons used in the page" class = "section" id = "svg-images">
-        <h1 class = "image-title">Components</h1>
-        <img loading = "lazy" 
-        src="assests/svg/free-roam/components.svg" alt="icons used in the page" class = "section" id = "svg-images">
-</main>
-<main class="section" id = "project-page">
-    <h1 class="section-header">Testing and Layout</h1>
-    <h2 class="subheading">Layout</h2>
-    <p class="subtext">Unlike my other projects, I went with a linear flow for this project since there is an end goal I want the user to reach. Simplifying the process will make it users, especially elderly users, to better understand where they are in the process of their journey</p>
-    <img src="assests/svg/free-roam/user-journey.svg" alt="image of the user user flow" class="section" id="project-images">
-    <h2 class="subheading">Results</h2>
-    <p class="subtext">I measured success based on the time on a task the user spent. Here we see that the first iteration of the app lead to longer times than later iterations.</p>
-    <img src = # alt="" class="section" id="project-images">
-</main>
+            <picture>
+                <source media = "(max-width:672px)" srcset = "assests/svg/free-roam/mobile-images/colors-mobile.svg">
+                <img loading = "lazy" src="assests/svg/free-roam/colors.svg" alt="color pallete of the product" class = "section" id = "project-images">
+            </picture>
+            
+            <h1 class = "image-title">Grid and Heirarchy</h1>
+            <picture>
+                <source media = "(max-width:672px)" srcset = "assests/svg/free-roam/mobile-images/grid-hierarchy-layout-mobile.svg">
+                <img loading = "lazy" src="assests/svg/free-roam/grid-hierarchy-layout.svg" alt="layout and heirarchy of the design" class = "section" id = "project-images">
+            </picture>
+            
+            <h1 class = "image-title">Icons</h1>
+            <picture>
+                <source media = "(max-width:672px)" srcset = "assests/svg/free-roam/mobile-images/icons-mobile.svg">
+                <img loading = "lazy" src="assests/svg/free-roam/icons.svg" alt="icons used in the page" class = "section" id = "project-images">
+            </picture>
+
+            <h1 class = "image-title">Components</h1>
+            <picture>
+                <source media="(max-width:672px)" srcset="assests/svg/free-roam/mobile-images/components-mobile.svg">
+                <img loading = "lazy" src="assests/svg/free-roam/components.svg" alt="icons used in the page" class = "section" id = "project-images">
+            </picture>
+    </main>
+    <main class="section" id = "project-page">
+        <h1 class="section-header">Testing</h1>
+        <h2 class="subheading">Results</h2>
+        <p class="subtext">I measured success based on the time on a task the user spent. Here we see that the first iteration of the app lead to longer times than later iterations.</p>
+        <picture>
+            <source media = "(max-width: 672px)" srcset="">
+            <img src="#" alt="image of results taken">
+        </picture>
+        <img src = # alt="" class="section" id="project-images">
+    </main>
     <main class="section" id = "project-page">
         <h1 class = "section-header">Final Product</h1>
         <div class = "image-div">
-            <img loading = "lazy" src="assests/png/free-roam/example-1.png" alt="example image" class = "section" id = "project-images">
-            <img loading = "lazy" src="assests/png/free-roam/example-2.png" alt="example image" class = "section" id = "project-images">
-            <img loading = "lazy" src="assests/png/free-roam/example-3.png" alt="example image" class = "section" id = "project-images">
-            <img loading = "lazy" src="assests/png/free-roam/example-4.png" alt="example image" class = "section" id = "project-images">
+            <picture>
+                <source media = "(max-width:672px)" srcset ="assests/png/free-roam/mobile-images/example-1-mobile.png">
+                <img loading = "lazy" src = "assests/png/free-roam/example-1.png" alt="example image" class = "section" id = "project-images">
+            </picture>
+            <picture>
+                <source media = "(max-width:672px)" srcset ="assests/png/free-roam/mobile-images/example-2-mobile.png">
+                <img loading = "lazy" src = "assests/png/free-roam/example-2.png" alt="example image" class = "section" id = "project-images">
+            </picture>
+            <picture>
+                <source media = "(max-width:672px)" srcset ="assests/png/free-roam/mobile-images/example-3-mobile.png">
+                <img loading = "lazy" src = "assests/png/free-roam/example-3.png" alt="example image" class = "section" id = "project-images">
+            </picture>
+            <picture>
+                <source media = "(max-width:672px)" srcset ="assests/png/free-roam/mobile-images/example-4-mobile.png">
+                <img loading = "lazy" src = "assests/png/free-roam/example-4.png" alt="example image" class = "section" id = "project-images">
+            </picture>
         </div>
     </main>
     <main class="section" id = "project-page">
         <h1 class="section-header">What I have Learned</h1>
+        
         <ul class="learned-list">
-            <li class = "list-subtext"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta.</p></li>
-            <li class = "list-subtext"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta.</p></li>
-            <li class = "list-subtext"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta.</p></li>
+            <li class = "list-subtext">
+                <p>Dark mode is probably the best choice for easier accessibility since it allows those with vision problems to better see the content.</p>
+            </li>
+            <li class = "list-subtext">
+                <p>Users prefer the results to be more personal as many have complained that no relevant information was being shown. Maybe in a future iteration, I could implenent more personalized search results.</p>
+            </li>
+            <li class = "list-subtext">
+                <p>Streamlining processes such as ordering a ride should be priority number 1, especially when it involves accessibility. The more streamlined the proccess, the higher the conversion rate. </p>
+            </li>
+            <li class="list-subtext">
+                <p>Due to the unrelenting amount of user research I had to conduct, it gave me better insight on how to design around ones disabilities, which I will definitely put to use in future projects. </p>
+            </li>
         </ul>
     </main>
     <main class="section">
@@ -200,36 +259,6 @@
             </a>
         </div> 
     </main>
-    <main class="bottom-form flex">
-        <div>
-            <div class = "profile-pic-div">
-                <img src="assests/png/placeholder.png" alt= "image of omar carbajal" class="profile-pic">
-                <div class = "profile-text">
-                    <h2 class = "name-bottom-form">Omar Carbajal</h2>
-                    <p class = "subtitle-bottom-form">UI/UX Designer</p>
-                </div>
-            </div>
-            <div>
-                <a href = "#.html" class = "button__resume"><img src = "">Resume</a>
-            </div>
-        </div>
-        <div class = "contact-div">
-            <h2 class = "contact-link__heading">Find Me Here</h2>
-            <div class = "contact-link">
-                <a class= "contact-links__link" href = "#.html">
-                    <img src = "assests/svg/linkedin.svg">
-                    <p>LinkedIn</p>
-                </a>
-                <a class = "contact-links__link" href = "#.html">
-                    <img src = "assests/svg/dribbble.svg">
-                    <p>Dribbble</p>
-                </a>
-                <a class = "contact-links__link" href = "#.html">
-                    <img src = "assests/svg/behance.svg">
-                    <p>Behance</p>
-                </a>
-            </div>
-        </div>
-    </main>
+
 </body>
 </html>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="807" viewBox="0 0 300 807">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.493" cy="1" r="1.122" gradientTransform="translate(-0.797 1.493) rotate(-90) scale(1 1.29)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6666b5"/>
+      <stop offset="0.51" stop-color="#996ccc"/>
+      <stop offset="1" stop-color="#a6a6c9"/>
+    </radialGradient>
+    <clipPath id="clip-colors-mobile">
+      <rect width="300" height="807"/>
+    </clipPath>
+  </defs>
+  <g id="colors-mobile" clip-path="url(#clip-colors-mobile)">
+    <rect width="300" height="807" fill="rgba(255,255,255,0)"/>
+    <text id="Primary" transform="translate(94 57)" font-size="32" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Primary</tspan></text>
+    <rect id="Rectangle_205" data-name="Rectangle 205" width="250" height="217" rx="3" transform="translate(25 72)" fill="url(#radial-gradient)"/>
+    <text id="_7C68BF" data-name="#7C68BF" transform="translate(109 272)" fill="#fff" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#7C68BF</tspan></text>
+    <text id="_A49DCA" data-name="#A49DCA" transform="translate(107 106)" fill="#fff" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#A49DCA</tspan></text>
+    <rect id="Rectangle_206" data-name="Rectangle 206" width="115" height="125" rx="3" transform="translate(25 365)" fill="#a399ca"/>
+    <text id="_A399CA" data-name="#A399CA" transform="translate(38 479)" fill="#fff" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#A399CA</tspan></text>
+    <rect id="Rectangle_207" data-name="Rectangle 207" width="115" height="125" rx="3" transform="translate(160 365)" fill="#6c66b8"/>
+    <text id="_6C66B8" data-name="#6C66B8" transform="translate(176 479)" fill="#fff" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#6C66B8</tspan></text>
+    <text id="Other_Colors" data-name="Other Colors" transform="translate(61 347)" font-size="32" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Other Colors</tspan></text>
+    <rect id="Rectangle_210" data-name="Rectangle 210" width="115" height="125" rx="3" transform="translate(25 506)" fill="#f1faff"/>
+    <text id="_6C66B8-2" data-name="#6C66B8" transform="translate(39 622)" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#6C66B8</tspan></text>
+    <rect id="Rectangle_211" data-name="Rectangle 211" width="115" height="125" rx="3" transform="translate(160 506)" fill="#e35d5d"/>
+    <text id="_E35D5D" data-name="#E35D5D" transform="translate(176 622)" fill="#fff" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#E35D5D</tspan></text>
+    <rect id="Rectangle_208" data-name="Rectangle 208" width="115" height="125" rx="3" transform="translate(25 647)" fill="#66c"/>
+    <rect id="Rectangle_209" data-name="Rectangle 209" width="115" height="125" rx="3" transform="translate(160 647)" fill="#69c"/>
+    <text id="_6699CC" data-name="#6699CC" transform="translate(177 761)" fill="#fff" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#6699CC</tspan></text>
+    <text id="_6666CC" data-name="#6666CC" transform="translate(39 761)" fill="#fff" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">#6666CC</tspan></text>
+  </g>
+</svg>
