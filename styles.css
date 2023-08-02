@@ -303,6 +303,12 @@ form{
     padding: 1rem 3rem;
     border: none;
     font-size: 1rem;
+
+    transition: transform 200ms ease-in-out;
+}
+.form-button:hover{
+    cursor: pointer;
+    transform: scale(1.10);
 }
 #cancel{
     background-color: hsl(101, 33%, 87%);
@@ -313,6 +319,9 @@ form{
     background-color: var(--primaryColor);
     font-weight: 700;
     color: rgb(229, 243, 231);
+}
+#submit:hover{
+    background-color: hsl(87, 100%, 23%);
 }
 
 
