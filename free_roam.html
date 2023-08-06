@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherLerts</title>
+    <title>Free Roam</title>
 </head>
 <body>
     <header>
@@ -29,7 +29,7 @@
             <ul id = "primary-navigation" data-visible = "false" class="primary-navigation flex">
                 <!--Resume Button-->
                 <li class ="nav-button">
-                    <a class = "nav-button__text" href = "#.html">Resume</a>
+                    <a class = "nav-button__text" href = "assests/download-files/resume.jpg" download = "resume">Resume</a>
                 </li>
                 
                 <!--Project Dropdown Menu-->
@@ -120,20 +120,38 @@
                     <p class="subtext">Free Roam is an app with the sole purpose of providing easy access to para-transit service and information about accessibility service at any destination. The project took place between June and July of 2023</p>
                 <h2 class="subheading">Problem That Needs To Be Solved</h2>
                     <p class="subtext">Finding a place that can provide proper accomodations for a disabled person's needs is difficult, even in this age of easy access to information. The problems that need to be addressed are: </p>
-                        <ul style="list-style: circle;">
-                            <li>Not enough services providing alternative modes of transport.</li>
-                            <li>Locations not providing information about their accomodation services.</li>
-                            <li>As a result, most elderly and people with disabilities have trouble traveling around town.</li>
-                        </ul>
+                    <span style="width: 75%; margin: 1rem 0rem;">
+                        <div class="results-item">
+                            <div class = list-number>1</div>
+                            <p>Not enough services providing alternative modes of transport.</p>
+                        </div>
+                        <div class="results-item">
+                            <div class="list-number">2</div>
+                            <p>Locations not providing information about their accomodation services.</p>
+                        </div>
+                        <div class="results-item">
+                            <div class = "list-number">3</div>
+                            <p>As a result, most elderly and people with disabilities have trouble traveling around town.</p>
+                        </div>
+                    </span>   
             </div>
             <div class="overview-box__item">
                 <h2 class="subheading">The Solution</h2>
                     <p class="subtext">Design an app that helps the elderly and people with mobility issues to help them move around. The app must:</p>
-                        <ul style="list-style: circle;">
-                            <li>Provide alternative modes of transport for everyone</li>
-                            <li>List out all information of a location's accomodation services.</li>
-                            <li>The app must be accessible to people of all physical abilities and ages.</li>
-                        </ul>
+                    <span style="width: 75%; margin: 1rem 0rem;">
+                        <div class="results-item">
+                            <div class = list-number>1</div>
+                            <p>Provide alternative modes of transport for everyone</p>
+                        </div>
+                        <div class="results-item">
+                            <div class="list-number">2</div>
+                            <p>List out all information of a location's accomodation services.</p>
+                        </div>
+                        <div class="results-item">
+                            <div class = "list-number">3</div>
+                            <p>The app must be accessible to people of all physical abilities and ages.</p>
+                        </div>
+                    </span>
                 <h2 class="subheading">My Role</h2>
                     <p class="subtext">Wireframing, Prototyping, Ideating, Research</p>
                 </div>
@@ -141,8 +159,8 @@
     </main>
     <main class="section" id = "project-page">
         <h1 class="section-header">Process to Product</h1>
-        <p class="subtext">I ran into the first challenge when designing this app. I am an able bodied person and I have no clue what the experience of a person with limited mobility is like. As such, I had to reach out to friends and family who have experienced or are currently expereincing issues with their mobility. <br> Here is the process I went though. </p>
-        <h2 class = "subheading">Process</h2>
+        <p class="subtext">I ran into the first challenge when designing this app. I am an able bodied person and I have no clue what the experience of a person with limited mobility is like. As such, I had to reach out to friends and family who have experienced or are currently expereincing issues with their mobility. 
+            <br><br><br> <strong>Here is the process I went though: </strong></p>
         <div class="grid-image">
             <div class="ui-images">
                 <div class="thumbnail-image">
@@ -183,8 +201,27 @@
     <main class="section" id = "project-page">
         <h1 class="section-header">Testing</h1>
         <h2 class="subheading">Results</h2>
-        <p class="subtext">I measured success based on the time on a task the user spent. Here we see that the first iteration of the app lead to longer times than later iterations.</p>
-            <img src="assests/png/free-roam/findings.png" alt="image of results taken" style="width: 100%; align-items: center;">
+        <p class="subtext">I measured success based on the time on a task the user spent. Findings for the study can be summarized as such:</p>
+        <span style="width: 75%; margin: 1rem 0rem;">
+            <div class="results-item">
+                <div class = list-number>1</div>
+                <p>Users were frustrated as to why the home screen wasn't the map screen</p>
+            </div>
+            <div class="results-item">
+                <div class="list-number">2</div>
+                <p>Button layouts were confusing.</p>
+            </div>
+            <div class="results-item">
+                <div class = "list-number">3</div>
+                <p>Information was not shared properly.</p>
+            </div>
+            <div class="results-item">
+                <div class = "list-number">4</div>
+                <p>Visually impaired individuals had a tough time navigating.</p>
+            </div>
+        </span>
+        <h2 class="subheading">What to Do</h2>
+        <p class="subtext">I needed to make an app that had as little hurdles to the end goal as possible. I got rid of the home screen entirely as it was not needed, and moved a few buttons around to make them easier to spot.</p>
     </main>
     <main class="section" id="project-page">
         <h1 class="section-header">Design</h1>
@@ -241,37 +278,58 @@
         <h1 class="section-header">Results and Takeaways</h1>
         <p class="subtext">Participants have overall expressed satisfaction over the recent changes made to the app, as they have found it significantly easier to use and better to navigate. A big plus was that I have made it incredibly accessible to people with vision impairments, which accounts for a large chunk of the elderly population. </p>
         <p class="subtext">Some things that I took away from completing this project are:</p>
-        <ul class="learned-list">
-            <li class = "list-subtext">
+        <span style="width: 75%; margin: 1rem 0rem;">
+            <div class="results-item">
+                <div class = list-number>1</div>
                 <p><strong>Dark mode is probably the best choice for easier accessibility.</strong> It allows those with vision problems to better see the content.</p>
-            </li>
-            <li class = "list-subtext">
+            </div>
+            <div class="results-item">
+                <div class="list-number">2</div>
                 <p><strong>Users prefer the results to be more personal.</strong> Many have complained that no relevant information was being shown. Maybe in a future iteration, I could implenent more personalized search results.</p>
-            </li>
-            <li class = "list-subtext">
-                <p><strong>Streamlining processes, such as ordering a ride, should be priority number 1.</strong> The more streamlined the proccess, the higher the conversion rate. </p>
-            </li>
-        </ul>
+            </div>
+            <div class="results-item">
+                <div class = "list-number">3</div>
+                <p><strong>Streamlining processes, such as ordering a ride, should be priority number 1.</strong> The more streamlined the proccess, the higher the conversion rate.</p>
+            </div>
+        </span>
+        <h2 class="subheading">In Conclusion</h2>
+            <p class="subtext">An app like this is absolutley neccessary, especially for people who struggle to get around as much as others. In all the interviews I have conducted, many have expressed desire for an application that would allow them to travel their hometown a lot easier. This could potentially lead to more accessible travel in the future.</p>
     </main>
-    <main class="section">
-        <h1 class="section-header">Other Works to Look at</h1>
-        <div class = "other-works">
-            <a href = "free_roam.html" class="other-works-box flex">
+    <main class="section" id = "other-works">
+        <h1>Check out my other projects</h1>
+        <div class = "other-works__divider">
+            <a href = "weatherlerts.html" class="other-works__item">
                 <div class = "img-preview">
                     <img loading = "lazy" 
-                    src="assests/png/placeholder.png" alt="preview image of the project">
+                    src="assests/png/mockup-images/weatherlerts-mockup.png" alt="preview image of the project">
                 </div>
-                <p class="project-description-small-form">Free Roam.</p>
+                <p>WeatherLerts</p>
             </a>
-            <a href="shelter_finds.html" class="other-works-box flex">
+            <a href="shelter_finds.html" class="other-works__item">
                 <div class = "img-preview">
                     <img loading = "lazy" 
-                    src="assests/png/placeholder.png" alt="preview image of the project">
+                    src="assests/png/mockup-images/shelter-finds-mockup.png" alt="preview image of the project">
                 </div>
-                <p class="project-description-small-form" >Shelter Finds</p>
+                <p>Shelter Finds</p>
             </a>
         </div> 
     </main>
-
+    <div class="footer">
+        <div class="name-and-title">
+            <h1 style="letter-spacing: .25rem;">Omar Carbajal</h1>
+            <p>UI/UX Designer</p>
+        </div>
+        <div class="short-paragraph">
+            <p>I am committed to making the best looking and functional designs for your next project. If you are interested in working together, don't hessitate to get in contact so we can make great projects together.</p>
+        </div>
+        <div class="outside-links">
+            <h2 style="font-weight: 600;">Follow Me</h2>
+            <div class="outside-links__icons">
+                <a href=""><img src="assests/svg/behance.svg" alt="Behance link"></a>
+                <a href=""><img src="assests/svg/linkedin.svg" alt="Linkedin link"></a>
+                <a href=""><img src="assests/svg/dribbble.svg" alt="Dribbble link"></a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
