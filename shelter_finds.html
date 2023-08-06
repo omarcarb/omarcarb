@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherLerts</title>
+    <title>Shelter Finds</title>
 </head>
     <body>
         <header >
@@ -25,7 +25,7 @@
             <nav>
                 <ul id = "primary-navigation" data-visible = "false" class="primary-navigation flex">
                     <li class ="nav-button">
-                        <a class = "nav-button__text" href = "#.html">Resume</a>
+                        <a class = "nav-button__text" href = "assests/download-files/resume.jpg" download = "resume">Resume</a>
                     </li>
                     <li class="nav-button" id = "dropdown-menu">
                         <a href="#" class="nav-button__text">Projects<img src="assests/svg/down-arrow.svg" width="12px" height = "12px"></a>
@@ -105,20 +105,34 @@
                         <p class="subtext">Shelter Finds is a website that searches for rental properties for people with different types of preferences, including people who look to own a house some day. The project time was between November and December of 2022.</p>
                     <h2 class="subheading">Problem That Needs To Be Solved</h2>
                         <p class="subtext">Weather seems like an easy problem to tackle but there are several things that need to be considered first:</p>
-                            <ul style="list-style: circle;">
-                                <li>News viewership is down across the board as alternative media sources take their place</li>
-                                <li>Weather is constantly changing and people hate weatherpeople who are wrong</li>
-                                <li>People want weather information on locations outside their current one.</li>
-                            </ul>
+                        <span style="width: 75%; margin: 1rem 0rem;">
+                            <div class="results-item">
+                                <div class = list-number>1</div>
+                                <p>Search for properties in the immediate area or properties in other locations.</p>
+                            </div>
+                            <div class="results-item">
+                                <div class="list-number">2</div>
+                                <p>List qualities people in the area generally look for.</p>
+                            </div>
+                        </span>
                 </div>
                 <div class="overview-box__item">
                     <h2 class="subheading">The Solution</h2>
                         <p class="subtext">Design an app that delivers up to date notifications of weather events. The app must:</p>
-                            <ul style="list-style: circle;">
-                                <li>Provide up to date weather alerts, both big and small, directly to the user.</li>
-                                <li>Show news stories related to their locations weather</li>
-                                <li>Allow users to pick and choose which locations to focus on.</li>
-                            </ul>
+                        <span style="width: 75%; margin: 1rem 0rem;">
+                            <div class="results-item">
+                                <div class = list-number>1</div>
+                                <p>Search for properties in the immediate area or properties in other locations.</p>
+                            </div>
+                            <div class="results-item">
+                                <div class="list-number">2</div>
+                                <p>List qualities people in the area generally look for.</p>
+                            </div>
+                            <div class="results-item">
+                                <div class = "list-number">3</div>
+                                <p>Narrow the search results with filters (such as allowing pets in the rental property).</p>
+                            </div>
+                        </span>    
                     <h2 class="subheading">My Role</h2>
                         <p class="subtext">Wireframing, Prototyping, Ideating, Research</p>
                     </div>
@@ -127,9 +141,20 @@
         <main class="section" id = "project-page">
             <h1 class="section-header">Process to Product</h1>
             <p class="subtext">Most rental websites follow a simple 3 step formula for getting the  property the user wants. </p>
-            <p class = "subtext">1. Search for properties in the immediate area.</p>
-            <p class = "subtext">2. List qualities people in the area generally look for.</p>
-            <p class = "subtext">3. Narrow the search results with filters (such as allowing pets in the rental property).</p>
+            <span style="width: 75%; margin: 1rem 0rem;">
+                <div class="results-item">
+                    <div class = list-number>1</div>
+                    <p>Search for properties in the immediate area or properties in other locations.</p>
+                </div>
+                <div class="results-item">
+                    <div class="list-number">2</div>
+                    <p>List qualities people in the area generally look for.</p>
+                </div>
+                <div class="results-item">
+                    <div class = "list-number">3</div>
+                    <p>Narrow the search results with filters (such as allowing pets in the rental property).</p>
+                </div>
+            </span>
             <p class="subtext">To deliver what the users would want, I had to come up with a way for users navigate the website. This also needs to accomplished while providing a wide variety of properties.</p>
             <p class = "subtext"> To accomplish this goal, I followed this methodology:</p>
             <div class="grid-image">
@@ -168,6 +193,31 @@
             </picture>
 
         </section>
+        <main class="section" id = "project-page">
+            <h1 class="section-header">Testing</h1>
+            <h2 class="subheading">Results</h2>
+            <p class="subtext">I measured success based on the time on a task the user spent. Findings for the study can be summarized as such:</p>
+            <span style="width: 75%; margin: 1rem 0rem;">
+                <div class="results-item">
+                    <div class = list-number>1</div>
+                    <p>Many users were confused when it came down to the navigation of the website.</p>
+                </div>
+                <div class="results-item">
+                    <div class="list-number">2</div>
+                    <p>Button layouts were confusing.</p>
+                </div>
+                <div class="results-item">
+                    <div class = "list-number">3</div>
+                    <p>Users wondered why there was only the ability to choose rental units, such as apartments or house, but not alternative rentals, such as container homes.</p>
+                </div>
+                <div class="results-item">
+                    <div class = "list-number">4</div>
+                    <p>Some users pointed out that the a lot of the information provided by the websites was unnecessary.</p>
+                </div>
+            </span>
+            <h2 class="subheading">What to Do</h2>
+            <p class="subtext">Users seemed to prefer less information on screen than more. Thus, the plan moving foward was to find a way to provide as many options to users without overloading their visual stimuli. I went back and revised the design to be more minimalist.</p>
+        </main>
         <main class="section" id="project-page">
             <h1 class="section-header">Design</h1>
             <h2 class="subheading">Laying the Foundation</h2>
@@ -200,16 +250,6 @@
                 </picture>
         </main>
         <main class="section" id = "project-page">
-            <h1 class="section-header">Testing</h1>
-            <h2 class="subheading">Results</h2>
-            <p class="subtext">I measured success based on the time on a task the user spent. Here we see that the first iteration of the app lead to longer times than later iterations.</p>
-            <picture>
-                <source media = "(max-width: 672px)" srcset="">
-                <img src="#" alt="image of results taken">
-            </picture>
-            <img src = # alt="" class="section" id="project-images">
-        </main>
-        <main class="section" id = "project-page">
             <h1 class = "section-header">Final Product</h1>
                 <picture>
                     <source media = "(max-width:520px)" srcset ="assests/png/shelter-finds/mobile-images/home-screen-mobile.png">
@@ -225,32 +265,63 @@
                     <source media = "(max-width:520px)" srcset ="assests/png/shelter-finds/mobile-images/rental-property-page-mobile.png">
                     <img loading = "lazy" src = "assests/png/shelter-finds/rental-property-page.png" alt="example image" class = "section" id = "project-images">
                 </picture>
-        <main class="section" id = "project-page">
-            <h1 class="section-header">What I have Learned</h1>
-            <ul class="learned-list">
-                <li class = "list-subtext"><p>People overwhelmingly seem to prefer properties close to family than having a unique home.</p></li>
-                <li class = "list-subtext"><p>Gradient designs are really liked by many people but do present a challenge to those that are slightly visually impaired.</p></li>
-                <li class = "list-subtext"><p>Having a lot of filters can be overwhelming to some users. Many prefered having the filters hidden over having them all visible while scrolling.</p></li>
-            </ul>
         </main>
-        <main class="section">
-            <h1 class="section-header">Other Works to Look at</h1>
-            <div class = "other-works">
-                <a href = "free_roam.html" class="other-works-box flex">
+        <main class="section" id = "project-page">
+            <h1 class="section-header">Results and Takeaways</h1>
+            <p class="subtext">Participants impressions on the website improved by a substantial margin. Many calling the website easy to use and colorful to look at. However, all participants have expressed doubts about using the website for their personal searches, which is understandable. Despite this I have learned plenty from this project.</p>
+            <p class="subtext">Some notable lessons include:</p>
+            <span style="width: 75%; margin: 1rem 0rem;">
+                <div class="results-item">
+                    <div class = list-number>1</div>
+                    <p><strong>Presenting to many choice to people can lead to low retention rate.</strong> As such, Its better to show few options </p>
+                </div>
+                <div class="results-item">
+                    <div class="list-number">2</div>
+                    <p><strong>Gradient designs are really liked by many people</strong> but do present a challenge to those that are slightly visually impaired.</p>
+                </div>
+                <div class="results-item">
+                    <div class = "list-number">3</div>
+                    <p><strong>Having a lot of filters can be overwhelming to some users.</strong> Many prefered having the filters hidden over having them all visible while scrolling.</p>
+                </div>
+            </span>
+            <h2 class="subheading">In Conclusion</h2>
+            <p class="subtext">While it isn't my best work so far, I do consider this project to be a significant stepping stone to my UI/UX journey. Even in failure, there was plenty to learn from the expereince of designing something different.</p>
+        </main>
+        <main class="section" id = "other-works">
+            <h1>Check out my other projects</h1>
+            <div class = "other-works__divider">
+                <a href = "free_roam.html" class="other-works__item">
                     <div class = "img-preview">
                         <img loading = "lazy" 
-                        src="assests/png/placeholder.png" alt="preview image of the project">
+                        src="assests/png/mockup-images/free-roam-mockup.png" alt="preview image of the project">
                     </div>
-                    <p class="project-description-small-form">Free Roam.</p>
+                    <p>Free Roam</p>
                 </a>
-                <a href="shelter_finds.html" class="other-works-box flex">
+                <a href="weatherlerts.html" class="other-works__item">
                     <div class = "img-preview">
                         <img loading = "lazy" 
-                        src="assests/png/placeholder.png" alt="preview image of the project">
+                        src="assests/png/mockup-images/weatherlerts-mockup.png" alt="preview image of the project">
                     </div>
-                    <p class="project-description-small-form" >Shelter Finds</p>
+                    <p>Weatherlerts</p>
                 </a>
             </div> 
         </main>
+        <div class="footer">
+            <div class="name-and-title">
+                <h1 style="letter-spacing: .25rem;">Omar Carbajal</h1>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="short-paragraph">
+                <p>I am committed to making the best looking and functional designs for your next project. If you are interested in working together, don't hessitate to get in contact so we can make great projects together.</p>
+            </div>
+            <div class="outside-links">
+                <h2 style="font-weight: 600;">Follow Me</h2>
+                <div class="outside-links__icons">
+                    <a href=""><img src="assests/svg/behance.svg" alt="Behance link"></a>
+                    <a href=""><img src="assests/svg/linkedin.svg" alt="Linkedin link"></a>
+                    <a href=""><img src="assests/svg/dribbble.svg" alt="Dribbble link"></a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

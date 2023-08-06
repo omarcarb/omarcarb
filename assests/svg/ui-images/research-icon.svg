@@ -1,7 +1,131 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg fill="#4e8807" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60.00 60.00" xml:space="preserve" width="80px" height="80px" stroke="#4e8807" transform="matrix(1, 0, 0, 1, 0, 0)">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24"/>
-<g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M53,12c0-0.1,0-0.2-0.1-0.3v-0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-11-11c-0.1-0.1-0.2-0.1-0.3-0.2h-0.1C41.2,0.1,41.1,0,41,0 l0,0H8C7.4,0,7,0.4,7,1v58c0,0.6,0.4,1,1,1h5h6h5h9h19c0.6,0,1-0.4,1-1V12L53,12z M49.6,11H42V3.4L49.6,11z M14,23h4v29h-4V23z M14.5,21l1.5-3.5l1.5,3.5H14.5z M14,58v-4h4v4H14z M25,58v-6h4v-2h-4v-6h4v-2h-4v-7h4v-2h-4v-6h4v-2h-4v-5h7v38H25z M34,58V19 c0-0.6-0.4-1-1-1h-9c-0.6,0-1,0.4-1,1v39h-3v-5V22c0-0.3-0.1-0.6-0.3-0.7l-2.8-6.6c-0.1-0.4-0.5-0.6-0.9-0.6s-0.7,0.2-0.9,0.6 l-2.8,6.6C12.1,21.5,12,21.7,12,22v31v5H9V2h31v10c0,0.6,0.4,1,1,1h10v45H34z"/> <rect x="12" y="5" width="8" height="2"/> <rect x="38" y="22" width="9" height="2"/> <rect x="38" y="27" width="9" height="2"/> <rect x="38" y="32" width="9" height="2"/> <rect x="38" y="37" width="9" height="2"/> <rect x="38" y="42" width="9" height="2"/> <rect x="38" y="47" width="9" height="2"/> <rect x="38" y="52" width="9" height="2"/> <rect x="12" y="9" width="16" height="2"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#4e8807"
+   version="1.1"
+   id="Capa_1"
+   viewBox="0 0 45.999996 60"
+   xml:space="preserve"
+   width="61.333328"
+   height="80"
+   stroke="#4e8807"
+   sodipodi:docname="research-icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs5600" /><sodipodi:namedview
+   id="namedview5598"
+   pagecolor="#505050"
+   bordercolor="#eeeeee"
+   borderopacity="1"
+   inkscape:showpageshadow="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#505050"
+   showgrid="false" />
+
+
+
+
+
+<g
+   id="SVGRepo_iconCarrier"
+   style="fill:#497da2;fill-opacity:1;stroke:none"
+   transform="translate(-7)"> <g
+   id="g5594"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> <g
+   id="g5562"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> <g
+   id="g5560"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> <path
+   d="m 53,12 c 0,-0.1 0,-0.2 -0.1,-0.3 v -0.1 c -0.1,-0.1 -0.1,-0.2 -0.2,-0.3 l -11,-11 C 41.6,0.2 41.5,0.2 41.4,0.1 H 41.3 C 41.2,0.1 41.1,0 41,0 V 0 H 8 C 7.4,0 7,0.4 7,1 v 58 c 0,0.6 0.4,1 1,1 h 5 6 5 9 19 c 0.6,0 1,-0.4 1,-1 z M 49.6,11 H 42 V 3.4 Z M 14,23 h 4 V 52 H 14 Z M 14.5,21 16,17.5 17.5,21 Z M 14,58 v -4 h 4 v 4 z m 11,0 v -6 h 4 v -2 h -4 v -6 h 4 v -2 h -4 v -7 h 4 v -2 h -4 v -6 h 4 v -2 h -4 v -5 h 7 v 38 z m 9,0 V 19 c 0,-0.6 -0.4,-1 -1,-1 h -9 c -0.6,0 -1,0.4 -1,1 V 58 H 20 V 53 22 c 0,-0.3 -0.1,-0.6 -0.3,-0.7 l -2.8,-6.6 c -0.1,-0.4 -0.5,-0.6 -0.9,-0.6 -0.4,0 -0.7,0.2 -0.9,0.6 l -2.8,6.6 C 12.1,21.5 12,21.7 12,22 v 31 5 H 9 V 2 h 31 v 10 c 0,0.6 0.4,1 1,1 h 10 v 45 z"
+   id="path5540"
+   style="fill:#497da2;fill-opacity:1;stroke:none" /> <rect
+   x="12"
+   y="5"
+   width="8"
+   height="2"
+   id="rect5542"
+   style="fill:#497da2;fill-opacity:1;stroke:none" /> <rect
+   x="38"
+   y="22"
+   width="9"
+   height="2"
+   id="rect5544"
+   style="fill:#497da2;fill-opacity:1;stroke:none" /> <rect
+   x="38"
+   y="27"
+   width="9"
+   height="2"
+   id="rect5546"
+   style="fill:#497da2;fill-opacity:1;stroke:none" /> <rect
+   x="38"
+   y="32"
+   width="9"
+   height="2"
+   id="rect5548"
+   style="fill:#497da2;fill-opacity:1;stroke:none" /> <rect
+   x="38"
+   y="37"
+   width="9"
+   height="2"
+   id="rect5550"
+   style="fill:#497da2;fill-opacity:1;stroke:none" /> <rect
+   x="38"
+   y="42"
+   width="9"
+   height="2"
+   id="rect5552"
+   style="fill:#497da2;fill-opacity:1;stroke:none" /> <rect
+   x="38"
+   y="47"
+   width="9"
+   height="2"
+   id="rect5554"
+   style="fill:#497da2;fill-opacity:1;stroke:none" /> <rect
+   x="38"
+   y="52"
+   width="9"
+   height="2"
+   id="rect5556"
+   style="fill:#497da2;fill-opacity:1;stroke:none" /> <rect
+   x="12"
+   y="9"
+   width="16"
+   height="2"
+   id="rect5558"
+   style="fill:#497da2;fill-opacity:1;stroke:none" /> </g> </g> <g
+   id="g5564"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5566"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5568"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5570"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5572"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5574"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5576"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5578"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5580"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5582"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5584"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5586"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5588"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5590"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> <g
+   id="g5592"
+   style="fill:#497da2;fill-opacity:1;stroke:none"> </g> </g> </g>
+
+</svg>

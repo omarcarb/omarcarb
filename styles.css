@@ -1,11 +1,9 @@
 :root{
-    --mainTextColor: #212c1b;
-    --backgroundColor: hsl(80, 100%, 99%);
-    --primaryColor: hsl(87, 56%, 51%);
-    --primaryAccentColor: hsl(87, 86%, 32%);
-    --neutralColor: hsl(87, 94%, 26%);
-    --secondaryColor: hsl(87, 90%, 28%);
-    --darkNeutral: hsl(0, 0%, 0%);
+    --mainTextColor: hsl(86, 45%, 10%);
+    --backgroundColor: hsl(90, 50%, 96%);
+    --primaryColor: hsl(176, 43%, 68%);
+    --secondaryColor: hsl(147, 47%, 85%);
+    --accentColor: hsl(205, 38%, 46%);
     --fontWeightH1: 700;
     --fontWeightH2: 400;
     --fontWeightP: 300;
@@ -60,33 +58,64 @@ p{
 }
 ul{
     list-style: none;
+    
 }
 li{
     padding: .5rem 1rem;
     font-size: var(--fontsizeParargraph);
+    list-style-position: inside;
+    justify-content: left;
 }
+
 .section{
     display:flex;
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    margin: 0rem auto;
-    border-radius: 8px;
+    margin: 2rem auto;
     opacity: 0;
     transform: translateY(4rem);
     
     transition: opacity 250ms ease-in-out, transform 350ms ease-in-out;
 }
-/* Animation transition. Applied after intersection observer crosses element*/
-.section-crossed{
-    display:flex;
+
+.footer{
+    display: flex;
     flex-direction: column;
-    justify-content: left;
+    margin: 3rem 5rem;
     align-items: center;
-    margin: 0rem auto;
-    border-radius: 8px;
-    animation: loading-animation 350ms ease-in-out;
 }
+.name-and-title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+}
+.name-and-title h1::after{
+    position: absolute;
+    content: '';
+    background-color: var(--primaryColor);
+    top: 50%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+.short-paragraph{
+    text-align: center;
+    max-width: 100ch;
+}
+.outside-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.outside-links__icons{
+    display: flex;
+    gap: 2rem;
+}
+/* Animation transition. Applied after intersection observer crosses element*/
+
 .section.animation{
     opacity: 1;
     transform: translateY(0);
@@ -97,11 +126,13 @@ Selector Classes
 
         /* header objects*/
 header{
-    --header-background: hsl(90, 5%, 100%);
-    --button-background: hsl(87, 56%, 51%);
-    --button-hover: hsl(87, 84%, 53%);
-    --text-color: hsl(98, 57%, 14%);
-    --text-color-inverse: hsl(0, 0%, 0%);
+    --header-background: var(--backgroundColor);
+    --button-background: var(--primaryColor);
+    --button-hover: var(--accentColor);
+    --text-color: var(--mainTextColor);
+    --button-text-color: hsl(0, 0%, 0%);
+    --button-text-color-hover:rgb(255, 255, 255);
+    --text-color-inverse: hsl(0, 0%, 100%);
     --menu-icon: url("assests/svg/color-menu.svg");
 
     z-index: 10001;
@@ -158,16 +189,15 @@ header{
 .nav-button:hover .nav-button__text:after{
     transform: scaleX(1);
 }
-.nav-button__filled{
+.nav-button__filled a{
     background-color: var(--button-background);
     padding: 1rem 2rem;
+    color: var(--button-text-color);
     transition: background-color 200ms ease-in;
 }
-.nav-button__filled a{
-    color: var(--text-color-inverse);
-}
-.nav-button__filled:hover{
+.nav-button__filled *:hover{
     background-color: var(--button-hover);
+    color: var(--button-text-color-hover);
 }
 .mobile-toggle{
     background-image: var(--menu-icon);
@@ -208,11 +238,9 @@ header{
     transform: translateY(80px);
 }
 .header-scrolled{
-    --header-background: hsl(103, 42%, 87%);
-    --button-background: hsl(87, 55%, 51%);
-    --button-hover: hsl(87, 99%, 30%);
+    --header-background: hsl(147, 47%, 85%);
     --text-color: hsl(103, 100%, 7%);
-    --text-color-inverse: hsl(114, 91%, 5%);
+    --text-color-inverse: hsl(0, 0%, 100%);
     --menu-icon: url("assests/svg/color-menu.svg");
     box-shadow: 0px 4px 24px hsla(0, 0%, 0%, 0.15);
 }
@@ -222,7 +250,7 @@ header{
     max-height: fit-content;
     border: none;
     border-radius: .25rem;
-    background-color: hsl(102, 89%, 93%);
+    background-color: var(--secondaryColor);
     padding: 1rem 2rem;
 }
 .pop-up::backdrop{
@@ -310,18 +338,14 @@ form{
     cursor: pointer;
     transform: scale(1.10);
 }
-#cancel{
-    background-color: hsl(101, 33%, 87%);
-    color: hsl(110, 7%, 34%);
-    font-weight: 700;
-}
 #submit{
     background-color: var(--primaryColor);
     font-weight: 700;
-    color: rgb(229, 243, 231);
+    color: var(--mainTextColor);
 }
 #submit:hover{
-    background-color: hsl(87, 100%, 23%);
+    background-color: var(--accentColor);
+    color: white;
 }
 
 
@@ -408,16 +432,16 @@ form{
     margin: 2rem 0rem;
 }
 #skills-heading::after{
-    --first-color: hsl(87, 100%, 23%);
-    --second-color: hsl(87, 95%, 32%);
-    --finalcolor: hsla(87, 84%, 47%, 0.836);
+    --first-color: var(--primaryColor);
+    --second-color: var(--accentColor);
+    --finalcolor: var(--secondaryColor);
     position: absolute;
     content: '';
     width: 100%;
-    height: 3px;
-    top: 100%;
+    height: 4px;
+    top: 130%;
     right: 0%;
-    border-radius: 4px;
+    border-radius: 8px;
     background: linear-gradient(
         to right,
         var(--first-color),
@@ -452,7 +476,7 @@ form{
 }
 .form-setion__page{
     width: 100%;
-    background-color: hsl(102, 89%, 93%);
+    background-color: var(--secondaryColor);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -475,49 +499,27 @@ form{
     align-items: flex-start;
 }
 .form-section__page-input label{
-    font-size: 1.15rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .15rem;
+    color: var(--mainTextColor);
 }
 .form-section__page-input input{
     width: 100%;
     height: 30px;
-    border: 2px solid hsla(103, 100%, 7%, 0.5);
+    border: none;
     border-radius: 3px;
     font-family: "Roboto";
     padding-left: 1rem;
 }
 .message-form-page{
     width: 100%;
-    border: 2px solid hsla(103, 100%, 7%, 0.5);
     border-radius: 3px;
 }
 .form-section__page-buttons{
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-}
-.contact-link__heading{
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: underline;
-}
-.contact-link{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 1rem;
-    place-items: center;
-}
-.contact-links__link{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 0;
-    max-height: 25px;
-}
-.contact-links__link img{
-    max-width: 24px;
-    max-height: 24px;
 }
 .hero-section{
     display: flex;
@@ -567,7 +569,7 @@ form{
     }
 }
 .hero-title >*{
-    color: white;
+    color:var(--mainTextColor);
 }
 .hero-title h1{
     position: relative;
@@ -581,7 +583,7 @@ form{
     height: 2px;
     border-radius: 3px;
     width: 100%;
-    background-color: white;
+    background-color: var(--mainTextColor);
 }
 .user-list{
     text-align: left;
@@ -644,23 +646,24 @@ form{
     justify-content: center;
     place-items: center;
     margin: 2rem;
-    row-gap: 4rem;
-    columns: 3rem;
+    row-gap: 5rem;
+    column-gap: 1rem;
 }
 .ui-images{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1.25rem 1rem;
+    padding: 1.25rem .75rem;
     height: 100%;
     max-width: 200px;
-    border: 4px solid rgba(99, 167, 3, 0.25);
+    border: 4px solid var(--accentColor);
     border-radius: 5px;
 }
 .ui-images h2{
     font-size: var(--fontsizerHeader2);
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: .25rem;
 }
 .ui-images p{
     font-size: var(--fontsizeParargraph);
@@ -723,48 +726,60 @@ form{
     text-align: left;
     max-width: 70ch;
 }
-.other-works{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;
-    row-gap: 1rem;
-    margin: 2rem 0rem;
+#other-works{
+    background-color: var(--secondaryColor);
+    padding: 3rem;
 }
-.other-works-heading{
-    text-align: left;
-    font-weight: 300;
-    font-size: var(--fontsizerHeader2);
-    color: var(--backgroundColor);
+#other-works h1{
+    margin-bottom: 3rem;
 }
-.other-works-box{
-    width: 90%;
-    max-height: 75px;
+.other-works__divider{
     display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.other-works__item{
+    display: flex;
+    flex-direction: row;
     justify-content: left;
     align-items: center;
-    gap: 1.25rem;
+    gap: .5rem;
     background-color: var(--backgroundColor);
-    box-shadow: 0px 4px 4px rgba(129, 129, 129, 0.3);
+    box-shadow: 0px 8px 10px rgba(129, 129, 129, 0.5);
+    max-height: 75px;
     overflow: hidden;
+    border-radius: 4px;
+}
+.other-works__item p{
+    color: var(--mainTextColor);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 2rem;
 }
 .img-preview{
-    height: 100%;
-    max-width: 40%;
+    height: auto;
+    max-width: 125px;
 }
 .img-preview img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
-.project-image{
-    width: 60px;
-    height: 60px;
+.results-item{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
 }
-.project-description-small-form{
-    width: 20ch;
-    font-size: var(--fontsizeParargraph);
+.list-number{
+    min-width: 32px; min-height: 32px;
+    background-color: var(--secondaryColor);
+    color: var(--mainTextColor);
+    display: flex;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
 }
 @keyframes loading-animation{
     from{
@@ -813,8 +828,8 @@ form{
 }
 @media screen and  (max-width: 672px){
     .primary-navigation{
-        --menu-color: rgb(136, 199, 59);
-        --button-background: rgb(254, 255, 252);
+        --menu-color: var(--secondaryColor);
+        --button-background: var(--primaryColor);
         position: fixed;
         gap: 3rem;
         inset: 0 0 0 40%;
@@ -886,6 +901,10 @@ form{
         padding: 2rem 1.5rem;
         background-color: white;
         width: 100%;
+    }
+    .other-works__divider{
+        flex-direction: row;
+        gap: 1rem;
     }
     #dropdown-menu:hover{
         margin-bottom: 0px;
@@ -973,7 +992,7 @@ form{
 }
 @media screen and (min-width: 1200px) {
     html{
-        font-size: 16px;
+        font-size: 14px;
     }
     header{
         padding: 1rem 3rem;
