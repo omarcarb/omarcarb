@@ -24,14 +24,21 @@
             </button>
             <nav>
                 <ul id = "primary-navigation" data-visible = "false" class="primary-navigation flex">
-                    <li class ="nav-button">
-                        <a class = "nav-button__text" href = "#.html">Resume</a>
+                    <li class="nav-button" id = "dropdown-menu">
+                        <a href="#" class="nav-button__text">Projects<img src="assests/svg/down-arrow.svg" width="12px" height = "12px"></a>
+                        <div class = "dropdown">
+                            <ul>
+                                <li class="dropdown-list-items"><a href = "weatherlerts.html" >WeatherLerts</a></li>
+                                <li class="dropdown-list-items"><a href = "free_roam.html">Free Roam</a></li>
+                                <li class="dropdown-list-items"><a href = "shelter_finds.html">Shelter Finds</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class = "nav-button">
-                        <a class = "nav-button__text" href = #about>About</a>
+                        <a class = "nav-button__text" href = "about.html">About</a>
                     </li>
                     <li class = "nav-button__filled">
-                        <a class = "nav-button__dark" href="contact.html">Contact Me</a>
+                        <a class = "nav-button__dark">Contact Me</a>
                     </li>
                 </ul>
             </nav>
@@ -80,6 +87,100 @@
                 </div>
             </form>
         </dialog>
-        
+        <div class="introduction">
+            <div class="about-image">
+                <img src="assests/png/placeholder.png" alt="image of omar carbajal">
+            </div>
+            <div class="about-text">
+                <h1>All About Me</h1>
+                <p>I am a user interface and user expereince designer with front-end development experience</p>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-section">
+                <h2>My Background</h2>
+                <p>Welcome! I'm a self-taught UI/UX designer with a strong grasp of front-end development - HTML, CSS, and JavaScript. Born in East Los Angeles and raised in South Gate, my journey has been defined by a passion for crafting engaging digital experiences.
+
+                    <br><br>I discovered my affinity for design and front-end development while studying at East Los Angeles College. The challenges of the 2020 pandemic only fueled my determination to improve my coding skills, further enhancing my capabilities.
+
+                    <br><br>Beyond the code and designs, I'm dedicated to forging connections between users and technology. Join me on this journey as I continue exploring the dynamic realm of design and development, blending innovation and creativity to shape tomorrow's digital landscape.</p>
+            </div>
+            <div class="about-section">
+                <h2>My Goals</h2>
+                <p>My goals are a blend of simplicity and ambition. At the forefront, I'm committed to crafting stunning and accessible designs that resonate with all users of my products. Alongside this, I aim to expand my expertise in computer science and design—whether it's UI or video game design—while continually elevating my skills as a designer.</p>
+            </div>
+            <div class="about-section">
+                    <h2>Why a UI/UX Designer?</h2>
+                    <p>The world of UI/UX design has held my passion since my teenage years, back when I used to contribute to crafting video game levels. The fascination of observing users interact with my creations and understanding their usage has been a guiding light throughout my journey.</p>
+            </div>
+            <div class="about-section">
+                <h2>My Interests</h2>
+                <div>
+                    <p>Aside from UI/UX design, I have a whole host of hobbies, including but not limited to</p>
+                    <div class = "interest-list-item">
+                        <img src="assests/svg/about/telescope.svg" alt="icon for ametuer astronomy">
+                        <p><strong>Ametuer Atronomy</strong></p>
+                    </div>
+                    <div class = "interest-list-item">
+                        <img src="assests/svg/about/gardening.svg" alt="icon for gardening">
+                        <p><strong>Gardening</strong></p>
+                    </div>
+                    <div class = "interest-list-item">
+                        <img src="assests/svg/about/technology.svg" alt="icon for technology">
+                        <p><strong>Tech Tinkering</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = form-setion__page>
+            <div>
+                <h1 class = "form-section__page-header">Let's Get Connected!</h1>
+            </div>
+            <form class = "form-section__page-form" action = "https://formsubmit.co/omarcarb34@duck.com" method = "POST">
+                <!---Honeypot-->
+                <input type="text" name = "some-dude" style = "display: none">
+                
+                <input type="hidden" name="_captcha" value = "false">
+                <input type="hidden" name="_subject" value = "New Visitor!">
+                <input type="hidden" name="_template" value="table">
+
+                <div class = "form-section__page-input">
+                    <label for = "full-name" class = "required">Full Name</label>
+                    <input type = "text" id = "full-name" name = "Full&nbsp;Name" placeholder="First and Last Name" required>
+                </div>
+                <div class = "form-section__page-input">
+                    <label for= "contact-email" class = "required">Email</label>
+                    <input type="email" id="contact-email" name = "Contact&nbsp;Email" placeholder="example@email.com" required>
+                </div>
+                <div class = "form-section__page-input">
+                    <label for= "phone">Phone Number</label>
+                    <input name = "phone" type = "tel" placeholder="(123)-456-7890"></textarea>
+                </div>
+                <div class = "form-section__page-input">
+                    <label for= "message" class = "required">Message</label>
+                    <textarea name = "Message" placeholder = "Send me a message." class = "message-form-page"required></textarea>
+                </div>
+                <div class = "form-section__page-buttons">
+                    <button class= "form-button" id = "submit">Submit</button>
+                </div> 
+            </form>
+        </div>
+        <div class="footer">
+            <div class="name-and-title">
+                <h1 style="letter-spacing: .25rem;">Omar Carbajal</h1>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="short-paragraph">
+                <p>I love crafting top-notch UI/UX designs that combine looks and functionality. I specialize in turning ideas into engaging digital experiences that put users first.</p>
+            </div>
+            <div class="outside-links">
+                <h2 style="font-weight: 600;">Follow Me</h2>
+                <div class="outside-links__icons">
+                    <a href="https://www.behance.net/omarcarbajal6"><img src="assests/svg/behance.svg" alt="Behance link"></a>
+                    <a href="www.linkedin.com/in/omar-carb03"><img src="assests/svg/linkedin.svg" alt="Linkedin link"></a>
+                    <a href="https://dribbble.com/omarcarb34"><img src="assests/svg/dribbble.svg" alt="Dribbble link"></a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

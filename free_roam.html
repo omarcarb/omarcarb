@@ -11,45 +11,32 @@
     <title>Free Roam</title>
 </head>
 <body>
-    <header>
-        <!---Logo and Subtitle-->
+    <header >
         <div class = "logo">
             <a class = "home-link" href = "index.html">
                 <h1 id = "name">Omar Carbajal</h1>
                 <h2 id = "title">UI/UX Designer</h2>
             </a>
         </div>
-        <!--Might need to find better logo later-->
 
-        <!--Hamburger menu controls. Will hide when screen size is below a set amount (672px)-->
         <button class = "mobile-toggle" aria-controls ="primary-navigation" aria-expanded ="false">
             <span class = "sr-only">Menu</span>
         </button>
         <nav>
             <ul id = "primary-navigation" data-visible = "false" class="primary-navigation flex">
-                <!--Resume Button-->
-                <li class ="nav-button">
-                    <a class = "nav-button__text" href = "assests/download-files/resume.jpg" download = "resume">Resume</a>
-                </li>
-                
-                <!--Project Dropdown Menu-->
                 <li class="nav-button" id = "dropdown-menu">
                     <a href="#" class="nav-button__text">Projects<img src="assests/svg/down-arrow.svg" width="12px" height = "12px"></a>
                     <div class = "dropdown">
                         <ul>
-                            <li class="dropdown-list-items"><a href = "weatherlerts.html" style: color = "black">WeatherLerts</a></li>
-                            <li class="dropdown-list-items"><a href = "free_roam.html" style: color = "black">Free Roam</a></li>
-                            <li class="dropdown-list-items"><a href = "shelter_finds.html" style: color = "black">Shelter Finds</a></li>
+                            <li class="dropdown-list-items"><a href = "weatherlerts.html" >WeatherLerts</a></li>
+                            <li class="dropdown-list-items"><a href = "free_roam.html">Free Roam</a></li>
+                            <li class="dropdown-list-items"><a href = "shelter_finds.html">Shelter Finds</a></li>
                         </ul>
                     </div>
                 </li>
-
-                <!--About Button-->
                 <li class = "nav-button">
-                    <a class = "nav-button__text" href = #about>About</a>
+                    <a class = "nav-button__text" href = "about.html">About</a>
                 </li>
-
-                <!--Contact Button-->
                 <li class = "nav-button__filled">
                     <a class = "nav-button__dark">Contact Me</a>
                 </li>
@@ -117,9 +104,9 @@
         <div class="overview-box">
             <div class="overview-box__item">
                 <h2 class="subheading">Project Summary</h2>
-                    <p class="subtext">Free Roam is an app with the sole purpose of providing easy access to para-transit service and information about accessibility service at any destination. The project took place between June and July of 2023</p>
+                    <p class="subtext">"Free Roam" is an app designed to make para-transit services and accessibility info readily available at any destination. This project spanned from June to July in 2023, aiming to enhance mobility and inclusiveness.</p>
                 <h2 class="subheading">Problem That Needs To Be Solved</h2>
-                    <p class="subtext">Finding a place that can provide proper accomodations for a disabled person's needs is difficult, even in this age of easy access to information. The problems that need to be addressed are: </p>
+                    <p class="subtext">Even in an age of easy information access, the struggle remains to find places and services that genuinely address the unique requirements of disabled individuals, including para-transit services. The problems that need to be addressed are: </p>
                     <span style="width: 75%; margin: 1rem 0rem;">
                         <div class="results-item">
                             <div class = list-number>1</div>
@@ -137,7 +124,7 @@
             </div>
             <div class="overview-box__item">
                 <h2 class="subheading">The Solution</h2>
-                    <p class="subtext">Design an app that helps the elderly and people with mobility issues to help them move around. The app must:</p>
+                    <p class="subtext">Create an application tailored to assist senior citizens and individuals facing mobility challenges in navigating their surroundings with ease. The app must:</p>
                     <span style="width: 75%; margin: 1rem 0rem;">
                         <div class="results-item">
                             <div class = list-number>1</div>
@@ -159,8 +146,9 @@
     </main>
     <main class="section" id = "project-page">
         <h1 class="section-header">Process to Product</h1>
-        <p class="subtext">I ran into the first challenge when designing this app. I am an able bodied person and I have no clue what the experience of a person with limited mobility is like. As such, I had to reach out to friends and family who have experienced or are currently expereincing issues with their mobility. 
-            <br><br><br> <strong>Here is the process I went though: </strong></p>
+        <p class="subtext">
+            While crafting the app, I faced my first challenge. Since I don't understand what it's like to have limited mobility, I reached out to friends and family who have experienced these issues to get their input.
+            <br><br><br> <strong>Here is the process I went though to solve this problem: </strong></p>
         <div class="grid-image">
             <div class="ui-images">
                 <div class="thumbnail-image">
@@ -190,7 +178,7 @@
     </main>
     <section class = "section" id = "project-page">
         <h1 class="section-header">Ideation</h1>
-        <p class="subtext">To make the process of ordering para-transit as simple and hassle free as possible, I thought of a simple 5 page ordering process allowing for quick and easy access to a variety of travel options.</p>
+        <p class="subtext">In order to streamline the para-transit ordering process and ensure simplicity and convenience, I conceptualized a straightforward five-page ordering system. This approach aims to facilitate rapid and effortless access to a range of travel choices.</p>
         <div class = "image-div">
             <picture>
                 <source media = "(max-width:672px)" srcset="assests/png/free-roam/mobile-images/ideation-phase-mobile.png">
@@ -201,7 +189,8 @@
     <main class="section" id = "project-page">
         <h1 class="section-header">Testing</h1>
         <h2 class="subheading">Results</h2>
-        <p class="subtext">I measured success based on the time on a task the user spent. Findings for the study can be summarized as such:</p>
+        <p class="subtext">
+            For gauging success, I utilized the time users spent on a task as a key metric. The study's outcomes can be encapsulated in the following summary:</p>
         <span style="width: 75%; margin: 1rem 0rem;">
             <div class="results-item">
                 <div class = list-number>1</div>
@@ -276,7 +265,7 @@
     </main>
     <main class="section" id = "project-page">
         <h1 class="section-header">Results and Takeaways</h1>
-        <p class="subtext">Participants have overall expressed satisfaction over the recent changes made to the app, as they have found it significantly easier to use and better to navigate. A big plus was that I have made it incredibly accessible to people with vision impairments, which accounts for a large chunk of the elderly population. </p>
+        <p class="subtext">The participants' feedback underscores a positive reception of the recent app enhancements. They have reported enhanced usability and improved navigation, marking a notable improvement. A standout achievement is the heightened accessibility for individuals with visual impairments, an important consideration for a substantial portion of the elderly demographic.</p>
         <p class="subtext">Some things that I took away from completing this project are:</p>
         <span style="width: 75%; margin: 1rem 0rem;">
             <div class="results-item">
@@ -293,7 +282,7 @@
             </div>
         </span>
         <h2 class="subheading">In Conclusion</h2>
-            <p class="subtext">An app like this is absolutley neccessary, especially for people who struggle to get around as much as others. In all the interviews I have conducted, many have expressed desire for an application that would allow them to travel their hometown a lot easier. This could potentially lead to more accessible travel in the future.</p>
+            <p class="subtext">An app like this is really important, especially for those who have more difficulty moving around. In the interviews I've done, many people have said they want an app that can help them navigate their hometown more easily. This could eventually make travel more accessible for everyone.</p>
     </main>
     <main class="section" id = "other-works">
         <h1>Check out my other projects</h1>
@@ -320,14 +309,14 @@
             <p>UI/UX Designer</p>
         </div>
         <div class="short-paragraph">
-            <p>I am committed to making the best looking and functional designs for your next project. If you are interested in working together, don't hessitate to get in contact so we can make great projects together.</p>
+            <p>I love crafting top-notch UI/UX designs that combine looks and functionality. I specialize in turning ideas into engaging digital experiences that put users first.</p>
         </div>
         <div class="outside-links">
             <h2 style="font-weight: 600;">Follow Me</h2>
             <div class="outside-links__icons">
-                <a href=""><img src="assests/svg/behance.svg" alt="Behance link"></a>
-                <a href=""><img src="assests/svg/linkedin.svg" alt="Linkedin link"></a>
-                <a href=""><img src="assests/svg/dribbble.svg" alt="Dribbble link"></a>
+                <a href="https://www.behance.net/omarcarbajal6"><img src="assests/svg/behance.svg" alt="Behance link"></a>
+                <a href="www.linkedin.com/in/omar-carb03"><img src="assests/svg/linkedin.svg" alt="Linkedin link"></a>
+                <a href="https://dribbble.com/omarcarb34"><img src="assests/svg/dribbble.svg" alt="Dribbble link"></a>
             </div>
         </div>
     </div>
