@@ -119,6 +119,8 @@ function enableScroll(){
     window.onscroll = function(){
     };
 }
+console.log(visibility);
+
 openModal.addEventListener('click', () => {
     modal.showModal();
 })
