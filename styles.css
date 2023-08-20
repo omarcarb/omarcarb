@@ -1,9 +1,9 @@
 :root{
     --mainTextColor: hsl(86, 45%, 10%);
     --backgroundColor: hsl(90, 50%, 96%);
-    --primaryColor: hsl(176, 43%, 68%);
+    --primaryColor: #8ad0cd;
     --secondaryColor: hsl(147, 47%, 85%);
-    --accentColor: hsl(205, 38%, 46%);
+    --accentColor: #497da2;
     --fontWeightH1: 700;
     --fontWeightH2: 400;
     --fontWeightP: 300;
@@ -66,7 +66,9 @@ li{
     list-style-position: inside;
     justify-content: left;
 }
-
+button{
+    border-radius: 8px;
+}
 .section{
     display:flex;
     flex-direction: column;
@@ -78,8 +80,7 @@ li{
     
     transition: opacity 250ms ease-in-out, transform 350ms ease-in-out;
 }
-
-.footer{
+footer{
     display: flex;
     flex-direction: column;
     margin: 3rem 5rem;
@@ -189,18 +190,20 @@ header{
 .nav-button:hover .nav-button__text:after{
     transform: scaleX(1);
 }
-.nav-button__filled a{
+.mobile-toggle{
+    background-image: var(--menu-icon);
+}
+.nav-button__button{
+    padding: 1rem 1.5rem;
+    border: none;
     background-color: var(--button-background);
     padding: 1rem 2rem;
     color: var(--button-text-color);
     transition: background-color 200ms ease-in;
 }
-.nav-button__filled *:hover{
+.nav-button__button:hover{
     background-color: var(--button-hover);
     color: var(--button-text-color-hover);
-}
-.mobile-toggle{
-    background-image: var(--menu-icon);
 }
 .dropdown{
     display: none;
@@ -258,6 +261,7 @@ header{
 }
 form{
     text-align: center;
+    border-radius: 8px;
 }
 .form-section__header{
     display: flex;
@@ -348,6 +352,44 @@ form{
     color: white;
 }
 
+.home-page-hero{
+    width: 100%;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.hero-image{
+    position: relative;
+}
+.hero-image img{
+    width: 100%;
+    min-height: 300px;
+    max-height: 500px;
+}
+.profile-image{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    left: 0; right: 0;
+    top: 0; bottom: 5%; 
+    margin-left: auto; margin-right: auto; 
+    margin-top: auto; margin-bottom: auto;
+    z-index: 2;
+}
+.hero-paragraph{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.322);
+    z-index: 4;
+    border-radius: 8px;
+}
+.hero-paragraph >*{
+    color: var(--backgroundColor);
+    text-align: center;
+}
+
+
 
         /*grid objects*/
 #grid-projects{
@@ -357,12 +399,11 @@ form{
     row-gap: 1rem;
     padding: 1rem;
     column-gap: 1rem ;
-    background-color: white;
-    border-radius: 3px;
 }
 .container{
     overflow: hidden ;
     position: relative;
+    border-radius: 8px;
     padding: 10rem 0rem 0rem 0rem;
     transition: transform 250ms ease-in, box-shadow 250ms ease-in;
 
@@ -472,6 +513,8 @@ form{
 }
 .skill-grid-item p{
     text-align: left;
+    font-weight: 500;
+    font-size: 1.25rem;
     width: 40%;
 }
 .form-setion__page{
@@ -783,17 +826,36 @@ form{
 }
 .introduction{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    width: 100%;
 }
+
 .about-image{
-    width: 90vw;
-    height: 70vh;
+    position: relative;
+    width: 100vw;
+    height: 50vh;
 }
 .about-image img{
     width: 100%;
     height: 100%;
+}
+.about-pic{
+    position: absolute;
+    max-width: 80%;
+    height: 100%;
+    inset: 0;
+    margin: auto;
+
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 2rem;
 }
 .about-text h1{
     font-weight: 900;
@@ -949,6 +1011,19 @@ form{
         box-shadow: 0px 0px 24px rgba(0 ,0 , 0, .45);
         height: auto;
     }
+    .hero-paragraph{
+        left: 5%;
+        top: 40%;
+    }
+    .hero-paragraph >*{
+        text-align: left;
+    }
+    .profile-image{
+        position: absolute;
+        width: 320px;
+        height: 400px;
+        left: 50%; 
+    }
     .dropdown-list-items{
         display: flex;
         justify-content: center;
@@ -1047,6 +1122,13 @@ form{
     .contact-div{
         display: block;
     }
+    .introduction{
+        flex-direction: row;
+    }
+    .about-pic{
+        width: 70%;
+        max-width: 400px;
+    }
 }
 @media screen and (min-width: 1200px) {
     html{
@@ -1064,6 +1146,17 @@ form{
     .project-button{
         margin: 1rem 0rem;
         font-size: var(--fontsizeParargraph);
+    }
+    .profile-image{
+        position: absolute;
+        width: 400px;
+        height: 450px;
+        left: 60%; 
+    }
+    .hero-paragraph{
+        position: absolute;
+        top: 35%;
+        left: 5%;
     }
     #grid-projects{
         grid-template-columns: repeat( 3, 1fr);
@@ -1092,5 +1185,9 @@ form{
     }
     .other-works-box{
         max-width: 90%;
+    }
+    .about-pic{
+        width: clamp(400px,45%,600px);
+        
     }
 }
