@@ -4,7 +4,7 @@ const homeLink = document.querySelector('.home-link');
 const matchResults = window.matchMedia("(max-width: 480px)");
 var thresholdValue = 1;
 const modal = document.querySelector('.pop-up');
-const openModal = document.querySelector('.nav-button__filled');
+const openModal = document.querySelector('.nav-button__button');
 const openContactForm = document.querySelector('.profile-button');
 const closeModal = document.querySelector('.close-button');
 
@@ -71,6 +71,7 @@ const appearOnScroll = new IntersectionObserver(function(
 faders.forEach(fader => {
     appearOnScroll.observe(fader)
 });
+
 const sectionOneObserver = new IntersectionObserver(function(
     entries, 
     sectionOneObserver
@@ -119,7 +120,6 @@ function enableScroll(){
     window.onscroll = function(){
     };
 }
-console.log(visibility);
 
 openModal.addEventListener('click', () => {
     modal.showModal();
