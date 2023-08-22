@@ -1,6 +1,6 @@
 :root{
     --mainTextColor: hsl(86, 45%, 10%);
-    --backgroundColor: hsl(90, 50%, 96%);
+    --backgroundColor: hsl(0, 0%, 99%);
     --primaryColor: #8ad0cd;
     --secondaryColor: hsl(147, 47%, 85%);
     --accentColor: #497da2;
@@ -830,25 +830,24 @@ form{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    width: 100%;
 }
-
 .about-image{
-    position: relative;
-    width: 100vw;
-    height: 50vh;
-}
-.about-image img{
     width: 100%;
+    height: clamp(200px,40vh,900px);
+    overflow: hidden;
+}
+.background-image{
+    max-width: 1080px;
+    min-width: 300px;
     height: 100%;
 }
-.about-pic{
+.about-profile-pic{
     position: absolute;
-    max-width: 80%;
-    height: 100%;
+    width: clamp(20px, 80%, 300px);
+    height: clamp(50px, 30%, 400px);
+    aspect-ratio: 1/1;
     inset: 0;
-    margin: auto;
-
+    margin: 5rem auto;
 }
 .about-text{
     display: flex;
@@ -1125,9 +1124,17 @@ form{
     .introduction{
         flex-direction: row;
     }
-    .about-pic{
-        width: 70%;
-        max-width: 400px;
+    .about-image{
+        height: clamp(400px, 70vh ,1000px);
+    }
+    .background-image{
+        width: 100%;
+    }
+    .about-profile-pic{
+        top: 10%;
+        left: -40%;
+        width: clamp(300px,50%,500px);
+        height: clamp(400px, 60%, 900px)
     }
 }
 @media screen and (min-width: 1200px) {
