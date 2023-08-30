@@ -116,6 +116,7 @@ footer{
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding-top: 2rem;
 }
 /* Animation transition. Applied after intersection observer crosses element*/
 
@@ -315,6 +316,11 @@ form{
     border-radius: var(--main-border-radius);
     margin-bottom: 1rem;
     font-size: 1rem;
+
+    transition: border-radius 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.form-section__input input:focus{
+    border-radius: 2px;
 }
 #message, textarea{
     height: 5rem;
@@ -411,6 +417,8 @@ form{
     position: relative;
     border-radius: var(--main-border-radius);
     padding: 10rem 0rem 0rem 0rem;
+    box-shadow: 0px 8px 12px 0px #0000007a;
+
     transition: transform 250ms ease-in, box-shadow 250ms ease-in;
 
 }
@@ -560,6 +568,11 @@ form{
     border-radius: var(--main-border-radius);
     font-family: "Roboto";
     padding-left: 1rem;
+
+    transition: border-radius 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.form-section__page-input input:focus{
+    border-radius: 2px;
 }
 .message-form-page{
     width: 100%;
@@ -1012,7 +1025,8 @@ form{
         display: none;
         position: absolute;
         flex-direction: column;
-        top: 160%;
+        top: 140%;
+        left: 60%;
         box-shadow: 0px 0px 24px rgba(0 ,0 , 0, .45);
         height: auto;
     }
