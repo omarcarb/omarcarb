@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="22.491341mm"
+   height="6.124402mm"
+   viewBox="0 0 22.491341 6.124402"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="8"
+     inkscape:cx="327.6875"
+     inkscape:cy="487.3125"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2">
+    <inkscape:grid
+       id="grid2"
+       units="px"
+       originx="-306.99688"
+       originy="-456.99621"
+       spacingx="0.26458333"
+       spacingy="0.26458334"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-81.226257,-120.91359)">
+    <g
+       id="g2">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.175px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.265112;paint-order:stroke fill markers"
+         x="82.17215"
+         y="124.45659"
+         id="text1"
+         inkscape:export-filename="logo.svg.svg"
+         inkscape:export-xdpi="265.43008"
+         inkscape:export-ydpi="265.43008"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.175px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.265112"
+           x="82.17215"
+           y="124.45659">Omar Carbajal</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:1.41111px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.265112;paint-order:stroke fill markers"
+         x="85.429344"
+         y="126.70657"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:1.41111px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.265112"
+           x="85.429344"
+           y="126.70657">Front End / UX Designer</tspan></text>
+      <rect
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.29322;stroke-linejoin:round;stroke-dasharray:31.0372, 1.29322;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="rect9"
+         width="3.6033564"
+         height="0.26481107"
+         x="81.226944"
+         y="126.20713" />
+      <rect
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.29863;stroke-linejoin:round;stroke-dasharray:31.1672, 1.29863;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="rect10"
+         width="3.6335921"
+         height="0.26481107"
+         x="100.08401"
+         y="126.17405" />
+      <rect
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.52794;stroke-linejoin:round;stroke-dasharray:36.6705, 1.52794;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="rect11"
+         width="5.030067"
+         height="0.26481107"
+         x="121.17712"
+         y="81.226257"
+         transform="matrix(0,1,1,0,0,0)" />
+      <rect
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.52747;stroke-linejoin:round;stroke-dasharray:36.6592, 1.52747;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="rect12"
+         width="5.0269666"
+         height="0.26481107"
+         x="121.14715"
+         y="103.45229"
+         transform="matrix(0,1,1,0,0,0)" />
+      <rect
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.23079;stroke-linejoin:round;stroke-dasharray:77.5389, 3.23079;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="rect13"
+         width="22.489513"
+         height="0.26481107"
+         x="81.226753"
+         y="120.91359" />
+    </g>
+  </g>
+</svg>

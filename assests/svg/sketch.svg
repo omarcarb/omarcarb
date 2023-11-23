@@ -1,33 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Sketch</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Sketch">
-            <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24">
-
-</rect>
-            <line x1="4" y1="10" x2="20" y2="10" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round">
-
-</line>
-            <line x1="6" y1="5" x2="18" y2="5" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round">
-
-</line>
-            <path d="M18,5 L20.638,9.39675 C20.8552,9.75863 20.8218,10.2179 20.5545,10.5445 L12.387,20.527 C12.1869,20.7715 11.8131,20.7715 11.613,20.527 L3.44549,10.5445 C3.17825,10.2179 3.14482,9.75863 3.36195,9.39675 L6,5" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round">
-
-</path>
-            <path d="M9,10 L11.5211,18.4036 C11.6636,18.8787 12.3364,18.8787 12.4789,18.4036 L15,10" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round">
-
-</path>
-            <path d="M9,10 L11.5713,5.71458 C11.7655,5.39091 12.2345,5.39091 12.4287,5.71458 L15,10" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round">
-
-</path>
-            <line x1="15" y1="10" x2="18" y2="5" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round">
-
-</line>
-            <line x1="9" y1="10" x2="6" y2="5" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round">
-
-</line>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.10908 4.79018L16 4L23.8909 4.79018L29.9999 12.558L16 27.9999L2 12.558L8.10908 4.79018Z" fill="#FDB300"/>
+<path d="M7.67063 12.5581L15.9999 28.0001L2 12.5581H7.67063ZM24.3294 12.5581L16.0001 28.0001L30 12.5581" fill="#EA6C00"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.6709 12.5581H24.3294L16.0002 28.0001" fill="#FDAD00"/>
+<path d="M16.0002 4L8.10928 4.79004L7.6709 12.5579L16.0002 4ZM16.0003 4L23.8912 4.79004L24.3296 12.5579" fill="#FDD231"/>
+<path d="M30 12.5579L23.891 4.79004L24.3294 12.5579H30ZM2 12.5579L8.10901 4.79004L7.67063 12.5579" fill="#FDAD00"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.0002 4L7.6709 12.5579H24.3294" fill="#FEEEB7"/>
 </svg>

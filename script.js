@@ -1,112 +1,86 @@
-const primaryNav = document.querySelector('.primary-navigation');
-const navToggle = document.querySelector('.mobile-toggle');
-const homeLink = document.querySelector('.home-link');
-const matchResults = window.matchMedia("(max-width: 480px)");
-var thresholdValue = 1;
-const modal = document.querySelector('.pop-up');
-const openModal = document.querySelector('.nav-button__button');
-const openContactForm = document.querySelector('.profile-button');
-const closeModal = document.querySelector('.close-button');
+// nav bar elements for mobile devices //
+const menuButton = document.querySelector(".mobile-toggle")
+const navigationElements = document.querySelector(".primary-navigation")
 
-const cancelButton = document.querySelector('#cancel');
-
-var path = window.location.pathname;
-var page = path.split("/").pop();
-console.log( page );
-
-var screenWidth = window.innerWidth;
-console.log(screenWidth);
-
-
-const landingImage = document.querySelector(".landing-image");
-
-window.onload = function(){
-    switch(page){
-        case "weatherlerts.html":
-            landingImage.src = "assests/png/weatherlerts/landing-image.png"; 
-        break;
-        case "free_roam.html":
-            landingImage.src = "assests/png/free-roam/landing-image.png";
-        break;
-        case "shelter_finds.html":
-            landingImage.src = "assests/png/shelter-finds/landing-image.png";
-        break;
-    }
-}
-if(matchResults == true){
-    thresholdValue = .2;
-}
-else{
-    thresholdValue = .5;
-}
-console.log(thresholdValue);
-const sectionOneOptions = {
-    threshold: thresholdValue,
-    rootMargin: '-25px 0px 20px 0px'
-};
-const header = document.querySelector("header");
-const sectionOne = document.querySelector("#section-crossed")
-const navIcon = document.querySelector(".mobile-toggle");
-
-const faders = document.querySelectorAll(".section");
-
-const appearOptions = {
-    rootMargin: '0px 0px -100px 0px'
-};
-const appearOnScroll = new IntersectionObserver(function(
-    entries, 
-    appearOnScroll
-    ){
-        entries.forEach(entry => {
-            if(!entry.isIntersecting){
-                return;
-            }
-            else{
-                entry.target.classList.add('animation');
-                appearOnScroll.unobserve(entry.target);
-            }
-        })
-    }, appearOptions);
-
-faders.forEach(fader => {
-    appearOnScroll.observe(fader)
-});
-
-const sectionOneObserver = new IntersectionObserver(function(
-    entries, 
-    sectionOneObserver
-    ) {
-        entries.forEach(entry => {
-                if(!entry.isIntersecting){
-                    header.classList.add("header-scrolled");
-                    navIcon.setAttribute('aria-expanded', true);
-                    navIcon.setAttribute("id", "menu-icon");
-                }
-                else{
-                    header.classList.remove("header-scrolled");
-                    navIcon.setAttribute('aria-expanded',false);
-                    navIcon.removeAttribute("id", "menu-icon");
-                }
-        })
-    }, sectionOneOptions)
-sectionOneObserver.observe(sectionOne);
-navToggle.onclick = function() {
-    const visibility = primaryNav.getAttribute('data-visible');
+menuButton.onclick = function() {
+    const visibility = navigationElements.getAttribute('data-visible');
     
     if(visibility === "false"){
-        primaryNav.setAttribute("data-visible", true);
-        navToggle.setAttribute('aria-expanded', true);
-        navIcon.setAttribute("id", "close-menu");
+        navigationElements.setAttribute("data-visible", true);
+        menuButton.setAttribute('aria-expanded', true);
         disableScroll();
     }
     else if(visibility === "true"){
-        primaryNav.setAttribute("data-visible", false);
-        navToggle.setAttribute('aria-expanded', false);
-        navIcon.removeAttribute("id", "close-menu")
-        
+        navigationElements.setAttribute("data-visible", false);
+        menuButton.setAttribute('aria-expanded', false);
         enableScroll();
     }
 };
+
+// for closing menu when clicking on contact button on mobile  //
+
+const contactButton = document.querySelector(".button__contact")
+
+contactButton.onclick = function(){
+    const visibility = navigationElements.getAttribute('data-visible');
+
+    if(visibility == "true"){
+        navigationElements.setAttribute("data-visible", false);
+        menuButton.setAttribute('aria-expanded', false);
+    }
+    else{
+        return;
+    }
+    console.log(visibility);
+}
+function validateForm() {
+    var fullName = document.getElementById("full-name").value;
+    var email = document.getElementById("contact-email").value;
+    if (fullName === "") {
+        return false; // Prevent form submission
+    }
+    if(email == ""){
+        return false;
+    } 
+}
+document.getElementById("formSubmit").addEventListener("click", function () {
+    if(validateForm() == false){
+        return;
+    }
+    else{
+        this.isDisabled = true;
+        // Make the text disappear after click
+        this.innerHTML = ' ';
+        // Add a spinner after click
+        this.innerHTML += '<span class="hidden" id="loader"></span>';
+        // Replace button text with the spinner
+        document.getElementById("loader").style.display = "inline-block"; // or set appropriate styles
+        // Simulate a delay (e.g., 3 seconds) before submitting the form
+        setTimeout(function () {
+        document.querySelector(".form-section__page-form").submit();
+        }, 3000); // 3000 milliseconds = 3 seconds
+    }
+});
+
+
+// for parallax scroll effect
+let background = document.getElementById("background");
+let foreground = document.getElementById("foreground");
+let foreground1 = document.getElementById("foreground1");
+let foreground2 = document.getElementById("foreground2");
+
+
+window.addEventListener("scroll", function(){
+    let value = window.scrollY;
+
+    foreground.style.top = value * .3 + 'px';
+    foreground1.style.top = value * .2 + 'px';
+    foreground2.style.top = value * .1 + 'px';
+    background.style.top = value * .08 + 'px';
+})
+
+console.log(window.innerWidth);
+
 function disableScroll(){
     scrollTop = window.scrollY || document.documentElement.scrollTop;
     scrollLeft = window.scrollX || document.documentElement.scrollLeft;
@@ -120,18 +94,3 @@ function enableScroll(){
     window.onscroll = function(){
     };
 }
-
-openModal.addEventListener('click', () => {
-    modal.showModal();
-})
-closeModal.addEventListener('click', () => {
-    modal.close();
-    console.log("closing box");
-})
-openContactForm.addEventListener('click', () => {
-    modal.showModal();
-})
-cancelButton.addEventListener('click', () => {
-    modal.close();
-    console.log("closing box");
-})
