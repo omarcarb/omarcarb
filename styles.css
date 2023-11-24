@@ -247,7 +247,7 @@ header{
     display: none;
     flex-direction: column;
     justify-content: center;
-    top: 85%;
+    top: 105%;
     left:-60%;
     min-width: 175px;
     box-shadow: var(--box-shadow-dark);
@@ -1039,6 +1039,9 @@ footer{
     }
     nav{
         position: absolute;
+    }
+    .dropdown__menu{
+        top: 200%;
     }
     .primary-navigation{
         position: fixed;
