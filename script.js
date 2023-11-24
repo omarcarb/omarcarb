@@ -44,7 +44,7 @@ function validateForm() {
     } 
 }
 document.getElementById("formSubmit").addEventListener("click", function () {
-    if(!validateForm() == true){
+    if(validateForm() == false){
         return;
     }
     this.isDisabled = true;
