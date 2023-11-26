@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5 {
 }
 :root{
     /*----colors-----*/
-    --background-color: #ebf6ff;
+    --background-color: #e3f2ff;
     --primary-color-100: #9bd0fc;
     --primary-color-300: #4340e6;
     --primary-color-500: #3378e0;
@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5 {
     --h3-text-color: hsla(221, 20%, 16%, 0.8);
     --p-text-color: hsla(221, 20%, 16%, 0.75);
     --secondary-text-color: rgba(0, 0, 0, 0.6);
+    --linear-gradient-color: linear-gradient(315deg, #e3f2fc, #c2e1fd);
     /*----measurments----*/
     --main-border-radius: .5rem;
     --input-border-radius: .5rem;
@@ -419,7 +420,7 @@ header{
     position: relative;
     border-radius: var(--main-border-radius);
     box-shadow: var(--default-box-shadow);
-    background: linear-gradient(315deg, #e3f2fc, #c2e1fd);
+    background: var(--linear-gradient-color);
 
     transition: transform 200ms ease-in, box-shadow 200ms ease-in;
 
@@ -504,7 +505,7 @@ header{
     overflow: hidden;
     /* ------nuemorphic shadows and highlights -------*/
     border-radius: var(--main-border-radius);
-    background: var(--background-color);
+    background: var(--linear-gradient-color);
     box-shadow:  8px 8px 16px #aeb4b9d2,
                 -8px -8px 16px #f0f5fd;
     
@@ -536,7 +537,7 @@ header{
     gap: 1rem;
     justify-content: center;
     border-radius: var(--main-border-radius);
-    background: #ebf6ff;
+    background: var(--linear-gradient-color);
     box-shadow:  8px 8px 16px #aeb4b9d2,
                  -8px -8px 16px #f0f5fd;
 }
@@ -557,7 +558,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #d9e3fa;
+        background-color: #ffffff;
         padding: .5rem 1.5rem;
         border-radius: 9rem;
         white-space: nowrap;
@@ -726,7 +727,7 @@ header{
         align-items: center;
         gap: .5rem;
         border-radius: var(--main-border-radius);
-        background: linear-gradient(145deg, #fbffff, #d4dde6);;
+        background: var(--linear-gradient-color);
         box-shadow: var(--box-shadow-dark);
         padding-bottom: 1rem;
     }
@@ -755,7 +756,7 @@ header{
     padding: 2rem 0rem;
 }
 .card{
-    background: linear-gradient(145deg, #d4dde6, #fbffff);
+    background: var(--linear-gradient-color);
     border-radius: var(--main-border-radius);
     padding: 1rem;
     display: flex;
@@ -879,6 +880,16 @@ header{
     & img{
         width: clamp(250px, 100%, 900px);
     }
+}
+#styles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+.styles__container{
+    padding: 16px;
+    background: var(--linear-gradient-color);
+    border-radius: var(--main-border-radius);
 }
 /* ---end of case study page styling----*/
 /*-------footer section--------*/
