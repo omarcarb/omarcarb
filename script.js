@@ -33,33 +33,6 @@ contactButton.onclick = function(){
     }
     console.log(visibility);
 }
-function validateForm() {
-    var fullName = document.getElementById("full-name").value;
-    var email = document.getElementById("contact-email").value;
-    if (fullName === "") {
-        return false; // Prevent form submission
-    }
-    if(email == ""){
-        return false;
-    } 
-}
-document.getElementById("formSubmit").addEventListener("click", function () {
-    if(!validateForm() == true){
-        return;
-    }
-    this.isDisabled = true;
-    // Make the text disappear after click
-    this.innerHTML = ' ';
-    // Add a spinner after click
-    this.innerHTML += '<span class="hidden" id="loader"></span>';
-    // Replace button text with the spinner
-    document.getElementById("loader").style.display = "inline-block"; // or set appropriate styles
-    // Simulate a delay (e.g., 3 seconds) before submitting the form
-    setTimeout(function () {
-    document.querySelector(".form-section__page-form").submit();
-    }, 3000); // 3000 milliseconds = 3 seconds
-});
-
 
 // for parallax scroll effect
 let background = document.getElementById("background");
