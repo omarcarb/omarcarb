@@ -503,9 +503,9 @@ header{
     overflow: hidden;
     /* ------nuemorphic shadows and highlights -------*/
     border-radius: var(--main-border-radius);
-    background: linear-gradient(145deg, #f3ffff, #ccdae6);;
-    box-shadow:  8px 8px 16px #aeb4b9d2,
-                -8px -8px 16px #f0f5fd;
+    background: #e3f2ff;
+    box-shadow:  20px 20px 60px #c1ced9,
+                -20px -20px 60px #ffffff;
     
     & .image-card__text{
         text-align: center;
@@ -520,7 +520,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 .list__skills{
     display: flex;
@@ -535,9 +535,9 @@ header{
     gap: 1rem;
     justify-content: center;
     border-radius: var(--main-border-radius);
-    background: linear-gradient(145deg, #f3ffff, #ccdae6);
-    box-shadow:  8px 8px 16px #aeb4b9d2,
-                 -8px -8px 16px #f0f5fd;
+    background: #e3f2ff;
+    box-shadow: 13px -13px 26px #c1ced9,
+    -13px 13px 26px #ffffff;
 }
 .items__list{
     display: flex;
@@ -557,6 +557,8 @@ header{
         justify-content: center;
         align-items: center;
         background-color: #ffffff;
+        box-shadow: 8px 8px 12px #aeb4b988,
+                    -8px -8px 12px #f0f5fd6c;
         padding: .5rem 1.5rem;
         border-radius: 9rem;
         white-space: nowrap;
@@ -927,6 +929,7 @@ footer{
         justify-content: center;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
     & .footer__bottom{
         display: flex;
