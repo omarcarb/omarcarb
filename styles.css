@@ -119,7 +119,7 @@ article{
 
 /* ---input variables--- */
 input[type = "text"], input[type="email"],input[type ="tel"], textarea{
-    padding: var(--input-padding);
+    padding:1rem;
     color: var(--main-text-color);
     border-radius: var(--main-border-radius);
     border: none;
@@ -131,12 +131,15 @@ input[type = "text"], input[type="email"],input[type ="tel"], textarea{
     transition: all 200ms ease-in;
 }
 label{
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
 }
 input::placeholder, textarea::placeholder{
-    color: rgba(0, 0, 0, 0.5);
-    font-weight: 500;
+    color: rgba(0, 0, 0, 0.719);
+    font-weight: 400;
+    font-size: 14px;
     font-family: 'Poppins';
+    font-style: italic;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type = "tel"]:focus, textarea:focus{
     border-radius: 0;
@@ -589,7 +592,7 @@ header{
 .contact-form{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     gap: 2rem;
     padding: 2rem 0rem;
 
