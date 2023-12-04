@@ -692,7 +692,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 8px;
-    min-width: 400px;
+    min-width: 200px;
     min-height: 200px;
 }
 .research__text{
