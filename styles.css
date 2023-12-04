@@ -31,8 +31,8 @@ h1, h2, h3, h4, h5 {
     --border-thickness: .5px;
     --input-padding: .5rem 1rem;
     /*----shadows----*/
-    --default-box-shadow: 8px 8px 16px #b1bdc7,
-                          -8px -8px 16px #ffffff;
+    --default-box-shadow: 20px 20px 60px #c1ced93f,
+                        -20px -20px 60px #ffffff31;
     --default-box-shadow-hover: -5px -5px 10px #b1bdc7,
                                 5px 5px 10px #ffffff;
     --button-box-shadow: -4px -4px 20px 0px #f1f5fd, 
@@ -294,7 +294,6 @@ header{
     margin: none;
 }
 .section__hero{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -378,7 +377,6 @@ header{
 }
 .phone__float{
     position: relative;
-    max-width: 100%;
     max-height: 50vh;
     animation: floating-up_objects 800ms cubic-bezier(0.075, 0.82, 0.165, 1), 4000ms floating-still_objects 800ms infinite ease-in-out;
 }
@@ -431,7 +429,7 @@ header{
 }
 .container:hover, .container:active{
     transform: scale(1.05);
-    box-shadow: var(--default-box-shadow-hover);
+
 }
 /* ---this changes the styling for the contents text ---*/
 .content-info{
@@ -594,13 +592,11 @@ header{
     padding: 2rem 0rem;
 
     & .form-section__page-buttons > *{
-        width: 100%;
         padding: none;
         margin: none;
     }
     & .input__top{
         display: flex;
-        width: 100%;
         gap: 2rem;
     }
     & .input__top .form-section__page-input{
@@ -610,7 +606,6 @@ header{
 .form-section__page-form{
     display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 1.75rem;
 }
 .form-section__page-input{
@@ -623,12 +618,6 @@ header{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-}
-.popup__header{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-    width: 100%;
 }
 /* ---end of index page styling ----*/
 /* ----everything in this section is primarily for case study pages ----*/
@@ -702,16 +691,12 @@ header{
     gap: .75rem;
     padding: 1rem 0rem;
 }
-#competition-header{
-    width: 100%;
-}
 #section__image-competition{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 24px;
-    width: 100%;
 }
 #grid-images{
     width: 100%;
@@ -720,7 +705,6 @@ header{
     column-gap: 1rem;
     row-gap: 1.5rem;
     padding: 1.5rem 0rem;
-
     & .app-image{
         display: flex;
         flex-direction: column;
@@ -749,6 +733,17 @@ header{
     display: flex;
     gap: 1rem;
 }
+#survey-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1.5rem;
+
+    & img {
+        max-width: 700px;
+    }
+}
 #comments{
     width: 100%;
     display: grid;
@@ -763,7 +758,6 @@ header{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
     & .card__header{
         display: flex;
         justify-content: left;
@@ -890,10 +884,10 @@ header{
 }
 .styles__container{
     padding: 16px;
-    background: var(--linear-gradient-color);
+    background: var(--background-color);
     border-radius: var(--main-border-radius);
-    box-shadow:  8px 8px 16px #b1bdc7,
-                -8px -8px 16px #ffffff;
+    box-shadow:  20px 20px 60px #c1ced9,
+                -20px -20px 60px #ffffff;
 }
 /* ---end of case study page styling----*/
 /*-------footer section--------*/
@@ -901,7 +895,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
+    align-items: center;
     padding: 2rem 4rem;
     gap: 2rem;
     text-align: center;
@@ -929,7 +923,6 @@ footer{
     }
     & .footer__middle{
         display: flex;
-        width: 100%;
         flex-direction: row;
         justify-content: center;
         justify-content: space-between;
@@ -979,7 +972,7 @@ footer{
         align-items: center;
         & .about-me__image-card{
             padding-bottom: 1.75rem;
-            width: 100%;
+            width: auto;
         }
         & .about-me__image-card img{
             width: 100%;
@@ -1017,18 +1010,6 @@ footer{
         font-size: 14px;
     }
     
-    dialog{
-        padding: 1.5rem;
-        width: clamp(300px, 80%, 600px);
-
-        & .popup__header{
-            width: 100%;
-        }
-
-        & .form-section__page-form{
-            width: 100%;
-        }
-    }
 
     section{
         padding: 2rem 1.5rem;
