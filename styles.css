@@ -24,17 +24,17 @@ h1, h2, h3, h4, h5 {
     --h3-text-color: hsla(221, 20%, 16%, 0.8);
     --p-text-color: hsla(221, 20%, 16%, 0.75);
     --secondary-text-color: rgba(0, 0, 0, 0.6);
-    --linear-gradient-color: linear-gradient(315deg, #e3f2fc, #c2e1fd);
+    --linear-gradient-color: linear-gradient(315deg, #f3ffff, #ccdae6);
     /*----measurments----*/
     --main-border-radius: .5rem;
     --input-border-radius: .5rem;
     --border-thickness: .5px;
     --input-padding: .5rem 1rem;
     /*----shadows----*/
-    --default-box-shadow: -5px -5px 24px #3a94dd,
-                          5px 5px 24px #b2efff;
-    --default-box-shadow-hover: -5px -5px 24px #6587a4,
-                                 5px 5px 24px #d1ffff;
+    --default-box-shadow: 8px 8px 16px #b1bdc7,
+                          -8px -8px 16px #ffffff;
+    --default-box-shadow-hover: -5px -5px 10px #b1bdc7,
+                                5px 5px 10px #ffffff;
     --button-box-shadow: -4px -4px 20px 0px #f1f5fd, 
                           4px 4px 16px 0px hsla(214, 88%, 44%, 0.9);
     --button-box-shadow-hover: -8px -8px 20px 0px #f1f5fd, 
