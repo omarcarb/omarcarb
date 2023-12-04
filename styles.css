@@ -114,7 +114,7 @@ section{
 }
 
 article{
-    max-width: 1160px;
+    max-width: 1200px;
 }
 
 /* ---input variables--- */
@@ -693,7 +693,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 8px;
-    min-width: 200px;
+    min-width: 400px;
     min-height: 200px;
 }
 .research__text{
@@ -1158,6 +1158,9 @@ footer{
     }
     #section__image-competition{
         flex-direction: column;
+    }
+    #image-chart{
+        min-width: 200px;
     }
     #initial-observations__image{
         display: none;
