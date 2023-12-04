@@ -505,7 +505,7 @@ header{
     overflow: hidden;
     /* ------nuemorphic shadows and highlights -------*/
     border-radius: var(--main-border-radius);
-    background: var(--linear-gradient-color);
+    background: linear-gradient(145deg, #f3ffff, #ccdae6);;
     box-shadow:  8px 8px 16px #aeb4b9d2,
                 -8px -8px 16px #f0f5fd;
     
@@ -537,7 +537,7 @@ header{
     gap: 1rem;
     justify-content: center;
     border-radius: var(--main-border-radius);
-    background: var(--linear-gradient-color);
+    background: linear-gradient(145deg, #f3ffff, #ccdae6);
     box-shadow:  8px 8px 16px #aeb4b9d2,
                  -8px -8px 16px #f0f5fd;
 }
@@ -573,6 +573,7 @@ header{
     & p{
         font-size: .75rem;
         text-align: center;
+        font-weight: 600;
     }
 }
 .list_item_vertical{
@@ -885,11 +886,14 @@ header{
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 1.5rem;
+    padding-block: 1.5rem;
 }
 .styles__container{
     padding: 16px;
     background: var(--linear-gradient-color);
     border-radius: var(--main-border-radius);
+    box-shadow:  8px 8px 16px #b1bdc7,
+                -8px -8px 16px #ffffff;
 }
 /* ---end of case study page styling----*/
 /*-------footer section--------*/
