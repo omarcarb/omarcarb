@@ -883,7 +883,7 @@ header{
 }
 #styles{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 .styles__container{
@@ -998,7 +998,7 @@ footer{
         font-size: 1.17rem; /* 18.72px */
     }
     h3{
-        font-size: 1rem; /* 16px */
+        font-size: 1.05rem; /* 16px */
     }
     h4{
         font-size: .83rem; /* 13.28px */
@@ -1215,6 +1215,9 @@ footer{
             flex-direction: column;
             gap: .5rem;
         }
+    }
+    #styles{
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
 }
 @media screen and (max-width: 510px) {
