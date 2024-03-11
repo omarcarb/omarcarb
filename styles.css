@@ -30,7 +30,7 @@ h2{
 }
 h3{
     font-size: var(--paragraphFontsize);
-    font-weight: 500;
+    font-weight: 400;
 }
 p{
     font-size: var(--paragraphFontsize);
@@ -75,17 +75,30 @@ button{
     & button{
         width: 50%;
         padding: 16px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
     }
 }
 .primary_button{
     background-color: var(--mainAccentColor);
     box-shadow: 8px 8px 16px hsla(229, 65%, 60%, 0.2),
                 -8px -8px 16px rgba(181, 189, 221, 0.2);
+    & img{
+        width: 20px;
+        height: 16px;
+    }
 }
 .secondary_button{
     background-color: var(--mainBackgroundColor);
     box-shadow: -8px -8px 16px rgba(61, 62, 70, 0.6),
                 8px 8px 16px #0F1012;
+    & img{
+        width: 16px; height: 16px;
+        position: relative;
+        top: -2px
+    }
 }
 #hero_section{
     display: flex;
@@ -97,6 +110,17 @@ button{
 }
 section{
     margin: 64px 0px;
+}
+.section_header{
+    margin-bottom: 48px;
+    & h2{
+        margin: 0px;
+    }
+    & h3{
+        margin: 0px;
+        color: #C8C8C8;
+        text-transform: capitalize;
+    }
 }
 .hero_text{
     width: 50%;
@@ -134,7 +158,10 @@ section{
     width: 48px; height: 48px;
     box-shadow: -8px -8px 16px rgba(61, 62, 70, 0.6),
                 8px 8px 16px #0F1012;
-                border-radius: 48px;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #project_grid{
     display: grid;
@@ -165,19 +192,21 @@ section{
         background-color: var(--mainAccentColor);
         width: -webkit-fill-available;
         margin: 0px 12px 12px 24px;
-        padding: 14px 0px;
+        padding: 14px 109px;
         box-shadow: 8px 8px 16px hsla(229, 65%, 60%, 0.2),
                     -8px -8px 16px rgba(181, 189, 221, 0.2);
     }
 }
 .project_tags{
     display: flex;
-    gap: 16px;
+    gap: 4px;
     & p{
         margin: 0px;
+        font-size: 12px;
         padding: 4px 18px;
         border-radius: 48px;
         background-color: var(--mainBackgroundColor);
+        color: #C0C0C0;
         box-shadow: -2px -2px 4px #3d3e4599,
                     2px 2px 4px #0F1012;
     }
