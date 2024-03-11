@@ -18,246 +18,119 @@
 </head>
 <body>
     <header>
-        <div class = "logo">
-            <a class = "home-link" href = "index.html">
-                <img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 36px;">
-            </a>
-        </div>
-
-        <button class = "mobile-toggle" aria-controls ="primary-navigation" aria-expanded ="false" id="menu-icon">
-            <span class = "sr-only">Navigation Menu</span>
-        </button>
+        <img src="assests/svg/logo.svg" alt="Omar Carbajal logo">
         <nav>
-            <ul id = "primary-navigation" data-visible = "false" class="primary-navigation">
-                <li class="nav__button" id = "dropdown-menu">
-                    <a href="#" class="nav__button--text dropdown__hover" role = "button">Projects<img src="assests/svg/down-arrow.svg" width="12px" height = "12px"></a>
-                    <div class = "dropdown__menu">
-                        <a href = "weatherlerts.html" role = "button">WeatherLerts</a>
-                        <a href = "free_roam.html" role = "button">Free Roam</a>
-                        <a href = "shelter_finds.html" role = "button">Shelter Finds</a>
-                    </div>
-                </li>
-                <li class = "nav__button">
-                    <a class = "nav__button--text" href = "about.html">About</a>
-                </li>
-                <li>
-                    <a class="button__contact" href="#contact-form"><button>Contact Me</button></a>
-                </li>
-            </ul>
+            <button class="menu_button">Work</button>
+            <button class="menu_button">About</button>
+            <button class="menu_button" id="button_selected">Contact</button>
         </nav>
     </header>
-    <!-- <dialog class = "popup">
-        <article>
-            <div class = "popup__header">
-                <h2 class = "form-section__page-header">Let's Get Connected!</h2>
-                <img src="assests/svg/x.svg" alt="" class = "close-popup">
-            </div>
-            <form class = "form-section__page-form" action = "https://formsubmit.co/omarcarb34@duck.com" method = "POST">
-                <input type="text" name = "some-dude" style = "display: none">
-                
-                <input type="hidden" name="_captcha" value = "false">
-                <input type="hidden" name="_subject" value = "New Visitor!">
-                <input type="hidden" name="_template" value="table">
-
-                <div class = "form-section__page-input">
-                    <label for = "full-name" class = "required">Full Name</label>
-                    <input type = "text" id = "full-name" name = "Full&nbsp;Name" placeholder="First and Last Name" required>
-                </div>
-                <div class = "form-section__page-input">
-                    <label for= "contact-email" class = "required">Email</label>
-                    <input type="email" id="contact-email" name = "Contact&nbsp;Email" placeholder="example@email.com" required>
-                </div>
-                <div class = "form-section__page-input">
-                    <label for= "phone">Phone Number</label>
-                    <input name = "phone" type = "tel" placeholder="(123)-456-7890"></textarea>
-                </div>
-                <div class = "form-section__page-input">
-                    <label for= "message" class = "required">Message</label>
-                    <textarea name = "Message" placeholder = "Send me a message." class = "message-form-page"required></textarea>
-                </div>
-                
-                <button class= "form-button" id = "submit">Submit</button>
-
-            </form>
-        </article>
-    </dialog> -->
     <main>
-        <section class = "hero">
-            <div class="parallax__background">
-                <img src="assests/svg/waves-foreground.svg" alt="" style="z-index: -1;" id="foreground">
-                <img src="assests/svg/waves-foreground-1.svg" alt="" style="z-index: -2;" id = "foreground1">
-                <img src="assests/svg/waves-foreground-2.svg" alt="" style="z-index: -3;" id = "foreground2">
-                <img src="assests/svg/waves-background-1.svg" alt="" style="z-index: -4;" id = "background">
+        <section id="hero_section">
+            <div class="hero_text">
+                <h1>Omar Carbajal</h1>
+                <h2>UI / UX Designer and Front-End Developer</h2>
+                <p>Crafting digital products that speaks your brand's language. From pixel-perfect design to seamless functionality, I bring your online vision to life with style and flair.</p>
+                <div id="button_container">
+                    <button class="primary_button"><img src="assests/svg/behance.svg" alt=""> Contact Me</button>
+                    <button class="secondary_button"><img src="assests/svg/behance.svg" alt="">Download CV</button>
+                </div>
+                <div id="contact_list" style = "display: flex; gap: 16px;">
+                    <p style="min-width: 103px; align-self: center; font-size: 16px;">Find Me Here</p>
+                    <div id="divider_line"></div>
+                    <div class="contact_icons" style = "display: flex; gap:17px">
+                    <div class="icon_text">
+                        <div class="icon_background">
+                            <img src="" alt="">
+                        </div>
+                        <p>Dribbble</p>
+                    </div>
+                    <div class="icon_text">
+                        <div class="icon_background">
+                            <img src="" alt="">
+                        </div>
+                        <p>Linkedin</p>
+                    </div>
+                    <div class="icon_text">
+                        <div class="icon_background">
+                            <img src="" alt="">
+                        </div>
+                        <p>Behance</p>
+                    </div>
+                    </div>
+                </div>
             </div>
-            <article class="section__hero">
-                <div class="hero__text">
-                    <div class="text__top">
-                        <h1>Omar Carbajal</h1>
-                        <p style = "font-weight: 900;">Web Developer and UI / UX Designer</p>
-                        <p>Fueled by a passion for crafting dynamic interfaces that ignite connections, every user interaction with a product becomes an immersive and unforgettable experience.</p>
-                        <div class="hero__buttons">
-                            <a href="#contact-form"><button>Contact Me</button></a>
-                            <button class="button__secondary">Download CV</button>
-                        </div>
-                    </div>
-                    <div class="hero__links">
-                        <h3>Let's Connect</h3>
-                        <div class = "hero__icons">
-                            <a href="https://www.behance.net/omarcarbajal6"><img src="assests/svg/behance-white.svg" alt="Behance link" width = "36px" height="36px"></a>
-                            <a href="https://www.linkedin.com/in/omar-carb03"><img src="assests/svg/linkedin-white.svg" alt="Linkedin link" width = "36px" height="36px"></a>
-                            <a href="https://dribbble.com/omarcarb34"><img src="assests/svg/dribbble-white.svg" alt="Dribbble link" width = "36px" height="36px"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__images">
-                    <img src="assests/png/hero-images/phone_float.png" alt="" class = "phone__float">
-                </div>
-            </article>
+            <div class="hero_image">
+                <img src="assests/png/placeholder.png" alt="">
+            </div>
         </section>
-
-        <section class = "grid-projects" id = "section-colored">
-            <h2>Latests Projects</h2>
-            <article class="projects">
-                <div class = "container">
-                    <a href="free_roam.html" >
-                        <span class="container__link"></span>
-                    </a>
-                    <img src="assests/png/mockup-images/free-roam-mockup.png" alt="">
-                    <div class = "content-info">
-                        <h3 class = "project-name">Free Roam</h3>
-                        <p class = "project-description">A map app for people with disabilities and the elderly in mind with tons of accessiblity options.</p>
-                        <div class="read-more-text">
-                            <p>Read More</p>
-                            <img src="assests/svg/arrow-right-color.svg" alt="" width="24px">
+        <section id="project_section">
+            <div class = "section_header">
+                <h2>Explore My Portfolio</h2>
+                <h3>Explore the Evolution of My Work and the Stories Behind Each Creation</h3>
+            </div>
+            <div id="project_grid">
+                <div class="project_container">
+                    <img src="assests/png/placeholder.png" alt="">
+                    <div class="project_text">
+                        <h3>Free Roam</h3>
+                        <div class="project_tags">
+                            <p>UI Design</p>
+                            <p>UX Design</p>
+                            <p>Project</p>
+                            <p>Mobile App</p>
                         </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Posuere fusce egestas quis est lectus facilisis.</p>
                     </div>
-                    
+                    <button class="project_button">Check Out Project <img src="assests/svg/arrow-right.svg" alt=""></button>
                 </div>
-                <div class = "container">
-                    <a href="weatherlerts.html">
-                        <span class="container__link"></span>
-                    </a>
-                    <img src="assests/png/mockup-images/weatherlerts-mockup.png" alt="">
-                    <div class = "content-info">
-                        <h3 class = "project-name">WeatherLerts</h3>
-                        <p class = "project-description">An easy to use weather app with alerts and notifications for weather related hazards</p>
-                        <div class="read-more-text">
-                            <p>Read More</p>
-                            <img src="assests/svg/arrow-right-color.svg" alt="" width="24px">
+                <div class="project_container">
+                    <img src="assests/png/placeholder.png" alt="">
+                    <div class="project_text">
+                        <h3>Shelter Finds</h3>
+                        <div class="project_tags">
+                            <p>UI Design</p>
+                            <p>UX Design</p>
+                            <p>Project</p>
+                            <p>Desktop</p>
                         </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Posuere fusce egestas quis est lectus facilisis.</p>
                     </div>
+                    <button class="project_button">Check Out Project <img src="assests/svg/arrow-right.svg" alt=""></button>
                 </div>
-                <div class = "container">
-                    <a href="shelter_finds.html">
-                        <span class="container__link"></span>
-                    </a>
-                    <img src="assests/png/mockup-images/shelter-finds-mockup.png" alt="">
-                    <div class = "content-info">
-                        <h3 class = "project-name">Shelter Finds</h3>
-                        <p class = "project-description">A website for finding the right home or rental with extesnsive filters for finding the right place</p>
-                        <div class="read-more-text">
-                            <p>Read More</p>
-                            <img src="assests/svg/arrow-right-color.svg" alt="" width="24px">
+                <div class="project_container">
+                    <img src="assests/png/placeholder.png" alt="">
+                    <div class="project_text">
+                        <h3>Weatherlerts</h3>
+                        <div class="project_tags">
+                            <p>UI Design</p>
+                            <p>UX Design</p>
+                            <p>Project</p>
+                            <p>Mobile App</p>
                         </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Posuere fusce egestas quis est lectus facilisis.</p>
                     </div>
+                    <button class="project_button">Check Out Project <img src="assests/svg/arrow-right.svg" alt=""></button>
                 </div>
-            </article>
+                <div class="project_container">
+                    <img src="assests/png/placeholder.png" alt="">
+                    <div class="project_text">
+                        <h3>Portfolio Website</h3>
+                        <div class="project_tags">
+                            <p>UI Design</p>
+                            <p>UX Design</p>
+                            <p>Front-End</p>
+                            <p>Personal</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Posuere fusce egestas quis est lectus facilisis.</p>
+                    </div>
+                    <button class="project_button">Check Out Project <img src="assests/svg/arrow-right.svg" alt=""></button>
+                </div>
+            </div>
         </section>
         <section>
-            <article class="about-me">
-                <div class = "about-me__image-card">
-                    <img src="assests/png/placeholder.png" alt="">
-                    <div class="image-card__text">
-                        <h3>Omar Carbajal</h3>
-                        <p>omarcarb34@duck.com</p>
-                    </div>
-                </div>
-                <div class="about-me__text">
-                    <div class="text__list">
-                        <h2>About Me</h2>
-                        <p>With many years of experience in UI/UX design under my belt, I bring a dedicated and results-driven approach to projects. A commitment to refining coding and design skills, coupled with a keen eye for contemporary trends, defines my journey. <br><br>Crafting elegant user experiences that excel in functionality is my passion. My creative problem-solving abilities and collaborative nature make me a valuable addition to any UI/UX team, poised to contribute positively to project success</p>
-                    </div>
-                    <div class="text__list">    
-                        <div class="list__skills">
-                            <h3>Skills</h3>
-                            <div class="items__list">
-                                <p>User-Centered Design</p>
-                                <p>Information Architecture</p>
-                                <p>HTML/CSS/Javascript</p>
-                                <p>Front-End Collaboration</p>
-                                <p>Problem-Solving</p>
-                                <p>User Research</p>
-                            </div>
-                        </div>
-                        <div class="list__skills">
-                            <h3>Tools</h3>
-                            <div class = "items__list__row">
-                                <p class = "list_item_vertical"><img src="assests/svg/adobe_creative_cloud.svg" alt="" class = "list_item_img">Adobe Creative Suite</p>
-                                <p class = "list_item_vertical"><img src="assests/svg/visual_studio_code.svg" alt="" class = "list_item_img">VS Code</p>
-                                <p class = "list_item_vertical"><img src="assests/svg/figma.svg" alt="" class = "list_item_img">Figma</p>
-                                <p class = "list_item_vertical"><img src="assests/svg/sketch.svg" alt="" class = "list_item_img">Sketch</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section id = "section-colored">
-            <article class = "contact-form" id = "contact-form">
-                <div>
-                    <h2 class = "form-section__page-header">Let's Get Connected!</h2>
-                </div>
-                <form class = "form-section__page-form" action = "https://formsubmit.co/omarcarb34@duck.com" method = "POST">
-                    <!---Honeypot-->
-                    <input type="text" name = "some-dude" style = "display: none">
-                    
-                    <input type="hidden" name="_captcha" value = "false">
-                    <input type="hidden" name="_subject" value = "New Visitor!">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value = "omarcarb.com">
-                    <div class = "input__top">
-                        <div class = "form-section__page-input">
-                            <label for = "full-name" class = "required">Full Name</label>
-                            <input type = "text" id = "full-name" name = "Full&nbsp;Name" placeholder="First and Last Name" required>
-                            <p class="validation-message"></p>
-                        </div>
-                        <div class = "form-section__page-input">
-                            <label for= "contact-email" class = "required">Email</label>
-                            <input type="email" id="contact-email" name = "Contact&nbsp;Email" placeholder="example@email.com" required>
-                        </div>
-                    </div>
-                    <div class = "form-section__page-input">
-                        <label for= "message" class = "required">Message (Optional)</label>
-                        <textarea name = "Message" placeholder = "Send me a message." class = "message-form-page" rows ="5" required></textarea>
-                    </div>
-                    <div class = "form-section__page-buttons">
-                        <button class= "form-button" id = "formSubmit">Submit</button>
-                    </div> 
-                </form>
-            </article>
+            
         </section>
     </main>
-    <footer>
-        <div class="footer__top">
-            <h3>Please don't hesitate to reach out through email or connect with me on social media &#128387;</h3>
-        </div>
-        <div class="footer__middle">
-            <button style="padding: 1rem 2rem; display: flex; align-items: center; width: max-content; text-wrap: nowrap;">📧 omarcarb34@duck.com</button>
-            <div>
-                <div class="outside-links" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <h3>Follow Me</h3>
-                    <div class="links__icons">
-                        <a href="https://www.behance.net/omarcarbajal6"><img src="assests/svg/behance.svg" alt="Behance link"></a>
-                        <a href="https://www.linkedin.com/in/omar-carb03"><img src="assests/svg/linkedin.svg" alt="Linkedin link"></a>
-                        <a href="https://dribbble.com/omarcarb34"><img src="assests/svg/dribbble.svg" alt="Dribbble link"></a>
-                    </div></div>
-                
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <p style="text-align: left;">Hosted by Github</p>
-            <p>&#169; Omar Carbajal 2023</p>
-        </div>
-    </footer>
 </body>
 </html>

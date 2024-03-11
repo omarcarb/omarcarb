@@ -65,3 +65,17 @@ function enableScroll(){
     window.onscroll = function(){
     };
 }
+
+const tags = document.querySelectorAll("tags");
+
+var timer = 0;
+var maxTime = 40
+
+function timer (){
+    while (timer <= maxTime){
+        setTimeout(function(){
+            timer++
+        }, 1000)
+        console.log(timer)
+    }
+}
