@@ -211,3 +211,50 @@ section{
                     2px 2px 4px #0F1012;
     }
 }
+#aboutme_block{
+    display: flex;
+    flex-direction: row;
+    box-shadow: -8px -8px 16px #383A41,
+                8px 8px 16px #141417;
+    border-radius: 24px;
+}
+.aboutme_text{
+    width: 50%;
+    & .text_block{
+        margin: 16px;
+        padding: 16px 32px;
+        box-shadow: inset -5px -5px 10px #3D3E46,
+                    inset 5px 5px 10px #0F1012;
+        border-radius: 16px;
+    }
+    & button{
+        padding: 16px 48px;
+        justify-self: center;
+        align-self: center;
+        margin: 32px auto;
+    }
+}
+#intro_paragrpah{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+#skill_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 8px;
+}
+.grid_skill_item{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: left;
+    align-items: center;
+    & img{
+        width: 24px; height: 24px;
+    }
+    & p{
+        font-size: 12px;
+    }
+}
