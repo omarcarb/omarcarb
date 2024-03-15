@@ -59,6 +59,14 @@ button{
     font-weight: 500;
     color: white;
 }
+input{
+    border: none;
+    height: 48px;
+    background: #26272C;
+    box-shadow: inset -5px -5px 10px #3D3E46, inset 5px 5px 10px #0F1012;
+    border-radius: 16px;
+
+}
 .menu_button{
     padding: 12px 32px;
     background-color: var(--mainBackgroundColor);
@@ -268,10 +276,65 @@ section{
         font-size: 12px;
     }
 }
+.contact_area{
+    display: flex;
+}
 .contact_info{
     width: 40%;
-    padding: 32px 16px;
+    padding: 24px 16px;
     box-shadow: -8px -8px 16px #383A41,
                 8px 8px 16px #141417;
     border-radius: 24px;
+}
+.contact_list{
+    padding: 0px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+.contact_form{
+    width: 100%;
+    padding: 0px 0px 0px 24px;
+}
+.contact_form > form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.info_block{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    & h4{
+        font-weight: 400;
+        color: #949494;
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+    }
+    & p{
+        font-weight: 600;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+.input_element{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 50%;
+}
+#contact_form_top, #contact_form_mid{
+    display: flex;
+    gap: 37px;
+    & input {
+        width: 100%;
+    }
+}
+#contact_form_bottom > .input_element{
+    width: 100%;
+}
+#message_area{
+    height: 96px;
 }
