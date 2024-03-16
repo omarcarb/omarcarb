@@ -49,6 +49,15 @@ header{
         display: flex;
     }
 }
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 48px;
+    margin-top: 64px;
+    padding: 24px 32px;
+    box-shadow: -8px -8px 16px #3D3E46,
+                8px 8px 16px #0F1012;
+}
 button{
     border-radius: 48px;
     display: flex;
@@ -337,4 +346,23 @@ section{
 }
 #message_area{
     height: 96px;
+}
+#submit_button_area{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    & #submit_button {
+        width: 196px;
+        font-size: 16px;
+        background-color: #5870DC;
+        box-shadow: 8px 8px 16px hsla(229, 65%, 60%, 0.2),
+                    -8px -8px 16px hsla(228, 38%, 79%, 0.2);
+        color: white;
+    }
+}
+.footer_links{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
 }
