@@ -22,12 +22,11 @@ body{
     background-color: var(--mainBackgroundColor);
     font-family: 'Poppins';
     color: white;
-    margin: 0px 64px;
+    margin: 0px 104px;
     overflow-x: hidden;
 }
 main{
-    max-width: 1229px;
-
+    padding: 0px 80px;
 }
 h1{
     font-size: var(--header1Fontsize);
@@ -48,6 +47,7 @@ p{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--mainBackgroundColor);
     padding: 17px 2rem;
     border-radius: 48px;
@@ -56,6 +56,7 @@ header{
                 8px 8px 16px #0F1012;
     & nav {
         display: flex;
+        gap: 17px;
     }
 }
 footer{
@@ -87,15 +88,15 @@ input[type="text"], input[type="tel"], input[type="email"]{
     padding: 0px 16px;
     font-size: 16px;
     color: #FFFFFF;
-
 }
 .menu_button{
-    padding: 12px 32px;
+    padding: 12px 42px;
     background-color: var(--mainBackgroundColor);
+    color: #DBDBDB;
 }
-#button_selected{
-    box-shadow: inset -5px -5px 10px #3D3E46,
-                inset 5px 5px 10px #0F1012;
+#button_standout{
+    box-shadow: -4px -4px 8px #3D3E46,
+                4px 4px 8px #0F1012;
 }
 #button_container{
     display: flex;
@@ -143,45 +144,59 @@ input[type="text"], input[type="tel"], input[type="email"]{
     z-index: -1;
     left: 0;
     background-color: #404149;
-    min-height: 650px;
+    min-height: 600px;
     top: 0;
     width:100vw;
     overflow: hidden;
 }
-.wave_background > *{
+.wave{
+    width: 100%;
     position: absolute;
     bottom: 0;
+    background-repeat: repeat-x;
 }
-.wave_left{
-    animation: wave_left 10000ms linear infinite;
+.foreground{
+    background-image: url(assests/svg/wave_foreground1.svg);
+    height: 529.13px;
+
+    animation: bottom_wave 30000ms infinite linear;
 }
-.wave_right{
-    right: -125%;
-    animation: wave_right 10000ms linear infinite;
+.foreground2{
+    background-image: url(assests/svg/wave_foreground2.svg);
+    height: 327.5px;
+    animation: middle_wave 35000ms infinite linear;
 }
-@keyframes wave_left {
-    0%,100%{
-        left: 0%;
-    }
-    49%{
-        left: -125%;
-    }
-    50%{
-        left: 125%;
-    }
-}
-@keyframes wave_right {
-    0%,100%{
-        right: -125%;
-    }
-    50%{
-        right: 0%;
-    }
-    99%{
-        right: 125%;
-    }
+.foreground3{
+    background-image: url(assests/svg/wave_foreground3.svg);
+    height: 126.53px;
     
+    animation: top_wave 40000ms infinite linear;
 }
+@keyframes bottom_wave {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1440px;
+    }
+}
+@keyframes middle_wave {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1440px;
+    }
+}
+@keyframes top_wave {
+    0%{
+        background-position-x: 0;
+    }    
+    100%{
+        background-position-x: -1440px
+    }
+}
+
 section{
     margin: 64px 0px;
 }
@@ -222,9 +237,8 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0px;
+    gap: 8px;
     & p{
-        line-height: 0px;
         font-size: 12px;
     }
 }
@@ -239,7 +253,7 @@ section{
 }
 #project_grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     column-gap: 16px;
     row-gap: 32px;
 }
@@ -267,6 +281,8 @@ section{
         width: -webkit-fill-available;
         margin: 0px 12px 12px 24px;
         padding: 14px 109px;
+        display: flex;
+        gap: 8px;
         box-shadow: 8px 8px 16px hsla(229, 65%, 60%, 0.2),
                     -8px -8px 16px rgba(181, 189, 221, 0.2);
     }
@@ -277,7 +293,7 @@ section{
     & p{
         margin: 0px;
         font-size: 12px;
-        padding: 4px 18px;
+        padding: 4px 16px;
         border-radius: 48px;
         background-color: var(--mainBackgroundColor);
         color: #C0C0C0;
@@ -294,7 +310,7 @@ section{
     max-height: 624px;
 }
 .aboutme_text{
-    width: 50%;
+    width: 60%;
     & .text_block{
         margin: 16px;
         padding: 16px 32px;
@@ -314,9 +330,8 @@ section{
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 24px;
-    & img{
-        height: 100%;
-    }
+    width: 40%;
+    max-height: 500px;
 }
 #text_intro{
     display: flex;
