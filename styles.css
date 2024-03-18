@@ -14,11 +14,20 @@
     --mainFontColor: #FFFFFF;
     --secondaryFontColor: #DBDBDB;
 }
+*{
+    margin: 0px;
+    
+}
 body{
     background-color: var(--mainBackgroundColor);
     font-family: 'Poppins';
     color: white;
-    margin: 0px 104px;
+    margin: 0px 64px;
+    overflow-x: hidden;
+}
+main{
+    max-width: 1229px;
+
 }
 h1{
     font-size: var(--header1Fontsize);
@@ -54,6 +63,7 @@ footer{
     justify-content: space-between;
     border-radius: 48px;
     margin-top: 64px;
+    margin-bottom: 32px;
     padding: 24px 32px;
     box-shadow: -8px -8px 16px #3D3E46,
                 8px 8px 16px #0F1012;
@@ -68,12 +78,15 @@ button{
     font-weight: 500;
     color: white;
 }
-input{
+input[type="text"], input[type="tel"], input[type="email"]{
     border: none;
     height: 48px;
     background: #26272C;
     box-shadow: inset -5px -5px 10px #3D3E46, inset 5px 5px 10px #0F1012;
     border-radius: 16px;
+    padding: 0px 16px;
+    font-size: 16px;
+    color: #FFFFFF;
 
 }
 .menu_button{
@@ -123,7 +136,51 @@ input{
     align-items: center;
     gap: 16px;
     flex-direction: row;
-    margin-top: 24px;
+    margin: 104px 0px;
+}
+.wave_background{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    background-color: #404149;
+    min-height: 650px;
+    top: 0;
+    width:100vw;
+    overflow: hidden;
+}
+.wave_background > *{
+    position: absolute;
+    bottom: 0;
+}
+.wave_left{
+    animation: wave_left 10000ms linear infinite;
+}
+.wave_right{
+    right: -125%;
+    animation: wave_right 10000ms linear infinite;
+}
+@keyframes wave_left {
+    0%,100%{
+        left: 0%;
+    }
+    49%{
+        left: -125%;
+    }
+    50%{
+        left: 125%;
+    }
+}
+@keyframes wave_right {
+    0%,100%{
+        right: -125%;
+    }
+    50%{
+        right: 0%;
+    }
+    99%{
+        right: 125%;
+    }
+    
 }
 section{
     margin: 64px 0px;
@@ -202,8 +259,8 @@ section{
         padding: 24px 12px;
         gap: 16px;
     }
-    & .project_text >*{
-        margin: 0px;
+    & .project_text >h3{
+        font-weight: 700;
     }
     & button{
         background-color: var(--mainAccentColor);
@@ -234,6 +291,7 @@ section{
     box-shadow: -8px -8px 16px #383A41,
                 8px 8px 16px #141417;
     border-radius: 24px;
+    max-height: 624px;
 }
 .aboutme_text{
     width: 50%;
@@ -253,18 +311,22 @@ section{
 }
 #aboutme_image{
     margin: 16px;
-    max-height: 670px;
-    width: 50%;
+    box-sizing: border-box;
     overflow: hidden;
     border-radius: 24px;
     & img{
         height: 100%;
     }
 }
-#intro_paragrpah{
+#text_intro{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
+}
+#intro_paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 #skill_grid{
     display: grid;
@@ -338,7 +400,7 @@ section{
     display: flex;
     gap: 37px;
     & input {
-        width: 100%;
+        width: calc(100%-40px);
     }
 }
 #contact_form_bottom > .input_element{
@@ -351,8 +413,11 @@ section{
     display: flex;
     width: 100%;
     justify-content: end;
-    & #submit_button {
+    & input[type="submit"] {
+        height: 48px;
         width: 196px;
+        border-radius: 64px;
+        border: none;
         font-size: 16px;
         background-color: #5870DC;
         box-shadow: 8px 8px 16px hsla(229, 65%, 60%, 0.2),
@@ -365,4 +430,17 @@ section{
     gap: 24px;
     align-items: center;
     justify-content: center;
+    & .footer_text{
+        font-size: 16px;
+        margin: 0px;
+    }
+}
+.links_buttons{
+    width: 48px; height: 48px;
+    border-radius: 48px;
+    box-shadow: -2px -2px 4px #383A41,
+                2px 2px 4px #141417;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
