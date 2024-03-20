@@ -90,6 +90,19 @@ input[type="text"], input[type="tel"], input[type="email"]{
     font-size: 16px;
     color: #FFFFFF;
 }
+textarea{
+    background: #26272C;
+    box-shadow: inset -5px -5px 10px #3D3E46, inset 5px 5px 10px #0F1012;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    resize: none;
+}
+label{
+    color: #DBDBDB;
+}
 .menu_button{
     padding: 12px 42px;
     background-color: var(--mainBackgroundColor);
@@ -267,7 +280,6 @@ section{
     row-gap: 32px;
 }
 .project_container{
-    background-color: var(--mainBackgroundColor);
     border-radius: 24px;
     box-shadow: -8px -8px 16px #383A41,
                 8px 8px 16px #141417;
@@ -292,8 +304,8 @@ section{
         padding: 14px 109px;
         display: flex;
         gap: 8px;
-        box-shadow: 8px 8px 16px hsla(229, 65%, 60%, 0.2),
-                    -8px -8px 16px rgba(181, 189, 221, 0.2);
+        box-shadow: 4px 4px 8px hsla(229, 65%, 60%, 0.2),
+                    -4px -4px 8px rgba(181, 189, 221, 0.2);
     }
 }
 .project_tags{
