@@ -9,7 +9,7 @@ window.addEventListener("scroll", function(){
     let value = window.scrollY;
 
     foreground.style.bottom = value * .4 + 'px';
-    foreground1.style.bottom = value * .1 + 'px';
+    foreground1.style.bottom = value * .125 + 'px';
     foreground2.style.bottom = value * 0 + 'px';
 })
 

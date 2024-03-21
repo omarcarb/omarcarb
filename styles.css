@@ -470,6 +470,21 @@ section{
 #message_area{
     height: 96px;
 }
+#optional{
+    position: relative;
+}
+#optional::after{
+    content: '(Optional)';
+    position: absolute;
+    right: 0%;
+    color: #8F929E;
+}
+#email_input:placeholder-shown, #phone_input:placeholder-shown, #message_area:placeholder-shown{
+    font-family: 'Poppins';
+    color: #B9B1B1;
+    font-style: italic;
+    font-weight: 400;
+}
 #submit_button_area{
     display: flex;
     width: 100%;

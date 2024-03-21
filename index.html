@@ -243,17 +243,17 @@
                         <div id="contact_form_mid">
                             <div class="input_element">
                                 <label for="email" class="label">Email</label>
-                                <input type="email" name="email" required>
+                                <input type="email" name="email" required id="email_input" placeholder="ex: fakemail123@gmail.com">
                             </div>
                             <div class="input_element">
                                 <label for="phone" class="label" id="optional">Phone</label>
-                                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="phone_input" placeholder="ex: 505-555-1234">
                             </div>
                         </div>
                         <div id="contact_form_bottom">
                             <div class="input_element">
-                                <label for="message_area">Send Message</label>
-                                <textarea name="message_area" id="message_area" cols="30" rows="3"></textarea>
+                                <label for="message_area" id="optional">Send Message</label>
+                                <textarea name="message_area" id="message_area" cols="30" rows="3" placeholder="Type your message here"></textarea>
                             </div>
                         </div>
                         <div id="submit_button_area">
