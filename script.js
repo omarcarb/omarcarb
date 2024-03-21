@@ -12,6 +12,3 @@ window.addEventListener("scroll", function(){
     foreground1.style.bottom = value * .125 + 'px';
     foreground2.style.bottom = value * 0 + 'px';
 })
-
-
-

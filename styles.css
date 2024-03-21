@@ -134,22 +134,34 @@ label{
         width: 20px;
         height: 16px;
     }
-    transition: box-shadow 300ms ease-out;
+    transition: box-shadow 300ms ease-out, transform 300ms ease-out;
 }
 .primary_button:hover{
     box-shadow: 2px 2px 4px hsla(229, 65%, 60%, 0.4),
                 -2px -2px 4px rgba(181, 189, 221, 0.4);
-    transition: box-shadow 300ms ease-out;
+    transform: scale(1.05);
+
+    transition: box-shadow 300ms ease-out, transform 300ms ease-out;
 }
 .secondary_button{
     background-color: var(--mainBackgroundColor);
-    box-shadow: -8px -8px 16px rgba(61, 62, 70, 0.6),
+    box-shadow: -8px -8px 16px rgba(61, 62, 70, 1),
                 8px 8px 16px #0F1012;
     & img{
         width: 16px; height: 16px;
         position: relative;
         top: -2px
     }
+
+    transition: box-shadow 300ms ease-out, transform 300ms ease-out;
+}
+.secondary_button:hover{
+    background-color: #2a3669;
+    transform: scale(1.05);
+    box-shadow: -2px -2px 4px rgba(61, 62, 70, 1),
+                2px 2px 4px #0F1012;
+
+    transition: box-shadow 300ms ease-out, transform 300ms ease-out;
 }
 #hero_section{
     display: flex;
@@ -274,6 +286,14 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+.icon_background:hover{
+    box-shadow: -2px -2px 4px rgba(61, 62, 70, 0.6),
+                2px 2px 4px rgb(15, 16, 18);
+    transform: scale(1.15);
+    background-color: #2a3669;
 }
 #project_grid{
     display: grid;
@@ -478,6 +498,18 @@ section{
     position: absolute;
     right: 0%;
     color: #8F929E;
+}
+#phone_input{
+    background: url(assests/svg/phone.svg);
+    background-repeat: no-repeat;
+    padding-left: 48px;
+    background-position: 16px 16px;
+}
+#email_input{
+    background: url(assests/svg/mail_icon.svg);
+    background-repeat: no-repeat;
+    padding-left: 48px;
+    background-position: 16px 16px;
 }
 #email_input:placeholder-shown, #phone_input:placeholder-shown, #message_area:placeholder-shown{
     font-family: 'Poppins';
