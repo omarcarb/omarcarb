@@ -89,6 +89,12 @@ input[type="text"], input[type="tel"], input[type="email"]{
     padding: 0px 16px;
     font-size: 16px;
     color: #FFFFFF;
+
+}
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus{
+    background: linear-gradient(145deg, #292a2f, #222328);
+    box-shadow: 5px 5px 10px #3D3E46, 5px 5px 10px #0F1012;
+
 }
 textarea{
     background: #26272C;
@@ -99,6 +105,10 @@ textarea{
     color: #FFFFFF;
     border: none;
     resize: none;
+}
+textarea:focus{
+    background: linear-gradient(145deg, #292a2f, #222328);
+    box-shadow: 5px 5px 10px #3D3E46, 5px 5px 10px #0F1012;
 }
 label{
     color: #DBDBDB;
