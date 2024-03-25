@@ -20,9 +20,9 @@
     <header>
         <img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;">
         <nav>
-            <button class="menu_button">Work</button>
-            <button class="menu_button">About</button>
-            <button class="menu_button" id="button_standout">Contact</button>
+            <button class="menu_button" onclick="LinkViewMove(this)" data-value ="0">Work</a>
+            <button class="menu_button" onclick="LinkViewMove(this)" data-value ="1">About</a>
+            <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="2">Contact</a>
         </nav>
     </header>
     <main>
@@ -69,7 +69,7 @@
                 <img src="assests/png/placeholder.png" alt="">
             </div>
         </section>
-        <section id="project_section">
+        <section id="project_section" id = "projects">
             <div class = "section_header">
                 <h2>Explore My Portfolio</h2>
                 <h3>Browse through the Evolution of My Work and the Stories Behind Each Creation</h3>
@@ -133,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="about">
             <div class="section_header">
                 <h2>Get to know me</h2>
                 <h3>Meet the mind fueling your future projects</h3>

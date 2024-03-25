@@ -12,3 +12,8 @@ window.addEventListener("scroll", function(){
     foreground1.style.bottom = value * .125 + 'px';
     foreground2.style.bottom = value * 0 + 'px';
 })
+
+function LinkViewMove(button){
+    var elemValue = button.getAttribute('data-value');
+    document.getElementsByClassName("section_header")[elemValue].scrollIntoView();
+}
