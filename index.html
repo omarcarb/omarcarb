@@ -234,15 +234,15 @@
                             <div class="input_element" id="firstnameInput">
                                 <label for="fname" class="label">First Name</label>
                                 <input type="text" name="fname" id="fname_input" 
-                                oninvalid="FirstNameValidity(event)"
-                                onchange="try{RemoveFirstErrorStyle()}catch(e){}" required>
+                                oninvalid="ValidityCheck(event, 'firstnameInput')"
+                                onchange="try{RemoveErrorStyle('firstnameInput')}catch(e){}" required>
                                 <div class="error-message" data-error = "false">Enter your first name</div>
                             </div>
                             <div class="input_element" id="lastnameInput">
                                 <label for="lname" class="label">Last Name</label>
                                 <input type="text" name="lname" id="lname_input" pattern="[a-zA-Z]+" 
-                                oninvalid="LastNameValidity(event)"
-                                onchange="try{RemoveLastErrorStyle()}catch(e){}" required>
+                                oninvalid="ValidityCheck(event, 'lastnameInput')"
+                                onchange="try{RemoveErrorStyle('lastnameInput')}catch(e){}" required>
                                 <div class="error-message" >Enter your last name</div>
                             </div>
                         </div>
@@ -250,8 +250,8 @@
                             <div class="input_element" id="emailparentInput">
                                 <label for="email" class="label">Email</label>
                                 <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                                oninvalid="EmailValidity(event)" 
-                                onchange="try{RemoveEmailErrorStyle()}catch(e){}"
+                                oninvalid="ValidityCheck(event, 'emailparentInput')" 
+                                onchange="try{RemoveErrorStyle('emailparentInput')}catch(e){}"
                                 id="email_input" required 
                                 placeholder="ex: fakemail123@gmail.com">
                                 <div class="error-message">Enter a valid email address</div>

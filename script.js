@@ -19,50 +19,31 @@ function LinkViewMove(button){
 }
 
 const lastNameParent = document.getElementById("lastnameInput")
-
 const firstNameParent = document.getElementById("firstnameInput")
-
 const emailParent = document.getElementById("emailparentInput")
 
 
-function FirstNameValidity(event){
+function ValidityCheck(event, parentElementId){
     event.preventDefault();
-    makeFirstNameErrorVisable();
-}
-function makeFirstNameErrorVisable(){
-    const errorMessage = firstNameParent.querySelector(".error-message")
-
-    errorMessage.style.display = 'block'
+    const parentElement = document.getElementById(parentElementId);
+    if (parentElement) {
+        makeErrorVisible(parentElement);
+    }
 }
 
-function LastNameValidity(event){
-    event.preventDefault();
-    makeLastNameErrorVisable();
-}
-function makeLastNameErrorVisable(){
-    const errorMessage = lastNameParent.querySelector(".error-message");
-
-    errorMessage.style.display = 'block';
-}
-function EmailValidity(event){
-    event.preventDefault();
-    makeEmailErrorVisable();
-}
-function makeEmailErrorVisable(){
-    const errorMessage = emailParent.querySelector(".error-message");
-
-    errorMessage.style.display = 'block';
+function makeErrorVisible(parentElement){
+    const errorMessage = parentElement.querySelector(".error-message");
+    if (errorMessage) {
+        errorMessage.style.display = 'block';
+    }
 }
 
-function RemoveLastErrorStyle(){
-    const errorMessage = lastNameParent.querySelector(".error-message");
-    errorMessage.style.display = 'none'
-}
-function RemoveFirstErrorStyle(){
-    const errorMessage = firstNameParent.querySelector(".error-message");
-    errorMessage.style.display = 'none'
-}
-function RemoveEmailErrorStyle(){
-    const errorMessage = emailParent.querySelector(".error-message");
-    errorMessage.style.display = 'none'
+function RemoveErrorStyle(parentElementId){
+    const parentElement = document.getElementById(parentElementId);
+    if (parentElement) {
+        const errorMessage = parentElement.querySelector(".error-message");
+        if (errorMessage) {
+            errorMessage.style.display = 'none';
+        }
+    }
 }
