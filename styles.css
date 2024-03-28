@@ -120,11 +120,35 @@ label{
     padding: 12px 42px;
     background-color: var(--mainBackgroundColor);
     color: #DBDBDB;
+    position: relative;
+}
+.menu_button:not(#button_standout)::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #8990b2;
+    border-radius: 48px;
+    bottom: 0%;
+
+    transition: width 300ms ease-out;
+}
+.menu_button:not(#button_standout):hover::after{
+    width: 100%;
+    transition: width 300ms ease-out;
 }
 #button_standout{
     box-shadow: -4px -4px 8px #3D3E46,
                 4px 4px 8px #0F1012;
     border-radius: 48px;
+
+    transition: border-radius 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+#button_standout:hover {
+    border-radius: 4px;
+
+    transition: border-radius 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 #button_container{
     display: flex;
@@ -543,6 +567,7 @@ section{
 }
 #submit_button_area{
     display: flex;
+    position: relative;
     width: 100%;
     justify-content: end;
     & input[type="submit"] {
@@ -556,7 +581,27 @@ section{
                     -8px -8px 16px hsla(228, 38%, 79%, 0.2);
         color: white;
     }
+    & #loading_icon{
+        display: none;
+        position: absolute;
+        right: 25%;
+        top: 25%;
+        width: 24px; height: 24px;
+        border: 5px solid #FFF;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
 }
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
 .footer_links{
     display: flex;
     gap: 24px;

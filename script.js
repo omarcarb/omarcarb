@@ -21,6 +21,7 @@ function LinkViewMove(button){
 const lastNameParent = document.getElementById("lastnameInput")
 const firstNameParent = document.getElementById("firstnameInput")
 const emailParent = document.getElementById("emailparentInput")
+const contactForm = document.getElementById("contact_form")
 
 
 function ValidityCheck(event, parentElementId){
@@ -46,4 +47,25 @@ function RemoveErrorStyle(parentElementId){
             errorMessage.style.display = 'none';
         }
     }
+}
+
+contactForm.addEventListener('submit', handleFormDelay)
+
+function handleFormDelay(event){
+
+        event.preventDefault()
+
+        const submitButton = document.getElementById('submit_button');
+        const loadingIcon = document.getElementById('loading_icon');
+        console.log("it worked")
+
+        loadingIcon.style.display = 'inline-block';
+        submitButton.setAttribute('disabled', true);
+        submitButton.setAttribute('value', "Sending....")
+
+       
+        setTimeout(function(){
+            contactForm.submit();
+        },2000)
+    
 }
