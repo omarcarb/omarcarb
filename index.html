@@ -69,7 +69,7 @@
                 <img src="assests/png/placeholder.png" alt="">
             </div>
         </section>
-        <section id="project_section" id = "projects">
+        <section id="project_section">
             <div class = "section_header">
                 <h2>Explore My Portfolio</h2>
                 <h3>Browse through the Evolution of My Work and the Stories Behind Each Creation</h3>
@@ -190,7 +190,8 @@
                             </div>
                         </div>
                     </div>
-                    <button class="secondary_button">Learn More About Me</button>
+                    <button class="secondary_button"
+                    onclick="SendToAboutPage()">Learn More About Me</button>
                 </div>
                 <div id="aboutme_image">
                     <img src="assests/png/placeholder.png" alt="">
@@ -238,7 +239,7 @@
                                 onchange="try{RemoveErrorStyle('firstnameInput')}catch(e){}" required>
                                 <div class="error-message" data-error = "false">Enter your first name</div>
                             </div>
-                            <div class="input_element" id="lastnameInput">
+                            <div class="input_element" id="lastnameInput" data-visible="false">
                                 <label for="lname" class="label">Last Name</label>
                                 <input type="text" name="lname" id="lname_input" pattern="[a-zA-Z]+" 
                                 oninvalid="ValidityCheck(event, 'lastnameInput')"
@@ -247,7 +248,7 @@
                             </div>
                         </div>
                         <div id="contact_form_mid">
-                            <div class="input_element" id="emailparentInput">
+                            <div class="input_element" id="emailparentInput" data-visible="false">
                                 <label for="email" class="label">Email</label>
                                 <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                 oninvalid="ValidityCheck(event, 'emailparentInput')" 

@@ -557,9 +557,17 @@ section{
     font-style: italic;
     font-weight: 400;
 }
+.input_element[data-visible = 'true'] input{
+    background-color: rgba(255, 152, 152, 0.742) !important;
+    border: 3px solid red !important;
+    box-shadow: none;
+}
+.input_element[data-visible = 'true'] #email_input:placeholder-shown{
+    color: red !important;
+}
 .error-message{
     position: absolute;
-    top: 0;
+    top: 4px;
     right: 0;
     font-size: 12px;
     color: #ff7e7e;
@@ -621,4 +629,14 @@ section{
     justify-content: center;
     align-items: center;
 }
-
+#why_ui{
+    display: flex;
+    gap: 16px;
+    & > *{
+        width: 50%;
+        margin: 0px;
+    }
+    & p{
+        color: #DBDBDB;
+    }
+}

@@ -36,6 +36,7 @@ function makeErrorVisible(parentElement){
     const errorMessage = parentElement.querySelector(".error-message");
     if (errorMessage) {
         errorMessage.style.display = 'block';
+        parentElement.dataset.visible = 'true'
     }
 }
 
@@ -45,6 +46,7 @@ function RemoveErrorStyle(parentElementId){
         const errorMessage = parentElement.querySelector(".error-message");
         if (errorMessage) {
             errorMessage.style.display = 'none';
+            parentElement.dataset.visible = 'false';
         }
     }
 }
@@ -67,5 +69,15 @@ function handleFormDelay(event){
         setTimeout(function(){
             contactForm.submit();
         },2000)
-    
+}
+function SendToAboutPage(){
+    window.location.href = "about.html"
+}
+
+function LinkViewMoveBack(button){
+    var elemValue = button.getAttribute('data-ids');
+    var targetSection = "index.html#" + elemValue;
+
+    console.log(targetSection)
+    window.location.href = targetSection;
 }
