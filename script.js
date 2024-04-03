@@ -15,6 +15,7 @@ window.addEventListener("scroll", function(){
 
 function LinkViewMove(button){
     var elemValue = button.getAttribute('data-value');
+    console.log(elemValue)
     document.getElementsByClassName("section_header")[elemValue].scrollIntoView();
 }
 

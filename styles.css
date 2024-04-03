@@ -629,14 +629,16 @@ section{
     justify-content: center;
     align-items: center;
 }
-#why_ui{
+#tidbits{
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+}
+.tidbits_article{
     display: flex;
     gap: 16px;
     & > *{
         width: 50%;
         margin: 0px;
-    }
-    & p{
-        color: #DBDBDB;
     }
 }
