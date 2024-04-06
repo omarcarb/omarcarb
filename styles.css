@@ -558,7 +558,6 @@ section{
     font-weight: 400;
 }
 .input_element[data-visible = 'true'] input{
-    background-color: rgba(255, 152, 152, 0.742) !important;
     border: 3px solid red !important;
     box-shadow: none;
 }
