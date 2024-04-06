@@ -642,3 +642,22 @@ section{
         margin: 0px;
     }
 }
+#skill_set_about{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    row-gap: 24px;
+    margin-top: 32px;
+}
+.skill_icon{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    & img{
+        width: 24px;
+        height: 24px;
+    }
+    & p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
