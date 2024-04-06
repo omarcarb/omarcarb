@@ -661,3 +661,15 @@ section{
         font-weight: 600;
     }
 }
+.hobby_section{
+    margin-bottom: 32px;
+}
+.hobby_header{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 24px;
+    & h3{
+        font-size: 24px;
+    }
+}
