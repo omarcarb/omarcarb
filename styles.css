@@ -661,17 +661,28 @@ section{
     }
 }
 .hobby_section{
+    display: flex;
+    gap: 16px;
     margin-bottom: 32px;
-    & p{
-        margin-left: 48px;
-    }
 }
-.hobby_header{
+.hobby_icon{
     display: flex;
     flex-direction: row;
+    & img{
+        width: 32px;
+        height: 32px;
+    }
+}
+.hobby_text{
+    display: flex;
+    flex-direction: column;
     gap: 16px;
-    margin-bottom: 8px;
+
     & h3{
         font-size: 24px;
+        font-weight: 500;
+    }
+    & p{
+        color: #DBDBDB;
     }
 }
