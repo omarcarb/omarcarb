@@ -8,14 +8,17 @@ let foreground2 = document.getElementsByClassName("wave")[2];
 window.addEventListener("scroll", function(){
     let value = window.scrollY;
 
+    //as the user scrolls, change the top value of each element by a the scroll position times a set value in pixels
     foreground.style.bottom = value * .4 + 'px';
     foreground1.style.bottom = value * .125 + 'px';
     foreground2.style.bottom = value * 0 + 'px';
 })
 
 function LinkViewMove(button){
+    // get the buttons value
     var elemValue = button.getAttribute('data-value');
-    console.log(elemValue)
+
+    //using the value, go to the section header matching the value
     document.getElementsByClassName("section_header")[elemValue].scrollIntoView();
 }
 
@@ -26,15 +29,23 @@ const contactForm = document.getElementById("contact_form")
 
 
 function ValidityCheck(event, parentElementId){
+    //prevent the default html message from appearing
     event.preventDefault();
+
+    //the element we are calling is the parent form
     const parentElement = document.getElementById(parentElementId);
+
+    //if the parent element is invalid, call the makeErrorVisible function
     if (parentElement) {
         makeErrorVisible(parentElement);
     }
 }
 
 function makeErrorVisible(parentElement){
+    //find the element which the error message must be shown to
     const errorMessage = parentElement.querySelector(".error-message");
+
+    //if the error message is not visible, make it visible
     if (errorMessage) {
         errorMessage.style.display = 'block';
         parentElement.dataset.visible = 'true'
@@ -60,7 +71,6 @@ function handleFormDelay(event){
 
         const submitButton = document.getElementById('submit_button');
         const loadingIcon = document.getElementById('loading_icon');
-        console.log("it worked")
 
         loadingIcon.style.display = 'inline-block';
         submitButton.setAttribute('disabled', true);
@@ -81,4 +91,10 @@ function LinkViewMoveBack(button){
 
     console.log(targetSection)
     window.location.href = targetSection;
+}
+
+function ProjectRedirect(button){
+    const webpageName = button.getAttribute('data-text');
+    
+    window.location.href = webpageName + ".html";
 }
