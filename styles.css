@@ -559,10 +559,10 @@ section{
 }
 .input_element[data-visible = 'true'] input{
     border: 3px solid red !important;
-    box-shadow: none;
+    box-shadow: 0px  0px 16px rgba(255, 0, 0, 0.183);
 }
-.input_element[data-visible = 'true'] #email_input:placeholder-shown{
-    color: red !important;
+.input_element[data-visible = 'true'] #email_input::placeholder{
+    color: rgb(255, 0, 0) !important;
 }
 .error-message{
     position: absolute;
