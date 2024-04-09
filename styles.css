@@ -736,3 +736,23 @@ section{
                 8px 8px 16px #0F1012;
     max-width: max-content;
 }
+#p_quick_descriptors{
+    margin-top: 33px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 17px;
+}
+.descriptor_block{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    & h3{
+        font-size: 16px;
+        color: #BDBEBF;
+    }
+    & p {
+        font-size: 20px;
+        color: #E9E9E9;
+        font-weight: 600;
+    }
+}
