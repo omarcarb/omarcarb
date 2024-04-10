@@ -757,5 +757,11 @@ section{
     }
 }
 .gray_background{
+    position: absolute;
+    width: 100%;
+    height: 196px;
+    z-index: -1;
+    left: 0;
     background-color: #383A41;
+    transform: translateY(-64px);
 }
