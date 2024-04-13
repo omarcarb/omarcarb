@@ -757,11 +757,52 @@ section{
     }
 }
 .gray_background{
+    position: relative;
+}
+.gray_background::before{
+    content: '';
     position: absolute;
-    width: 100%;
-    height: 196px;
+    background-color: #35363E;
+    top: -64px;
+    left: -15%;
+    height: calc(100% + 64px);
+    width: 100vw;
     z-index: -1;
-    left: 0;
-    background-color: #383A41;
-    transform: translateY(-64px);
+}
+#market_research{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+#mr_text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+#mr_g_paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.mr_paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    & h3{
+        color: #AEAFB2;
+        font-weight: 600;
+    }
+    & p{
+        line-height: 24px;
+    }
+}
+#mr_image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img{
+        width: 100%;
+    }
 }
