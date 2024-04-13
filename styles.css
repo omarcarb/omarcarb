@@ -695,14 +695,15 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 60vh;
     margin-top: 0px;
     padding-bottom: 0px;
     pointer-events: none;
 }
 #hero_section_image_project{
-    height: 65vh;
+    height: 70vh;
     width: 100%;
+    object-fit: cover;
     position: absolute;
     z-index: -1;
     top: 0;
@@ -764,10 +765,10 @@ section{
     position: absolute;
     background-color: #35363E;
     top: -64px;
-    left: -15%;
     height: calc(100% + 64px);
-    width: 100vw;
+    width: 200%;
     z-index: -1;
+    transform: translateX(-30%);
 }
 #market_research{
     display: flex;
@@ -798,11 +799,17 @@ section{
     }
 }
 #mr_image{
-    width: 50%;
+    width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 24px 61px;
+    box-shadow: 8px 8px 16px #191A1E, -8px -8px 16px #51525E;
+    border-radius: 16px;
+    -webkit-user-select: none;
     & img{
-        width: 100%;
+        object-fit: contain;
+        max-height: 300px;
+        aspect-ratio: 16 /9;
     }
 }
