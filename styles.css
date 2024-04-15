@@ -817,10 +817,19 @@ section{
     display: flex;
     flex-direction: row;
     gap: 24px;
+    justify-content: center;
+
     & #ca_app_images{
         display: flex;
         flex-direction: row;
         gap: 16px;
+    }
+    & #ca_app_list{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        justify-content: center;
+        align-items: center;
     }
 }
 .img_captions{
@@ -832,13 +841,6 @@ section{
     & img{
         max-height: 366px;
     }
-}
-#ca_app_list{
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
-    justify-content: center;
-    align-items: center;
 }
 .list_comparison{
     display: flex;
