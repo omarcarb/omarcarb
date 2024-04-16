@@ -690,6 +690,9 @@ section{
     margin-top: 64px;
     margin-bottom: 0px;
     padding-bottom: 64px;
+    & .section_header > h3{
+        text-transform: none;
+    }
 }
 #project_hero_section{
     display: flex;
@@ -846,6 +849,8 @@ section{
     display: flex;
     flex-direction: column;
     gap: 6px;
+    align-items: left;
+    width: 100%;
     & h3 {
         color: #A8A9AB;
     }
@@ -879,7 +884,7 @@ section{
 .con_block{
     display: flex;
     gap: 16px;
-    align-items: center;
+    align-items: top;
     padding: 16px;
     box-shadow: 8px 8px 16px #0F1012, -8px -8px 16px #3d3e4599;
     border-radius: 16px;
@@ -889,5 +894,35 @@ section{
     }
     & p{
         color: #DFDFE0;
+        margin: 0px;
+    }
+}
+.question_header{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    & h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+.response_group{
+    margin: 24px 0px 32px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+}
+.response_stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 12px;
+    gap: 8px;
+    box-shadow: 8px 8px 16px #191A1E, -8px -8px 16px #51525E;
+    border-radius: 16px;
+    & .stat_number{
+        font-size: 32px;
+        font-weight: 600;
     }
 }
