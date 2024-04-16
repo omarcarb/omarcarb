@@ -886,7 +886,7 @@ section{
     gap: 16px;
     align-items: top;
     padding: 16px;
-    box-shadow: 8px 8px 16px #0F1012, -8px -8px 16px #3d3e4599;
+    box-shadow: 8px 8px 16px #0F1012, -8px -8px 16px #3d3e45;
     border-radius: 16px;
     & img{
         width: 24px;
@@ -925,4 +925,33 @@ section{
         font-size: 32px;
         font-weight: 600;
     }
+}
+.persona_container{
+    display: flex;
+    gap: 16px;
+}
+.p_reverse{
+    flex-direction: row-reverse;
+}
+.persona_bio{
+    height: 100%;
+    width: 30%;
+    box-shadow: 8px 8px 16px #0F1012, -8px -8px 16px #3d3e45;
+    border-radius: 16px;
+    overflow: hidden;
+    & img{
+        max-height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    & .bio_text{
+        padding: 24px 12px;
+    }
+    & .persona_title{
+        font-size: 12px;
+        color: #5870DC;
+    }
+}
+.persona_description{
+    width: 70%;
 }
