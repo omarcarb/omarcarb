@@ -860,3 +860,34 @@ section{
     flex-direction: row;
     gap: 7px;
 }
+#conclusion{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+    & h2{
+        font-size: 20px;
+        margin: 0px;
+        color: #ffffffcc;
+    }
+    & #con_block_group{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+.con_block{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 8px 8px 16px #0F1012, -8px -8px 16px #3d3e4599;
+    border-radius: 16px;
+    & img{
+        width: 24px;
+        height: 24px;
+    }
+    & p{
+        color: #DFDFE0;
+    }
+}
