@@ -991,3 +991,86 @@ section{
         color: #C9C9C9;
     }
 }
+#hifi_design_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 128px;
+}
+#colors_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 16px;
+    row-gap: 24px;
+    padding: 24px 0px;
+}
+.subsection_header{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: 100%;
+    justify-content: left;
+    & h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    & p{
+        color: #D7D7D8;
+    }
+}
+.color_item_grid{
+    height: 187.5px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px #191A1E, -4px -4px 8px #51525E;
+    & .color_background{
+        height: 60%;
+        width: 100%;
+    }
+    & .color_text{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        padding: 16px 8px;
+    }
+}
+.color_title{
+    color: #EAEBEB;
+    font-size: 14px;
+    font-weight: 600;
+}
+.color_hex{
+    color: #8592AD;
+    font-size: 12px;
+}
+#left_buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+#button_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+    padding: 16px 0px;
+    & .button_grid_item{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+.button_grid_item p{
+    font-size: 14px;
+}
+.button_demo{
+    width: 180px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 16px;
+}
