@@ -1252,6 +1252,7 @@ section{
     height: 48px;
     border-radius: 48px;
     box-sizing: border-box;
+    z-index: 999;
 }
 #text_input{
     border: 12px solid #394660;
@@ -1268,4 +1269,29 @@ section{
 #secondary_input{
     border: 12px solid #131720;
     background-color: #83A5E6;
+}
+.diagram_eval{
+    position: relative;
+}
+.floating_arrow{
+    position: absolute;
+}
+#up_left{
+    top: 15%;
+    left: 40%;
+    height: 90px;
+    z-index: 0;
+}
+#straight_left{
+    bottom: 26%;
+    left: 50%;
+}
+#down_right{
+    height: 210px;
+    top: 8%;
+    left: -25%;
+}
+#down_short{
+    bottom: 30%;
+    left: -25%;
 }
