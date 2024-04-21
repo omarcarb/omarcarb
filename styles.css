@@ -776,13 +776,13 @@ section{
     z-index: -1;
     transform: translateX(-30%);
 }
-#market_research{
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
+#mr_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
 }
 #mr_text{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 32px;
