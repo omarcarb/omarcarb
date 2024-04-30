@@ -1141,6 +1141,17 @@ section{
     align-items: center;
     gap: 16px;
 }
+#hifi_screens{
+    position: relative;
+}
+.screens_animated{
+    display: flex;
+    gap: 19px;
+    & img{
+        max-height: 383px;
+        border-radius: 8px;
+    }
+}
 #free_roam_prototype_demo{
     width: 1232px;
     position: relative;
