@@ -22,6 +22,28 @@ function LinkViewMove(button){
     document.getElementsByClassName("section_header")[elemValue].scrollIntoView();
 }
 
+const animatedScreens = document.querySelectorAll(".screens_animated")
+
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    addAnimation();
+}
+
+function addAnimation(){
+    animatedScreens.forEach(screens_animated =>{
+        screens_animated.setAttribute("data-animated", true);
+
+        const screenCopy = screens_animated.querySelector("#animated_container");
+        const containerChildren = Array.from(screenCopy.children);
+
+        containerChildren.forEach(item =>{
+            const duplicatedItem = item.cloneNode(true);
+
+            screenCopy.appendChild(duplicatedItem);
+        })
+
+    })
+}
+
 const lastNameParent = document.getElementById("lastnameInput")
 const firstNameParent = document.getElementById("firstnameInput")
 const emailParent = document.getElementById("emailparentInput")

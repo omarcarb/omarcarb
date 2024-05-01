@@ -1155,7 +1155,7 @@ section{
     gap: 19px;
     padding-block: 1rem;
     flex-wrap: nowrap;
-    animation: scrolling 40s linear infinite;
+    animation: scrolling 50s linear infinite;
     & img{
         max-height: 383px;
         border-radius: 8px;
@@ -1163,7 +1163,7 @@ section{
 }
 @keyframes scrolling {
     to{
-        transform: translate(50%);
+        transform: translate(calc(-50% - 9.5px ));
     }
 }
 #free_roam_prototype_demo{
