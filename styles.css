@@ -997,7 +997,7 @@ section{
 #hifi_design_container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 128px;
+    column-gap: 64px;
 }
 #colors_grid{
     display: grid;
@@ -1145,11 +1145,25 @@ section{
     position: relative;
 }
 .screens_animated{
+    overflow-x: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+#animated_container{
     display: flex;
+    width: fit-content;
     gap: 19px;
+    padding-block: 1rem;
+    flex-wrap: nowrap;
+    animation: scrolling 40s linear infinite;
     & img{
         max-height: 383px;
         border-radius: 8px;
+    }
+}
+@keyframes scrolling {
+    to{
+        transform: translate(50%);
     }
 }
 #free_roam_prototype_demo{
