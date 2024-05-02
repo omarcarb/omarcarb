@@ -4,15 +4,24 @@ let foreground = document.getElementsByClassName("wave")[0];
 let foreground1 = document.getElementsByClassName("wave")[1];
 let foreground2 = document.getElementsByClassName("wave")[2];
 
+const wavePages = ['index.html', 'about.html']
 
-window.addEventListener("scroll", function(){
-    let value = window.scrollY;
+var path = window.location.pathname
+var page = path.split("/").pop();
 
-    //as the user scrolls, change the top value of each element by a the scroll position times a set value in pixels
-    foreground.style.bottom = value * .4 + 'px';
-    foreground1.style.bottom = value * .125 + 'px';
-    foreground2.style.bottom = value * 0 + 'px';
-})
+
+if(wavePages.includes(page)){
+    window.addEventListener("scroll", function(){
+        let value = window.scrollY;
+        
+        //as the user scrolls, change the top value of each element by a the scroll position times a set value in pixels
+        if(foreground) foreground.style.bottom = value * .4 + 'px';
+        if(foreground1) foreground1.style.bottom = value * .125 + 'px';
+        if(foreground2) foreground2.style.bottom = value * 0 + 'px';
+    })
+}
+
+
 
 function LinkViewMove(button){
     // get the buttons value
@@ -104,7 +113,7 @@ function ProjectRedirect(button){
 const Sections = document.querySelectorAll('.project_section');
 const options = {
     root: null,
-    threshold: 1.0,
+    threshold: .5,
     rootMargin: "100px 100px 0px 0px",
 };
 const observer = new IntersectionObserver(function(entries, observer){
