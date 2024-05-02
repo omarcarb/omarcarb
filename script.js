@@ -22,28 +22,6 @@ function LinkViewMove(button){
     document.getElementsByClassName("section_header")[elemValue].scrollIntoView();
 }
 
-const animatedScreens = document.querySelectorAll(".screens_animated")
-
-if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
-    addAnimation();
-}
-
-function addAnimation(){
-    animatedScreens.forEach(screens_animated =>{
-        screens_animated.setAttribute("data-animated", true);
-
-        const screenCopy = screens_animated.querySelector("#animated_container");
-        const containerChildren = Array.from(screenCopy.children);
-
-        containerChildren.forEach(item =>{
-            const duplicatedItem = item.cloneNode(true);
-
-            screenCopy.appendChild(duplicatedItem);
-        })
-
-    })
-}
-
 const lastNameParent = document.getElementById("lastnameInput")
 const firstNameParent = document.getElementById("firstnameInput")
 const emailParent = document.getElementById("emailparentInput")
@@ -85,7 +63,9 @@ function RemoveErrorStyle(parentElementId){
     }
 }
 
-contactForm.addEventListener('submit', handleFormDelay)
+if(contactForm !== null){
+    contactForm.addEventListener('submit', handleFormDelay)
+}
 
 function handleFormDelay(event){
 
@@ -120,3 +100,20 @@ function ProjectRedirect(button){
     
     window.location.href = webpageName + ".html";
 }
+
+const Sections = document.querySelectorAll('.project_section');
+const options = {
+    root: null,
+    threshold: 1.0,
+    rootMargin: "100px 100px 0px 0px",
+};
+const observer = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry =>{
+        console.log(entry.target)
+    })
+}, options)
+
+Sections.forEach(section =>{
+    observer.observe(section)
+})
+
