@@ -698,7 +698,9 @@ section{
         text-transform: none;
     }
 }
-.project_section [data-animated]
+.project_section [data-animated = "true"]{
+    
+}
 #project_hero_section{
     display: flex;
     justify-content: center;

@@ -135,11 +135,14 @@ const Sections = document.querySelectorAll('.project_section');
 const options = {
     root: null,
     threshold: .5,
-    rootMargin: "100px 100px 0px 0px",
+    rootMargin: "",
 };
-const observer = new IntersectionObserver(function(entries, observer){
+
+let observer = new IntersectionObserver(function(entries, observer){
     entries.forEach(entry =>{
-        entry.target.setAttribute("data-animated", true)
+        if(entry.isIntersecting){
+            entry.target.setAttribute("data-animated", true)
+        } 
     })
 }, options)
 
