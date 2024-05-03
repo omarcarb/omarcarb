@@ -103,6 +103,27 @@ function LinkViewMoveBack(button){
     console.log(targetSection)
     window.location.href = targetSection;
 }
+const animatedScreens = document.querySelectorAll(".screens_animated")
+
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    addAnimation();
+}
+
+function addAnimation(){
+    animatedScreens.forEach(screens_animated =>{
+        screens_animated.setAttribute("data-animated", true);
+
+        const screenCopy = screens_animated.querySelector("#animated_container");
+        const containerChildren = Array.from(screenCopy.children);
+
+        containerChildren.forEach(item =>{
+            const duplicatedItem = item.cloneNode(true);
+
+            screenCopy.appendChild(duplicatedItem);
+        })
+
+    })
+}
 
 function ProjectRedirect(button){
     const webpageName = button.getAttribute('data-text');

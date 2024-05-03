@@ -690,6 +690,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     margin-top: 64px;
     margin-bottom: 0px;
     padding-bottom: 64px;
@@ -697,6 +698,7 @@ section{
         text-transform: none;
     }
 }
+.project_section [data-animated]
 #project_hero_section{
     display: flex;
     justify-content: center;
