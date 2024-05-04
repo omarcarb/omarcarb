@@ -690,7 +690,6 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
     margin-top: 64px;
     margin-bottom: 0px;
     padding-bottom: 64px;
@@ -698,14 +697,18 @@ section{
         text-transform: none;
     }
 }
-.project_section [data-animated = "true"]{
-    
+.project_section[data-direction="left"] > *{
+    position: relative;
+    left: -150%;
+}
+.project_section[data-direction="left"][data-animated="true"] > *{
+    left: 0;
 }
 #project_hero_section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 50vh;
     margin-top: 0px;
     padding-bottom: 0px;
     pointer-events: none;
@@ -716,7 +719,7 @@ section{
     object-fit: cover;
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: 0px;
     pointer-events: none;
     -webkit-user-select: none;
 }
