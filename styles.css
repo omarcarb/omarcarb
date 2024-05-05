@@ -700,10 +700,33 @@ section{
 .project_section[data-direction="left"] > *{
     position: relative;
     left: -150%;
+    opacity: 0%;
+}
+.project_section[data-direction="right"]>*{
+    position: relative;
+    right: -150%;
+    opacity: 0%;
 }
 .project_section[data-direction="left"][data-animated="true"] > *{
-    left: 0;
+    animation: slideLeft 1s cubic-bezier(0, 0.86, 0.36, 1) forwards;
 }
+.project_section[data-direction="right"][data-animated="true"]>*{
+    animation: slideRight 1s cubic-bezier(0, 0.86, 0.36, 1) forwards;
+}
+
+@keyframes slideLeft {
+    to{
+        left:0%;
+        opacity: 100%;
+    }
+}
+@keyframes slideRight {
+    to{
+        right: 0%;
+        opacity: 100%;
+    }
+}
+
 #project_hero_section{
     display: flex;
     justify-content: center;
@@ -714,7 +737,7 @@ section{
     pointer-events: none;
 }
 #hero_section_image_project{
-    height: 70vh;
+    height: 65vh;
     width: 100%;
     object-fit: cover;
     position: absolute;
