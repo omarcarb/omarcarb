@@ -27,9 +27,14 @@ body{
     color: white;
     margin: 0px 104px;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 main{
     padding: 0px 64px;
+    max-width: 1440px;
 }
 h1{
     font-size: var(--header1Fontsize);
@@ -51,6 +56,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1440px;
     background-color: var(--mainBackgroundColor);
     padding: 17px 2rem;
     border-radius: 48px;
@@ -66,6 +73,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1440px;
     border-radius: 48px;
     margin-top: 64px;
     margin-bottom: 32px;
@@ -1176,8 +1185,8 @@ section{
 }
 .screens_animated{
     overflow-x: hidden;
-    -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
-    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+    mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
 }
 #animated_container{
     display: flex;
@@ -1349,4 +1358,19 @@ section{
 #down_short{
     bottom: 30%;
     left: -25%;
+}
+
+/* Media query for laptop screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+/* Media query for tablet screens */
+@media (min-width: 481px) and (max-width: 768px) {
+    
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    
 }
