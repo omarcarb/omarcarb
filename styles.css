@@ -1388,6 +1388,7 @@ section{
         padding: 0px;
     }
     header{
+        position: relative;
         padding: 14px 1rem;
         margin-top: 16px;
         & img{
@@ -1403,7 +1404,17 @@ section{
             box-shadow: -8px -8px 16px #383A41, 8px 8px 16px #141417;
             z-index: 99999;
         }
+        #primary_nav::before{
+            position: absolute;
+            content: '';
+            width: 50vw;
+            height: 100%;
+            backdrop-filter: blur(0.15rem);
+            left: -45%;
+            top: 0;
+        }
         .mobile-toggle{
+            display: block;
             position: absolute;
             background: url(assests/svg/menu_icon.svg);
             background-repeat: no-repeat;
@@ -1411,7 +1422,7 @@ section{
             border-radius: 0;
             width: 1.5rem;
             aspect-ratio: 1;
-            top: 2rem;
+            top: 1rem;
             right: 2rem;
         }
     }
