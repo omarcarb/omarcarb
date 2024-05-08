@@ -6,6 +6,7 @@
     <script defer src = "script.js"></script>
     <meta name = "keywords" content = "UI design, UX design, user interface design, user experience design, web design, mobile app design, interaction design, usability, wireframing, prototyping, user research, information architecture, responsive design, user-centered design, UI/UX principles, design thinking, user testing, visual design, UI/UX tools, design portfolio">
     <meta name = "author" content="Omar Carbajal">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <!-- HTML Meta Tags -->
     <title>Omar Carbajal</title>
     <meta name="description" content="A skilled UI/UX designer and front-end developer ready to help you out on your next project.">
@@ -32,16 +33,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
     <title>Omar Carbajal</title>
 </head>
 <body>
     <header>
         <img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;">
+        <button class= "mobile-toggle" aria-controls="primary_nav" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
         <nav>
-            <button class="menu_button" onclick="LinkViewMove(this)" data-value ="0">Work</a>
-            <button class="menu_button" onclick="LinkViewMove(this)" data-value ="1">About</a>
-            <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="2">Contact</a>
+            <div id="primary_nav" data-visible="false" aria-hidden="true">
+                <button class="menu_button" onclick="LinkViewMove(this)" data-value ="0">Work</a>
+                <button class="menu_button" onclick="LinkViewMove(this)" data-value ="1">About</a>
+                <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="2">Contact</a>
+            </div>
         </nav>
     </header>
     <main>

@@ -64,9 +64,18 @@ header{
     margin-top: 32px;
     box-shadow: -8px -8px 16px #3D3E46,
                 8px 8px 16px #0F1012;
-    & nav {
+    & #primary_nav {
         display: flex;
         gap: 17px;
+    }
+}
+.mobile-toggle{
+    & .sr-only{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
     }
 }
 footer{
@@ -1377,5 +1386,33 @@ section{
     }
     main{
         padding: 0px;
+    }
+    header{
+        padding: 14px 1rem;
+        margin-top: 16px;
+        & img{
+            max-height: 20px;
+        }
+        & #primary_nav{
+            position: fixed;
+            flex-direction: column;
+            inset: 0 0 0 30%;
+            padding: min(30vh, 10rem) 2em;
+            gap: 3rem;
+            background: #26272C;
+            box-shadow: -8px -8px 16px #383A41, 8px 8px 16px #141417;
+            z-index: 99999;
+        }
+        .mobile-toggle{
+            position: absolute;
+            background: url(assests/svg/menu_icon.svg);
+            background-repeat: no-repeat;
+            z-index: 100000;
+            border-radius: 0;
+            width: 1.5rem;
+            aspect-ratio: 1;
+            top: 2rem;
+            right: 2rem;
+        }
     }
 }
