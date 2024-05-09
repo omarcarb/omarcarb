@@ -180,6 +180,7 @@ label{
         justify-content: center;
         align-items: center;
         gap: 8px;
+        font-family: 'Poppins';
     }
 }
 .primary_button{
@@ -307,6 +308,9 @@ section{
         font-size: 20px;
     }
 }
+.mobile-paragraph{
+    display: none;
+}
 .hero_image{
     width: 50%;
     & img{
@@ -323,6 +327,7 @@ section{
 }
 #contact_list{
     margin-top: 64px;
+    gap: 16px;
 }
 .icon_text{
     display: flex;
@@ -1383,21 +1388,31 @@ section{
 @media (max-width: 480px) {
     body{
         margin: 0px 24px;
+        overflow-x: visible;
     }
     main{
         padding: 0px;
     }
+    p{
+        font-size: 12px;
+    }
     header{
-        position: relative;
+        position: sticky;
+        top: 14px;
+        left: 0;
+        z-index: 999999999;
         padding: 14px 1rem;
         margin-top: 16px;
         & img{
             max-height: 20px;
         }
         & #primary_nav{
+            display: none;
             position: fixed;
             flex-direction: column;
             inset: 0 0 0 30%;
+            max-width: 250px;
+            height: 100vh;
             padding: min(30vh, 10rem) 2em;
             gap: 3rem;
             background: #26272C;
@@ -1410,7 +1425,7 @@ section{
             width: 50vw;
             height: 100%;
             backdrop-filter: blur(0.15rem);
-            left: -45%;
+            left: -50%;
             top: 0;
         }
         .mobile-toggle{
@@ -1424,6 +1439,66 @@ section{
             aspect-ratio: 1;
             top: 1rem;
             right: 2rem;
+        }
+    }
+    section{
+        margin: 42px 0px;
+    }
+    .wave_background{
+        min-height: 395px;
+    }
+    .foreground{
+        height: 269.13px;
+        bottom: 10%;
+    }
+    .foreground2{
+        height: 158px;
+        bottom: 10%;
+    }
+    .foreground3{
+        height: 83.5px;
+    }
+    .hero_image{
+        display: none;
+    }
+    .hero_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 327px;
+        & h1{
+            font-size: 24px;
+        }
+        & h2{
+            font-size: 14px;
+            margin-bottom: 13px;
+        }
+        & .desktop-paragraph{
+            display: none;
+        }
+        & .mobile-paragraph{
+            display: block;
+            text-align: center;
+        }
+    }
+    #button_container{
+        margin-top: 32px;
+        gap: 16px;
+        & button{
+            font-size: 14px;
+        }
+    }
+    #contact_list{
+        margin-top: 32px;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        & #divider_line{
+            height: 2px;
+            background-color: #B9B1B1;
+        }
+        & .contact_icons{
+            justify-content: space-evenly;
         }
     }
 }
