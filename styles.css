@@ -96,7 +96,7 @@ footer{
     }
 }
 button{
-    border-radius: 48px;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,6 +299,18 @@ section{
     & h3{
         color: #C8C8C8;
         text-transform: capitalize;
+    }
+}
+.fade_in_animation{
+    opacity: 0%;
+    transform: translateY(300px);
+    animation: fade_up_start cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes fade_up_start{
+    to{
+        opacity: 100%;
+        transform: translateY(0);
     }
 }
 .hero_text{
@@ -1562,7 +1574,7 @@ section{
     #aboutme_image{
         max-height: 253px;
         margin: 8px;
-        border-radius: 16px;
+        border-radius: 12px;
     }
     #skill_grid{
         grid-template-columns: repeat(2, 1fr);

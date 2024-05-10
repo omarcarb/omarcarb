@@ -21,7 +21,13 @@ if(wavePages.includes(page)){
     })
 }
 
+const aniamtionSet = document.querySelectorAll(".fade_in_animation")
 
+aniamtionSet.forEach(element =>{
+    const sequenceSet = parseFloat(element.getAttribute('data-sequence'));
+
+    element.style.animationDuration = (sequenceSet * 300) + 'ms';
+})
 
 function LinkViewMove(button){
     // get the buttons value
