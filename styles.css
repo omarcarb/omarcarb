@@ -658,6 +658,15 @@ section{
     justify-content: center;
     align-items: center;
 }
+#aboutme_hero_section_container{
+    display: flex;
+    & >*{
+        width: 50%;
+    }
+    & img{
+        max-height: 510px;
+    }
+}
 #tidbits{
     display: flex;
     flex-direction: column;
@@ -669,6 +678,9 @@ section{
     & > *{
         width: 50%;
         margin: 0px;
+    }
+    & p{
+        color:#DBDBDB;
     }
 }
 #skill_set_about{
@@ -1626,6 +1638,60 @@ section{
         height: 24px;
         & img{
             width: 12px;
+        }
+    }
+    #aboutme_hero_section_container{
+        display: flex;
+        position: relative;
+        & >*{
+            width: 100%;
+        }
+        & img{
+            position: absolute;
+            height: 325px;
+            top: -10%;
+            z-index: -1;
+        }
+    }
+    #aboutme_hero_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 0px 0px 0px;
+        & h1{
+            font-size: 32px;
+        }
+    }
+    #tidbits{
+        gap: 42px;
+    }
+    .tidbits_article{
+        flex-direction: column;
+        gap: 8px;
+        & > *{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    #skill_set_about{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+    }
+    .skill_icon{
+        align-items: center;
+    }
+    .skill_icon > p{
+        font-size: 14px;
+        text-align: left;
+    }
+    .hobby_text{
+        & h3{
+            font-size: 14px;
+            text-align: left;
+        }
+        & p{
+            text-align: left;
         }
     }
 }

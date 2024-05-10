@@ -42,10 +42,15 @@
     <body>
         <header>
             <img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;">
+            <button class= "mobile-toggle" aria-controls="primary_nav" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
             <nav>
-                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids ="project_section">Work</a>
-                <button class="menu_button" id="button_standout">About</a>
-                <button class="menu_button" onclick="LinkViewMove(this)" data-value ="0">Contact</a>
+                <div id="primary_nav" data-visible="false" aria-hidden="true">
+                    <button class="menu_button" onclick="LinkViewMove(this)" data-value ="0">Work</a>
+                    <button class="menu_button" onclick="LinkViewMove(this)" data-value ="1">About</a>
+                    <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="2">Contact</a>
+                </div>
             </nav>
         </header>
         <main>
@@ -55,15 +60,15 @@
                 <div class="wave foreground3"></div>
             </div>
             <section id="aboutme_hero_section">
-                <div id="hero_section_container">
-                    <div id="hero_text">
+                <div id="aboutme_hero_section_container">
+                    <div id="aboutme_hero_text">
                         <h1>About Me!</h1>
                         <h2>Hello! My name is Omar Carbajal.</h2>
                         <p>I am a UI / UX designer and front end developer looking to improve both the 
                             design and functionality of the web at large,. Here you will get to learn a 
                             little bit about me and why I got into this line of work in the first place</p>
                     </div>
-                    <div id="hero_image"></div>
+                    <img src="assests/png/placeholder.png" alt="">
                 </div>
             </section>
             <section id="tidbits">
