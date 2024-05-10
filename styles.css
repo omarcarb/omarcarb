@@ -1609,6 +1609,7 @@ section{
         height: 76px;
         padding: 14px 1rem;
         border-radius: 16px;
+        margin-top: 32px;
         & img{
             height: 20px;
         }
