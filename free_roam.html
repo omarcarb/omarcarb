@@ -38,10 +38,15 @@
 <body>
     <header>
         <a href="index.html"><img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;"></a>
+        <button class= "mobile-toggle" aria-controls="primary_nav" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
         <nav>
-            <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</a>
-            <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="about">About</a>
-            <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="contact_section">Contact</a>
+            <div id="primary_nav" data-visible="false" aria-hidden="true">
+                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</a>
+                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="about">About</a>
+                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="contact_section">Contact</a>
+            </div>
         </nav>
     </header>
     <main>

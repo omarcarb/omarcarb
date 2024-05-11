@@ -23,19 +23,53 @@ if(wavePages.includes(page)){
 
 const aniamtionSet = document.querySelectorAll(".fade_in_animation")
 
+//find elements with an attribute of data-sequence
 aniamtionSet.forEach(element =>{
     const sequenceSet = parseFloat(element.getAttribute('data-sequence'));
 
+    //after finding the elements data-sequence value, multiply it by 300 and add this value to animationDuration in milliseconds
     element.style.animationDuration = (sequenceSet * 300) + 'ms';
 })
 
-function LinkViewMove(button){
-    // get the buttons value
-    var elemValue = button.getAttribute('data-value');
+const menuButton = document.querySelector('.mobile-toggle')
+const menuBackground = document.querySelector('#primary_nav')
 
-    //using the value, go to the section header matching the value
-    document.getElementsByClassName("section_header")[elemValue].scrollIntoView();
+menuButton.addEventListener('click', function(){
+
+    const menuVisibility = menuBackground.getAttribute('data-visible')
+
+    if(menuVisibility=="false"){
+        menuBackground.setAttribute('data-visible','true')
+        document.body.style.overflow = 'hidden';
+    }
+    if(menuVisibility=="true"){
+        menuBackground.setAttribute('data-visible','false')
+        document.body.style.overflow = '';
+    }
+})
+function LinkViewMove(button){
+    const menuVisibility = menuBackground.getAttribute('data-visible');
+
+    if (menuVisibility === 'true') {
+       
+       menuBackground.setAttribute('data-visible', 'false');
+       document.body.style.overflow = '';
+    }
+   // get the buttons value
+   var elemValue = button.getAttribute('data-value');
+
+   //using the value, go to the section header matching the value
+   var targetElement = document.getElementsByClassName("section_header")[elemValue];
+
+   var scrollPosition = targetElement.offsetTop - 100; 
+
+    
+    window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth' 
+    });
 }
+
 
 const lastNameParent = document.getElementById("lastnameInput")
 const firstNameParent = document.getElementById("firstnameInput")
