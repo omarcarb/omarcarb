@@ -781,6 +781,13 @@ section{
     }
 }
 
+span{
+    & img{
+        max-height: 512px;
+        margin-bottom: 55px;
+    }
+}
+
 #project_hero_section{
     display: flex;
     justify-content: center;
@@ -1260,11 +1267,6 @@ section{
     & img{
         max-height: 492px;
     }
-    & .floating_images_prototype{
-        position: absolute;
-        top: 6.75%;
-        left: 3.3%;
-    }
 }
 #val_contain_results{
     display: flex;
@@ -1511,6 +1513,12 @@ section{
     section{
         margin: 42px 0px;
         max-width: 327px;
+    }
+    span{
+        & img{
+            max-height: 227px;
+            margin-bottom: 32px;
+        }
     }
     .section_header{
         text-align: center;
@@ -1793,8 +1801,173 @@ section{
             gap: 12px;
         }
     }
+    .img_captions{
+        font-size: 12px;
+    }
     .img_captions > img{
         max-height: 202px;
         max-width: 106px;
+    }
+    #conclusion {
+        & #con_block_group{
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+    .con_block{
+        box-shadow: 2px 2px 4px #0F1012, -2px -2px 4px rgba(61, 62, 70, 0.6);
+    }
+    .response_group{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .response_stats{
+        box-shadow: 4px 4px 8px #191A1E, -4px -4px 8px #51525E;
+        text-align: center;
+        justify-content: start;
+        gap: 0px;
+    }
+    .question_header {
+        & h3{
+            font-size: 16px;
+        }
+    }
+    .persona_container{
+        flex-direction: column;
+        & .persona_bio{
+            width: 100%;
+        }
+    }
+    .persona_bio > .bio_text{
+        padding: 12px 8px;
+        gap: 1px;
+        & h3{
+            font-size: 16px;
+        }
+        & q{
+            font-size: 12px;
+        }
+    }
+    .persona_description{
+        width: 100%;
+        max-width: 316px;
+        padding: 16px 8px;
+    }
+    .breif_description{
+        gap: 8px;
+    }
+    .l_item{
+        gap: 1px;
+        & img{
+            max-height: 16px;
+        }
+    }
+    .subsection_header > h3{
+        font-size: 16px;
+    }
+    #hifi_design_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #colors_grid{
+        gap: 12px 8px;
+        max-width: 316px;
+    }
+    .color_item_grid{
+        height: 141px;
+        border-radius: 8px;
+        & .color_text{
+            padding: 12px 6px;;
+        }
+    }
+    .color_text > p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #left_buttons{
+        max-width: 316px;
+    }
+    #button_grid{
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 16px;
+        row-gap: 12px;
+        max-width: 316px;
+        padding: 12px 0px;
+        & .button_grid_item{
+            gap: 5px;
+        }
+    }
+    .button_demo{
+        width: 100%;
+    }
+    #right_typography{
+        & img{
+            width: 100%;
+        }
+    }
+    #typography_grid{
+        column-gap: 12px;
+        max-width: 327px;
+    }
+    .typography_grid_item{
+        height: 126px;
+        padding: 12px 6px;
+    }
+    #grid_screens{
+        grid-template-columns: repeat(1, 100%);
+        max-width: 327px;
+        row-gap: 16px;
+    }
+    #grid_alignment{
+        & img{
+            height: 368px;
+        }
+        & #grid_lines_image{
+            left:17px;
+            width: 307px;
+            height: 329px;
+            top:8.8%
+        }
+    }
+    #heirarchy{
+        & img{
+            height: 368px;
+        }
+    }
+    #free_roam_prototype_demo {
+        & img {
+          max-height: 617px;
+        }
+    }
+    #val_contain_results{
+        flex-direction: column;
+        & #results_images{
+            flex-direction: column;
+        }
+    }
+    .image_container {
+        & .arrow_circle {
+          left: 20%;
+          bottom: 20%;
+        }
+    }
+    #accessibility_container{
+        grid-template-columns: repeat(1,100%);
+    }
+    .diagram_eval{
+        & img{
+            max-height: 260px;
+        }
+    }
+    #up_left{
+        width: 101px;
+        height: 102px;
+    }
+    #text_input{
+        border: 6px solid #394660;
+    }
+    .circle_color{
+        width: 28px;
+        height: 28px;
     }
 }
