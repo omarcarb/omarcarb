@@ -16,7 +16,7 @@
 }
 *{
     margin: 0px;
-    
+    outline: 2px solid red;
 }
 html{
     scroll-behavior: smooth;
@@ -1421,7 +1421,7 @@ span{
 @media (max-width: 480px) {
     body{
         margin: 0px 24px;
-        overflow-x: visible;
+        overflow-x: hidden;
     }
     main{
         padding: 0px;
@@ -1514,10 +1514,13 @@ span{
         margin: 42px 0px;
         max-width: 327px;
     }
-    span{
-        & img{
-            max-height: 227px;
-            margin-bottom: 32px;
+    span {
+        & img {
+          height: 227px;
+          margin: 32px 0px;
+          position: relative;
+          left: -6%;
+          bottom: 0%;
         }
     }
     .section_header{
@@ -1935,6 +1938,7 @@ span{
         }
     }
     #free_roam_prototype_demo {
+        max-width: 327px;
         & img {
           max-height: 617px;
         }
@@ -1954,6 +1958,9 @@ span{
     #accessibility_container{
         grid-template-columns: repeat(1,100%);
     }
+    .container_eval:nth-child(2){
+        display: none;
+    }
     .diagram_eval{
         & img{
             max-height: 260px;
@@ -1962,12 +1969,39 @@ span{
     #up_left{
         width: 101px;
         height: 102px;
+        top: 24%;
+    }
+    #straight_left {
+        bottom: 22%;
+        left: 21%;
     }
     #text_input{
         border: 6px solid #394660;
     }
+    #border_input{
+        border: 6px solid #131720;
+    }
     .circle_color{
         width: 28px;
         height: 28px;
+    }
+    .rating_container{
+        padding: 0px;
+        gap: 8px;
+    }
+    .rating_text {
+        & .text_score > img {
+            width: 12px;
+            height: 12px;
+        }
+    }
+    .container_eval {
+        & #left_text {
+          gap: 12px;
+          padding: 0px 0px;
+        }
+    }
+    .accessibility_rating_right {
+        gap: 12px;
     }
 }

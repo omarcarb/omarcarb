@@ -172,9 +172,21 @@ function ProjectRedirect(button){
 }
 
 const Sections = document.querySelectorAll('.project_section');
+const screenWidth = window.screen.width;
+let thresholdValue = 0;
+
+if(screenWidth < 480){
+    thresholdValue = .15;
+}
+else{
+    thresholdValue = .5;
+}
+console.log(thresholdValue)
+
+console.log(screenWidth)
 const options = {
     root: null,
-    threshold: .5,
+    threshold: thresholdValue,
     rootMargin: "",
 };
 
