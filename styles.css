@@ -16,7 +16,6 @@
 }
 *{
     margin: 0px;
-    outline: 2px solid red;
 }
 html{
     scroll-behavior: smooth;
@@ -751,35 +750,24 @@ section{
         text-transform: none;
     }
 }
-.project_section[data-direction="left"] > *{
+.project_section[data-direction="up"]>*{
     position: relative;
-    left: -150%;
+    bottom: -150%;
     opacity: 0%;
+    filter: blur(48px);
 }
-.project_section[data-direction="right"]>*{
-    position: relative;
-    right: -150%;
-    opacity: 0%;
-}
-.project_section[data-direction="left"][data-animated="true"] > *{
-    animation: slideLeft 1s cubic-bezier(0, 0.86, 0.36, 1) forwards;
-}
-.project_section[data-direction="right"][data-animated="true"]>*{
-    animation: slideRight 1s cubic-bezier(0, 0.86, 0.36, 1) forwards;
+.project_section[data-direction="up"][data-animated="true"] > *{
+    animation: slideup 800ms cubic-bezier(0, 0.86, 0.36, 1) forwards;
 }
 
-@keyframes slideLeft {
+@keyframes slideup {
     to{
-        left:0%;
+        bottom:0%;
         opacity: 100%;
+        filter: blur(0);
     }
 }
-@keyframes slideRight {
-    to{
-        right: 0%;
-        opacity: 100%;
-    }
-}
+
 
 span{
     & img{
@@ -1744,6 +1732,7 @@ span{
     .gray_background::before{
         height: calc(100% + 32px);
         top: -32px;
+        width: 100%;
     }
     #project_hero_section{
         height: 30vh;
