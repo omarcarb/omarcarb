@@ -752,9 +752,9 @@ section{
 }
 .project_section[data-direction="up"]>*{
     position: relative;
-    bottom: -150%;
+    transform: translateY(300px);
     opacity: 0%;
-    filter: blur(48px);
+    filter: blur(12px);
 }
 .project_section[data-direction="up"][data-animated="true"] > *{
     animation: slideup 800ms cubic-bezier(0, 0.86, 0.36, 1) forwards;
@@ -762,7 +762,7 @@ section{
 
 @keyframes slideup {
     to{
-        bottom:0%;
+        transform: translateY(0px);
         opacity: 100%;
         filter: blur(0);
     }
@@ -1507,7 +1507,7 @@ span{
           height: 227px;
           margin: 32px 0px;
           position: relative;
-          left: -6%;
+          left: -3%;
           bottom: 0%;
         }
     }
@@ -1732,7 +1732,7 @@ span{
     .gray_background::before{
         height: calc(100% + 32px);
         top: -32px;
-        width: 100%;
+        transform: translateX(-303px);
     }
     #project_hero_section{
         height: 30vh;
@@ -1904,6 +1904,15 @@ span{
     .typography_grid_item{
         height: 126px;
         padding: 12px 6px;
+        position: relative;
+        & .subtitle_typography{
+            font-size: 10px;
+        }
+    }
+    .main_typeface{
+        position: absolute;
+        bottom: 20%;
+        left: 1%;
     }
     #grid_screens{
         grid-template-columns: repeat(1, 100%);
