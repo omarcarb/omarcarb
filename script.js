@@ -208,6 +208,7 @@ outsideLinks.forEach(function(object){
     object.addEventListener('click', function(){
         const linkID = object.id;
         
+
         switch(linkID){
             case 'dribbble': window.location.href = ("https://dribbble.com/omarcarb34");
             break;
