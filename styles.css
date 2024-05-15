@@ -1511,13 +1511,8 @@ span{
     span {
         display: inline-block;
         max-width: 327px;
-        & img {
+        & img{
             width: 327px;
-          height: 227px;
-          margin: 32px 0px;
-          position: relative;
-          left: -3%;
-          bottom: 0%;
         }
     }
     .section_header{
