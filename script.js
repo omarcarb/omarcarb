@@ -206,17 +206,22 @@ const outsideLinks = document.querySelectorAll('.icon_background')
 
 outsideLinks.forEach(function(object){
     object.addEventListener('click', function(){
+        object.classList.add('bouncing');
+
         const linkID = object.id;
         
-
-        switch(linkID){
-            case 'dribbble': window.location.href = ("https://dribbble.com/omarcarb34");
-            break;
-            case 'linkedin': window.location.href = ("https://www.linkedin.com/in/omar-carb03/");
-            break;
-            case 'github': window.location.href = ("https://github.com/omarcarb");
-            break;
-            default: console.log("Link not found")
-        }
+        setTimeout(function(){
+            switch(linkID){
+                case 
+                'dribbble': window.location.href = ("https://dribbble.com/omarcarb34");
+                break;
+                case 'linkedin': window.location.href = ("https://www.linkedin.com/in/omar-carb03/");
+                break;
+                case 'github': window.location.href = ("https://github.com/omarcarb");
+                break;
+                default: console.log("Link not found")
+            }
+            object.classList.remove('bouncing');
+        }, 2000)
     })
 })
