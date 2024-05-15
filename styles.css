@@ -250,21 +250,22 @@ label{
 .foreground{
     background-image: url(assests/svg/wave_foreground1.svg);
     height: 529.13px;
+    transform: translateY(100px);
 
-    animation: bottom_wave 40000ms infinite linear;
+    animation: bottom_wave 40000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) forwards;
 }
 .foreground2{
     background-image: url(assests/svg/wave_foreground2.svg);
     height: 327.5px;
+    transform: translateY(100px);
 
-
-    animation: middle_wave 35000ms infinite linear;
+    animation: middle_wave 35000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 100ms forwards;
 }
 .foreground3{
     background-image: url(assests/svg/wave_foreground3.svg);
     height: 126.53px;
-
-    animation: top_wave 30000ms infinite linear;
+    transform: translateY(100px);
+    animation: top_wave 30000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 200ms forwards;
 }
 @keyframes bottom_wave {
     0%{
@@ -288,6 +289,20 @@ label{
     }    
     100%{
         background-position-x: -1440px
+    }
+}
+@keyframes move_up {
+    0%{
+        transform: translateY(100px);
+    }
+    70%{
+        transform: translateY(15px);
+    }
+    85%{
+        transform: translateY(25px);
+    }
+    100%{
+        transform: translateY(0px);
     }
 }
 section{
