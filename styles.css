@@ -296,9 +296,11 @@ label{
         transform: translateY(100px);
     }
     70%{
+        animation-timing-function: ease-in;
         transform: translateY(15px);
     }
     100%{
+        animation-timing-function: ease-out;
         transform: translateY(0px);
     }
 }
