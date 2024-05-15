@@ -1509,7 +1509,10 @@ span{
         max-width: 327px;
     }
     span {
+        display: inline-block;
+        max-width: 327px;
         & img {
+            width: 327px;
           height: 227px;
           margin: 32px 0px;
           position: relative;
