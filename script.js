@@ -202,3 +202,20 @@ Sections.forEach(section =>{
     observer.observe(section)
 })
 
+const outsideLinks = document.querySelectorAll('.icon_background')
+
+outsideLinks.forEach(function(object){
+    object.addEventListener('click', function(){
+        const linkID = object.id;
+        
+        switch(linkID){
+            case 'dribbble': window.location.href = ("https://dribbble.com/omarcarb34");
+            break;
+            case 'linkedin': window.location.href = ("https://www.linkedin.com/in/omar-carb03/");
+            break;
+            case 'github': window.location.href = ("https://github.com/omarcarb");
+            break;
+            default: console.log("Link not found")
+        }
+    })
+})
