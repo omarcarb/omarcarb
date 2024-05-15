@@ -1942,7 +1942,7 @@ span{
     #free_roam_prototype_demo {
         max-width: 327px;
         & img {
-          max-height: 617px;
+          max-height: 575px;
         }
     }
     #val_contain_results{
