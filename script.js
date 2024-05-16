@@ -212,7 +212,7 @@ let indexObserver = new IntersectionObserver(function(entries, observer){
     entries.forEach(entry =>{
         let sequenceSet = parseFloat(entry.target.getAttribute('data-animation-sequence'))
         
-        entry.target.style.animationDelay = (sequenceSet * 50)+ 'ms'
+        entry.target.style.animationDelay = (sequenceSet * 150)+ 'ms'
         
         if(entry.isIntersecting){
             entry.target.setAttribute("data-animated", true)
