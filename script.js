@@ -204,16 +204,15 @@ const indexSection = document.querySelectorAll('.project_container');
 
 const options1 = {
     root: null,
-    threshold: .3,
-    rootMargin: "",
+    threshold: .9,
+    rootMargin: "100px 0px 100px 0px",
 };
 
 let indexObserver = new IntersectionObserver(function(entries, observer){
     entries.forEach(entry =>{
         let sequenceSet = parseFloat(entry.target.getAttribute('data-animation-sequence'))
         
-        entry.target.style.animationDelay = (sequenceSet * 300)+ 'ms'
-        console.log(entry)
+        entry.target.style.animationDelay = (sequenceSet * 50)+ 'ms'
         
         if(entry.isIntersecting){
             entry.target.setAttribute("data-animated", true)
