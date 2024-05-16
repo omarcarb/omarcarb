@@ -205,7 +205,7 @@ const indexSection = document.querySelectorAll('.project_container');
 const options1 = {
     root: null,
     threshold: .9,
-    rootMargin: "100px 0px 100px 0px",
+    rootMargin: "-100px 0px -100px 0px",
 };
 
 let indexObserver = new IntersectionObserver(function(entries, observer){
