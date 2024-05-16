@@ -210,7 +210,17 @@ const options1 = {
 
 let indexObserver = new IntersectionObserver(function(entries, observer){
     entries.forEach(entry =>{
-        let sequenceSet = parseFloat(entry.target.getAttribute('data-animation-sequence'))
+        const screenWidth = window.screen.width;
+        let sequenceSet
+        
+        if(screenWidth<480){
+            sequenceSet = 0;
+        }
+        else{
+            sequenceSet = parseFloat(entry.target.getAttribute('data-animation-sequence'))
+        }
+        
+        console.log(sequenceSet)
         
         entry.target.style.animationDelay = (sequenceSet * 150)+ 'ms'
         
