@@ -401,7 +401,7 @@ section{
         animation-timing-function: ease-in;
     }
     100%{
-        transform: scale(1, 1);
+        transform: scale(1, 1) translateY(0px);
         animation-timing-function: ease-in;
     }
 }
@@ -441,7 +441,7 @@ section{
         gap: 8px;
         box-shadow: 4px 4px 8px hsla(229, 65%, 60%, 0.2), -4px -4px 8px rgba(181, 189, 221, 0.2);
         transition: box-shadow 300ms ease-out, transform 300ms ease-out, border-radius 300ms ease-in;
-        width: 100%;
+        width: 95%;
     }
     & button:hover{
         box-shadow: 1px 1px 2px hsla(229, 65%, 60%, 0.2),
