@@ -418,7 +418,9 @@ section{
     border-radius: 24px;
     box-shadow: -8px -8px 16px #383A41,
                 8px 8px 16px #141417;
-                overflow: hidden;
+    overflow: hidden;
+    transform: translateY(400px) perspective(500px) rotate3d(0, 1, 0, -90deg);
+    opacity: 0;
     & img{
         max-height: 50%;
         max-width: 100%;
@@ -450,6 +452,15 @@ section{
         border-radius: 4px;
 
         transition: box-shadow 300ms ease-out, transform 300ms ease-out, border-radius 300ms ease-out;
+    }
+}
+.project_container[data-animated=true]{
+    animation: spinUp 500ms ease-out forwards;
+}
+@keyframes spinUp {
+    to{
+        transform: translateY(0px) perspective(500px) rotate3d(0, 1, 0, 0deg);
+        opacity: 1;
     }
 }
 .project_tags{

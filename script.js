@@ -181,9 +181,7 @@ if(screenWidth < 480){
 else{
     thresholdValue = .5;
 }
-console.log(thresholdValue)
 
-console.log(screenWidth)
 const options = {
     root: null,
     threshold: thresholdValue,
@@ -200,6 +198,31 @@ let observer = new IntersectionObserver(function(entries, observer){
 
 Sections.forEach(section =>{
     observer.observe(section)
+})
+
+const indexSection = document.querySelectorAll('.project_container');
+
+const options1 = {
+    root: null,
+    threshold: .3,
+    rootMargin: "",
+};
+
+let indexObserver = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry =>{
+        let sequenceSet = parseFloat(entry.target.getAttribute('data-animation-sequence'))
+        
+        entry.target.style.animationDelay = (sequenceSet * 300)+ 'ms'
+        console.log(entry)
+        
+        if(entry.isIntersecting){
+            entry.target.setAttribute("data-animated", true)
+        }
+    })
+}, options1)
+
+indexSection.forEach(section =>{
+    indexObserver.observe(section)
 })
 
 const outsideLinks = document.querySelectorAll('.icon_background')
