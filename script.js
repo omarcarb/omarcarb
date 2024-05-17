@@ -167,8 +167,11 @@ function addAnimation(){
 
 function ProjectRedirect(button){
     const webpageName = button.getAttribute('data-text');
+
+    setTimeout(function(){
+        window.location.href = webpageName + ".html";
+    }, 1500)
     
-    window.location.href = webpageName + ".html";
 }
 
 const Sections = document.querySelectorAll('.project_section');
