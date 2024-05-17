@@ -421,10 +421,7 @@ section{
     overflow: hidden;
     transform: translateY(400px) perspective(500px) rotate3d(0, 1, 0, -90deg);
     opacity: 0;
-    & img{
-        max-height: 50%;
-        max-width: 100%;
-    }
+    height: 100%;
     & .project_text{
         display: flex;
         flex-direction: column;
@@ -460,6 +457,14 @@ section{
     to{
         transform: translateY(0px) perspective(500px) rotate3d(0, 1, 0, 0deg);
         opacity: 1;
+    }
+}
+.img_background_parallax{
+    background-color: #5870DC;
+    height: 50%;
+    width: 100%;
+    & img{
+        max-width: 100%;
     }
 }
 .project_tags{
