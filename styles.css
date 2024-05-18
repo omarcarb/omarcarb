@@ -40,15 +40,46 @@ body{
     left: 0;
     z-index: 1000000;
     transition: opacity 0.75s, visibility 0.75s;
-    & img{
+    & .icon_wrapper{
         position: absolute;
-        width: 100px;
-        height: 120px;
+        width: 150px;
+        height: 320px;
         left: 0; 
         margin-right: auto; 
         right: 0; 
         margin-left: auto;
-        top: 45%; 
+        top: 15%;
+        overflow: hidden;
+    }
+    & .icon_wrapper > img{
+        position: relative;
+        left: 22%;
+        width: 100px;
+        height: 120px;
+        transform: translateY(200px);
+        animation: jumpUp 1s ease-in-out forwards;
+    }
+}
+
+@keyframes jumpUp {
+    0%{
+        transform: translateY(400px);
+    }
+    40%{
+        transform: translateY(100px) scale(.75, 1.25);
+    }
+    60%{
+        transform: translateY(90px) scale(1, .5);
+        animation-timing-function: ease-in;
+    }
+    75%{
+        transform: scale(1,1.25) translateY(150px);
+    }
+    80%{
+        transform: translateY(250px) scale(1.25, .25);
+    }
+    100%{
+        transform: translateY(200px) scale(1, 1);
     }
 }
 
@@ -1589,6 +1620,7 @@ span{
   position: relative;
   width: 80px;
   height: 80px;
+  left: 25%;
 }
 .lds-ellipsis div {
   position: absolute;
@@ -2248,7 +2280,7 @@ span{
         gap: 12px;
     }
     .loading_icon_wrapper{
-        left: 40%;
+        left: 22%;
         top: 60%;
     }
 }
