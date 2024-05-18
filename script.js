@@ -260,3 +260,11 @@ outsideLinks.forEach(function(object){
         }, 2000)
     })
 })
+
+window.addEventListener("load", function(){
+    const loader = document.querySelector("#preloader");
+    setTimeout(function(){
+        loader.classList.add("hidden");
+    }, 2000)
+    
+})

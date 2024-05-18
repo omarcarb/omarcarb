@@ -39,6 +39,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1000000;
+    transition: opacity 0.75s, visibility 0.75s;
     & img{
         position: absolute;
         width: 100px;
@@ -49,6 +50,11 @@ body{
         margin-left: auto;
         top: 45%; 
     }
+}
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
 }
 main{
     padding: 0px 64px;
@@ -271,20 +277,20 @@ label{
     height: 529.13px;
     transform: translateY(100px);
 
-    animation: bottom_wave 40000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) forwards;
+    animation: bottom_wave 40000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2250ms forwards;
 }
 .foreground2{
     background-image: url(assests/svg/wave_foreground2.svg);
     height: 327.5px;
     transform: translateY(100px);
 
-    animation: middle_wave 35000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 100ms forwards;
+    animation: middle_wave 35000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2350ms forwards;
 }
 .foreground3{
     background-image: url(assests/svg/wave_foreground3.svg);
     height: 126.53px;
     transform: translateY(100px);
-    animation: top_wave 30000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 200ms forwards;
+    animation: top_wave 30000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2350ms forwards;
 }
 @keyframes bottom_wave {
     0%{
@@ -336,7 +342,7 @@ section{
 .fade_in_animation{
     opacity: 0%;
     transform: translateY(300px);
-    animation: fade_up_start cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: fade_up_start 1s cubic-bezier(0.165, 0.84, 0.44, 1) 2250ms forwards;
 }
 
 @keyframes fade_up_start{
