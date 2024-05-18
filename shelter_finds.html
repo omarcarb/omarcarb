@@ -11,314 +11,171 @@
     <title>Shelter Finds</title>
 </head>
     <body>
-        <header >
-            <div class = "logo">
-                <a class = "home-link" href = "index.html">
-                    <h1 id = "name">Omar Carbajal</h1>
-                    <h2 id = "title">UI/UX Designer</h2>
-                </a>
-            </div>
-    
-            <button class = "mobile-toggle" aria-controls ="primary-navigation" aria-expanded ="false">
-                <span class = "sr-only">Menu</span>
+        <header>
+            <a href="index.html"><img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;"></a>
+            <button class= "mobile-toggle" aria-controls="primary_nav" aria-expanded="false">
+                <span class="sr-only">Menu</span>
             </button>
             <nav>
-                <ul id = "primary-navigation" data-visible = "false" class="primary-navigation flex">
-                    <li class="nav-button" id = "dropdown-menu">
-                        <a href="#" class="nav-button__text">Projects<img src="assests/svg/down-arrow.svg" width="12px" height = "12px"></a>
-                        <div class = "dropdown">
-                            <ul>
-                                <li class="dropdown-list-items"><a href = "weatherlerts.html" >WeatherLerts</a></li>
-                                <li class="dropdown-list-items"><a href = "free_roam.html">Free Roam</a></li>
-                                <li class="dropdown-list-items"><a href = "shelter_finds.html">Shelter Finds</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class = "nav-button">
-                        <a class = "nav-button__text" href = "about.html">About</a>
-                    </li>
-                    <li>
-                        <button class = "nav-button__button">Contact Me</button>
-                    </li>
-                </ul>
+                <div id="primary_nav" data-visible="false" aria-hidden="true">
+                    <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</a>
+                    <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="about">About</a>
+                    <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="contact_section">Contact</a>
+                </div>
             </nav>
         </header>
-        <dialog class = "pop-up">
-            <div class="form-section__header">
-                <h1 class = "form-header">Get in Touch</h1>
-                <div class="close-button"><img src="assests/svg/x.svg" alt="close-button"></div>
-            </div>
-            <form class = "form" action = "https://formsubmit.co/omarcarb34@duck.com" method = "POST">
-                <!---Honeypot-->
-                <input type="text" name = "some-dude" style = "display: none">
-
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="New Visitor!">
-                <input type="hidden" name="_template" value="table">
-
-                <div class="form-section__links">
-                    <h2>Find me Here</h2>
-                    <div class="form-section__link-div">
-                        <a href="https://www.linkedin.com/in/omar-carb03"><img src="assests/svg/linkedin.svg" alt="" width="32px" height="32px"></a>
-                        <a href="https://dribbble.com/omarcarb34"><img src="assests/svg/dribbble.svg" alt="" width="32px" height="32px"></a>
-                        <a href="https://www.behance.net/omarcarbajal6"><img src="assests/svg/behance.svg" alt="" width="32px" height="32px"></a>
+        <main>
+            <section class="project_section" id="project_hero_section">
+                <img src="assests/png/free-roam/hero_section_free_roam.png" alt="Free Roam Hero image" id="hero_section_image_project">
+            </section>
+            <section class="project_section" id="project_description">
+                <h1>Shelter Finds</h1>
+                <h2>Like Tinder but with homes and rentals</h2>
+                <div id="p_tags_group">
+                    <div class="p_tags">Market Research</div>
+                    <div class="p_tags">Competitive Analysis</div>
+                    <div class="p_tags">User Survey</div>
+                    <div class="p_tags">Personas</div>
+                    <div class="p_tags">Wireframes</div>
+                    <div class="p_tags">Flow Diagrams</div>
+                    <div class="p_tags">High Fidelity Interfaces</div>
+                    <div class="p_tags">Prototype</div>
+                    <div class="p_tags">Mini Usability Study</div>
+                    <div class="p_tags">Accessibility Evaluation</div>
+                </div>
+                <div id="p_quick_descriptors">
+                    <div class="descriptor_block">
+                        <h3>Location</h3>
+                        <p>South Gate, California</p>
+                    </div>
+                    <div class="descriptor_block">
+                        <h3>Product Type</h3>
+                        <p>Desktop Application</p>
+                    </div>
+                    <div class="descriptor_block">
+                        <h3>Purpose</h3>
+                        <p>Portfolio Project</p>
+                    </div>
+                    <div class="descriptor_block">
+                        <h3>Role</h3>
+                        <p>Designer, Researcher</p>
+                    </div>
+                    <div class="descriptor_block">
+                        <h3>Category</h3>
+                        <p>Property Search</p>
+                    </div>
+                    <div class="descriptor_block">
+                        <h3>Date</h3>
+                        <p>Oct 2023 - Nov 2023</p>
                     </div>
                 </div>
-                <h2>Or Send Me a Message</h2>
-                <div class = "form-section__input">
-                    <label for = "full-name" class = "required">Full Name</label>
-                    <input type = "text" id = "full-name" name = "Full&nbsp;Name" placeholder="First and Last Name" required>
+            </section>
+            <section class="project_section gray_background" id="market_research" data-direction="up">
+                <div class="section_header">
+                    <h2>Market Research</h2>
                 </div>
-                <div class="form-section__input">
-                    <label for= "contact-email" class = "required">Email</label>
-                    <input type="email" id="contact-email" name = "Contact&nbsp;Email" placeholder="example@email.com" required>
-                </div>
-                <div class="form-section__input">
-                    <label for= "phone">Phone Number</label>
-                    <input name = "Phone" type = "tel" placeholder="(123)-456-7890"></textarea>
-                </div>
-                <div class="form-section__input">
-                    <label for= "message" class = "required">Message</label>
-                    <textarea name = "Message" placeholder = "Send me a message." required></textarea>
-                </div>
-                <div class="form-section__buttons">
-                    <button class= "form-button" id = "submit">Submit</button>
-                </div>
-
-            </form>
-        </dialog>
-        <span class = "hero-section">
-            <div class="hero-title">
-                <h1 class="project-name-hero">Shelter Finds</h1>
-                <h2 class = "project-subtitle">Your one stop for all of your residency needs.</h2>
-            </div>
-            <img loading = "lazy" class = "landing-image" id = "section-crossed">
-        </span>
-        <main class = "section" id = "project-page">
-            <h1 class = section-header>Overview</h1>
-            <div class="overview-box">
-                <div class="overview-box__item">
-                    <h2 class="subheading">Project Summary</h2>
-                        <p class="subtext">"Shelter Finds" is a website dedicated to locating rental properties that cater to a range of preferences, encompassing not only individuals with aspirations of homeownership but also those seeking accommodations aligned with unique tastes. The project duration spanned from November to December 2022.</p>
-                    <h2 class="subheading">Problem That Needs To Be Solved</h2>
-                        <p class="subtext">Unearthing the ideal property for purchase or rental presents hurdles, including sifting through listings, deciphering amenities, and matching preferences with options. To fix this, it is the responsibility of the website to:</p>
-                        <span style="width: 75%; margin: 1rem 0rem;">
-                            <div class="results-item">
-                                <div class = list-number>1</div>
-                                <p>Offer locations near or around the desire location of the user</p>
+                <div id="mr_container">
+                    <div id="mr_text">
+                        <div id="mr_g_paragraph">
+                            <div class="mr_paragraph">
+                                <h3>What The Research Shows</h3>
+                                <p>Renters are increasingly selective, prioritizing amenities like gyms, pet areas, and broadband internet. The percentage seeking a 
+                                    fitness gym rose from 15% in 2022 to 24% in 2023, with 48% considering broadband essential, according to the Zillow Consumer Housing 
+                                    Trends Report. Technavio's research indicates the tiny homes market may grow by $3.57 billion from 2021 to 2026, driven by affordability 
+                                    and sustainability, with North America leading this growth. The US tiny home market is projected to exceed $5 billion by 2024. These trends 
+                                    emphasize the importance of modern amenities and flexible living options in rental decisions and satisfaction
+                                </p>
                             </div>
-                            <div class="results-item">
-                                <div class="list-number">2</div>
-                                <p>List qualities people in the area generally look for.</p>
+                            <div class="mr_paragraph">
+                                <h3>What The Research Concludes</h3>
+                                <p>Renters today are demanding rental properties that cater to their specific preferences and lifestyle needs. This increasing desire for 
+                                    personalized accommodation is fueling growth in the rental market, prompting the development of more sophisticated matching methods. 
+                                    Innovations in rental applications and platforms are leveraging advanced algorithms and user data to facilitate this personalized matching 
+                                    process. This shift towards tailored rental experiences underscores the importance of understanding and catering to the diverse needs of 
+                                    today's renters, ultimately leading to higher satisfaction and retention rates.
+                                </p>
                             </div>
-                        </span>
+                        </div>
+                    </div>
+                    <div id="mr_image">
+                        <img src="assests/png/free-roam/free_roam_chart.png" alt="">
+                    </div>
                 </div>
-                <div class="overview-box__item">
-                    <h2 class="subheading">The Solution</h2>
-                        <p class="subtext">Design an app tailored to the needs of rental and property seekersThe app must:</p>
-                        <span style="width: 75%; margin: 1rem 0rem;">
-                            <div class="results-item">
-                                <div class = list-number>1</div>
-                                <p>Search for properties in the immediate area or properties in other locations.</p>
+            </section>
+            <section class="project_section" id="comptetitive_analysis" data-direction="up">
+                <div class="section_header">
+                    <h2>Competitive Analysis</h2>
+                    <h3>The first step in my design process was to look at how the competition approached the problem. 
+                    I chose 2 competitors as my main inspiration</h3>
+                </div>
+                <div id="ca_img_txt_container">
+                    <div id="ca_app_images">
+                        <div class="img_captions">
+                            <img src="assests/png/free-roam/app_myRTCpara.png" alt="">
+                            <caption>Rent.com</caption>
+                        </div>
+                        <div class="img_captions">
+                            <img src="assests/png/free-roam/app_uber.png" alt="">
+                            <caption>Zillow</caption>
+                        </div>
+                    </div>
+                    <div id="ca_app_list">
+                        <div class="list_comparison">
+                            <h3>What These Websites Do Right:</h3>
+                            <div class="l_list_group">
+                                <div class="l_item">
+                                    <img src="assests/svg/i_plus.svg" alt="">
+                                    <p>Google Maps offers accessibility information about a specific location</p>
+                                </div>
+                                <div class="l_item">
+                                    <img src="assests/svg/i_plus.svg" alt="">
+                                    <p>Uber allows for specific pick up instructions</p>
+                                </div>
+                                <div class="l_item">
+                                    <img src="assests/svg/i_plus.svg" alt="">
+                                    <p>myRTCpara offers paratransit services in a dedicated app</p>
+                                </div>
                             </div>
-                            <div class="results-item">
-                                <div class="list-number">2</div>
-                                <p>List qualities people in the area generally look for.</p>
+                        </div>
+                        <div class="list_comparison">
+                            <h3>What These Websites Do Wrong:</h3>
+                            <div class="l_list_group">
+                                <div class="l_item">
+                                    <img src="assests/svg/i_minus.svg" alt="">
+                                    <p>Google Maps doesn’t offer transport alternatives </p>
+                                </div>
+                                <div class="l_item">
+                                    <img src="assests/svg/i_minus.svg" alt="">
+                                    <p>Uber doesn’t offer paratransit services </p>
+                                </div>
+                                <div class="l_item">
+                                    <img src="assests/svg/i_minus.svg" alt="">
+                                    <p>myRTCpara is local and their services are not available everywhere</p>
+                                </div>
                             </div>
-                            <div class="results-item">
-                                <div class = "list-number">3</div>
-                                <p>Narrow the search results with filters (such as allowing pets in the rental property).</p>
-                            </div>
-                        </span>    
-                    <h2 class="subheading">My Role</h2>
-                        <p class="subtext">Wireframing, Prototyping, Ideating, Research</p>
+                        </div>
                     </div>
-            </div>
-        </main>
-        <main class="section" id = "project-page">
-            <h1 class="section-header">Process to Product</h1>
-            <p class="subtext">Most rental websites follow a simple 3 step formula for getting the  property the user wants. </p>
-            <span style="width: 75%; margin: 1rem 0rem;">
-                <div class="results-item">
-                    <div class = list-number>1</div>
-                    <p>Search for properties in the immediate area or properties in other locations.</p>
                 </div>
-                <div class="results-item">
-                    <div class="list-number">2</div>
-                    <p>List qualities people in the area generally look for.</p>
-                </div>
-                <div class="results-item">
-                    <div class = "list-number">3</div>
-                    <p>Narrow the search results with filters (such as allowing pets in the rental property).</p>
-                </div>
-            </span>
-            <p class="subtext">In pursuit of user-centric design, devising a seamless website navigation strategy became imperative. This endeavor was further enriched by the challenge of ensuring a diverse array of properties is easily accessible to users.</p>
-            <p class = "subtext"> To accomplish this goal, I followed this methodology:</p>
-            <div class="grid-image">
-                <div class="ui-images">
-                    <div class="thumbnail-image">
-                        <img src="assests/svg/ui-images/research-icon.svg" alt="" width="64px" height="64px">
+                <div id="conclusion">
+                    <h2>Conclusion</h2>
+                    <div id="con_block_group">
+                        <div class="con_block">
+                            <img src="assests/svg/info_circle.svg" alt="">
+                            <p>Competitors offer some accessibility features but don’t offer much in the way 
+                                of delivering a service that allows individuals with disabilities to move around their city. </p>
+                        </div>
+                        <div class="con_block">
+                            <img src="assests/svg/info_circle.svg" alt="">
+                            <p>Competitors that do offer a service for people with disabilities, they are all local services
+                                 with no nationwide support. If a user were to travel abroad, they would lose that service.</p>
+                        </div>
+                        <div class="con_block">
+                            <img src="assests/svg/info_circle.svg" alt="">
+                            <p>Accommodations are a last consideration for most of the competitors. Those that do offer 
+                                accommodations are services that specialize in those field but are local.</p>
+                        </div>
                     </div>
-                    <h2>Research</h2>
-                    <p>Find out how the competition solves this problem, if they have solved it at all.</p>
                 </div>
-                <div class="ui-images">
-                    <div class = "thumbnail-image">
-                        <img src="assests/svg/ui-images/idea-icon.svg" alt="" width="64px" height="64px">
-                    </div>
-                    <h2>Ideation</h2>
-                    <p>Come up with as many ideas as possible and pick the best one from the bunch</p>
-                </div>
-                <div class="ui-images">
-                    <img src="assests/svg/ui-images/test-icon.svg" alt="" class = "thumbnail-image">
-                    <h2>Testing</h2>
-                    <p>See if the ideas work in practice and keep testing until it works</p>
-                </div>
-                <div class="ui-images">
-                    <img src="assests/svg/ui-images/design-icon.svg" alt="" class = "thumbnail-image">
-                    <h2>Design</h2>
-                    <p>Finalize the process by coming up with the final look and feel of the product</p>
-                </div>
-            </div>
-        </main>
-        <section class = "section" id = "project-page">
-            <h1 class="section-header">Ideation</h1>
-            <p class="subtext">To facilitate the presentation of an extensive range of properties, I embarked on crafting multiple iterations of the website layout. Emphasizing the efficiency of decision-making, I prioritized prominent imagery. Many of the initial design concepts drew inspiration from platforms like Rent.com and Zillow. The final choice gravitated towards a clean, simplified layout that places a significant emphasis on visual elements.</p>
-            <picture>
-                <source media = "(max-width:672px)" srcset="assests/png/shelter-finds/mobile-images/ideation-phase-mobile.png">
-                <img loading = "lazy" src="assests/png/shelter-finds/ideation-phase.png" alt="image of early sketches" class = "section" id = "project-images">
-            </picture>
-
-        </section>
-        <main class="section" id = "project-page">
-            <h1 class="section-header">Testing</h1>
-            <h2 class="subheading">Results</h2>
-            <p class="subtext">I measured success based on the time on a task the user spent. Findings for the study can be summarized as such:</p>
-            <span style="width: 75%; margin: 1rem 0rem;">
-                <div class="results-item">
-                    <div class = list-number>1</div>
-                    <p>Many users were confused when it came down to the navigation of the website.</p>
-                </div>
-                <div class="results-item">
-                    <div class="list-number">2</div>
-                    <p>Button layouts were confusing.</p>
-                </div>
-                <div class="results-item">
-                    <div class = "list-number">3</div>
-                    <p>Users wondered why there was only the ability to choose rental units, such as apartments or house, but not alternative rentals, such as container homes.</p>
-                </div>
-                <div class="results-item">
-                    <div class = "list-number">4</div>
-                    <p>Some users pointed out that the a lot of the information provided by the websites was unnecessary.</p>
-                </div>
-            </span>
-            <h2 class="subheading">What to Do</h2>
-            <p class="subtext">Users showed a preference for a cleaner screen with less information rather than an overloaded one. With this insight, the strategic direction was to offer users a wide array of options without overwhelming them visually. Subsequently, I revisited the design and opted for a more minimalist approach.</p>
-        </main>
-        <main class="section" id="project-page">
-            <h1 class="section-header">Design</h1>
-            <h2 class="subheading">Laying the Foundation</h2>
-            <p class="subtext">Other rental websites go for a minimalistic aesthetic to convey a lot of information. While this is effective, its not very distinct from other website. As such, I went with a more Aurora Gradient aesthetic with soft gradients and vibrant colors. This helps the website stand out from others, while also giving visual feedback to the user.</p>
-                <img src="assests/png/shelter-finds/findings.png" alt="">
-        </main>
-        <main class= "section" id = "image-container">
-            <h1 class = "image-title">Colors</h1>
-                <picture>
-                    <source media = "(max-width:672px)" srcset = "assests/svg/shelter-finds/mobile-images/colors-mobile.svg">
-                    <img loading = "lazy" src="assests/svg/shelter-finds/colors.svg" alt="color pallete of the product" class = "section" id = "project-images">
-                </picture>
-
-                <h1 class = "image-title">Grid and Heirarchy</h1>
-                <picture>
-                    <source media = "(max-width:672px)" srcset = "assests/svg/shelter-finds/mobile-images/grid-hierarchy-layout-mobile.svg">
-                    <img loading = "lazy" src="assests/svg/shelter-finds/grid-hierarchy-layout.svg" alt="layout and heirarchy of the design" class = "section" id = "project-images">
-                </picture>
-
-                <h1 class = "image-title">Icons</h1>
-                <picture>
-                    <source media = "(max-width:672px)" srcset = "assests/svg/shelter-finds/mobile-images/icons-mobile.svg">
-                    <img loading = "lazy" src="assests/svg/shelter-finds/icons.svg" alt="icons used in the page" class = "section" id = "project-images">
-                </picture>
-
-                <h1 class = "image-title">Components</h1>
-                <picture>
-                    <source media="(max-width:672px)" srcset="assests/svg/shelter-finds/mobile-images/components-mobile.svg">
-                    <img loading = "lazy" src="assests/svg/shelter-finds/components.svg" alt="icons used in the page" class = "section" id = "project-images">
-                </picture>
-        </main>
-        <main class="section" id = "project-page">
-            <h1 class = "section-header">Final Product</h1>
-                <picture>
-                    <source media = "(max-width:520px)" srcset ="assests/png/shelter-finds/mobile-images/home-screen-mobile.png">
-                    <img loading = "lazy" src = "assests/png/shelter-finds/home-screen.png" alt="example image" class = "section" id = "project-images">
-                </picture>
-
-                <picture>
-                    <source media = "(max-width:520px)" srcset ="assests/png/shelter-finds/mobile-images/search-page–mobile.png">
-                    <img loading = "lazy" src = "assests/png/shelter-finds/search-page.png" alt="example image" class = "section" id = "project-images">
-                </picture>
-
-                <picture>
-                    <source media = "(max-width:520px)" srcset ="assests/png/shelter-finds/mobile-images/rental-property-page-mobile.png">
-                    <img loading = "lazy" src = "assests/png/shelter-finds/rental-property-page.png" alt="example image" class = "section" id = "project-images">
-                </picture>
-        </main>
-        <main class="section" id = "project-page">
-            <h1 class="section-header">Results and Takeaways</h1>
-            <p class="subtext">Participants impressions on the website improved by a substantial margin. Many calling the website easy to use and colorful to look at. However, all participants have expressed doubts about using the website for their personal searches, which is understandable. Despite this I have learned plenty from this project.</p>
-            <p class="subtext">Some notable lessons include:</p>
-            <span style="width: 75%; margin: 1rem 0rem;">
-                <div class="results-item">
-                    <div class = list-number>1</div>
-                    <p><strong>Presenting to many choice to people can lead to low retention rate.</strong> As such, Its better to show few options </p>
-                </div>
-                <div class="results-item">
-                    <div class="list-number">2</div>
-                    <p><strong>Gradient designs are really liked by many people</strong> but do present a challenge to those that are slightly visually impaired.</p>
-                </div>
-                <div class="results-item">
-                    <div class = "list-number">3</div>
-                    <p><strong>Having a lot of filters can be overwhelming to some users.</strong> Many prefered having the filters hidden over having them all visible while scrolling.</p>
-                </div>
-            </span>
-            <h2 class="subheading">In Conclusion</h2>
-            <p class="subtext">Although not my finest work to date, I regard this project as an important stepping stone in my UI/UX journey. Even in moments of setback, there were valuable lessons to be learned from designing something unique.</p>
-        </main>
-        <main class="section" id = "other-works">
-            <h1>Check out my other projects</h1>
-            <div class = "other-works__divider">
-                <a href = "free_roam.html" class="other-works__item">
-                    <div class = "img-preview">
-                        <img loading = "lazy" 
-                        src="assests/png/mockup-images/free-roam-mockup.png" alt="preview image of the project">
-                    </div>
-                    <p>Free Roam</p>
-                </a>
-                <a href="weatherlerts.html" class="other-works__item">
-                    <div class = "img-preview">
-                        <img loading = "lazy" 
-                        src="assests/png/mockup-images/weatherlerts-mockup.png" alt="preview image of the project">
-                    </div>
-                    <p>Weatherlerts</p>
-                </a>
-            </div> 
-        </main>
-        <footer>
-            <div class="name-and-title">
-                <h1 style="letter-spacing: .25rem;">Omar Carbajal</h1>
-                <p>UI/UX Designer</p>
-            </div>
-            <div class="short-paragraph">
-                <p>I love crafting top-notch UI/UX designs that combine looks and functionality. I specialize in turning ideas into engaging digital experiences that put users first.</p>
-            </div>
-            <div class="outside-links">
-                <h2 style="font-weight: 600;">Follow Me</h2>
-                <div class="outside-links__icons">
-                    <a href="https://www.behance.net/omarcarbajal6"><img src="assests/svg/behance.svg" alt="Behance link"></a>
-                    <a href="https://www.linkedin.com/in/omar-carb03"><img src="assests/svg/linkedin.svg" alt="Linkedin link"></a>
-                    <a href="https://dribbble.com/omarcarb34"><img src="assests/svg/dribbble.svg" alt="Dribbble link"></a>
-                </div>
-            </div>
-        </footer>
+            </section>
     </body>
 </html>
