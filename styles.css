@@ -1191,6 +1191,10 @@ span{
         font-weight: 600;
     }
 }
+#chart{
+    display: flex;
+    justify-content: center;
+}
 .response_group{
     margin: 24px 0px 32px 0px;
     display: grid;
@@ -1280,6 +1284,15 @@ span{
     }
     & .l_item > p{
         color: #C9C9C9;
+    }
+}
+.shelter_finds #lofi_screens, .free_roam #lofi_screens{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    & img{
+        max-width: 700px;
+        max-height: 600px;
     }
 }
 #hifi_design_container{
@@ -2293,5 +2306,11 @@ span{
     .loading_icon_wrapper{
         left: 22%;
         top: 60%;
+    }
+    picture{
+        max-width: 327px;
+        & img{
+            max-width: 327px;
+        }
     }
 }
