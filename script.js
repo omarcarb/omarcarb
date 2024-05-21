@@ -37,13 +37,16 @@ const menuBackground = document.querySelector('#primary_nav')
 menuButton.addEventListener('click', function(){
 
     const menuVisibility = menuBackground.getAttribute('data-visible')
+    
 
     if(menuVisibility=="false"){
         menuBackground.setAttribute('data-visible','true')
+        menuButton.setAttribute('aria-expanded', 'true')
         document.body.style.overflow = 'hidden';
     }
     if(menuVisibility=="true"){
         menuBackground.setAttribute('data-visible','false')
+        menuButton.setAttribute('aria-expanded', 'false')
         document.body.style.overflow = '';
     }
 })
@@ -167,10 +170,26 @@ function addAnimation(){
 
 function ProjectRedirect(button){
     const webpageName = button.getAttribute('data-text');
+    const parentElement = button.closest(".project_container");
+    const animatedPage = parentElement.querySelector('.img_background_parallax')
+    let delay;
+
+    const screenWidth = window.screen.width;
+    
+    if(screenWidth < 480){
+        animatedPage.setAttribute('data-animated',true)
+        delay = 1500;
+    }
+    else{
+        delay = 1000;
+    }
+
+    
 
     setTimeout(function(){
+        animatedPage.setAttribute('data-animated',false)
         window.location.href = webpageName + ".html";
-    }, 1500)
+    }, delay)
     
 }
 
