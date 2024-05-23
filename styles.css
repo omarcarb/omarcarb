@@ -1436,14 +1436,14 @@ span{
     width: 77%;
 }
 
-@keyframes fadeIn {
-    0%{
-        top: 100%;
-        opacity: 0%;
-    }
-    100%{
-        top: 9.9%;
-        opacity: 100%;
+.shelter_finds#grid_alignment{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77%;
+    & img{
+        max-width: 100%;
     }
 }
 #heirarchy{
@@ -1451,6 +1451,15 @@ span{
     justify-content: center;
     align-items: center;
     gap: 16px;
+}
+.shelter_finds#heirarchy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    & img{
+        max-width: 100%;
+    }
 }
 #hifi_screens{
     position: relative;
@@ -1486,6 +1495,16 @@ span{
 
     & img{
         max-height: 492px;
+    }
+}
+#shelter_finds_prototype_demo{
+    width: 1232px;
+    position: relative;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+    & img{
+        max-height: 645px;
     }
 }
 #val_contain_results{
@@ -2250,6 +2269,9 @@ span{
             top:8.8%
         }
     }
+    .shelter_finds#grid_alignment{
+        width: 100%;
+    }
     #heirarchy{
         & img{
             height: 368px;
@@ -2260,6 +2282,9 @@ span{
         & img {
           max-height: 575px;
         }
+    }
+    #shelter_finds_prototype_demo{
+        max-width: 327px;
     }
     #val_contain_results{
         flex-direction: column;
