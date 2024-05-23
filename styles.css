@@ -532,6 +532,14 @@ section{
         border-radius: 24px 24px 0px 0px;
     }
 }
+.img_background_parallax.desktopapp > .img_set{
+    & img{
+        left: 8%;
+    }
+    & img:nth-child(1){
+        animation: scaleUpReverse 200ms ease-out forwards;
+    }
+}
 .img_set{
     position: absolute;
     width: 100%;
@@ -566,6 +574,11 @@ section{
     }
     & img:nth-child(3){
         animation: rotateRight 200ms ease-out 300ms forwards;
+    }
+}
+.desktopapp.img_background_parallax:hover > .img_set, .img_background_parallax[data-animated="true"]> .img_set{
+    & img:nth-child(1){
+        animation: scaleUp 200ms ease-out forwards;
     }
 }
 @keyframes scaleUp {
