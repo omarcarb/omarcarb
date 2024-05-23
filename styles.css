@@ -2332,6 +2332,10 @@ span{
           bottom: 20%;
         }
     }
+    .shelter_finds.arrow_circle{
+        left: 16%;
+        bottom: 27%;
+    }
     #accessibility_container{
         grid-template-columns: repeat(1,100%);
     }

@@ -199,7 +199,7 @@ const screenWidth = window.screen.width;
 let thresholdValue = 0;
 
 if(screenWidth < 480){
-    thresholdValue = .15;
+    thresholdValue = .1;
 }
 else{
     thresholdValue = .5;
@@ -227,8 +227,8 @@ const indexSection = document.querySelectorAll('.project_container');
 
 const options1 = {
     root: null,
-    threshold: .9,
-    rootMargin: "-100px 0px -100px 0px",
+    threshold: .3,
+    rootMargin: "",
 };
 
 let indexObserver = new IntersectionObserver(function(entries, observer){
