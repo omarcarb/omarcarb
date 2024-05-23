@@ -11,304 +11,778 @@
     <title>WeatherLerts</title>
 </head>
     <body>
-        <header >
-            <div class = "logo">
-                <a class = "home-link" href = "index.html">
-                    <h1 id = "name">Omar Carbajal</h1>
-                    <h2 id = "title">UI/UX Designer</h2>
-                </a>
-            </div>
-    
-            <button class = "mobile-toggle" aria-controls ="primary-navigation" aria-expanded ="false">
-                <span class = "sr-only">Menu</span>
+        <header>
+            <a href="index.html"><img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;"></a>
+            <button class= "mobile-toggle" aria-controls="primary_nav" aria-expanded="false">
+                <span class="sr-only">Menu</span>
             </button>
             <nav>
-                <ul id = "primary-navigation" data-visible = "false" class="primary-navigation flex">
-                    <li class="nav-button" id = "dropdown-menu">
-                        <a href="#" class="nav-button__text">Projects<img src="assests/svg/down-arrow.svg" width="12px" height = "12px"></a>
-                        <div class = "dropdown">
-                            <ul>
-                                <li class="dropdown-list-items"><a href = "weatherlerts.html" >WeatherLerts</a></li>
-                                <li class="dropdown-list-items"><a href = "free_roam.html">Free Roam</a></li>
-                                <li class="dropdown-list-items"><a href = "shelter_finds.html">Shelter Finds</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class = "nav-button">
-                        <a class = "nav-button__text" href = "about.html">About</a>
-                    </li>
-                    <li>
-                        <button class = "nav-button__button">Contact Me</button>
-                    </li>
-                </ul>
+                <div id="primary_nav" data-visible="false" aria-hidden="true">
+                    <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</a>
+                    <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="about">About</a>
+                    <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="contact_section">Contact</a>
+                </div>
             </nav>
         </header>
-        <dialog class = "pop-up">
-        <div class="form-section__header">
-            <h1 class = "form-header">Get in Touch</h1>
-            <div class="close-button"><img src="assests/svg/x.svg" alt="close-button"></div>
-        </div>
-        <form class = "form" action = "https://formsubmit.co/omarcarb34@duck.com" method = "POST">
-            <!---Honeypot-->
-            <input type="text" name = "some-dude" style = "display: none">
-            
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New Visitor!">
-            <input type="hidden" name="_template" value="table">
-
-            <div class="form-section__links">
-                <h2>Find me Here</h2>
-                <div class="form-section__link-div">
-                    <a href="https://www.linkedin.com/in/omar-carb03"><img src="assests/svg/linkedin.svg" alt="" width="32px" height="32px"></a>
-                    <a href="https://dribbble.com/omarcarb34"><img src="assests/svg/dribbble.svg" alt="" width="32px" height="32px"></a>
-                    <a href="https://www.behance.net/omarcarbajal6"><img src="assests/svg/behance.svg" alt="" width="32px" height="32px"></a>
+        <main>
+            <section class="project_section" id="project_hero_section">
+                <img src="assests/png/free-roam/hero_section_free_roam.png" alt="Free Roam Hero image" id="hero_section_image_project">
+            </section>
+            <section class="project_section" id="project_description">
+                <h1>Free Roam</h1>
+                <h2>Movement at the tap of a button</h2>
+                <div id="p_tags_group">
+                    <div class="p_tags">Market Research</div>
+                    <div class="p_tags">Competitive Analysis</div>
+                    <div class="p_tags">User Survey</div>
+                    <div class="p_tags">Personas</div>
+                    <div class="p_tags">Wireframes</div>
+                    <div class="p_tags">Flow Diagrams</div>
+                    <div class="p_tags">High Fidelity Interfaces</div>
+                    <div class="p_tags">Prototype</div>
+                    <div class="p_tags">Mini Usability Study</div>
+                    <div class="p_tags">Accessibility Evaluation</div>
                 </div>
-            </div>
-            <h2>Or Send Me a Message</h2>
-            <div class = "form-section__input">
-                <label for = "full-name" class = "required">Full Name</label>
-                <input type = "text" id = "full-name" name = "Full&nbsp;Name" placeholder="First and Last Name" required>
-            </div>
-            <div class="form-section__input">
-                <label for= "contact-email" class = "required">Email</label>
-                <input type="email" id="contact-email" name = "Contact&nbsp;Email" placeholder="example@email.com" required>
-            </div>
-            <div class="form-section__input">
-                <label for= "phone">Phone Number</label>
-                <input name = "Phone" type = "tel" placeholder="(123)-456-7890"></textarea>
-            </div>
-            <div class="form-section__input">
-                <label for= "message" class = "required">Message</label>
-                <textarea name = "Message" placeholder = "Send me a message." required></textarea>
-            </div>
-            <div class="form-section__buttons">
-                <button class= "form-button" id = "submit">Submit</button>
-            </div>
-            
-        </form>
-        </dialog>
-        <span class = "hero-section">
-        <div class="hero-title">
-            <h1 class="project-name-hero">Weatherlerts</h1>
-            <h2 class = "project-subtitle">A personal weather app with real time weather alerts</h2>
-        </div>
-        <img loading = "lazy" class = "landing-image" id = "section-crossed">
-        </span>
-        <main class = "section" id = "project-page">
-            <h1 class = section-header>Overview</h1>
-            <div class="overview-box">
-                <div class="overview-box__item">
-                    <h2 class="subheading">Project Summary</h2>
-                        <p class="subtext">Weatherlerts is a mobile app project. It's designed to deliver early warning alerts to the user of any upcoming disasters. The project time was between August 2022 and September 2022.</p>
-                    <h2 class="subheading">Problem That Needs To Be Solved</h2>
-                        <p class="subtext">Weather seems like an easy problem to tackle but there are several things that need to be considered first:</p>
-                            <span style="width: 75%; margin: 1rem 0rem;">
-                                <div class="results-item">
-                                    <div class = list-number>1</div>
-                                    <p>News viewership is down across the board as alternative media sources take their place</p>
-                                </div>
-                                <div class="results-item">
-                                    <div class="list-number">2</div>
-                                    <p>Weather is constantly changing and people hate weatherpeople who are wrong</p>
-                                </div>
-                                <div class="results-item">
-                                    <div class = "list-number">3</div>
-                                    <p>People want weather information on locations outside their current one.</p>
-                                </div>
-                            </span>   
-                </div>
-                <div class="overview-box__item">
-                    <h2 class="subheading">The Solution</h2>
-                        <p class="subtext">Design an app that delivers up to date notifications of weather events. The app must:</p>
-                        <span style="width: 75%; margin: 1rem 0rem;">
-                            <div class="results-item">
-                                <div class = list-number>1</div>
-                                <p>Provide up to date weather alerts, both big and small, directly to the user.</p>
-                            </div>
-                            <div class="results-item">
-                                <div class="list-number">2</div>
-                                <p>Show news stories related to their locations weather</p>
-                            </div>
-                            <div class="results-item">
-                                <div class = "list-number">3</div>
-                                <p>Allow users to pick and choose which locations to focus on.</p>
-                            </div>
-                        </span> 
-                    <h2 class="subheading">My Role</h2>
-                        <p class="subtext">Wireframing, Prototyping, Ideating, Research</p>
-                </div>
-            </div>
-        </main>
-        <main class="section" id = "project-page">
-        <h1 class="section-header">Process to Product</h1>
-        <p class="subtext">I approached the project with assumptions in mind: users sought swift access to pertinent information, preferably on their mobile devices. Thus, I adopted a mobile-first design strategy to accommodate smaller screens effectively. This approach also enabled the incorporation of features like pop-up notifications.</p>
-        <h2 class = "subheading">Process</h2>
-        <div class="grid-image">
-            <div class="ui-images">
-                <div class="thumbnail-image">
-                    <img src="assests/svg/ui-images/research-icon.svg" alt="" width="64px" height="64px">
-                </div>
-                <h2>Research</h2>
-                <p>Find out how the competition solves this problem, if they have solved it at all.</p>
-            </div>
-            <div class="ui-images">
-                <div class = "thumbnail-image">
-                    <img src="assests/svg/ui-images/idea-icon.svg" alt="" width="64px" height="64px">
-                </div>
-                <h2>Ideation</h2>
-                <p>Come up with as many ideas as possible and pick the best one from the bunch</p>
-            </div>
-            <div class="ui-images">
-                <img src="assests/svg/ui-images/test-icon.svg" alt="" class = "thumbnail-image">
-                <h2>Testing</h2>
-                <p>See if the ideas work in practice and keep testing until it works</p>
-            </div>
-            <div class="ui-images">
-                <img src="assests/svg/ui-images/design-icon.svg" alt="" class = "thumbnail-image">
-                <h2>Design</h2>
-                <p>Finalize the process by coming up with the final look and feel of the product</p>
-            </div>
-        </div>
-        </main>
-        <section class = "section" id = "project-page">
-        <h1 class="section-header">Ideation</h1>
-        <p class="subtext">My aim was to create a neatly organized app that minimized information clutter while providing essential weather details. Many design decisions in the ideation phase were centered around prioritizing weather alerts before general information, based on the assumption that users typically prioritize alerts.</p>
-        <div class = "image-div">
-            <picture>
-                <source media = "(max-width:672px)" srcset="assests/png/weatherlerts/mobile-images/ideation-phase-mobile.png">
-                <img loading = "lazy" src="assests/png/weatherlerts/ideation-phase.png" alt="image of early sketches" class = "section" id = "project-images">
-            </picture>
-        </div>
-        </section>
-        <main class="section" id = "project-page">
-            <h1 class="section-header">Testing</h1>
-            <h2 class="subheading">Results</h2>
-            <p class="subtext">I measured success based on the time on a task the user spent. Findings for the study can be summarized as such:</p>
-            <span style="width: 75%; margin: 1rem 0rem;">
-                <div class="results-item">
-                    <div class = list-number>1</div>
-                    <p>Users were frustrated as to why the home screen wasn't the map screen</p>
-                </div>
-                <div class="results-item">
-                    <div class="list-number">2</div>
-                    <p>Button layouts were confusing.</p>
-                </div>
-                <div class="results-item">
-                    <div class = "list-number">3</div>
-                    <p>Information was not shared properly.</p>
-                </div>
-                <div class="results-item">
-                    <div class = "list-number">4</div>
-                    <p>Visually impaired individuals had a tough time navigating.</p>
-                </div>
-            </span>
-            <h2 class="subheading">What to Do</h2>
-            <p class="subtext">I had a bit of a struggle figuring out how to make the app easy to use. Finally, I decided to get rid of the starting screen that wasn't really needed, and I moved some buttons around to make them easier to find. This really helped make the app much easier to use.</p>
-        </main>
-        <main class="section" id="project-page">
-        <h1 class="section-header">Design</h1>
-        <h2 class="subheading">Laying the Foundation</h2>
-        <p class="subtext">My first design try didn't work well when tested, so I had to start over. I chose a simple 8-point grid layout and a clean look. Picking colors was a challenge, but I settled on a calming blue like the sky. For the text, I went with the Roboto font since it's commonly used in many designs.</p>
-        </main>
-        <main class= "section" id = "image-container">
-            <h1 class = "image-title">Colors</h1>
-            <picture>
-                <source media = "(max-width:672px)" srcset = "assests/svg/weatherlerts/mobile-images/colors-mobile.svg">
-                <img loading = "lazy" src="assests/svg/weatherlerts/colors.svg" alt="color pallete of the product" class = "section" id = "project-images">
-            </picture>
-            
-            <h1 class = "image-title">Grid and Heirarchy</h1>
-            <picture>
-                <source media = "(max-width:672px)" srcset = "assests/svg/weatherlerts/mobile-images/grid-hierarchy-layout-mobile.svg">
-                <img loading = "lazy" src="assests/svg/weatherlerts/grid-hierarchy-layout.svg" alt="layout and heirarchy of the design" class = "section" id = "project-images">
-            </picture>
-            
-            <h1 class = "image-title">Icons</h1>
-            <picture>
-                <source media = "(max-width:672px)" srcset = "assests/svg/weatherlerts/mobile-images/icons-mobile.svg">
-                <img loading = "lazy" src="assests/svg/weatherlerts/icons.svg" alt="icons used in the page" class = "section" id = "project-images">
-            </picture>
-
-            <h1 class = "image-title">Components</h1>
-            <picture>
-                <source media="(max-width:672px)" srcset="assests/svg/weatherlerts/mobile-images/components-mobile.svg">
-                <img loading = "lazy" src="assests/svg/weatherlerts/components.svg" alt="icons used in the page" class = "section" id = "project-images">
-            </picture>
-            
-        </main>
-        <main class="section" id = "project-page">
-        <h1 class = "section-header">Final Design</h1>
-        <div class = "image-div">
-            <picture>
-                <source media = "(max-width:672px)" srcset="assests/png/weatherlerts/mobile-images/home-screen-mobile.png">
-                <img loading = "lazy" src="assests/png/weatherlerts/home-screen.png" alt="home screen images" class = "section" id = "project-images">
-            </picture>
-            <picture>
-                <source media = "(max-width:672px)" srcset="assests/png/weatherlerts/mobile-images/weather-page-mobile.png">
-                <img loading = "lazy" src="assests/png/weatherlerts/weather-page.png" alt="weather page" class = "section" id = "project-images">
-            </picture>
-            <picture>
-                <source media = "(max-width:672px)" srcset="assests/png/weatherlerts/mobile-images/article-page-mobile.png">
-                <img loading = "lazy" src="assests/png/weatherlerts/article-page.png" alt="article and notifications page" class = "section" id = "project-images">
-            </picture>        
-        </div>
-         </main>
-        <main class="section" id = "project-page">
-        <h1 class="section-header">Results and Takeaways</h1>
-        <p class="subtext">After fine-tuning the app to its final version, we received a lot more positive feedback. Everyone was able to complete their tasks quickly and without any problems.</p>
-        <p class="subtext">Some things that I took away from completing this project are:</p>
-            <span style="width: 75%; margin: 1rem 0rem;">
-                <div class="results-item">
-                    <div class = list-number>1</div>
-                    <p><strong>Users like it when they get the info they need right away on the first page.</strong> In weather apps, having lots of useful stuff on that first page keeps more people interested.</p>
-                </div>
-                <div class="results-item">
-                    <div class="list-number">2</div>
-                    <p><strong>Unlike most apps, weather apps like this one tend to get clicked through more.</strong> People find it convenient to access all the info they want with just a few taps.</p>
-                </div>
-                <div class="results-item">
-                    <div class = "list-number">3</div>
-                    <p><strong>Enhancing the user experience requires further testing.</strong> Our discussions with project participants highlight their predominant use of weather apps for planning purposes. Thus, an intriguing concept could involve enabling the app to sync with their calendar and issue alerts regarding weather conditions that could potentially impact their plans.</p>
-                </div>
-            </span>
-            <h2 class="subheading">In Conclusion</h2>
-            <p class="subtext">While the market for personalized weather apps isn't as big as I expected, there's room for innovation. Many existing apps lack an integrated alert system. By filling this gap and adding alerts, we can greatly improve emergency readiness and user engagement, making the app even more valuable.</p>    
-        </main>
-        <main class="section" id = "other-works">
-            <h1>Check out my other projects</h1>
-            <div class = "other-works__divider">
-                <a href = "free_roam.html" class="other-works__item">
-                    <div class = "img-preview">
-                        <img loading = "lazy" 
-                        src="assests/png/mockup-images/free-roam-mockup.png" alt="preview image of the project">
+                <div id="p_quick_descriptors">
+                    <div class="descriptor_block">
+                        <h3>Location</h3>
+                        <p>South Gate, California</p>
                     </div>
-                    <p>Free Roam</p>
-                </a>
-                <a href="shelter_finds.html" class="other-works__item">
-                    <div class = "img-preview">
-                        <img loading = "lazy" 
-                        src="assests/png/mockup-images/shelter-finds-mockup.png" alt="preview image of the project">
+                    <div class="descriptor_block">
+                        <h3>Product Type</h3>
+                        <p>Native Mobile App (iOS)</p>
                     </div>
-                    <p>Shelter Finds</p>
-                </a>
-            </div> 
+                    <div class="descriptor_block">
+                        <h3>Purpose</h3>
+                        <p>Portfolio Project</p>
+                    </div>
+                    <div class="descriptor_block">
+                        <h3>Role</h3>
+                        <p>Designer, Researcher</p>
+                    </div>
+                    <div class="descriptor_block">
+                        <h3>Category</h3>
+                        <p>Transportation</p>
+                    </div>
+                    <div class="descriptor_block">
+                        <h3>Date</h3>
+                        <p>Sept 2023 - Oct 2023</p>
+                    </div>
+                </div>
+            </section>
+            <section class="project_section gray_background" id="market_research" data-direction="up">
+                <div class="section_header">
+                    <h2>Market Research</h2>
+                </div>
+                <div id="mr_container">
+                    <div id="mr_text">
+                        <div id="mr_g_paragraph">
+                            <div class="mr_paragraph">
+                                <h3>What The Research Shows</h3>
+                                <p>In 2017, 13.9% of people with disabilities drove / traveled regularly (down 
+                                    from 17.5% in 2009), a concerning pattern that restricts their mobility, access 
+                                    to essential services, and employment opportunities due to the constraints posed 
+                                    by their disabilities, underscoring the pressing need for enhanced para transit 
+                                    services and improved accessibility.</p>
+                            </div>
+                            <div class="mr_paragraph">
+                                <h3>What The Research Concludes</h3>
+                                <p>There exists a discernible correlation between the frequency of individuals' travel 
+                                    engagements on a weekly basis and the extent of resources accessible to them. It is 
+                                    observed that individuals with limited access to resources tend to engage in travel 
+                                    activities less frequently, whereas those with greater access to resources are more 
+                                    inclined to embark on journeys with greater frequency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mr_image">
+                        <img src="assests/png/free-roam/free_roam_chart.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="project_section" id="comptetitive_analysis" data-direction="up">
+                <div class="section_header">
+                    <h2>Competitive Analysis</h2>
+                    <h3>The first step in my design process was to look at how the competition approached the problem. 
+                    I chose 3 competitors as my main inspiration</h3>
+                </div>
+                <div id="ca_img_txt_container">
+                    <div id="ca_app_images">
+                        <div class="img_captions">
+                            <img src="assests/png/free-roam/app_myRTCpara.png" alt="">
+                            <caption>myRTCpara</caption>
+                        </div>
+                        <div class="img_captions">
+                            <img src="assests/png/free-roam/app_googlemaps.png" alt="">
+                            <caption>Google Maps</caption>
+                        </div>
+                        <div class="img_captions">
+                            <img src="assests/png/free-roam/app_uber.png" alt="">
+                            <caption>Uber</caption>
+                        </div>
+                    </div>
+                    <div id="ca_app_list">
+                        <div class="list_comparison">
+                            <h3>What These Apps Do Right:</h3>
+                            <div class="l_list_group">
+                                <div class="l_item">
+                                    <img src="assests/svg/i_plus.svg" alt="">
+                                    <p>Google Maps offers accessibility information about a specific location</p>
+                                </div>
+                                <div class="l_item">
+                                    <img src="assests/svg/i_plus.svg" alt="">
+                                    <p>Uber allows for specific pick up instructions</p>
+                                </div>
+                                <div class="l_item">
+                                    <img src="assests/svg/i_plus.svg" alt="">
+                                    <p>myRTCpara offers paratransit services in a dedicated app</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_comparison">
+                            <h3>What These Apps Do Wrong:</h3>
+                            <div class="l_list_group">
+                                <div class="l_item">
+                                    <img src="assests/svg/i_minus.svg" alt="">
+                                    <p>Google Maps doesn’t offer transport alternatives </p>
+                                </div>
+                                <div class="l_item">
+                                    <img src="assests/svg/i_minus.svg" alt="">
+                                    <p>Uber doesn’t offer paratransit services </p>
+                                </div>
+                                <div class="l_item">
+                                    <img src="assests/svg/i_minus.svg" alt="">
+                                    <p>myRTCpara is local and their services are not available everywhere</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="conclusion">
+                    <h2>Conclusion</h2>
+                    <div id="con_block_group">
+                        <div class="con_block">
+                            <img src="assests/svg/info_circle.svg" alt="">
+                            <p>Competitors offer some accessibility features but don’t offer much in the way 
+                                of delivering a service that allows individuals with disabilities to move around their city. </p>
+                        </div>
+                        <div class="con_block">
+                            <img src="assests/svg/info_circle.svg" alt="">
+                            <p>Competitors that do offer a service for people with disabilities, they are all local services
+                                 with no nationwide support. If a user were to travel abroad, they would lose that service.</p>
+                        </div>
+                        <div class="con_block">
+                            <img src="assests/svg/info_circle.svg" alt="">
+                            <p>Accommodations are a last consideration for most of the competitors. Those that do offer 
+                                accommodations are services that specialize in those field but are local.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project_section gray_background" id="user_survey" data-direction="up">
+                <div class="section_header">
+                    <h2>User Survey</h2>
+                    <h3>I conducted a simple 2 question survey on Google Forms amongst those with disabilities or lack of mobility.</h3>
+                </div>
+                <div class="survey_question">
+                    <div class="question_header">
+                        <img src="assests/svg/i_google_forms.svg" alt="">
+                        <h3>How often do you travel around your city?</h3>
+                    </div>
+                    <div class="response_group">
+                        <div class="response_stats">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="assests/svg/i_five_days_mobile.svg" />
+                                <img src="assests/svg/i_five_days.svg" alt="">
+                            </picture>
+                            <p class="stat_number">16%</p>
+                            <p>say they travel 5 days or more per week</p>
+                        </div>
+                        <div class="response_stats">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="assests/svg/i_3_days_mobile.svg" />
+                                <img src="assests/svg/i_3_days.svg" alt="">
+                            </picture>
+                            <p class="stat_number">18%</p>
+                            <p>say they travel 3 - 4 days per week</p>
+                        </div>
+                        <div class="response_stats">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="assests/svg/i_2_days_mobile.svg" />
+                                <img src="assests/svg/i_2_days.svg" alt="">
+                            </picture>
+                            <p class="stat_number">38%</p>
+                            <p>say they travel 1 - 2 days per week</p>
+                        </div>
+                        <div class="response_stats">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="assests/svg/i_no_days_mobile.svg" />
+                                <img src="assests/svg/i_no_days.svg" alt="">
+                            </picture>
+                            <p class="stat_number">28%</p>
+                            <p>say they never travel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="survey_question">
+                    <div class="question_header">
+                        <img src="assests/svg/i_google_forms.svg" alt="">
+                        <h3>If you don’t travel or travel rarely, what is the biggest hurdle for you preventing you from travelling?</h3>
+                    </div>
+                    <div class="response_group">
+                        <div class="response_stats">
+                            <p class="stat_number">7%</p>
+                            <p>say they don’t can’t drive anymore</p>
+                        </div>
+                        <div class="response_stats">
+                            <p class="stat_number">25%</p>
+                            <p>say public transportation is a hassle to use</p>
+                        </div>
+                        <div class="response_stats">
+                            <p class="stat_number">33%</p>
+                            <p>say paratransit services are not available</p>
+                        </div>
+                        <div class="response_stats">
+                            <p class="stat_number">35%</p>
+                            <p>say lack of accommodations </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <span><picture>
+                <source media="(max-width: 767px)" srcset="assests/png/free-roam/free_roam_preview_image_1_mobile.png" />
+                <img src="assests/png/free-roam/free_roam_preview_image_1.png" alt="">
+            </picture></span>
+            <section class="project_section" id="personas" data-direction="up">
+                <div class="section_header">
+                    <h2>Personas</h2>
+                    <h3>I created two types of personas based on the most likely users of the app: people with disabilities and senior citizens.</h3>
+                </div>
+                <div class="persona_group" style="display: flex; flex-direction: column; gap: 32px;">
+                    <div class="persona_container">
+                        <div class="persona_bio">
+                            <img src="assests/png/free-roam/free_roam_persona_1.png" alt="">
+                            <div class="bio_text">
+                                <h3>Jermaine Metz</h3>
+                                <p class="persona_title">Student</p>
+                                <q>Yearning to roam, disability shouldn't curtail my urban adventures</q>
+                            </div>
+                        </div>
+                        <div class="persona_description">
+                            <div class="description_top">
+                                <div class="persona_wants">
+                                    <h3>Goals</h3>
+                                    <div class="list_group">
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_plus.svg" alt="">
+                                            <p>Attend classes and navigate campus independently</p>
+                                        </div>
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_plus.svg" alt="">
+                                            <p>Easily travel to off-campus activities</p>
+                                        </div>
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_plus.svg" alt="">
+                                            <p>Find accessible routes for recreational outings</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="persona_wants">
+                                    <h3>Frustrations</h3>
+                                    <div class="list_group">
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_minus.svg" alt="">
+                                            <p>Limited availability of wheelchair-accessible vehicles for off-campus travel</p>
+                                        </div>
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_minus.svg" alt="">
+                                            <p>Difficulty finding parking spots with sufficient space for wheelchair access</p>
+                                        </div>
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_minus.svg" alt="">
+                                            <p>Inaccessible public transportation options</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description_bottom">
+                                <h3>About Jermaine</h3>
+                                <div class="breif_description">
+                                    <div class="l_item">
+                                        <img src="assests/svg/i_birthday.svg" alt="">
+                                        <p>21 years old</p>
+                                    </div>
+                                    <div class="l_item">
+                                        <img src="assests/svg/i_town.svg" alt="">
+                                        <p>Port Remingtonburgh</p>
+                                    </div>
+                                    <div class="l_item">
+                                        <img src="assests/svg/i_school.svg" alt="">
+                                        <p>UCLA</p>
+                                    </div>
+                                </div>
+                                <p>Jermaine Metz, a 21-year-old student at UCLA from 
+                                    Port Remingtonburgh, finds solace in horror novels and expresses his creativity through playing the 
+                                    violin. Despite mobility challenges, he navigates campus with resilience, driven by his love for 
+                                    literature and music.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="persona_container p_reverse">
+                        <div class="persona_bio">
+                            <img src="assests/png/free-roam/free_roam_persona_2.png" alt="">
+                            <div class="bio_text">
+                                <h3>Susie Schinner</h3>
+                                <p class="persona_title">Senior citizen, Animal Shelter Volunteer</p>
+                                <q>Embrace each moment; find joy in simple pleasures</q>
+                            </div>
+                        </div>
+                        <div class="persona_description">
+                            <div class="description_top">
+                                <div class="persona_wants">
+                                    <h3>Goals</h3>
+                                    <div class="list_group">
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_plus.svg" alt="">
+                                            <p>Safely travel to medical appointments</p>
+                                        </div>
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_plus.svg" alt="">
+                                            <p>Access essential services like banking or post</p>
+                                        </div>
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_plus.svg" alt="">
+                                            <p>Attend social gatherings with friends/family</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="persona_wants">
+                                    <h3>Frustrations</h3>
+                                    <div class="list_group">
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_minus.svg" alt="">
+                                            <p>Lack of reliable transportation services for seniors</p>
+                                        </div>
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_minus.svg" alt="">
+                                            <p>Insufficient availability of handicap-accessible taxis</p>
+                                        </div>
+                                        <div class="l_item">
+                                            <img src="assests/svg/i_minus.svg" alt="">
+                                            <p>Challenges navigating through crowded public transit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description_bottom">
+                                <h3>About Susie</h3>
+                                <div class="breif_description">
+                                    <div class="l_item">
+                                        <img src="assests/svg/i_birthday.svg" alt="">
+                                        <p>72 years old</p>
+                                    </div>
+                                    <div class="l_item">
+                                        <img src="assests/svg/i_town.svg" alt="">
+                                        <p>North Mollieboro</p>
+                                    </div>
+                                    <div class="l_item">
+                                        <img src="assests/svg/i_school.svg" alt="">
+                                        <p>Bertgreen High School</p>
+                                    </div>
+                                </div>
+                                <p>Susie Schinner, a 72-year-old retiree in North Mollieboro, enjoys tranquil walks in parks and dedicates 
+                                    her time to volunteering at the local animal shelter. Despite age-related mobility limitations, her 
+                                    love for nature and animals fuels her compassionate spirit and zest for life.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project_section gray_background" id="flow_diagram" data-direction="up">
+                <div class="section_header">
+                    <h2>Flow Diagram</h2>
+                    <h3>To get a good idea of how a user would navigate the app, I created a flow diagram to demonstrate one of the tasks 
+                        a user will go through on the app.</h3>
+                </div>
+                <img src="assests/svg/free_roam_flow_diagram.svg" alt="">
+            </section>
+            <section class="project_section" id="lofi_wireframes" data-direction="right">
+                <div class="section_header">
+                    <h2>Low Fidelity Wireframes</h2>
+                    <h3>After establishing the basis of the user flow, I began creating some rough designs for the interfaces and how they would function</h3>
+                </div>
+                <div class="free_roam" id="lofi_screens">
+                        <img src="assests/png/free-roam/lofi1.png" alt="">
+                        <img src="assests/png/free-roam/lofi2.png" alt="">
+                        <img src="assests/png/free-roam/lofi3.png" alt="">
+                </div>
+            </section>
+            <section class="project_section gray_background" data-direction="up">
+                <div class="section_header">
+                    <h2>High Fidelity UI Designs</h2>
+                    <h3>Once I got the general design down, I began deciding on the general aesthetics
+                         of the app. For the purposes of this app, I went with a dark mode theme to 
+                         the design since the colors are easier on the eyes and they create great 
+                         contrast for accessibility, which is important for the target demographic.</h3>
+                </div>
+                <div id="hifi_design_container">
+                    <div id="design_left">
+                        <div id="left_colors">
+                            <div class="subsection_header">
+                                <h3>Colors</h3>
+                                <p>Safety was the primary feeling I wanted to invoke in users. So 
+                                    I chose a color palate with blue as the main color.</p>
+                            </div>
+                            <div id="colors_grid">
+                                <div class="color_item_grid">
+                                    <div class="color_background" style="background-color: #2F67D4;"></div>
+                                    <div class="color_text">
+                                        <p class="color_title">Main Blue</p>
+                                        <p class="color_hex">#2F67D4</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="color_item_grid">
+                                    <div class="color_background" style="background-color: #152B55;"></div>
+                                    <div class="color_text">
+                                        <p class="color_title">Secondary Blue</p>
+                                        <p class="color_hex">#152B55</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="color_item_grid">
+                                    <div class="color_background" style="background-color: #0E0F11;"></div>
+                                    <div class="color_text">
+                                        <p class="color_title">Background</p>
+                                        <p class="color_hex">#0E0F11</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="color_item_grid">
+                                    <div class="color_background" style="background-color: #4C5E80;"></div>
+                                    <div class="color_text">
+                                        <p class="color_title">Level 1 Gray</p>
+                                        <p class="color_hex">#4C5E80</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="color_item_grid">
+                                    <div class="color_background" style="background-color: #394660;"></div>
+                                    <div class="color_text">
+                                        <p class="color_title">Level 2 Gray</p>
+                                        <p class="color_hex">#394660</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="color_item_grid">
+                                    <div class="color_background" style="background-color: #262F40;"></div>
+                                    <div class="color_text">
+                                        <p class="color_title">Level 3 Gray</p>
+                                        <p class="color_hex">#262F40</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div id="left_buttons">
+                            <div class="subsection_header">
+                                <h3>Buttons</h3>
+                                <p>The buttons had to be the most attractive element on any given page, while being easy on the eyes.</p>
+                            </div>
+                            <img src="assests/svg/button_demonstration.svg" alt="" style="padding: 16px 0px; width: 180px;">
+                            <div id="button_grid">
+                                <div class="button_grid_item">
+                                    <p>Main Button /  CTA</p>
+                                    <div class="button_demo" style="background-color: #2F67D4;">Button Label</div>
+                                </div>
+                                <div class="button_grid_item">
+                                    <p>Pressed</p>
+                                    <div class="button_demo" style="background-color: #214DA2;">Button Label</div>
+                                </div>
+                                <div class="button_grid_item">
+                                    <p>Disabled</p>
+                                    <div class="button_demo" style="background-color: #D2D2D6; color: #929298;">Button Label</div>
+                                </div>
+                                <div class="button_grid_item">
+                                    <p>Secondary Button</p>
+                                    <div class="button_demo" style="background-color: #152B55;">Button Label</div>
+                                </div>
+                                <div class="button_grid_item">
+                                    <p>Pressed</p>
+                                    <div class="button_demo" style="background-color: #0D1C39; color: #DEDEDE;">Button Label</div>
+                                </div>
+                                <div class="button_grid_item">
+                                    <p>Disabled</p>
+                                    <div class="button_demo" style="background-color: #D2D2D6; color: #929298;">Button Label</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="design_right">
+                        <div id="right_typography">
+                            <div class="subsection_header">
+                                <h3>Typography</h3>
+                                <p>I chose Plus Jakarta Sans as the main typeface for the app, as it gives a cleaner and more readable look to the interface.</p>
+                            </div>
+                            <div id="typography_grid">
+                                <div class="typography_grid_item">
+                                    <p class="typography_wieght">Regular</p>
+                                    <p class="subtitle_typography">Body</p>
+                                    <p class="main_typeface" style="font-weight: 400;">Aa</p>
+                                </div>
+                                <div class="typography_grid_item">
+                                    <p class="typography_wieght">Medium</p>
+                                    <p class="subtitle_typography">Subheading</p>
+                                    <p class="main_typeface" style="font-weight: 600;">Aa</p>
+                                </div>
+                                <div class="typography_grid_item">
+                                    <p class="typography_wieght">Semi Bold</p>
+                                    <p class="subtitle_typography">Headings / Button</p>
+                                    <p class="main_typeface" style="font-weight: 700;">Aa</p>
+                                </div>
+                            </div>
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="assests/svg/typography_chart_mobile.svg" />
+                                <img src="assests/svg/typography_chart.svg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <span><picture>
+                <source media="(max-width: 767px)" srcset="assests/png/free-roam/free_roam_preview_image_2_mobile.png" />
+                <img src="assests/png/free-roam/free_roam_preview_image_2.png" alt="">
+            </picture></span>
+            <section class="project_section" id="hifi_screens" data-direction="up">
+                <div class="section_header">
+                    <h2>34 High Fidelity Screens Created</h2>
+                    <h3>To ensure that all choices are considered in the design process, several paths needed to be considered. 
+                        As such, there were several screens  I created for users that wished to take a different path than the 
+                        intended one. </h3>
+                </div>
+                <div class="screens_animated">
+                    <div id="animated_container">
+                        <img src="assests/png/hifiscreen_1.png" alt="">
+                        <img src="assests/png/hifiscreen_5.png" alt="">
+                        <img src="assests/png/hifiscreen_7.png" alt="">
+                        <img src="assests/png/hifiscreen_9.png" alt="">
+                        <img src="assests/png/hifiscreen_3.png" alt="">
+                        <img src="assests/png/hifiscreen_4.png" alt="">
+                        <img src="assests/png/hifiscreen_8.png" alt="">
+                        <img src="assests/png/hifiscreen_11.png" alt="">
+                        <img src="assests/png/hifiscreen_10.png" alt="">
+                        <img src="assests/png/hifiscreen_2.png" alt="">
+                        <img src="assests/png/hifiscreen_6.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="project_section" data-direction="up">
+                <div class="section_header">
+                    <h2>Grid Alignment and Heirarchy</h2>
+                    <h3>Of course, choices and pretty colors aren’t everything to a design, it all has to flow perfectly as well. 
+                        As such, I took into heavy consideration how each element aligns itself in an 8 point grid, with distances 
+                        between groups or elements being anywhere between 8, 16, 24, or 32. </h3>
+                </div>
+                <div id="grid_screens">
+                    <div id="grid_alignment">
+                        <img src="assests/png/free-roam/hifi_screen1.png" alt="">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="assests/svg/grid_alignment_colors_mobile.svg" />
+                            <img src="assests/svg/grid_alignment_colors.svg" alt="" id="grid_lines_image">
+                        </picture>
+                    </div>
+                    <div id="heirarchy">
+                        <img src="assests/png/free-roam/hifi_screen2.png" alt="">
+                        <img src="assests/svg/heirarchy_colors.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="project_section" data-direction="up">
+                <div class="section_header">
+                    <h2>Prototyping The Design</h2>
+                    <h3>Now that I had the design laid out, it was time for me to start testing the flow with some users. So I built a 
+                        clickable prototype with all of my high fidelity designs connected together. </h3>
+                </div>
+                <div id="free_roam_prototype_demo">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="assests/png/free-roam/user_journey_mobile.png" />
+                        <img src="assests/png/free-roam/user_journey.png" alt="">
+                    </picture>
+                </div>
+                <p style="margin-top: 32px;">You can view the prototype here: <a href="" style="text-decoration: none; color: #2F67D4;">[Free Roam Figma Prototype]</a></p>
+            </section>
+            <section class="project_section gray_background" data-direction="up">
+                <div class="section_header">
+                    <h2>Prototype Validation</h2>
+                    <h3>It was time to begin testing to see if the designs and the flows work well together. I gathered around 4 friends to help me test the app and give 
+                        their opinions about its flow and how it looks. To eliminate bias, I explicitly told them that the app was made by an undisclosed individual with 
+                        no relation to me. </h3>
+                </div>
+                <div id="validation_container">
+                    <h3 style="text-transform: none; color: #C8C8C8;">All individuals were ask to participate in a simple 40 - 50 minute exercise where they had to complete a series of apps. The tasks ranged from asking the 
+                        user to book a paratransit ride to a given location, to asking the users to find the settings menu. These tests were specifically designed to test for 
+                        app usability and look for any issues with the design, such as poor contrast.</h3>
+                    <div id="val_contain_results">
+                        <div id="results_images">
+                            <div class="image_container">
+                                <h3>Before</h3>
+                                <img src="assests/png/free-roam/validation_screen_1.png" alt="">
+                                <img src="assests/svg/arrow_circle.svg" alt="" class="arrow_circle">
+                                <p>In this iteration, All rides were on display for everyone to pick and choose what ride they wanted. 
+                                    This presented a problem as users couldn't find their preferred ride method</p>
+                            </div>
+                            <div class="image_container">
+                                <h3>After</h3>
+                                <img src="assests/png/free-roam/user_journey2.png" alt="">
+                                <img src="assests/svg/arrow_circle.svg" alt="" class="arrow_circle">
+                                <p>After the revision, I implemented a tab system which would sort rides to 
+                                    whatever the user chooses. This makes picking a ride quicker and easier for the user. </p>
+                            </div>
+                        </div>
+                        <div id="results_text">
+                            <div class="text_section">
+                                <h3>Study Results</h3>
+                                <p>1 out 4 users mentioned that the app had a confusing navigation menu, claiming that some of the icons were not properly 
+                                    visible. 3 out of 4 users failed to complete the task of booking a paratransit ride because “they weren't sure which 
+                                    option was the paratransit option</p>
+                            </div>
+                            <div class="text_section">
+                                <h3>New and Improved</h3>
+                                <p>To fix the first issue, I simply made the visuals on the navigation menu, more visible and added labels on the bottom with recognizable icons. 
+                                    To fix the second issue, I decided that instead of having all options available at once, I would instead layout my options in a tab menu for 
+                                    each type of transportation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project_section" data-direction="up">
+                <div class="section_header">
+                    <h2>Accessibility Evaluation</h2>
+                    <h3>Since this app is primarily targeted towards individuals with mobility issues, accessibility was a major consideration when designing the project. 
+                        Not only did the text have to be readable to those that are visually impaired, but the structure of the app needs to be smooth enough for people to use 
+                        and screen readers to breeze through each stage in the app</h3>
+                </div>
+                <div id="accessibility_container">
+                    <div class="container_eval">
+                        <div class="diagram_eval">
+                            <img src="assests/png/free-roam/access_eval_1.png" alt="">
+                        </div>
+                        <div id="left_text">
+                            <p>Contrast was the main consideration when choosing the colors for this app. Following WGA 2.2 Standards, 
+                                I ensured that all text and buttons passed AA ratings. </p>
+                            <div class="accessibility_rating_right">
+                                <div class="rating_container">
+                                    <div class="circle_color" id="text_input"></div>
+                                    <div class="rating_text">
+                                        <p class="subtitle">Contrast Rating</p>
+                                        <div class="text_score">
+                                            <p>AA Small Text:</p>
+                                            <img src="assests/svg/green_check.svg" alt="">
+                                            <p>4.5:1</p>
+                                        </div>
+                                        <div class="text_score">
+                                            <p>AA Large Text:</p>
+                                            <img src="assests/svg/green_check.svg" alt="">
+                                            <p>3:1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating_container">
+                                    <div class="circle_color" id="border_input"></div>
+                                    <div class="rating_text">
+                                        <p class="subtitle">Contrast Rating</p>
+                                        <div class="text_score">
+                                        <p>AA Small Text:</p>
+                                        <img src="assests/svg/green_check.svg" alt="">
+                                        <p>4.5:1</p>
+                                        </div>
+                                        <div class="text_score">
+                                        <p>AA Large Text:</p>
+                                        <img src="assests/svg/green_check.svg" alt="">
+                                        <p>3:1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_eval">
+                        <div id="left_text">
+                            <div class="accessibility_rating_right">
+                                <div class="rating_container right">
+                                    <div class="rating_text">
+                                        <p class="subtitle">Contrast Rating</p>
+                                        <div class="text_score">
+                                            <p>AA Small Text:</p>
+                                            <img src="assests/svg/green_check.svg" alt="">
+                                            <p>4.5:1</p>
+                                        </div>
+                                        <div class="text_score">
+                                            <p>AA Large Text:</p>
+                                            <img src="assests/svg/green_check.svg" alt="">
+                                            <p>3:1</p>
+                                        </div>
+                                    </div>
+                                    <div class="circle_color" id="primary_input"></div>
+                                </div>
+                                <div class="rating_container right">
+                                    <div class="rating_text">
+                                        <p class="subtitle">Contrast Rating</p>
+                                        <div class="text_score">
+                                        <p>AA Small Text:</p>
+                                        <img src="assests/svg/green_check.svg" alt="">
+                                        <p>4.5:1</p>
+                                        </div>
+                                        <div class="text_score">
+                                        <p>AA Large Text:</p>
+                                        <img src="assests/svg/green_check.svg" alt="" >
+                                        <p>3:1</p>
+                                        </div>
+                                    </div>
+                                    <div class="circle_color" id="secondary_input"></div>
+                                </div>
+                                <p>All elements and backgrounds were evaluated to ensure that the contrast can stand up to close scrutiny throughout the app.</p>
+                            </div>
+                        </div>
+                        <div class="diagram_eval">
+                            <img src="assests/png/free-roam/access_eval_2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project_section" data-direction="up">
+                <div class="section_header">
+                    <h2>Final Thoughts and Future Plans</h2>
+                    <h3>This project was a personal challenge, as the consideration of the design had to go beyond the what i was familiar with 
+                        and had to include people with different abilities and backgrounds. The major problem with an app such as this would most 
+                        likely be implementations as it would probably take an enormous amount of resources to build the infrastructure needed to have such as 
+                        system available to use for everyone across the country</h3>
+                </div>
+            </section>
+            <span><picture>
+                <source media="(max-width: 767px)" srcset="assests/png/free-roam/free_roam_preview_image_1_mobile.png" />
+                <img src="assests/png/free-roam/free_roam_preview_image_1.png" alt="">
+            </picture></span>
         </main>
         <footer>
-            <div class="name-and-title">
-                <h1 style="letter-spacing: .25rem;">Omar Carbajal</h1>
-                <p>UI/UX Designer</p>
-            </div>
-            <div class="short-paragraph">
-                <p>I love crafting top-notch UI/UX designs that combine looks and functionality. I specialize in turning ideas into engaging digital experiences that put users first.</p>
-            </div>
-            <div class="outside-links">
-                <h2 style="font-weight: 600;">Follow Me</h2>
-                <div class="outside-links__icons">
-                    <a href="https://www.behance.net/omarcarbajal6"><img src="assests/svg/behance.svg" alt="Behance link"></a>
-                    <a href="https://www.linkedin.com/in/omar-carb03"><img src="assests/svg/linkedin.svg" alt="Linkedin link"></a>
-                    <a href="https://dribbble.com/omarcarb34"><img src="assests/svg/dribbble.svg" alt="Dribbble link"></a>
+            <img src="assests/svg/logo.svg" alt="" style="height: 28px;">
+            <div class="footer_links">
+                <h2 class="footer_text">Follow Me:</h2>
+                <div class="footer_icons">
+                    <div class="links_buttons">
+                        <img src="assests/svg/dribbble.svg" alt="" id="dribbble">
+                    </div>
+                    <div class="links_buttons">
+                        <img src="assests/svg/linkedin.svg" alt="" id="linkedin">
+                    </div>
+                    <div class="links_buttons">
+                        <img src="assests/svg/github.svg" alt="" id="github">
+                    </div>
                 </div>
             </div>
-        </footer>   
+        </footer>    
     </body>
 </html>

@@ -676,15 +676,6 @@ section{
     max-height: 500px;
     width: auto;
 }
-#aboutme_image::before{
-    content: '';
-    position: absolute;
-    border: 5px solid #FFF;
-    border-bottom-color: transparent;
-    width: 48px; height: 48px;
-    border-radius: 48px;
-    animation: rotation 5s linear infinite;
-}
 #text_intro{
     display: flex;
     flex-direction: column;
@@ -860,14 +851,6 @@ section{
         animation: rotation 1s linear infinite;
     }
 }
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-} 
 .footer_links{
     display: flex;
     gap: 24px;
@@ -997,7 +980,14 @@ span{
         margin-bottom: 55px;
     }
 }
-
+.shelter_finds_border_image{
+    max-height: 750px;
+    margin: 55px 0px;
+    transform: translateX(25%);
+}
+.moveLeft{
+    transform: translateX(10%);
+}
 #project_hero_section{
     display: flex;
     justify-content: center;
@@ -1016,6 +1006,25 @@ span{
     top: 0px;
     pointer-events: none;
     -webkit-user-select: none;
+}
+.shelter_finds#project_hero_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    pointer-events: none;
+    & #hero_section_image_project{
+        height: 65vh;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        pointer-events: none;
+        -webkit-user-select: none;
+    }
 }
 #project_description{
     display: flex;
@@ -1552,8 +1561,13 @@ span{
     & .arrow_circle{
         position: absolute;
         left: 24%;
-        bottom: 23%;
+        bottom: 27%;
     }
+}
+.shelter_finds.arrow_circle{
+    position: absolute;
+    left: 24%;
+    bottom: 29%;
 }
 #results_text{
     display: flex;
@@ -2088,6 +2102,13 @@ span{
             left: 0;
         }
     }
+    .shelter-finds#project_hero_section{
+        height: 27vh;
+        & img{
+            height: 35vh;
+            left: 0;
+        }
+    }
     #project_description{
         margin-top: 32px;
         & h1{
@@ -2378,5 +2399,21 @@ span{
     }
     .img_background_parallax > .img_background{
         border-radius: 16px 16px 0px 0px;
+    }
+    .shelter_finds#grid_alignment{
+        & img{
+            height: 316px;
+        }
+    }
+    .shelter_finds#heirarchy{
+        & img{
+            height: 255px;
+        }
+    }
+    .shelter_finds_border_image{
+        transform: translateX(0%);
+    }
+    .moveLeft{
+        transform: translateX(0%);
     }
 }
