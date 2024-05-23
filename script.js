@@ -56,6 +56,7 @@ function LinkViewMove(button){
     if (menuVisibility === 'true') {
        
        menuBackground.setAttribute('data-visible', 'false');
+       menuButton.setAttribute('aria-expanded', 'false')
        document.body.style.overflow = '';
     }
    // get the buttons value
