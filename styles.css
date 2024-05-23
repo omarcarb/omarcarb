@@ -576,7 +576,7 @@ section{
         animation: rotateRight 200ms ease-out 300ms forwards;
     }
 }
-.desktopapp.img_background_parallax:hover > .img_set, .img_background_parallax[data-animated="true"]> .img_set{
+.desktopapp.img_background_parallax:hover > .img_set, .desktopapp.img_background_parallax[data-animated="true"]> .img_set{
     & img:nth-child(1){
         animation: scaleUp 200ms ease-out forwards;
     }
