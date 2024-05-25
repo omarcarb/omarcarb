@@ -1653,6 +1653,14 @@ span{
     border: 12px solid #131720;
     background-color: #83A5E6;
 }
+.weatherlerts.circle_color#text_input{
+    border: 12px solid #F8F8F8;
+    background-color: #3A3A3A;
+}
+.weatherlerts.circle_color#border_input{
+    border: 12px solid #3498DB;
+    background-color: #EFF3F5;
+}
 .diagram_eval{
     position: relative;
 }
