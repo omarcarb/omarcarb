@@ -680,6 +680,21 @@ section{
     max-height: 500px;
     width: auto;
 }
+.blob{
+    position: absolute;
+    left: -30%;
+    top: 10%;
+
+    animation: rotate 20s linear infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
 #text_intro{
     display: flex;
     flex-direction: column;
