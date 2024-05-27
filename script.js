@@ -74,11 +74,14 @@ function LinkViewMove(button){
     });
 }
 
+const contactForm = document.getElementById("contact_form")
 
 const lastNameParent = document.getElementById("lastnameInput")
 const firstNameParent = document.getElementById("firstnameInput")
 const emailParent = document.getElementById("emailparentInput")
-const contactForm = document.getElementById("contact_form")
+const phoneInput = document.getElementById("phone_input")
+const messageAreaInput = document.getElementById("message_area")
+
 
 
 function ValidityCheck(event, parentElementId){
@@ -287,4 +290,37 @@ window.addEventListener("load", function(){
         loader.classList.add("hidden");
     }, 2000)
     
+})
+
+// for contact form //
+
+const fnameInput = document.getElementById('fname_input')
+const lnameInput = document.getElementById('lname_input')
+const emailInput = document.getElementById('email_input')
+
+const serviceID = 'service_gpvqb7n';
+const templeteID = 'template_6x11r8b'
+const publicIDkey = 'D153c5R-mnvwvFCTI'
+
+emailjs.init(publicIDkey);
+
+contactForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const inputData = {
+        firstName: fnameInput.value,
+        lastName: lnameInput.value,
+        emailID: emailInput.value,
+        phoneID: phoneInput.value,
+        message: messageAreaInput.value
+    };
+    emailjs.send(serviceID, templeteID, inputData).then(()=>{
+        fnameInput.value = '';
+        lnameInput.value = '';
+        emailInput.value = '';
+        phoneInput.value = '';
+        messageAreaInput.value = '';
+        console.log("success")
+    }, (error)=> {
+        console.log(error);
+    })
 })
