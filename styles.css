@@ -1008,7 +1008,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 35vh;
     margin-top: 0px;
     padding-bottom: 0px;
     pointer-events: none;
@@ -2124,11 +2124,10 @@ span{
         }
     }
     .project_section{
-        margin-top: 32px;
-        padding-bottom: 32px;
+        padding: 32px 0px;
     }
     #project_hero_section{
-        height: 30vh;
+        height: 20vh;
         & img{
             height: 40vh;
             left: 0;
@@ -2141,10 +2140,9 @@ span{
         bottom: 0px;
     }
     .shelter-finds#project_hero_section{
-        height: 27vh;
         & img{
-            height: 35vh;
-            left: 0;
+            height: 40vh;
+            left: 10%;
         }
     }
     #project_description{
