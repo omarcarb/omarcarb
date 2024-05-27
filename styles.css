@@ -1539,11 +1539,10 @@ span{
     }
 }
 #free_roam_prototype_demo{
-    width: 1232px;
+    width: 100%;
     position: relative;
     display: flex;
-    margin: 0px auto;
-    justify-content: space-between;
+    justify-content: center;
 
     & img{
         max-height: 492px;
@@ -2468,5 +2467,13 @@ span{
         & img{
             width: 100%;
         }
+    }
+    .weatherlerts.circle_color#text_input{
+        border: 6px solid;
+        height: 24px;
+    }
+    .weatherlerts.circle_color#border_input{
+        border: 6px solid #3498DB;
+        height: 24px;
     }
 }
