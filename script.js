@@ -292,6 +292,16 @@ window.addEventListener("load", function(){
     
 })
 
+function EmailThis(){
+    window.location.href = 'mailto:omarcarb34@duck.com';
+}
+
+function WebsiteRedirect(button){
+    const websiteName = button.getAttribute('data-site')
+
+    window.location.href = websiteName;
+}
+
 // for contact form //
 
 const fnameInput = document.getElementById('fname_input')

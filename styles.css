@@ -775,6 +775,10 @@ section{
         margin: 0px;
         padding: 0px;
     }
+    & p:not(.not_underlined){
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 .input_element{
     display: flex;
