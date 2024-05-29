@@ -525,21 +525,17 @@ section{
 .img_background_parallax{
     background-color: #378AE2;
     position: relative;
-    height: 56%;
-    max-height: 200px;
+    height: 200px;
     width: 100%;
     border-radius: 24px 24px 0px 0px;
     & img{
         max-width: 100%;
         height: 100%;
     }
-    & .img_background{
-        border-radius: 24px 24px 0px 0px;
-    }
 }
 .img_background_parallax.desktopapp > .img_set{
     & img{
-        left: 8%;
+        left: 20%;
     }
     & img:nth-child(1){
         animation: scaleUpReverse 200ms ease-out forwards;
@@ -2474,5 +2470,10 @@ span{
     .weatherlerts.circle_color#border_input{
         border: 6px solid #3498DB;
         height: 24px;
+    }
+    .img_background_parallax.desktopapp > .img_set{
+        & img{
+            left: 5%;
+        }
     }
 }
