@@ -147,7 +147,7 @@ function LinkViewMoveBack(button){
     var elemValue = button.getAttribute('data-ids');
     var targetSection = "index.html#" + elemValue;
 
-    console.log(targetSection)
+
     window.location.href = targetSection;
 }
 const animatedScreens = document.querySelectorAll(".screens_animated")
@@ -246,7 +246,6 @@ let indexObserver = new IntersectionObserver(function(entries, observer){
             sequenceSet = parseFloat(entry.target.getAttribute('data-animation-sequence'))
         }
         
-        console.log(sequenceSet)
         
         entry.target.style.animationDelay = (sequenceSet * 150)+ 'ms'
         
