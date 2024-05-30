@@ -1905,10 +1905,10 @@ span{
         max-width: 327px;
     }
     span {
-        display: inline-block;
-        max-width: 327px;
+        display: flex;
+        max-width: 100%;
         & img{
-            width: 327px;
+            width: 100%;
         }
     }
     .section_header{
@@ -1992,8 +1992,8 @@ span{
         padding: 4px 24px;
     }
     .project_button{
-        max-width: 303px;
         border-radius: 16px;
+        max-width: 90%;
     }
     #aboutme_block{
         max-height: none;
@@ -2153,7 +2153,7 @@ span{
     .shelter-finds#project_hero_section{
         & img{
             height: 40vh;
-            left: 10%;
+            left: 0;
         }
     }
     #project_description{
@@ -2188,16 +2188,22 @@ span{
     #mr_container{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 24px;
+        width: 100%;
+    }
+    #mr_text{
+        max-width: 81%;
     }
     #mr_image{
-        padding: 24px 8px;
-        max-width: 327px;
+        padding: 16px 8px;
+        max-width: 75%;
         & img{
             max-height: 175px;
+            max-width: 100%;
         }
     }
     .mr_paragraph{
         gap: 4px;
+        width: 100%;
     }
     .mr_paragraph > p{
         line-height: 20px;
@@ -2208,17 +2214,22 @@ span{
             gap: 12px;
             justify-content: space-evenly;
             width: 100%;
+            align-items: start;
         }
         & #ca_app_list{
             width: 100%;
         }
     }
-    .img_captions{
-        font-size: 12px;
+    .img_captions {
+    font-size: 12px;
+    width: 33%;
+    align-content: start;
+    justify-content: start;
+    text-align: center;
     }
     .img_captions > img{
         max-height: 202px;
-        max-width: 160px;
+        width: 100%;
     }
     #conclusion {
         & #con_block_group{
@@ -2238,6 +2249,9 @@ span{
         text-align: center;
         justify-content: start;
         gap: 0px;
+        & picture > img{
+            max-width: 100%;
+        }
     }
     .question_header {
         & h3{
@@ -2261,7 +2275,7 @@ span{
         }
     }
     .persona_description{
-        width: 100%;
+        width: 94%;
         max-width: 316px;
         padding: 16px 8px;
         & .description_top {
@@ -2273,10 +2287,11 @@ span{
         gap: 8px;
     }
     .l_item{
-        gap: 1px;
-        & img{
-            max-height: 16px;
-        }
+        gap: 4px;
+    }
+    .l_item > img{
+        height: 16px;
+        max-width: 16px;
     }
     .subsection_header > h3{
         font-size: 16px;
@@ -2305,9 +2320,9 @@ span{
     }
     #button_grid{
         grid-template-columns: repeat(2, 50%);
-        column-gap: 16px;
+        column-gap: 8px;
         row-gap: 12px;
-        max-width: 316px;
+        max-width: 100%;
         padding: 12px 0px;
         & .button_grid_item{
             gap: 5px;
@@ -2315,6 +2330,8 @@ span{
     }
     .button_demo{
         width: 100%;
+        font-size: 12px;
+        height: 40px;
     }
     #right_typography{
         & img{
@@ -2336,22 +2353,16 @@ span{
     .main_typeface{
         position: absolute;
         bottom: 20%;
-        left: 1%;
+        left: -12%;
     }
     #grid_screens{
         grid-template-columns: repeat(1, 100%);
-        max-width: 327px;
+        max-width: 100%;
         row-gap: 16px;
     }
     #grid_alignment{
         & img{
-            height: 368px;
-        }
-        & #grid_lines_image{
-            left:17px;
-            width: 307px;
-            height: 329px;
-            top:8.8%
+            width: 100%;
         }
     }
     .shelter_finds#grid_alignment{
@@ -2359,17 +2370,20 @@ span{
     }
     #heirarchy{
         & img{
-            height: 368px;
+            width: 100%;
         }
     }
     #free_roam_prototype_demo {
-        max-width: 327px;
+        max-width: 100%;
         & img {
-          max-height: 575px;
+            width: 100%;
         }
     }
     #shelter_finds_prototype_demo{
-        max-width: 327px;
+        max-width: 100%;
+        & img{
+            max-width: 100%;
+        }
     }
     #val_contain_results{
         flex-direction: column;
@@ -2415,7 +2429,7 @@ span{
     }
     .circle_color{
         width: 28px;
-        height: 28px;
+        height: 24px;
     }
     .rating_container{
         padding: 0px;
@@ -2432,9 +2446,18 @@ span{
           gap: 12px;
           padding: 0px 0px;
         }
+        & #left_text > p{
+            font-size: 8px;
+        }
     }
     .accessibility_rating_right {
         gap: 12px;
+    }
+    .rating_text > *{
+        font-size: 8px;
+    }
+    .text_score > p{
+        font-size: 8px;
     }
     #preloader > .icon_wrapper{
         top: 15%;
@@ -2452,7 +2475,7 @@ span{
     #lofi_screens{
         flex-direction: column;
     }
-    .img_background_parallax > .img_background{
+    .img_background_parallax{
         border-radius: 16px 16px 0px 0px;
     }
     .shelter_finds#grid_alignment{
@@ -2487,7 +2510,12 @@ span{
     }
     .img_background_parallax.desktopapp > .img_set{
         & img{
-            left: 5%;
+            left: 0%;
+        }
+    }
+    #chart{
+        & img{
+            max-width: 100%;
         }
     }
 }
