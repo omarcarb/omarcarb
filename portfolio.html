@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+        <link rel = "stylesheet" href = "styles.css">
+        <script defer src = "script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name = "keywords" content = "UI design, UX design, user interface design, user experience design, web design, mobile app design, interaction design, usability, wireframing, prototyping, user research, information architecture, responsive design, user-centered design, UI/UX principles, design thinking, user testing, visual design, UI/UX tools, design portfolio">
+        <meta name = "author" content="Omar Carbajal">
+        <!-- HTML Meta Tags -->
+        <title>Omar's Portfolio Site</title>
+        <meta name="description" content="Learn the process it took to make the website you are viewing">
+        
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://www.omarcarb.com/index.html">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Omar's Portfolio Site">
+        <meta property="og:description" content="Learn the process it took to make the website you are viewing">
+        <meta property="og:image" content="">
+        
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="omarcarb.com">
+        <meta property="twitter:url" content="https://www.omarcarb.com/index.html">
+        <meta name="twitter:title" content="Omar's Portfolio Site">
+        <meta name="twitter:description" content="Learn the process it took to make the website you are viewing">
+        <meta name="twitter:image" content="">
+        
+        <link rel="icon" href="assests/png/browser_icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <title>Omar's Portfolio Site</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;"></a>
+        <button class= "mobile-toggle" aria-controls="primary_nav" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+            <div id="primary_nav" data-visible="false" aria-hidden="true">
+                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</a>
+                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="about">About</a>
+                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="contact_section">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 style="margin-bottom: 64px;">This page is currently under construction. Please Visit the other projects I have made in the meantime.</h1>
+            <div id="project_grid">
+                <div class="project_container" data-animated="false" data-animation-sequence="1">
+                    <div class="img_background_parallax" data-animated="false">
+                        <div class="img_set">
+                            <img src="assests/png/free-roam/preview_free_roam2.png" alt="" class="img_left">
+                            <img src="assests/png/free-roam/preview_free_roam1.png" alt="" class="img_center">
+                            <img src="assests/png/free-roam/preview_free_roam3.png" alt="" class="img_right">
+                        </div>
+                    </div>
+                    <div class="project_text">
+                        <h3>Free Roam</h3>
+                        <div class="project_tags">
+                            <p>UI Design</p>
+                            <p>UX Design</p>
+                            <p>Project</p>
+                            <p>Mobile App</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Posuere fusce egestas quis est lectus facilisis.</p>
+                    </div>
+                    <button class="project_button" onclick="ProjectRedirect(this)" data-text="free_roam">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
+                </div>
+                <div class="project_container" data-animated="false" data-animation-sequence="2">
+                    <div class="desktopapp img_background_parallax" data-animated="false">
+                        <div class="img_set">
+                            <img src="assests/png/shelter-finds/shelter_finds_preview1.png" alt="" class="img_center">
+                        </div>
+                    </div>
+                    <div class="project_text">
+                        <h3>Shelter Finds</h3>
+                        <div class="project_tags">
+                            <p>UI Design</p>
+                            <p>UX Design</p>
+                            <p>Project</p>
+                            <p>Desktop</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Posuere fusce egestas quis est lectus facilisis.</p>
+                    </div>
+                    <button class="project_button" onclick="ProjectRedirect(this)" data-text="shelter_finds">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
+                </div>
+                <div class="project_container" data-animated="false" data-animation-sequence="3">
+                    <div class="img_background_parallax" data-animated="false">
+                        <div class="img_set">
+                            <img src="assests/png/weatherlerts/preview_weatherlerts1.png" alt="" class="img_left">
+                            <img src="assests/png/weatherlerts/preview_weatherlerts2.png" alt="" class="img_center">
+                            <img src="assests/png/weatherlerts/preview_weatherlerts3.png" alt="" class="img_right">
+                        </div>
+                    </div>
+                    <div class="project_text">
+                        <h3>Weatherlerts</h3>
+                        <div class="project_tags">
+                            <p>UI Design</p>
+                            <p>UX Design</p>
+                            <p>Project</p>
+                            <p>Mobile App</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Posuere fusce egestas quis est lectus facilisis.</p>
+                    </div>
+                    <button class="project_button" onclick="ProjectRedirect(this)" data-text="weatherlerts">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="assests/svg/logo.svg" alt="" style="height: 28px;">
+        <div class="footer_links">
+            <h2 class="footer_text">Follow Me:</h2>
+            <div class="footer_icons">
+                <div class="links_buttons">
+                    <img src="assests/svg/dribbble.svg" alt="" id="dribbble">
+                </div>
+                <div class="links_buttons">
+                    <img src="assests/svg/linkedin.svg" alt="" id="linkedin">
+                </div>
+                <div class="links_buttons">
+                    <img src="assests/svg/github.svg" alt="" id="github">
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
