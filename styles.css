@@ -447,23 +447,23 @@ section{
     background-color: #2a3669;
 }
 .bouncing{
-    animation: upanddown 1s ease-out 2 forwards;
+    animation: shake 1s ease-out 1 forwards;
 }
-@keyframes upanddown {
-    0%{
-        transform: scale(0),translateY(0px);
+@keyframes shake {
+    30% { 
+        transform: scale(1.2); 
     }
-    25%{
-        transform: scale(1.25,.25) translateY(48px);
-        animation-timing-function: ease-out;
+    40%, 60% { 
+        transform: rotate(-20deg) scale(1.2); 
     }
-    75%{
-        transform: scale(.75, 1.25) translateY(-16px);
-        animation-timing-function: ease-in;
+    50% { 
+        transform: rotate(20deg) scale(1.2); 
     }
-    100%{
-        transform: scale(1, 1) translateY(0px);
-        animation-timing-function: ease-in;
+    70% { 
+        transform: rotate(0deg) scale(1.2); 
+    }
+    100% { 
+        transform: scale(1); 
     }
 }
 
@@ -676,7 +676,7 @@ section{
     overflow: hidden;
     border-radius: 24px;
     max-height: 500px;
-    width: auto;
+    width: 100%;
 }
 .blob{
     position: absolute;

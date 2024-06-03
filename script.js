@@ -279,7 +279,7 @@ outsideLinks.forEach(function(object){
                 default: console.log("Link not found")
             }
             object.classList.remove('bouncing');
-        }, 2000)
+        }, 1500)
     })
 })
 
