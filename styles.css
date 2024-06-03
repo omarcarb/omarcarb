@@ -2537,5 +2537,8 @@ span{
     }
     #website_container{
         flex-direction: column;
+        & .website_item > img{
+            width: 100%;
+        }
     }
 }
