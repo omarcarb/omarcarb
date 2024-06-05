@@ -2018,9 +2018,10 @@ span{
         border-radius: 16px;
     }
     #aboutme_image{
-        max-height: 253px;
+        height: 253px;
         margin: 8px;
         border-radius: 12px;
+        max-width: 93%;
     }
     #skill_grid{
         grid-template-columns: repeat(2, 1fr);
@@ -2541,4 +2542,5 @@ span{
             width: 100%;
         }
     }
+
 }
