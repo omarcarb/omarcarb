@@ -1898,6 +1898,7 @@ span{
         background-size: cover;
         z-index: 10000000;
         width: 1.5rem;
+        height: 1.5rem;
         top: 1rem;
         right: 2rem;
     }
