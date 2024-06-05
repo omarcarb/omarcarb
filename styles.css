@@ -1033,16 +1033,17 @@ span{
     margin-top: 0px;
     padding-bottom: 0px;
     pointer-events: none;
-    & #hero_section_image_project{
-        height: 65vh;
-        width: 100%;
-        object-fit: cover;
-        position: absolute;
-        z-index: -1;
-        top: 0px;
-        pointer-events: none;
-        -webkit-user-select: none;
-    }
+}
+#hero_section_image_project{
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    pointer-events: none;
+    -webkit-user-select: none;
+    left: 0%;
 }
 #project_description{
     display: flex;
