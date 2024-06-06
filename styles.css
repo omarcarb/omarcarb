@@ -2530,7 +2530,7 @@ span{
     }
     .img_background_parallax.desktopapp > .img_set{
         & img{
-            left: 0%;
+            left: 10%;
         }
     }
     #chart{
