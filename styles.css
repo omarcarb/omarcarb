@@ -1158,6 +1158,10 @@ span{
         aspect-ratio: 16 /9;
     }
 }
+#portfolio_inspiration{
+    display: flex;
+    flex-direction: column;
+}
 #ca_img_txt_container{
     display: flex;
     flex-direction: row;
