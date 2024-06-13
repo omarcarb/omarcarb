@@ -1161,6 +1161,13 @@ span{
 #portfolio_inspiration{
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    gap: 16px;
+    align-items: center;
+    & > *{
+        max-width: 100%;
+        max-height: 300px;
+    }
 }
 #ca_img_txt_container{
     display: flex;
@@ -1447,6 +1454,7 @@ span{
     & img{
         max-width: 100%;
     }
+    margin-bottom: 24px;
 }
 #typography_grid{
     display: grid;
