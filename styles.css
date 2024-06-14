@@ -1371,7 +1371,7 @@ span{
     grid-template-columns: repeat(3, auto);
     & img{
         max-width: 700px;
-        height: 500px;
+        max-height: 500px;
     }
 }
 #hifi_design_container{
@@ -2646,6 +2646,11 @@ span{
         & .website_item > img{
             width: 100%;
         }
+    }
+    #portfolio_inspiration{
+        grid-template-columns: repeat(1, minmax(328px, 1fr));
+        grid-template-rows: repeat(2, 170px);
+        row-gap: 16px;
     }
     #portfolio_screens{
         display: grid;
