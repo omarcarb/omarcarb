@@ -114,24 +114,6 @@
                 </div>
                 <div id="project_grid">
                     <div class="project_container" data-animated="false" data-animation-sequence="1">
-                        <div class="desktopapp img_background_parallax" data-animated="false">
-                            <div class="img_set">
-                                <img src="assests/png/website_porfolio_preview.png" alt="" class="img_center">
-                            </div>
-                        </div>
-                        <div class="project_text">
-                            <h3>Portfolio Website</h3>
-                            <div class="project_tags">
-                                <p>UI Design</p>
-                                <p>UX Design</p>
-                                <p>Front-End</p>
-                                <p>Personal</p>
-                            </div>
-                            <p>A HTML, CSS and Javascript website made to host projects I have worked on</p>
-                        </div>
-                        <button class="project_button" onclick="ProjectRedirect(this)" data-text="portfolio">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
-                    </div>
-                    <div class="project_container" data-animated="false" data-animation-sequence="1">
                     <div class="img_background_parallax" data-animated="false">
                         <div class="img_set">
                             <img src="assests/png/free-roam/preview_free_roam2.png" alt="" class="img_left">
@@ -145,7 +127,7 @@
                             <p>UI Design</p>
                             <p>UX Design</p>
                             <p>Project</p>
-                            <p>Mobile App</p>
+                            <p class="remove">Mobile App</p>
                         </div>
                         <p>A mobile app designed for people with disabilities and the elderly</p>
                     </div>
@@ -163,11 +145,29 @@
                             <p>UI Design</p>
                             <p>UX Design</p>
                             <p>Project</p>
-                            <p>Desktop</p>
+                            <p class="remove">Desktop</p>
                         </div>
                         <p>A website with endless filtering options for personalized rental searching</p>
                     </div>
                     <button class="project_button" onclick="ProjectRedirect(this)" data-text="shelter_finds">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
+                </div>
+                <div class="project_container" data-animated="false" data-animation-sequence="1">
+                    <div class="desktopapp img_background_parallax" data-animated="false">
+                        <div class="img_set">
+                            <img src="assests/png/website_porfolio_preview.png" alt="" class="img_center">
+                        </div>
+                    </div>
+                    <div class="project_text">
+                        <h3>Portfolio Website</h3>
+                        <div class="project_tags">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p class="remove">Personal</p>
+                        </div>
+                        <p>A HTML, CSS and Javascript website made to host projects I have worked on</p>
+                    </div>
+                    <button class="project_button" onclick="ProjectRedirect(this)" data-text="portfolio">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
                 </div>
                 <div class="project_container" data-animated="false" data-animation-sequence="3">
                     <div class="img_background_parallax" data-animated="false">
@@ -183,7 +183,7 @@
                             <p>UI Design</p>
                             <p>UX Design</p>
                             <p>Project</p>
-                            <p>Mobile App</p>
+                            <p class="remove">Mobile App</p>
                         </div>
                         <p>A mobile app designed to alert users to potention weather related problems</p>
                     </div>
@@ -198,7 +198,6 @@
             </div>
             <div id="aboutme_block">
                 <div id="aboutme_image">
-                    <img src="assests/png/profilepic_updated.png" alt="" style="width: 100%; z-index: 1; position: relative; bottom: -6%;">
                     <img src="assests/svg/background_blob.svg" alt="" class="blob">
                 </div>
                 <div class="aboutme_text">
@@ -219,24 +218,16 @@
                         <h2>Skill Overview</h2>
                         <div id="skill_grid">
                             <div class="grid_skill_item">
-                                <img src="assests/svg/ui_design.svg" alt="">
-                                <p>UI/UX Design</p>
+                                <img src="assests/svg/figma.svg" alt="">
+                                <p>Figma</p>
                             </div>
                             <div class="grid_skill_item">
-                                <img src="assests/svg/prototyping.svg" alt="">
-                                <p>Prototyping</p>
+                                <img src="assests/svg/adobe_creative_suite.svg" alt="">
+                                <p>Adobe Creative Suite</p>
                             </div>
                             <div class="grid_skill_item">
                                 <img src="assests/svg/css_white.svg" alt="">
                                 <p>CSS</p>
-                            </div>
-                            <div class="grid_skill_item">
-                                <img src="assests/svg/ux_testing.svg" alt="">
-                                <p>UX Testing</p>
-                            </div>
-                            <div class="grid_skill_item">
-                                <img src="assests/svg/research.svg" alt="">
-                                <p>Research</p>
                             </div>
                             <div class="grid_skill_item">
                                 <img src="assests/svg/html5_white.svg" alt="">
@@ -247,8 +238,16 @@
                                 <p>JavaScript</p>
                             </div>
                             <div class="grid_skill_item">
-                                <img src="assests/svg/collaboration.svg" alt="">
-                                <p>Collaboration</p>
+                                <img src="assests/svg/tailwind.svg" alt="">
+                                <p>Tailwind</p>
+                            </div>
+                            <div class="grid_skill_item">
+                                <img src="assests/svg/vscode.svg" alt="">
+                                <p>VSCode</p>
+                            </div>
+                            <div class="grid_skill_item">
+                                <img src="assests/svg/git.svg" alt="">
+                                <p>Git</p>
                             </div>
                         </div>
                     </div>

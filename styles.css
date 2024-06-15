@@ -710,8 +710,7 @@ section{
 #skill_grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 16px;
-    row-gap: 8px;
+    gap: 16px;
 }
 #text_skills > h2{
     font-size: 16px;
@@ -1823,7 +1822,7 @@ span{
 /* Media query for tablet screens */
 @media (min-width: 481px) and (max-width: 1024px) {
     main{
-        width: 95%;
+        width: 100%;
     }
     body{
         margin: 0px 64px;
@@ -1913,6 +1912,137 @@ span{
     }
     .hero_image{
         display: none;
+    }
+    .hero_text {
+        width: 100%;
+    }
+    #primary_nav{
+        max-width: 380px;
+    }
+    #primary_nav::before{
+        left: -84%;
+    }
+    #primary_nav[data-visible="false"] {
+      transform: translateX(600px);
+    }
+    #primary_nav[data-visible="true"] {
+        transform: translateX(125px);
+      }
+    #hero_section_image_project {
+        height: 55vh;
+    }
+    .remove{
+        display: none;
+    }
+    #project_grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .project_text > p{
+        font-size: 14px;
+    }
+    .img_background_parallax.desktopapp > .img_set {
+        & img {
+          left: 0;
+        }
+    }
+    #aboutme_block {
+        flex-direction: column;
+    }
+    .contact_area{
+        flex-direction: column;
+        gap: 32px;
+        & .contact_info{
+            width: 94%;
+        }
+    }
+    .contact_form{
+        padding: 0px;
+    }
+    .input_element{
+        width: 47%;
+    }
+    #mr_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 24px;
+        row-gap: 32px;
+    }
+    #ca_img_txt_container{
+        flex-direction: column;
+        & #ca_app_images{
+            gap: 12px;
+            justify-content: space-evenly;
+            width: 100%;
+            align-items: start;
+        }
+        & #ca_app_list{
+            width: 100%;
+        }
+    }
+    .img_captions {
+    font-size: 12px;
+    width: 33%;
+    align-content: start;
+    justify-content: start;
+    text-align: center;
+    }
+    .img_captions > img{
+        max-height: 400px;
+        width: 100%;
+    }
+    #conclusion {
+        & #con_block_group{
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+    .response_group {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .response_stats {
+        box-shadow: 2px 2px 4px #191A1E, -2px -2px 4px #51525E;
+    }
+    span {
+        & img {
+          max-height: 227px;
+        }
+    }
+    .persona_group{
+        gap: 64px;
+    }
+    .persona_container{
+        flex-direction: column;
+        & .persona_bio{
+            width: 100%;
+        }
+        & .persona_description{
+            width: auto;
+        }
+    }
+    .breif_description {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+    }
+    #lofi_screens {
+        & img {
+          max-width: 200px;
+        }
+    }
+    #hifi_design_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #grid_screens{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 32px;
+    }
+    #free_roam_prototype_demo {
+        & img {
+          max-height: 274px;
+        }
+    }
+    #accessibility_container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
