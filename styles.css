@@ -2044,6 +2044,25 @@ span{
     #accessibility_container {
         grid-template-columns: repeat(1, 1fr);
     }
+    .shelter-finds#project_hero_section{
+        height: 25vh;
+        & img{
+            height: 43vh;
+            left: 0;
+        }
+    }
+    .shelter_finds_border_image {
+        max-height: 359px;
+        transform: translateX(16%);
+    }
+    #shelter_finds_prototype_demo {
+        & img {
+          max-height: 325px;
+        }
+    }
+    #val_contain_results{
+        flex-direction: column;
+    }
 }
 
 /* Media query for mobile screens */
