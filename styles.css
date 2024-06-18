@@ -5,6 +5,7 @@
     --mainBackgroundColor: #26272C;
     --secondaryBackgroundColor: #35363E;
     --level2Gray: #dbdbdb;
+    --level3Gray: #404149;
     --header1Fontsize: 48px;
     --header2Fontsize: 24px;
     --paragraphFontsize: 16px;
@@ -250,7 +251,7 @@ label{
 }
 .primary_button{
     background-color: var(--mainAccentColor);
-    box-shadow: 8px 8px 16px hsla(229, 98%, 50%, 0.404),
+    box-shadow: 8px 8px 16px hsla(229, 88%, 67%, 0.404),
                 -8px -8px 16px rgba(181, 189, 221, 0.2);
     & img{
         width: 20px;
@@ -267,8 +268,7 @@ label{
 }
 .secondary_button{
     background-color: var(--mainBackgroundColor);
-    box-shadow: -8px -8px 16px rgba(61, 62, 70, 1),
-                8px 8px 16px #0F1012;
+    box-shadow: var(--boxShadow);
     & img{
         width: 16px; height: 16px;
         position: relative;
@@ -297,7 +297,7 @@ label{
     position: absolute;
     z-index: -1;
     left: 0;
-    background-color: #404149;
+    background-color: var(--level3Gray);
     min-height: 600px;
     top: 0;
     width:100vw;
@@ -473,13 +473,12 @@ section{
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(400px, .75fr));
-    column-gap: 16px;
+    column-gap: 8px;
     row-gap: 32px;
 }
 .project_container{
-    border-radius: 24px;
-    box-shadow: -8px -8px 16px #383A41,
-                8px 8px 16px #141417;
+    border-radius: var(--mainBorderRadius);
+    box-shadow: var(--boxShadow);
     transform: translateY(400px) perspective(500px) rotate3d(0, 1, 0, -90deg);
     opacity: 0;
     height: fit-content;
