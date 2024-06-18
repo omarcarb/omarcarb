@@ -4,6 +4,7 @@
     --mainAccentColor: #5870DC;
     --mainBackgroundColor: #26272C;
     --secondaryBackgroundColor: #35363E;
+    --level2Gray: #dbdbdb;
     --header1Fontsize: 48px;
     --header2Fontsize: 24px;
     --paragraphFontsize: 16px;
@@ -14,8 +15,10 @@
     --mainFontColor: #FFFFFF;
     --secondaryFontColor: #DBDBDB;
     --mainBorderRadius: 16px;
-    --boxShadow: -8px -8px 16px #3D3E46,
-                8px 8px 16px #0F1012;
+    --pillBorderRadius: 48px;
+    --boxShadow: -8px -8px 16px #3D3E46, 8px 8px 16px #0F1012;
+    --innerBoxShadow: inset -5px -5px 10px #3D3E46, inset 5px 5px 10px #0F1012;
+    --inputFocusShadow: 5px 5px 10px #3D3E46, 5px 5px 10px #0F1012;
 }
 *{
     margin: 0px;
@@ -35,7 +38,7 @@ body{
     align-items: center;
 }
 #preloader{
-    background-color: #35363E;
+    background-color: var(--secondaryBackgroundColor);
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -119,10 +122,9 @@ header{
     max-width: 1440px;
     background-color: var(--mainBackgroundColor);
     padding: 17px 2rem;
-    border-radius: 48px;
+    border-radius: var(--pillBorderRadius);
     margin-top: 32px;
-    box-shadow: -8px -8px 16px #3D3E46,
-                8px 8px 16px #0F1012;
+    box-shadow: var(--boxShadow);
     & #primary_nav {
         display: flex;
         gap: 17px;
@@ -148,12 +150,11 @@ footer{
     align-items: center;
     width: 100%;
     max-width: 1440px;
-    border-radius: 48px;
+    border-radius: var(--pillBorderRadius);
     margin-top: 64px;
     margin-bottom: 32px;
     padding: 24px 32px;
-    box-shadow: -8px -8px 16px #3D3E46,
-                8px 8px 16px #0F1012;
+    box-shadow: var(--boxShadow);
     & img{
         height: 28px;
     }
@@ -172,21 +173,20 @@ input[type="text"], input[type="tel"], input[type="email"]{
     border: none;
     height: 48px;
     background: #26272C;
-    box-shadow: inset -5px -5px 10px #3D3E46, inset 5px 5px 10px #0F1012;
-    border-radius: 16px;
+    box-shadow: var(--innerBoxShadow);
+    border-radius: var(--mainBorderRadius);
     padding: 0px 16px;
     font-size: 16px;
     color: #FFFFFF;
 
 }
 input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus{
-    background: linear-gradient(145deg, #292a2f, #222328);
-    box-shadow: 5px 5px 10px #3D3E46, 5px 5px 10px #0F1012;
+    box-shadow: var(--inputFocusShadow);
 
 }
 textarea{
     background: #26272C;
-    box-shadow: inset -5px -5px 10px #3D3E46, inset 5px 5px 10px #0F1012;
+    box-shadow: var(--innerBoxShadow);
     border-radius: 16px;
     padding: 16px;
     font-size: 16px;
@@ -195,16 +195,15 @@ textarea{
     resize: none;
 }
 textarea:focus{
-    background: linear-gradient(145deg, #292a2f, #222328);
-    box-shadow: 5px 5px 10px #3D3E46, 5px 5px 10px #0F1012;
+    box-shadow: var(--inputFocusShadow);
 }
 label{
-    color: #DBDBDB;
+    color: var(--level2Gray);
 }
 .menu_button{
     padding: 12px 42px;
     background-color: var(--mainBackgroundColor);
-    color: #DBDBDB;
+    color: var(--level2Gray);
     position: relative;
 }
 .menu_button:not(#button_standout)::after{
@@ -223,9 +222,8 @@ label{
     transition: width 300ms ease-out;
 }
 #button_standout{
-    box-shadow: -4px -4px 8px #3D3E46,
-                4px 4px 8px #0F1012;
-    border-radius: 48px;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--pillBorderRadius);
 
     transition: border-radius 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
@@ -252,7 +250,7 @@ label{
 }
 .primary_button{
     background-color: var(--mainAccentColor);
-    box-shadow: 8px 8px 16px hsla(229, 65%, 60%, 0.2),
+    box-shadow: 8px 8px 16px hsla(229, 98%, 50%, 0.404),
                 -8px -8px 16px rgba(181, 189, 221, 0.2);
     & img{
         width: 20px;
