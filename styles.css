@@ -13,6 +13,9 @@
     --paragraphFontweight: 400;
     --mainFontColor: #FFFFFF;
     --secondaryFontColor: #DBDBDB;
+    --mainBorderRadius: 16px;
+    --boxShadow: -8px -8px 16px #3D3E46,
+                8px 8px 16px #0F1012;
 }
 *{
     margin: 0px;
