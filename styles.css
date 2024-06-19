@@ -1192,8 +1192,10 @@ span{
     gap: 2px;
     justify-content: center;
     align-items: center;
+    max-width: 50%;
     & img{
         max-height: 366px;
+        width: 100%;
     }
 }
 .list_comparison{
