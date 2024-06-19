@@ -8,6 +8,7 @@
     --level3Gray: #404149;
     --header1Fontsize: 48px;
     --header2Fontsize: 24px;
+    --header3Fontsize: 20px;
     --paragraphFontsize: 16px;
     --header1Fontweight: 700;
     --header2Fontweight: 600;
@@ -2014,7 +2015,7 @@ span{
         gap: 16px;
     }
     .response_stats {
-        box-shadow: 2px 2px 4px #191A1E, -2px -2px 4px #51525E;
+        box-shadow: var(--boxShadow);
     }
     span {
         & img {
@@ -2080,6 +2081,15 @@ span{
 
 /* Media query for mobile screens */
 @media (max-width: 480px) {
+    :root{
+        --header1Fontsize: 24px;
+        --header2Fontsize: 16px;
+        --header3Fontsize: 16px;
+        --paragraphFontsize: 12px;
+        --boxShadow: -2px -2px 4px #3D3E46, 2px 2px 4px #0F1012;
+        --innerBoxShadow: inset -1px -1px 2px #3D3E46, inset 1px 1px 2px #0F1012;
+        --inputFocusShadow: -1px -1px 2px #3D3E46, 1px 1px 2px #0F1012;
+    }
     body{
         margin: 0px 24px;
         overflow-x: hidden;
@@ -2087,18 +2097,6 @@ span{
     main{
         padding: 0px;
         width: 95%;
-    }
-    h1{
-        font-size: 16px;
-    }
-    h2{
-        font-size: 16px;
-    }
-    h3{
-        font-size: 12px;
-    }
-    p{
-        font-size: 12px;
     }
     .desktop-paragraph{
         display: none;
@@ -2127,7 +2125,7 @@ span{
         padding: min(30vh, 10rem) 2em;
         gap: 3rem;
         background: #26272C;
-        box-shadow: -8px -8px 16px #383A41, 8px 8px 16px #141417;
+        box-shadow: var(--boxShadow);
         transform: translateX(300px);
         transition: transform 400ms ease-out;
         z-index: 99999;
