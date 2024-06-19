@@ -205,7 +205,9 @@ function ProjectRedirect(button){
     
 
     setTimeout(function(){
+        //set the animation attribute back to false
         animatedPage.setAttribute('data-animated',false)
+        //send to project page after "delay" seconds
         window.location.href = webpageName + ".html";
     }, delay)
     
@@ -216,7 +218,7 @@ const screenWidth = window.screen.width;
 let thresholdValue = 0;
 
 if(screenWidth < 480){
-    thresholdValue = .1;
+    thresholdValue = .01;
 }
 else{
     thresholdValue = .5;
