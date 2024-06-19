@@ -40,11 +40,13 @@ menuButton.addEventListener('click', function(){
     
 
     if(menuVisibility=="false"){
+        //only if the menu is not visible will the menu become visable when clicking on the menu button
         menuBackground.setAttribute('data-visible','true')
         menuButton.setAttribute('aria-expanded', 'true')
         document.body.style.overflow = 'hidden';
     }
     if(menuVisibility=="true"){
+        //only if the menu is visible will the menu become go away when clicking on the close button
         menuBackground.setAttribute('data-visible','false')
         menuButton.setAttribute('aria-expanded', 'false')
         document.body.style.overflow = '';
@@ -54,7 +56,7 @@ function LinkViewMove(button){
     const menuVisibility = menuBackground.getAttribute('data-visible');
 
     if (menuVisibility === 'true') {
-       
+       //if the menu is in its mobile state, the menu will stop the user from being able to scroll
        menuBackground.setAttribute('data-visible', 'false');
        menuButton.setAttribute('aria-expanded', 'false')
        document.body.style.overflow = '';
@@ -120,6 +122,7 @@ function RemoveErrorStyle(parentElementId){
 }
 
 if(contactForm !== null){
+    //if there are no invalid inputs, continue to the submit and call the delay function
     contactForm.addEventListener('submit', handleFormDelay)
 }
 
@@ -128,22 +131,26 @@ function handleFormDelay(event){
         event.preventDefault()
 
         const submitButton = document.getElementById('submit_button');
+        //add a loading icon
         const loadingIcon = document.getElementById('loading_icon');
 
+        //set the icons style and change the submit text
         loadingIcon.style.display = 'inline-block';
         submitButton.setAttribute('disabled', true);
         submitButton.setAttribute('value', "Sending....")
 
-       
+       //delay the submit by about 1.5 seconds
         setTimeout(function(){
             contactForm.submit();
-        },2000)
+        },1500)
 }
 function SendToAboutPage(){
+    //send the user to the about page when called
     window.location.href = "about.html"
 }
 
 function LinkViewMoveBack(button){
+    //if the user is in a project page, move back to the index page and go to the area selected on the menu
     var elemValue = button.getAttribute('data-ids');
     var targetSection = "index.html#" + elemValue;
 
@@ -153,19 +160,23 @@ function LinkViewMoveBack(button){
 const animatedScreens = document.querySelectorAll(".screens_animated")
 
 if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    //only if the user has reduced motion turned off will this function be called
     addAnimation();
 }
 
 function addAnimation(){
     animatedScreens.forEach(screens_animated =>{
+        //set all screens animtion attribute set to true
         screens_animated.setAttribute("data-animated", true);
+
 
         const screenCopy = screens_animated.querySelector("#animated_container");
         const containerChildren = Array.from(screenCopy.children);
 
         containerChildren.forEach(item =>{
+            //duplicate all screens once
             const duplicatedItem = item.cloneNode(true);
-
+            //add the duplicated item to the screen
             screenCopy.appendChild(duplicatedItem);
         })
 
@@ -178,13 +189,16 @@ function ProjectRedirect(button){
     const animatedPage = parentElement.querySelector('.img_background_parallax')
     let delay;
 
+    //check to see if the user is on mobile
     const screenWidth = window.screen.width;
     
     if(screenWidth < 480){
+        //if the user is on a device less than 480px wide, play an animation on the project images and delay for 1.5 seconds
         animatedPage.setAttribute('data-animated',true)
         delay = 1500;
     }
     else{
+        //if the user is on a device more than 480px wide, delay for 1 seconds
         delay = 1000;
     }
 

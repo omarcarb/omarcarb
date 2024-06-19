@@ -16,6 +16,7 @@
     --mainFontColor: #FFFFFF;
     --secondaryFontColor: #DBDBDB;
     --mainBorderRadius: 16px;
+    --imageBorderRadius: 16px 16px 0px 0px;
     --pillBorderRadius: 48px;
     --boxShadow: -8px -8px 16px #3D3E46, 8px 8px 16px #0F1012;
     --innerBoxShadow: inset -5px -5px 10px #3D3E46, inset 5px 5px 10px #0F1012;
@@ -528,7 +529,7 @@ section{
     position: relative;
     height: 200px;
     width: 100%;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: var(--imageBorderRadius);
     & img{
         max-width: 100%;
         height: 100%;
@@ -1820,6 +1821,19 @@ span{
 }
 /* Media query for tablet screens */
 @media (min-width: 481px) and (max-width: 1024px) {
+    :root{
+        --header1Fontsize: 36px;
+        --header2Fontsize: 20px;
+        --header1Fontweight: 700;
+        --header2Fontweight: 600;
+        --header3Fontwieght: 500;
+        --paragraphFontweight: 400;
+        --mainBorderRadius: 8px;
+        --imageBorderRadius: 8px 8px 0px 0px;
+        --boxShadow: -4px -4px 8px #3D3E46, 4px 4px 8px #0F1012;
+        --innerBoxShadow: inset -3px -3px 6px #3D3E46, inset 3px 3px 6px #0F1012;
+        --inputFocusShadow: 3px 3px 6px #3D3E46, 3px 3px 6px #0F1012;
+    }
     main{
         width: 100%;
     }
@@ -1847,7 +1861,7 @@ span{
         padding: min(30vh, 10rem) 2em;
         gap: 3rem;
         background: #26272C;
-        box-shadow: -8px -8px 16px #383A41, 8px 8px 16px #141417;
+        box-shadow: var(--boxShadow);
         transform: translateX(300px);
         transition: transform 400ms ease-out;
         z-index: 99999;
