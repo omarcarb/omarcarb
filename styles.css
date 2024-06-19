@@ -1622,6 +1622,7 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 32px;
 }
 .text_section{
     display: flex;
