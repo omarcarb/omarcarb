@@ -19,9 +19,9 @@
     --mainBorderRadius: 16px;
     --imageBorderRadius: 16px 16px 0px 0px;
     --pillBorderRadius: 48px;
-    --boxShadow: -8px -8px 16px #3D3E46, 8px 8px 16px #0F1012;
-    --innerBoxShadow: inset -5px -5px 10px #3D3E46, inset 5px 5px 10px #0F1012;
-    --inputFocusShadow: 5px 5px 10px #3D3E46, 5px 5px 10px #0F1012;
+    --boxShadow: -3px -3px 6px #3D3E46, 3px 3px 6px #0F1012;
+    --innerBoxShadow: inset -4px -4px 8px #3D3E46, inset 4px 4px 8px #0F1012;
+    --inputFocusShadow: -4px -4px 8px #3D3E46, 4px 4px 8px #0F1012;
     --blueShadowButton: 4px 4px 8px hsla(229, 65%, 60%, 0.582), -4px -4px 8px rgba(181, 189, 221, 0.2);
     --neutralShadowButton:-2px -2px 4px #383A41, 8px 8px 16px #141417;   
     --shadowButtonPressedBlue: inset -2px -2px 4px #5870DC, inset 2px 2px 4px #141417;
