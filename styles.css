@@ -408,21 +408,19 @@ section{
     align-items: center;
     & h1{
         margin-bottom: 8px;
+        text-align: center;
     }
     & h2{
         margin-bottom: 24px;
         font-size: 20px;
+        text-align: center;
+    }
+    & p{
+        text-align: center;
     }
 }
 .mobile-paragraph{
     display: none;
-}
-.hero_image{
-    width: 50%;
-    & img{
-        max-width: 100%;
-        max-height: 600px;
-    }
 }
 #divider_line{
     width: 100%;
@@ -434,6 +432,11 @@ section{
 #contact_list{
     margin-top: 64px;
     gap: 16px;
+    flex-direction: column;
+}
+.contact_icons{
+    justify-content: space-around;
+    padding-top: 24px;
 }
 .icon_text{
     display: flex;
@@ -487,7 +490,7 @@ section{
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(400px, .75fr));
-    column-gap: 16px;
+    column-gap: 48px;
     row-gap: 32px;
 }
 .project_container{
@@ -2253,7 +2256,6 @@ span{
     }
     #contact_list{
         margin-top: 32px;
-        flex-direction: column;
         width: 100%;
         gap: 12px;
         & #divider_line{
