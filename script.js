@@ -221,7 +221,7 @@ if(screenWidth < 480){
     thresholdValue = .01;
 }
 else{
-    thresholdValue = .5;
+    thresholdValue = 1;
 }
 
 const options = {
