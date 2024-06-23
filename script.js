@@ -26,8 +26,8 @@ function DisplayProjectDetails(){
 
     console.log(projectHeaders.title)
 
-    document.getElementsByClassName('title').innerText = projectHeaders.title;
-    document.getElementsByClassName('subheader').innerText = projectHeaders.subheading;
+    document.getElementById('title').innerHTML = projectHeaders.title;
+    document.getElementById('subheader').innerHTML = projectHeaders.subheading;
 
     const tagElements = document.getElementById("p_tags_group");
     
@@ -261,7 +261,7 @@ if(screenWidth < 480){
     thresholdValue = .01;
 }
 else{
-    thresholdValue = 1;
+    thresholdValue = .25;
 }
 
 const options = {
