@@ -29,12 +29,13 @@ function DisplayProjectDetails(){
     document.getElementsByClassName('title').innerText = projectHeaders.title;
     document.getElementsByClassName('subheader').innerText = projectHeaders.subheading;
 
-    const tagsElements = document.getElementById("p_tags_group");
+    const tagElements = document.getElementById("p_tags_group");
+    
     projectHeaders.tags.forEach(tag => {
         const div = document.createElement('div');
         div.className = "p_tags"
         div.innerText = tag;
-        tagsElement.appendChild(div);
+        tagElements.appendChild(div);
     })
 }
 
