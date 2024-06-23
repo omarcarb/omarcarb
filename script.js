@@ -4,8 +4,6 @@ const projectHeaders= {
     tags: []
 }
 
-DisplayProjectDetails();
-
 function DisplayProjectDetails(){
     const pageTitle = document.title;
     
@@ -21,7 +19,18 @@ function DisplayProjectDetails(){
             projectHeaders.title = "Shelter Finds"
             projectHeaders.subheading = "A Rental Search Website for Those With Specific Tastes"
             projectHeaders.tags = ["Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study"];
-        break  
+        break 
+        case "Weatherlerts": 
+            projectHeaders.title = "Weatherlerts"
+            projectHeaders.subheading = "Reliable Weather Disaster Tracking and Forecasting App"
+            projectHeaders.tags = ["Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study"];
+        break 
+        case "Omar's Portfolio Site": 
+            projectHeaders.title = "Personal Portfolio Site"
+            projectHeaders.subheading = "To Showcase My Latest Work"
+            projectHeaders.tags = ["HTML 5", "CSS 3", "Javascript", "Wireframes", "High Fidelity Interfaces", "Prototype", "Github", "Figma"];
+        break 
+        default: return
     }
 
     console.log(projectHeaders.title)
@@ -252,6 +261,7 @@ function ProjectRedirect(button){
     }, delay)
     
 }
+DisplayProjectDetails();
 
 const Sections = document.querySelectorAll('.project_section');
 const screenWidth = window.screen.width;
