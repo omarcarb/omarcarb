@@ -1,3 +1,42 @@
+const projectHeaders= {
+    title: "unknown",
+    subheading: "unknown",
+    tags: []
+}
+
+DisplayProjectDetails();
+
+function DisplayProjectDetails(){
+    const pageTitle = document.title;
+    
+    console.log (pageTitle);
+    switch(pageTitle){
+        case "Free Roam": 
+        console.log("The page is free")
+            projectHeaders.title = "Free Roam"
+            projectHeaders.subheading = "Movement for you at the tap of a button"
+            projectHeaders.tags = ["Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"];
+        break
+        case "Shelter Finds": 
+            projectHeaders.title = "Shelter Finds"
+            projectHeaders.subheading = "A Rental Search Website for Those With Specific Tastes"
+            projectHeaders.tags = ["Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study"];
+        break  
+    }
+
+    console.log(projectHeaders.title)
+
+    document.getElementsByClassName('title').innerText = projectHeaders.title;
+    document.getElementsByClassName('subheader').innerText = projectHeaders.subheading;
+
+    const tagsElements = document.getElementById("p_tags_group");
+    projectHeaders.tags.forEach(tag => {
+        const div = document.createElement('div');
+        div.className = "p_tags"
+        div.innerText = tag;
+        tagsElement.appendChild(div);
+    })
+}
 
 // for parallax scroll effect
 let foreground = document.getElementsByClassName("wave")[0];
@@ -280,7 +319,6 @@ const outsideLinks = document.querySelectorAll('.icon_background')
 outsideLinks.forEach(function(object){
     object.addEventListener('click', function(){
         object.classList.add('bouncing');
-
         const linkID = object.id;
         
         setTimeout(function(){
@@ -349,3 +387,9 @@ contactForm.addEventListener('submit', (e)=>{
         console.log(error);
     })
 })
+
+
+
+
+
+
