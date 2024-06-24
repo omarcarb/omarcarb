@@ -1,3 +1,4 @@
+//An object for project headers
 const projectHeaders= {
     title: "unknown",
     subheading: "unknown",
@@ -6,11 +7,9 @@ const projectHeaders= {
 
 function DisplayProjectDetails(){
     const pageTitle = document.title;
-    
-    console.log (pageTitle);
+
     switch(pageTitle){
         case "Free Roam": 
-        console.log("The page is free")
             projectHeaders.title = "Free Roam"
             projectHeaders.subheading = "Movement for you at the tap of a button"
             projectHeaders.tags = ["Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"];
@@ -32,8 +31,6 @@ function DisplayProjectDetails(){
         break 
         default: return
     }
-
-    console.log(projectHeaders.title)
 
     document.getElementById('title').innerHTML = projectHeaders.title;
     document.getElementById('subheader').innerHTML = projectHeaders.subheading;
