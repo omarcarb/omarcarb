@@ -907,8 +907,10 @@ section{
 }
 #aboutme_hero_section_container{
     display: flex;
+    justify-content: center;
     & >*{
-        width: 100%;
+        width: 50%;
+        text-align: center;
     }
 }
 #tidbits{
