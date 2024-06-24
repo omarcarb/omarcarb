@@ -6,8 +6,10 @@ const projectHeaders= {
 }
 
 function DisplayProjectDetails(){
+    //extract the title of the webpage the user is in
     const pageTitle = document.title;
 
+    //based on the webpage, the object projectHeaders changes its property values.
     switch(pageTitle){
         case "Free Roam": 
             projectHeaders.title = "Free Roam"
@@ -32,11 +34,13 @@ function DisplayProjectDetails(){
         default: return
     }
 
+    //display the object values onto the page
     document.getElementById('title').innerHTML = projectHeaders.title;
     document.getElementById('subheader').innerHTML = projectHeaders.subheading;
 
     const tagElements = document.getElementById("p_tags_group");
     
+    //take the tags array and display the indiviual tags based on the array size
     projectHeaders.tags.forEach(tag => {
         const div = document.createElement('div');
         div.className = "p_tags"
