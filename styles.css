@@ -908,10 +908,7 @@ section{
 #aboutme_hero_section_container{
     display: flex;
     & >*{
-        width: 50%;
-    }
-    & img{
-        max-height: 510px;
+        width: 100%;
     }
 }
 #tidbits{
