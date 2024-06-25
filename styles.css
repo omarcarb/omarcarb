@@ -328,22 +328,22 @@ label{
 .foreground{
     background-image: url(assests/svg/wave_foreground1.svg);
     height: 529.13px;
-    transform: translateY(100px);
+    transform: translateY(700px);
 
-    animation: bottom_wave 40000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2250ms forwards;
+    animation: bottom_wave 40000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2100ms forwards;
 }
 .foreground2{
     background-image: url(assests/svg/wave_foreground2.svg);
     height: 327.5px;
-    transform: translateY(100px);
+    transform: translateY(700px);
 
-    animation: middle_wave 35000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2350ms forwards;
+    animation: middle_wave 35000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2150ms forwards;
 }
 .foreground3{
     background-image: url(assests/svg/wave_foreground3.svg);
     height: 126.53px;
-    transform: translateY(100px);
-    animation: top_wave 30000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2350ms forwards;
+    transform: translateY(700px);
+    animation: top_wave 30000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2150ms forwards;
 }
 @keyframes bottom_wave {
     0%{
@@ -371,11 +371,11 @@ label{
 }
 @keyframes move_up {
     0%{
-        transform: translateY(100px);
+        transform: translateY(700px);
     }
     70%{
         animation-timing-function: ease-in;
-        transform: translateY(15px);
+        transform: translateY(10px);
     }
     100%{
         animation-timing-function: ease-out;
