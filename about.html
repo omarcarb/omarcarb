@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 
         <meta name = "keywords" content = "UI design, UX design, user interface design, user experience design, web design, mobile app design, interaction design, usability, wireframing, prototyping, user research, information architecture, responsive design, user-centered design, UI/UX principles, design thinking, user testing, visual design, UI/UX tools, design portfolio">
@@ -41,15 +42,15 @@
     </head>
     <body>
         <header>
-            <img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;">
+            <a href="index.html"><img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;"></a>
             <button class= "mobile-toggle" aria-controls="primary_nav" aria-expanded="false">
                 <span class="sr-only">Menu</span>
             </button>
             <nav>
                 <div id="primary_nav" data-visible="false" aria-hidden="true">
-                    <button class="menu_button" onclick="LinkViewMove(this)" data-value ="0">Work</a>
-                    <button class="menu_button" onclick="LinkViewMove(this)" data-value ="1">About</a>
-                    <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="2">Contact</a>
+                    <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</a>
+                    <button class="menu_button">About</a>
+                    <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="0">Contact</a>
                 </div>
             </nav>
         </header>
@@ -309,7 +310,24 @@
                         </form>
                     </div>
                 </div>
-            </section>     
+            </section>
+            <footer>
+                <img src="assests/svg/logo.svg" alt="">
+                <div class="footer_links">
+                    <h2 class="footer_text">Follow Me:</h2>
+                        <div class="footer_icons">
+                            <div class="links_buttons">
+                                <img src="assests/svg/dribbble.svg" alt="" id="dribbble" onclick="WebsiteRedirect(this)" data-site="https://dribbble.com/omarcarb34" style="cursor: pointer;">
+                            </div>
+                            <div class="links_buttons">
+                                <img src="assests/svg/linkedin.svg" alt="" id="linkedin" onclick="WebsiteRedirect(this)" data-site="https://www.linkedin.com/in/omar-carb03/" style="cursor: pointer;">
+                            </div>
+                            <div class="links_buttons">
+                                <img src="assests/svg/github.svg" alt="" id="github" onclick="WebsiteRedirect(this)" data-site="https://github.com/omarcarb" style="cursor: pointer;">
+                            </div>
+                        </div>
+                    </div>
+            </footer>     
         </main>
     </body>
 </html>
