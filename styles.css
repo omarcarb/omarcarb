@@ -536,7 +536,7 @@ section{
     }
 }
 .project_container[data-animated=true]{
-    animation: spinUp 500ms ease-out forwards;
+    animation: spinUp 400ms ease-out forwards;
 }
 @keyframes spinUp {
     to{
