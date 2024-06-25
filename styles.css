@@ -306,7 +306,7 @@ label{
     align-items: center;
     gap: 16px;
     flex-direction: row;
-    margin: 64px 0px;
+    margin: 128px 0px;
 }
 .wave_background{
     position: absolute;
