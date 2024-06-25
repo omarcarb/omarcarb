@@ -23,7 +23,7 @@
     --innerBoxShadow: inset -4px -4px 8px #3D3E46, inset 4px 4px 8px #0F1012;
     --inputFocusShadow: -4px -4px 8px #3D3E46, 4px 4px 8px #0F1012;
     --blueShadowButton: 4px 4px 8px hsla(229, 65%, 60%, 0.582), -4px -4px 8px rgba(181, 189, 221, 0.2);
-    --neutralShadowButton:-2px -2px 4px #383A41, 8px 8px 16px #141417;   
+    --neutralShadowButton:-2px -2px 4px #383A41, 2px 2px 4px #141417;   
     --shadowButtonPressedBlue: inset -2px -2px 4px #5870DC, inset 2px 2px 4px #141417;
     --shadowButtonPressedNeutral: inset -2px -2px 4px #3F4252, inset 2px 2px 4px #141417;
     --shadowHoverButtonBlue: -2px -2px 4px #454851, 2px 2px 4px rgba(96, 121, 235, 0.6);
