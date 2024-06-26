@@ -1258,8 +1258,8 @@ span{
     gap: 16px;
     align-items: top;
     padding: 16px;
-    box-shadow: 8px 8px 16px #0F1012, -8px -8px 16px #3d3e45;
-    border-radius: 16px;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--mainBorderRadius);
     & img{
         width: 24px;
         height: 24px;
@@ -1295,8 +1295,8 @@ span{
     align-items: center;
     padding: 24px 12px;
     gap: 8px;
-    box-shadow: 8px 8px 16px #191A1E, -8px -8px 16px #51525E;
-    border-radius: 16px;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--mainBorderRadius);
     & .stat_number{
         font-size: 32px;
         font-weight: 600;
@@ -1312,8 +1312,8 @@ span{
 .persona_bio{
     height: 100%;
     width: 30%;
-    box-shadow: 8px 8px 16px #0F1012, -8px -8px 16px #3d3e45;
-    border-radius: 16px;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--mainBorderRadius);
     overflow: hidden;
     & img{
         width: 100%;
@@ -1337,8 +1337,8 @@ span{
     flex-direction: column;
     gap: 32px;
     padding: 24px;
-    box-shadow: 8px 8px 16px #0F1012, -8px -8px 16px #3d3e45;
-    border-radius: 16px;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--mainBorderRadius);
     & .description_top{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -1420,7 +1420,7 @@ span{
     height: 187.5px;
     overflow: hidden;
     border-radius: 16px;
-    box-shadow: 4px 4px 8px #191A1E, -4px -4px 8px #51525E;
+    box-shadow: var(--neutralShadowButton);
     & .color_background{
         height: 60%;
         width: 100%;
@@ -1489,7 +1489,7 @@ span{
     height: 158.73px;
     overflow: hidden;
     border-radius: 16px;
-    box-shadow: 4px 4px 8px #191A1E, -4px -4px 8px #51525E;
+    box-shadow: var(--neutralShadowButton);
     padding: 16px 24px;
     display: flex;
     flex-direction: column;
