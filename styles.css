@@ -419,6 +419,24 @@ section{
         text-align: center;
     }
 }
+.hero_image{
+    position: relative;
+    & #skill_circle{
+        position: absolute;
+        left: 200px;
+        top: -100px;
+        z-index: -1;
+        animation: rotateSkills 10000ms linear infinite;
+    }
+}
+@keyframes rotateSkills{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 .mobile-paragraph{
     display: none;
 }
