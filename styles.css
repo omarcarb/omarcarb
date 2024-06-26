@@ -1565,7 +1565,7 @@ span{
     gap: 19px;
     padding-block: 1rem;
     flex-wrap: nowrap;
-    animation: scrolling 50s linear infinite;
+    animation: scrolling 80s linear infinite;
     & img{
         max-height: 383px;
         border-radius: 8px;
