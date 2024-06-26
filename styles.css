@@ -303,9 +303,8 @@ label{
 }
 #hero_section{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 16px;
     flex-direction: row;
     margin: 128px 0px;
 }
@@ -343,7 +342,7 @@ label{
     background-image: url(assests/svg/wave_foreground3.svg);
     height: 126.53px;
     transform: translateY(700px);
-    animation: top_wave 30000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2150ms forwards;
+    animation: top_wave 30000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.05) 2150ms forwards;
 }
 @keyframes bottom_wave {
     0%{
