@@ -54,7 +54,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000000;
+    z-index: 10000000000000;
     transition: opacity 0.75s, visibility 0.75s;
     & .icon_wrapper{
         position: absolute;
@@ -75,6 +75,56 @@ body{
         height: 120px;
         transform: translateY(200px);
         animation: jumpUp 1s ease-in-out forwards;
+    }
+}
+#blinking_stars{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: transparent;
+    & .block_stars{
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        animation: stars 2000ms linear infinite 2000ms;
+    }
+    & .block_stars:nth-child(1) {
+        animation-delay: 1s;
+    }
+
+    & .block_stars:nth-child(2) {
+        animation-delay: 2s;
+    }
+
+    & .block_stars:nth-child(3) {
+        animation-delay: 3s;
+    }
+    & .block_stars > .solidBlock{
+        outline: solid 1px rgba(255, 255, 255, 0.486);
+        height: 32px;
+        width: 32px;
+        border-radius: 100px;
+        
+    }
+}
+
+@keyframes stars {
+    0%{
+        transform: scale(0);
+        opacity: 0%;
+    }
+    75%{
+        opacity: 100%;
+    }
+    100%{
+        transform: scale(2);
+        transition: ease-in;
+        opacity: 0%;
     }
 }
 
@@ -135,6 +185,7 @@ header{
     border-radius: var(--pillBorderRadius);
     margin-top: 32px;
     box-shadow: var(--boxShadow);
+    z-index: 10000000;
     & #primary_nav {
         display: flex;
         gap: 17px;
@@ -165,6 +216,8 @@ footer{
     margin-bottom: 32px;
     padding: 24px 32px;
     box-shadow: var(--boxShadow);
+    position: relative;
+    z-index: 40;
     & img{
         height: 28px;
     }
@@ -307,10 +360,12 @@ label{
     align-items: center;
     flex-direction: row;
     margin: 128px 0px;
+    position: relative;
+    z-index: 40;
 }
 .wave_background{
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     left: 0;
     background-color: var(--level3Gray);
     min-height: 600px;
@@ -509,6 +564,8 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(400px, .75fr));
     column-gap: 48px;
     row-gap: 32px;
+    position: relative;
+    z-index: 40;
 }
 .project_container{
     border-radius: var(--mainBorderRadius);
@@ -516,6 +573,7 @@ section{
     transform: translateY(400px) perspective(500px) rotate3d(0, 1, 0, -90deg);
     opacity: 0;
     height: fit-content;
+    background-color: var(--mainBackgroundColor);
     & .project_text{
         display: flex;
         flex-direction: column;
@@ -689,6 +747,9 @@ section{
     box-shadow: var(--boxShadow);
     border-radius: var(--mainBorderRadius);
     max-height: 624px;
+    background-color: var(--mainBackgroundColor);
+    position: relative;
+    z-index: 40;
 }
 .aboutme_text{
 
@@ -768,6 +829,8 @@ section{
 }
 .contact_area{
     display: flex;
+    position: relative;
+    z-index: 40;
 }
 .contact_info{
     width: 40%;

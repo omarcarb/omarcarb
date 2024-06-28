@@ -49,6 +49,57 @@ function DisplayProjectDetails(){
     })
 }
 
+var stars = document.querySelectorAll('.block_stars');
+
+// Function to get the current positions of all star elements
+function getCurrentPositions() {
+    var positions = [];
+    stars.forEach(star => {
+        var rect = star.getBoundingClientRect();
+        positions.push({ top: rect.top, left: rect.left });
+    });
+    return positions;
+}
+
+// Function to move each star element to a new position
+function moveStar(star, newPosition) {
+    star.style.position = 'absolute'; // Ensure position is set to absolute
+    star.style.top = newPosition.top + 'px';
+    star.style.left = newPosition.left + 'px';
+}
+
+// Function to start moving a single star element periodically
+function startMovingStar(star, delay) {
+    setTimeout(function() {
+        setInterval(function() {
+            var screenWidth = window.innerWidth;
+            var screenHeight = window.innerHeight;
+            var rect = star.getBoundingClientRect();
+            var starHeight = 50; // Adjust based on the actual height of the star element
+            var starWidth = 50;  // Adjust based on the actual width of the star element
+
+            var newTop, newLeft;
+
+            do {
+                newTop = rect.top + Math.floor(Math.random() * 1201) - 600;
+            } while (newTop < 0 || newTop > screenHeight - starHeight);
+
+            do {
+                newLeft = rect.left + Math.floor(Math.random() * 1201) - 600;
+            } while (newLeft < 0 || newLeft > screenWidth - starWidth);
+
+            moveStar(star, { top: newTop, left: newLeft });
+        }, 2000); // Move every 2 seconds
+    }, delay);
+}
+
+// Set different delays for each star
+var delays = [1000, 2000, 3000]; // Delays in milliseconds for each star (1s, 2s, 3s)
+
+stars.forEach((star, index) => {
+    startMovingStar(star, delays[index]);
+});
+
 // for parallax scroll effect
 let foreground = document.getElementsByClassName("wave")[0];
 let foreground1 = document.getElementsByClassName("wave")[1];
@@ -70,6 +121,8 @@ if(wavePages.includes(page)){
         if(foreground2) foreground2.style.bottom = value * 0 + 'px';
     })
 }
+
+// Get the star element by its ID
 
 const aniamtionSet = document.querySelectorAll(".fade_in_animation")
 
@@ -263,6 +316,8 @@ function ProjectRedirect(button){
     
 }
 DisplayProjectDetails();
+
+
 
 const Sections = document.querySelectorAll('.project_section');
 const screenWidth = window.screen.width;
