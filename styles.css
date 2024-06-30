@@ -570,7 +570,6 @@ section{
     }
 }
 .img_background_parallax{
-    background-color: #378AE2;
     position: relative;
     height: 200px;
     width: 100%;
@@ -1140,22 +1139,17 @@ span{
     position: relative;
 }
 .line_border::before{
-    content: '';
-    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(121,131,179,1) 15%, rgba(121,131,179,1) 85%, rgba(0,212,255,0) 100%);
-    position: absolute;
-    border-radius: 48px;
     top: -64px;
-    height: 4px;
-    width: 100%;
-    z-index: -1;
 }
 .line_border::after{
+    bottom: -64px;
+}
+.line_border::after, .line_border::before{
     content: '';
-    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(121,131,179,1) 15%, rgba(121,131,179,1) 85%, rgba(0,212,255,0) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgb(75, 99, 215) 5%, rgb(66, 93, 223) 95%, rgba(0,212,255,0) 100%);
+    height: 2px;
     position: absolute;
     border-radius: 48px;
-    bottom: -64px;
-    height: 4px;
     width: 100%;
     z-index: -1;
 }
