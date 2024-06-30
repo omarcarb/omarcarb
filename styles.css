@@ -527,7 +527,7 @@ section{
     & .project_text{
         display: flex;
         flex-direction: column;
-        padding: 24px 12px;
+        padding: 32px 16px;
         gap: 16px;
     }
     & .project_text >h3{
@@ -678,7 +678,7 @@ section{
 }
 .project_tags{
     display: flex;
-    gap: 4px;
+    justify-content: space-around;
     & p{
         margin: 0px;
         font-size: 12px;
