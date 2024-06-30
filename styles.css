@@ -523,7 +523,7 @@ section{
     transform: translateY(400px) perspective(500px) rotate3d(0, 1, 0, -90deg);
     opacity: 0;
     height: fit-content;
-    background-color: var(--mainBackgroundColor);
+    background: linear-gradient(145deg, #292a2f, #222328);
     & .project_text{
         display: flex;
         flex-direction: column;
