@@ -2139,6 +2139,14 @@ span{
         --boxShadow: -2px -2px 4px #3D3E46, 2px 2px 4px #0F1012;
         --innerBoxShadow: inset -1px -1px 2px #3D3E46, inset 1px 1px 2px #0F1012;
         --inputFocusShadow: -1px -1px 2px #3D3E46, 1px 1px 2px #0F1012;
+        --mainBorderRadius: 8px;
+        --imageBorderRadius: 8px 8px 0px 0px;
+        --boxShadow: -1px -1px 2px #3D3E46, 1px 1px 2px #0F1012;
+        --innerBoxShadow: inset -2px -2px 4px #3D3E46, inset 2px 2px 4px #0F1012;
+        --inputFocusShadow: -2px -2px 4px #3D3E46, 2px 2px 4px #0F1012;
+        --blueShadowButton: 2px 2px 4px hsla(229, 65%, 60%, 0.582), -2px -2px 4px rgba(181, 189, 221, 0.2);
+        --blueShadowProjectButton: 1px 1px 2px hsla(229, 65%, 60%, 0.582), -1px -1px 2px rgba(181, 189, 221, 0.2);
+        --neutralShadowButton:-1px -1px 2px #383A41, 1px 1px 2px #141417;    
     }
     body{
         margin: 0px 24px;
@@ -2520,11 +2528,11 @@ span{
         width: 100%;
     }
     #mr_text{
-        max-width: 100%;
+        max-width: 95%;
     }
     #mr_image{
         padding: 16px 8px;
-        max-width: 75%;
+        max-width: 90%;
         & img{
             max-height: 175px;
             max-width: 100%;
@@ -2574,7 +2582,6 @@ span{
         gap: 16px;
     }
     .response_stats{
-        box-shadow: 4px 4px 8px #191A1E, -4px -4px 8px #51525E;
         text-align: center;
         justify-content: start;
         gap: 0px;
