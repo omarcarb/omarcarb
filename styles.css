@@ -4,6 +4,7 @@
     --mainAccentColor: #5870DC;
     --mainBackgroundColor: #26272C;
     --secondaryBackgroundColor: #35363E;
+    --mainContainerGradientColor: linear-gradient(145deg, #292a2f, #222328);
     --level2Gray: #dbdbdb;
     --level3Gray: #404149;
     --header1Fontsize: 48px;
@@ -185,7 +186,7 @@ button{
 input[type="text"], input[type="tel"], input[type="email"]{
     border: none;
     height: 48px;
-    background: #26272C;
+    background: var(--mainBackgroundColor);
     box-shadow: var(--innerBoxShadow);
     border-radius: var(--mainBorderRadius);
     padding: 0px 16px;
@@ -198,7 +199,7 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus{
     outline: none;
 }
 textarea{
-    background: #26272C;
+    background: var(--mainBackgroundColor);
     box-shadow: var(--innerBoxShadow);
     border-radius: 16px;
     padding: 16px;
@@ -225,7 +226,7 @@ label{
     position: absolute;
     width: 0%;
     height: 3px;
-    background-color: #8990b2;
+    background-color: #fcfcfc;
     border-radius: 48px;
     bottom: 0%;
 
@@ -478,6 +479,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--mainBackgroundColor);
 
     transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out, background-color 200ms ease-in-out;
 }
@@ -523,7 +525,7 @@ section{
     transform: translateY(400px) perspective(500px) rotate3d(0, 1, 0, -90deg);
     opacity: 0;
     height: fit-content;
-    background: linear-gradient(145deg, #292a2f, #222328);
+    background: var(--mainContainerGradientColor);
     & .project_text{
         display: flex;
         flex-direction: column;
@@ -1187,7 +1189,8 @@ span{
     justify-content: center;
     align-items: center;
     padding: 24px 61px;
-    box-shadow: 8px 8px 16px #191A1E, -8px -8px 16px #51525E;
+    box-shadow: var(--boxShadow);
+    background: var(--mainContainerGradientColor);
     border-radius: 16px;
     -webkit-user-select: none;
     & img{
@@ -1284,6 +1287,7 @@ span{
     padding: 16px;
     box-shadow: var(--boxShadow);
     border-radius: var(--mainBorderRadius);
+    background: var(--mainContainerGradientColor);
     & img{
         width: 24px;
         height: 24px;
@@ -1321,6 +1325,7 @@ span{
     gap: 8px;
     box-shadow: var(--boxShadow);
     border-radius: var(--mainBorderRadius);
+    background: var(--mainContainerGradientColor);
     & .stat_number{
         font-size: 32px;
         font-weight: 600;
@@ -1329,6 +1334,9 @@ span{
 .persona_container{
     display: flex;
     gap: 16px;
+    & > * {
+        background: var(--mainContainerGradientColor);
+    }
 }
 .p_reverse{
     flex-direction: row-reverse;
@@ -1639,7 +1647,8 @@ span{
     padding: 16px;
     justify-content: center;
     align-items: center;
-    box-shadow: 4px 4px 8px #191A1E, -4px -4px 8px #51525E;
+    background: var(--mainContainerGradientColor);
+    box-shadow: var(--boxShadow);
     border-radius: 16px;
 
     & img{
@@ -1902,7 +1911,7 @@ span{
         height: 100vh;
         padding: min(30vh, 10rem) 2em;
         gap: 3rem;
-        background: #26272C;
+        background: var(--mainBackgroundColor);
         box-shadow: var(--boxShadow);
         transform: translateX(300px);
         transition: transform 400ms ease-out;
@@ -2165,7 +2174,7 @@ span{
         height: 100vh;
         padding: min(30vh, 10rem) 2em;
         gap: 3rem;
-        background: #26272C;
+        background: var(--mainBackgroundColor);
         box-shadow: var(--boxShadow);
         transform: translateX(300px);
         transition: transform 400ms ease-out;
