@@ -2574,9 +2574,6 @@ span{
             gap: 8px;
         }
     }
-    .con_block{
-        box-shadow: 2px 2px 4px #0F1012, -2px -2px 4px rgba(61, 62, 70, 0.6);
-    }
     .response_group{
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
