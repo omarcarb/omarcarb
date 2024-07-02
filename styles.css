@@ -14,7 +14,7 @@
     --header1Fontweight: 700;
     --header2Fontweight: 600;
     --header3Fontwieght: 500;
-    --paragraphFontweight: 400;
+    --paragraphFontweight: 300;
     --mainFontColor: #FFFFFF;
     --secondaryFontColor: #DBDBDB;
     --mainBorderRadius: 16px;
@@ -33,13 +33,14 @@
 }
 *{
     margin: 0px;
+    font-family: 'Poppins';
 }
 html{
     scroll-behavior: smooth;
 }
 body{
     background-color: var(--mainBackgroundColor);
-    font-family: 'Poppins';
+
     color: white;
     margin: 0px 104px;
     overflow-x: hidden;
@@ -534,6 +535,9 @@ section{
     }
     & .project_text >h3{
         font-weight: 700;
+    }
+    & .project_text > p{
+        color: var(--secondaryFontColor);
     }
     & button{
         background-color: var(--mainAccentColor);
