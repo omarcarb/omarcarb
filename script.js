@@ -363,7 +363,7 @@ window.addEventListener("load", function(){
 })
 
 function EmailThis(){
-    window.location.href = 'mailto:omarcarb34@duck.com';
+    window.location.href = 'mailto:omarcarb34@gmail.com';
 }
 
 function WebsiteRedirect(button){
