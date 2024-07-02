@@ -31,6 +31,8 @@ function DisplayProjectDetails(){
             projectHeaders.subheading = "To Showcase My Latest Work"
             projectHeaders.tags = ["HTML 5", "CSS 3", "Javascript", "Wireframes", "High Fidelity Interfaces", "Prototype", "Github", "Figma"];
         break 
+        case "Evike Design Audit":
+            projectHeaders.title = ""
         default: return
     }
 
