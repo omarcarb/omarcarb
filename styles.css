@@ -126,6 +126,9 @@ p{
     font-size: var(--paragraphFontsize);
     font-weight: var(--paragraphFontweight);
 }
+a{
+    text-decoration: none;
+}
 header{
     display: flex;
     justify-content: space-between;
