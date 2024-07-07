@@ -528,6 +528,9 @@ section{
     box-shadow: var(--boxShadow);
     height: fit-content;
     background: var(--mainContainerGradientColor);
+    outline: 2px solid #595c6713;
+
+    transition: outline 400ms ease-out;
     & .project_text{
         display: flex;
         flex-direction: column;
@@ -566,6 +569,9 @@ section{
         box-shadow: var(--shadowButtonPressedBlue);
         transition: box-shadow 300ms ease-in;
     }
+}
+.project_container:hover{
+    outline: 2px solid #595C67;
 }
 .img_background_parallax{
     position: relative;
