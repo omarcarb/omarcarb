@@ -598,7 +598,7 @@ section{
     & img{
         position: absolute;
         transform: scale(0.75);
-        left: 30%;
+        left: 35%;
     }
     & img:nth-child(1){
         animation: rotateLeftReverse 200ms ease-out forwards;
@@ -636,7 +636,7 @@ section{
         transform: scale(0.75) translate(0px, 0px);
     }
     to{
-        transform: scale(1.15) translate(0px, -20px);
+        transform: scale(1.05) translate(0px, -20px);
     }
 }
 @keyframes rotateLeft {
@@ -644,7 +644,7 @@ section{
         transform: rotate(0deg) translate(0px 0px) scale(.75);
     }
     to{
-        transform: rotate(25deg) translate(60px, -40px) scale(.85);
+        transform: rotate(25deg) translate(120px, -40px) scale(.85);
     }
 }
 @keyframes rotateRight {
@@ -652,12 +652,12 @@ section{
         transform: rotate(0deg) translate(0px 0px) scale(.75);
     }
     to{
-        transform: rotate(-25deg) translate(-60px, -40px) scale(.85);
+        transform: rotate(-25deg) translate(-120px, -40px) scale(.85);
     }
 }
 @keyframes scaleUpReverse {
     from{
-        transform: scale(1.15) translate(0px, -20px);
+        transform: scale(1.05) translate(0px, -20px);
     }
     to{
         transform: scale(0.75) translate(0px, 0px);
@@ -665,7 +665,7 @@ section{
 }
 @keyframes rotateLeftReverse {
     from{
-        transform: rotate(25deg) translate(60px, -40px) scale(.85);
+        transform: rotate(25deg) translate(120px, -40px) scale(.85);
     }
     to{
         transform: rotate(0deg) translate(0px 0px) scale(.75);
@@ -673,7 +673,7 @@ section{
 }
 @keyframes rotateRightReverse {
     from{
-        transform: rotate(-25deg) translate(-60px, -40px) scale(.85);
+        transform: rotate(-25deg) translate(-120px, -40px) scale(.85);
     }
     to{
         transform: rotate(0deg) translate(0px 0px) scale(.75);
@@ -681,7 +681,7 @@ section{
 }
 .project_tags{
     display: flex;
-    justify-content: space-around;
+    gap: 12px;
     & p{
         margin: 0px;
         font-size: 12px;
@@ -1149,8 +1149,8 @@ span{
 }
 .line_border::after, .line_border::before{
     content: '';
-    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgb(75, 99, 215) 5%, rgb(66, 93, 223) 95%, rgba(0,212,255,0) 100%);
-    height: 2px;
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgb(49, 65, 141) 5%, rgb(49, 65, 141) 95%, rgba(0,212,255,0) 100%);
+    height: 3px;
     position: absolute;
     border-radius: 48px;
     width: 100%;
