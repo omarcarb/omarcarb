@@ -588,6 +588,11 @@ section{
         height: 100%;
     }
 }
+.container_bakcground_img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--imageBorderRadius);
+}
 .img_background_parallax.desktopapp > .img_set{
     & img{
         left: 20%;
