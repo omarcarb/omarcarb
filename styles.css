@@ -517,8 +517,8 @@ section{
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(400px, .75fr));
-    column-gap: 48px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, .75fr));
+    column-gap: 64px;
     row-gap: 32px;
     position: relative;
     z-index: 40;
@@ -526,8 +526,6 @@ section{
 .project_container{
     border-radius: var(--mainBorderRadius);
     box-shadow: var(--boxShadow);
-    transform: translateY(400px) perspective(500px) rotate3d(0, 1, 0, -90deg);
-    opacity: 0;
     height: fit-content;
     background: var(--mainContainerGradientColor);
     & .project_text{
@@ -569,18 +567,9 @@ section{
         transition: box-shadow 300ms ease-in;
     }
 }
-.project_container[data-animated=true]{
-    animation: spinUp 400ms ease-out forwards;
-}
-@keyframes spinUp {
-    to{
-        transform: translateY(0px) perspective(500px) rotate3d(0, 1, 0, 0deg);
-        opacity: 1;
-    }
-}
 .img_background_parallax{
     position: relative;
-    height: 200px;
+    height: 400px;
     width: 100%;
     border-radius: var(--imageBorderRadius);
     & img{
@@ -609,7 +598,7 @@ section{
     & img{
         position: absolute;
         transform: scale(0.75);
-        left: 35%;
+        left: 30%;
     }
     & img:nth-child(1){
         animation: rotateLeftReverse 200ms ease-out forwards;
