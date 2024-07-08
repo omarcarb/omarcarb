@@ -2018,14 +2018,10 @@ span{
     .project_text > p{
         font-size: 14px;
     }
-    .img_background_parallax.desktopapp > .img_set {
-        & img {
-          left: 0;
-        }
-    }
     #aboutme_block {
         flex-direction: column;
     }
+    
     .contact_area{
         flex-direction: column;
         gap: 32px;
@@ -2355,6 +2351,11 @@ span{
         margin: 8px;
         border-radius: 12px;
         max-width: 93%;
+        & .profile_image{
+            width: 130%;
+            top: -20px;
+            left: -10%;
+        }
     }
     #skill_grid{
         grid-template-columns: repeat(2, 1fr);
@@ -2855,11 +2856,6 @@ span{
     .weatherlerts.circle_color#border_input{
         border: 6px solid #3498DB;
         height: 24px;
-    }
-    .img_background_parallax.desktopapp > .img_set{
-        & img{
-            left: 10%;
-        }
     }
     #chart{
         & img{
