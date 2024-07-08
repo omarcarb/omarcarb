@@ -2014,10 +2014,14 @@ span{
     }
     #project_grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        column-gap: 24px;
     }
     .project_text > p{
         font-size: 14px;
     }
+    .img_background_parallax {
+        height: 200px;
+      }
     #aboutme_block {
         flex-direction: column;
     }
