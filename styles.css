@@ -729,9 +729,15 @@ section{
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
-    border-radius: 24px;
+    border-radius: 250px;
     max-height: 500px;
     width: 100%;
+    & .profile_image{
+        position: absolute;
+        width: 100%;
+        z-index: 9;
+        top: 10%;
+    }
 }
 .blob{
     position: absolute;
