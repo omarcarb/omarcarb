@@ -2158,6 +2158,9 @@ span{
         --blueShadowProjectButton: 1px 1px 2px hsla(229, 65%, 60%, 0.582), -1px -1px 2px rgba(181, 189, 221, 0.2);
         --neutralShadowButton:-1px -1px 2px #383A41, 1px 1px 2px #141417;    
     }
+    *{
+        margin: 0px;
+    }
     body{
         margin: 0px 24px;
         overflow-x: hidden;
