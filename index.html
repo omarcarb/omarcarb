@@ -53,32 +53,13 @@
         </button>
         <nav>
             <div id="primary_nav" data-visible="false" aria-hidden="true">
-                <button class="menu_button" onclick="LinkViewMove(this)" data-value ="0">Work</a>
-                <button class="menu_button" onclick="LinkViewMove(this)" data-value ="1">About</a>
-                <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="2">Contact</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="wave_background">
-            <div class="wave foreground"></div>
-            <div class="wave foreground2"></div>
-            <div class="wave foreground3"></div>
-        </div>
-        <section id="hero_section">
-            <div class="hero_text">
-                <h1 class="fade_in_animation" data-sequence="1">Omar Carbajal</h1>
-                <h2 class="fade_in_animation" data-sequence="2">UI / UX Designer and Front-End Developer</h2>
-                <p style="color: #DBDBDB;" class="desktop-paragraph fade_in_animation" data-sequence="3">Transforming your digital presence into a vibrant reflection of your brand. With meticulous design and flawless functionality, I bring your online vision to life with creativity and precision.</p>
-                <p style="color: #DBDBDB;" class="mobile-paragraph fade_in_animation" data-sequence="3">Bringing your brand to life with vibrant design and seamless functionality. I transform your digital presence with creativity and precision.</p>
-            <div class="fade_in_animation" id="button_container" data-sequence="4">
-                <button class="primary_button" id="email_button" onclick="EmailThis()"><img src="assests/svg/mail_icon.svg" alt="">Contact Me</button>
-                <a href="assests/download-files/Cover Letter.pdf" download="cover_letter_for_omar" style="width: 50%;"><button class="secondary_button" style="width: 100%;"><img src="assests/svg/download.svg" alt="">Cover Letter</button></a>
-            </div>
-            <div class="fade_in_animation" id="contact_list" style = "display: flex;" data-sequence="5">
-                    <p style="min-width: 103px; align-self: center; font-size: 16px;">Find Me Here</p>
-            <div id="divider_line"></div>
-            <div class="contact_icons" style = "display: flex;">
+                <button class="menu_button" onclick="LinkViewMove(this)" data-value ="0">Work</button>
+                <button class="menu_button" onclick="LinkViewMove(this)" data-value ="1">About</button>
+                <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="2">Contact</button>
+                <div class="mobile_contact_list" id="contact_list">
+                    <p style="min-width: 100px; align-self: center; font-size: 12px; text-align: center;">Find Me Here</p>
+                <div id="divider_line"></div>
+                <div class="contact_icons" style = "display: flex;">
                 <div class="icon_text">
                     <div class="icon_background" id="dribbble" data-slowed="false">
                         <img src="assests/svg/dribbble.svg" alt="">
@@ -94,10 +75,27 @@
                 <div class="icon_text">
                     <div class="icon_background" id="github">
                             <img src="assests/svg/github.svg" alt="">
-                        </div>
-                            <p>Github</p>
-                        </div>
                     </div>
+                    <p>Github</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="wave_background">
+            <div class="wave foreground"></div>
+            <div class="wave foreground2"></div>
+            <div class="wave foreground3"></div>
+        </div>
+        <section id="hero_section">
+            <div class="hero_text">
+                <h1>Omar Carbajal</h1>
+                <h2>UI / UX Designer and Front-End Developer</h2>
+                <p style="color: #DBDBDB;" class="desktop-paragraph">Transforming your digital presence into a vibrant reflection of your brand. With meticulous design and flawless functionality, I bring your online vision to life with creativity and precision.</p>
+                <p style="color: #DBDBDB;" class="mobile-paragraph">Bringing your brand to life with vibrant design and seamless functionality. I transform your digital presence with creativity and precision.</p>
+                <div id="button_container">
+                    <a href="assests/download-files/Cover Letter.pdf" download="omar's_resume" style="width: 50%;"><button class="secondary_button" style="width: 100%;"><img src="assests/svg/download.svg" alt="">Resume</button></a>
+                    <button class="primary_button" id="email_button" onclick="EmailThis()"><img src="assests/svg/mail_icon.svg" alt="">Contact Me</button>
                 </div>
             </div>
             <div class="hero_image fade_in_animation" data-sequence="2">
@@ -105,7 +103,7 @@
                 <img src="assests/svg/skill_circle.svg" alt="" id="skill_circle">
             </div>
         </section>
-        <section id="project_section" class="fade_in_animation" data-sequence="4">
+        <section id="project_section">
             <div class = "section_header">
                 <h2>Explore My Portfolio</h2>
                 <h3 class="desktop-paragraph">Browse through the Evolution of My Work and the Stories Behind Each Creation</h3>
