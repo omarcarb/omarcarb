@@ -534,7 +534,7 @@ section{
     & .project_text{
         display: flex;
         flex-direction: column;
-        padding: 32px 16px;
+        padding: 24px 16px;
         gap: 16px;
     }
     & .project_text >h3{
@@ -2350,7 +2350,6 @@ span{
         padding: 4px 20px;
     }
     .project_button{
-        border-radius: 16px;
         max-width: 90%;
     }
     #aboutme_block{
@@ -2624,6 +2623,11 @@ span{
             width: 100%;
         }
     }
+    .persona_bio {
+        & img {
+          height: 200px;
+        }
+      }
     .persona_bio > .bio_text{
         padding: 12px 8px;
         gap: 1px;
