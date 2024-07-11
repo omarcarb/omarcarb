@@ -2269,7 +2269,6 @@ span{
         }
     }
     .section_header{
-        text-align: center;
         margin-bottom: 19px;
     }
     .wave_background{
@@ -2531,7 +2530,7 @@ span{
         & .p_tags{
             font-size: 10px;
             padding: 8px 16px;
-            box-shadow: -2px -2px 4px rgba(61, 62, 70, 0.6), 2px 2px 4px rgba(15, 16, 18, 1);
+            box-shadow: var(--boxShadow);
         }
     }
     #p_quick_descriptors{
@@ -2651,11 +2650,11 @@ span{
         gap: 8px;
     }
     .l_item{
-        gap: 4px;
+        gap: 8px;
     }
     .l_item > img{
-        height: 16px;
-        max-width: 16px;
+        height: 20px;
+        max-width: 20px;
     }
     .subsection_header > h3{
         font-size: 16px;
