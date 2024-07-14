@@ -125,6 +125,7 @@ h3{
 p{
     font-size: var(--paragraphFontsize);
     font-weight: var(--paragraphFontweight);
+    color: var(--level2Gray);
 }
 a{
     text-decoration: none;
