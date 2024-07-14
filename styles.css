@@ -1681,8 +1681,8 @@ span{
     }
     & .arrow_circle{
         position: absolute;
-        left: 24%;
-        bottom: 27%;
+        left: 18%;
+        bottom: 23%;
     }
 }
 .shelter_finds.arrow_circle{
@@ -2814,7 +2814,9 @@ span{
           padding: 0px 0px;
         }
         & #left_text > p{
-            font-size: 8px;
+            font-size: 12px;
+            font-weight: 300;
+            color: var(--secondaryFontColor);
         }
     }
     .accessibility_rating_right {
