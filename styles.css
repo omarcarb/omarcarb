@@ -1278,6 +1278,10 @@ span{
     flex-direction: row;
     gap: 7px;
     align-items: center;
+    & img {
+        width: 36px;
+        height: 36px;
+      }
 }
 .positive{
     color: #65C18A;
@@ -1408,7 +1412,7 @@ span{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    & .l_item > img{
+    & img{
         width: 36px;
     }
 }
@@ -2649,10 +2653,11 @@ span{
     }
     .l_item{
         gap: 8px;
+        width: 100%;
     }
     .l_item > img{
-        height: 20px;
-        max-width: 20px;
+        height: 24px;
+        width: 24px;
     }
     .subsection_header > h3{
         font-size: 16px;
