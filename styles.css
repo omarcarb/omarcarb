@@ -5,8 +5,9 @@
     --mainBackgroundColor: #26272C;
     --secondaryBackgroundColor: #35363E;
     --mainContainerGradientColor: linear-gradient(145deg, #292a2f, #222328);
-    --level2Gray: #dbdbdb;
-    --level3Gray: #404149;
+    --level2Gray: #ecedf1;
+    --level3Gray: #cecfd6;
+    --level4Gray: #9fa0ad;
     --header1Fontsize: 48px;
     --header2Fontsize: 24px;
     --header3Fontsize: 20px;
@@ -14,7 +15,7 @@
     --header1Fontweight: 700;
     --header2Fontweight: 600;
     --header3Fontwieght: 500;
-    --paragraphFontweight: 300;
+    --paragraphFontweight: 400;
     --mainFontColor: #FFFFFF;
     --secondaryFontColor: #DBDBDB;
     --mainBorderRadius: 16px;
@@ -41,7 +42,6 @@ html{
 body{
     background-color: var(--mainBackgroundColor);
 
-    color: white;
     margin: 0px 104px;
     overflow-x: hidden;
     display: flex;
@@ -113,19 +113,27 @@ main{
 h1{
     font-size: var(--header1Fontsize);
     font-weight: var(--header1Fontweight);
+    color: white;
 }
 h2{
     font-size: var(--header2Fontsize);
     font-weight: var(--header2Fontweight);
+    color: var(--level2Gray);
 }
 h3{
     font-size: var(--paragraphFontsize);
-    font-weight: 400;
+    font-weight: var(--header3Fontwieght);
+    color: var(--level3Gray);
+}
+h4{
+    font-size: var(--paragraphFontsize);
+    font-weight: 300;
+    color: var(--level3Gray);
 }
 p{
     font-size: var(--paragraphFontsize);
     font-weight: var(--paragraphFontweight);
-    color: var(--level2Gray);
+    color: var(--level4Gray);
 }
 a{
     text-decoration: none;
@@ -323,7 +331,7 @@ label{
     position: absolute;
     z-index: 0;
     left: 0;
-    background-color: var(--level3Gray);
+    background-color: #3D3E46;
     min-height: 600px;
     top: 0;
     width:100vw;
@@ -398,7 +406,6 @@ section{
 .section_header{
     margin-bottom: 42px;
     & h3{
-        color: #C8C8C8;
         text-transform: capitalize;
     }
 }
@@ -540,9 +547,6 @@ section{
     }
     & .project_text >h3{
         font-weight: 700;
-    }
-    & .project_text > p{
-        color: var(--secondaryFontColor);
     }
     & button{
         background-color: var(--mainAccentColor);
@@ -696,7 +700,6 @@ section{
         padding: 4px 16px;
         border-radius: 48px;
         background-color: var(--mainBackgroundColor);
-        color: #C0C0C0;
         box-shadow: -2px -2px 4px #3d3e4599,
                     2px 2px 4px #0F1012;
     }
@@ -734,6 +737,7 @@ section{
     border-radius: 250px;
     max-height: 500px;
     width: 100%;
+    box-shadow: var(--boxShadow);
     & .profile_image{
         position: absolute;
         width: 100%;
@@ -788,6 +792,9 @@ section{
     align-items: center;
     & img{
         width: 24px; height: 24px;
+        padding: 8px;
+        box-shadow: var(--boxShadow);
+        border-radius: 8px;
     }
     & p{
         font-size: 12px;
@@ -828,14 +835,10 @@ section{
     flex-direction: column;
     gap: 4px;
     & h4{
-        font-weight: 400;
-        color: #949494;
         margin: 0px;
         padding: 0px;
-        font-size: 14px;
     }
     & p{
-        font-weight: 600;
         margin: 0px;
         padding: 0px;
     }
@@ -976,9 +979,7 @@ section{
         width: 50%;
         margin: 0px;
     }
-    & p{
-        color:#DBDBDB;
-    }
+
 }
 #skill_set_about{
     display: grid;
@@ -1020,9 +1021,6 @@ section{
     & h3{
         font-size: 24px;
         font-weight: 00;
-    }
-    & p{
-        color: #DBDBDB;
     }
 }
 .project_section{
@@ -1110,8 +1108,6 @@ span{
     flex-direction: column;
     & h2{
         margin-top: 4px;
-        font-weight: 500;
-        color: #BDBEBF;
     }
 }
 #p_tags_group{
@@ -1128,9 +1124,9 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: -8px -8px 16px #3d3e4699,
-                8px 8px 16px #0F1012;
+    box-shadow: var(--boxShadow);
     max-width: max-content;
+    color: var(--level3Gray);
 }
 #p_quick_descriptors{
     margin-top: 33px;
@@ -1142,15 +1138,6 @@ span{
     display: flex;
     flex-direction: column;
     gap: 2px;
-    & h3{
-        font-size: 16px;
-        color: #BDBEBF;
-    }
-    & p {
-        font-size: 20px;
-        color: #E9E9E9;
-        font-weight: 600;
-    }
 }
 .line_border{
     position: relative;
@@ -1190,13 +1177,6 @@ span{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    & h3{
-        color: #AEAFB2;
-        font-weight: 600;
-    }
-    & p{
-        line-height: 36px;
-    }
 }
 #mr_image{
     width: max-content;
@@ -1265,9 +1245,6 @@ span{
     gap: 6px;
     align-items: left;
     width: 100%;
-    & h3 {
-        color: #A8A9AB;
-    }
     & .l_list_group{
         display: flex;
         flex-direction: column;
@@ -1295,11 +1272,6 @@ span{
     flex-direction: column;
     gap: 16px;
     margin-top: 24px;
-    & h2{
-        font-size: 20px;
-        margin: 0px;
-        color: #ffffffcc;
-    }
     & #con_block_group{
         display: flex;
         flex-direction: row;
@@ -1317,10 +1289,6 @@ span{
     & img{
         width: 24px;
         height: 24px;
-    }
-    & p{
-        color: #DFDFE0;
-        margin: 0px;
     }
 }
 .question_header{
@@ -1423,9 +1391,6 @@ span{
     & .l_item{
         width: 100%;
     }
-    & .l_item > p{
-        color: #C9C9C9;
-    }
 }
 #lofi_screens{
     display: flex;
@@ -1462,13 +1427,6 @@ span{
     gap: 1px;
     width: 100%;
     justify-content: left;
-    & h3{
-        font-size: 20px;
-        font-weight: 600;
-    }
-    & p{
-        color: #D7D7D8;
-    }
 }
 .color_item_grid{
     height: 187.5px;
@@ -1830,7 +1788,7 @@ span{
   width: 13.33333px;
   height: 13.33333px;
   border-radius: 50%;
-  background: currentColor;
+  background: var(--level2Gray);
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .lds-ellipsis div:nth-child(1) {
@@ -2365,10 +2323,10 @@ span{
         border-radius: 16px;
     }
     #aboutme_image{
-        height: 253px;
+        height: 240px;
         margin: 8px;
         border-radius: 12px;
-        max-width: 93%;
+        max-width: 94%;
         & .profile_image{
             width: 130%;
             top: -20px;
