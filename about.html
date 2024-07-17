@@ -57,9 +57,31 @@
             </button>
             <nav>
                 <div id="primary_nav" data-visible="false" aria-hidden="true">
-                    <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</a>
-                    <button class="menu_button">About</a>
-                    <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="0">Contact</a>
+                    <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</button>
+                    <button class="menu_button">About</button>
+                    <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="0">Contact</button>
+                        <div class="mobile_contact_list" id="contact_list">
+                            <p style="min-width: 100px; align-self: center; font-size: 12px; text-align: center;">Find Me Here</p>
+                        <div id="divider_line"></div>
+                        <div class="contact_icons" style = "display: flex;">
+                        <div class="icon_text">
+                            <div class="icon_background" id="dribbble" data-slowed="false">
+                                <img src="assests/svg/dribbble.svg" alt="">
+                            </div>
+                            <p>Dribbble</p>
+                        </div>
+                        <div class="icon_text">
+                            <div class="icon_background" id="linkedin">
+                                <img src="assests/svg/linkedin.svg" alt="">
+                            </div>
+                            <p>Linkedin</p>
+                        </div>
+                        <div class="icon_text">
+                            <div class="icon_background" id="github">
+                                    <img src="assests/svg/github.svg" alt="">
+                            </div>
+                            <p>Github</p>
+                        </div>
                 </div>
             </nav>
         </header>
@@ -249,23 +271,23 @@
                         <div class="contact_list">
                             <div class="info_block">
                                 <h4>Based In</h4>
-                                <p>Los Angeles, California</p>
+                                <p class="not_underlined">Los Angeles, California</p>
                             </div>
                             <div class="info_block">
                                 <h4>Email</h4>
-                                <p>omarcarb34@duck.com</p>
+                                <p onclick="EmailThis()">omarcarb34@gmail.com</p>
                             </div>
                             <div class="info_block">
                                 <h4>Dribbble Profile</h4>
-                                <p>Insert Profile Here</p>
+                                <p onclick="WebsiteRedirect(this)" data-site="https://dribbble.com/omarcarb34">Omar Carbajal's Dribble</p>
                             </div>
                             <div class="info_block">
                                 <h4>Linkedin</h4>
-                                <p>Insert Profile Here</p>
+                                <p onclick="WebsiteRedirect(this)" data-site="https://www.linkedin.com/in/omar-carb03/">Omar Carbajal's LinkedIn</p>
                             </div>
                             <div class="info_block">
-                                <h4>Behance</h4>
-                                <p>Insert Profile Here</p>
+                                <h4>Github</h4>
+                                <p onclick="WebsiteRedirect(this)" data-site="https://github.com/omarcarb">OmarCarb's Github Repo</p>
                             </div>
                         </div>
                     </div>

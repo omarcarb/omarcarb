@@ -43,9 +43,31 @@
         </button>
         <nav>
             <div id="primary_nav" data-visible="false" aria-hidden="true">
-                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</a>
-                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="about">About</a>
-                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="contact_section">Contact</a>
+                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</button>
+                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="about">About</button>
+                <button class="menu_button" onclick="LinkViewMoveBack(this)" data-ids="contact_section">Contact</button>
+                    <div class="mobile_contact_list" id="contact_list">
+                        <p style="min-width: 100px; align-self: center; font-size: 12px; text-align: center;">Find Me Here</p>
+                    <div id="divider_line"></div>
+                    <div class="contact_icons" style = "display: flex;">
+                    <div class="icon_text">
+                        <div class="icon_background" id="dribbble" data-slowed="false">
+                            <img src="assests/svg/dribbble.svg" alt="">
+                        </div>
+                        <p>Dribbble</p>
+                    </div>
+                    <div class="icon_text">
+                        <div class="icon_background" id="linkedin">
+                            <img src="assests/svg/linkedin.svg" alt="">
+                        </div>
+                        <p>Linkedin</p>
+                    </div>
+                    <div class="icon_text">
+                        <div class="icon_background" id="github">
+                                <img src="assests/svg/github.svg" alt="">
+                        </div>
+                        <p>Github</p>
+                    </div>
             </div>
         </nav>
     </header>
@@ -655,8 +677,7 @@
         <section class="project_section" data-direction="up">
             <div class="section_header">
                 <h2>Accessibility Evaluation</h2>
-                <h3>As the app targets individuals with mobility issues, ensuring accessibility was paramount. This involved making text readable for the visually impaired and 
-                    structuring the app for smooth navigation with screen readers.</h3>
+                <h3>Since the app is for people with mobility issues, I made sure it was accessible with readable text for the visually impaired and easy navigation for screen readers.</h3>
             </div>
             <div id="accessibility_container">
                 <div class="container_eval">
@@ -749,9 +770,9 @@
         <section class="project_section" data-direction="up">
             <div class="section_header">
                 <h2>Final Thoughts and Future Plans</h2>
-                <h3>This project presented a significant personal challenge, necessitating design considerations that transcended my usual scope to accommodate 
-                    diverse abilities and backgrounds. One of the foremost challenges was anticipating the extensive resources required for nationwide implementation 
-                    of such an app, which would need robust infrastructure to ensure accessibility across the country.</h3>
+                <h3>This project was a big personal challenge for me. I had to think beyond my usual design scope to include people with different 
+                    abilities and backgrounds. One of the toughest parts was figuring out how to make the app work nationwide, which would need a lot 
+                    of resources and strong infrastructure to make sure everyone across the country could access it easily.</h3>
             </div>
         </section>
         <span><picture>

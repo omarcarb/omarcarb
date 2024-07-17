@@ -975,6 +975,7 @@ section{
 .tidbits_article{
     display: flex;
     gap: 16px;
+    z-index: 1;
     & > *{
         width: 50%;
         margin: 0px;
@@ -1702,6 +1703,7 @@ span{
     & .text_score{
         display: flex;
         gap: 8px;
+        align-items: center;
     }
     & .subtitle{
         font-weight: 600;
@@ -2782,10 +2784,10 @@ span{
         gap: 12px;
     }
     .rating_text > *{
-        font-size: 8px;
+        font-size: 12px;
     }
     .text_score > p{
-        font-size: 8px;
+        font-size: 12px;
     }
     #preloader > .icon_wrapper{
         top: 15%;
