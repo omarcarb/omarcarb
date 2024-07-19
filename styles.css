@@ -1321,6 +1321,7 @@ span{
     & .stat_number{
         font-size: 32px;
         font-weight: 600;
+        color: #EFF3F5;
     }
 }
 .persona_container{
@@ -2527,7 +2528,6 @@ span{
     }
     #mr_image{
         padding: 16px 8px;
-        max-width: 90%;
         & img{
             max-height: 175px;
             max-width: 100%;
@@ -2580,6 +2580,9 @@ span{
         & picture > img{
             max-width: 100%;
         }
+    }
+    .question_header > img{
+        max-height: 24px;
     }
     .persona_container{
         flex-direction: column;
