@@ -139,6 +139,9 @@ p{
 a{
     text-decoration: none;
 }
+q{
+    color: var(--level4Gray);
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -1781,7 +1784,7 @@ span{
   position: relative;
   width: 80px;
   height: 80px;
-  left: 42%;
+  left: 25%;
 }
 .lds-ellipsis div {
   position: absolute;
@@ -2281,6 +2284,7 @@ span{
         gap: 8px;
         & button{
             font-size: 14px;
+            width: 100%;
         }
         & .secondary_button{
             box-shadow: -4px -4px 8px rgba(61, 62, 70, 1), 4px 4px 8px #0F1012;
