@@ -35,7 +35,7 @@
 *{
     margin: 0px;
     font-family: 'Poppins';
-    background: rgba(255, 0, 0, 0.377);
+
 }
 html{
     scroll-behavior: smooth;
@@ -2175,7 +2175,7 @@ span{
     #primary_nav::before{
         position: absolute;
         content: '';
-        width: 50vw;
+        width: 35vw;
         height: 100%;
         backdrop-filter: blur(0.15rem);
         left: -50%;
@@ -2212,7 +2212,7 @@ span{
         display: flex;
     }
     #primary_nav[data-visible="false"]{
-        transform: translateX(300px);
+        transform: translateX(400px);
         
     }
     #primary_nav[data-visible="false"]::before{
