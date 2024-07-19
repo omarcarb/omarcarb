@@ -1213,12 +1213,10 @@ span{
     justify-content: center;
 
     & #ca_app_images{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        display: grid;
         gap: 16px;
         width: 55%;
+        grid-template-columns: repeat(3,1fr);
     }
     & #ca_app_list{
         display: flex;
@@ -1226,7 +1224,6 @@ span{
         gap: 21px;
         justify-content: center;
         align-items: start;
-        width: 45%;
     }
 }
 .img_captions{
@@ -1235,10 +1232,10 @@ span{
     gap: 2px;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
+    color: var(--level3Gray);
     & img{
         max-height: 366px;
-        width: 100%;
+        width: 85%;
     }
 }
 .list_comparison{
@@ -1974,9 +1971,12 @@ span{
     }
     #primary_nav[data-visible="true"] {
         transform: translateX(125px);
-      }
+    }
+    #project_hero_section{
+        height: 25vh;
+    }
     #hero_section_image_project {
-        height: 55vh;
+        height: 40vh;
     }
     .remove{
         display: none;
@@ -2028,7 +2028,6 @@ span{
     }
     .img_captions {
     font-size: 12px;
-    width: 33%;
     align-content: start;
     justify-content: start;
     text-align: center;
@@ -2547,6 +2546,7 @@ span{
             justify-content: space-evenly;
             width: 100%;
             align-items: start;
+            grid-template-columns: repeat(2,1fr);
         }
         & #ca_app_list{
             width: 100%;
@@ -2554,14 +2554,13 @@ span{
     }
     .img_captions {
     font-size: 12px;
-    width: 33%;
     align-content: start;
     justify-content: start;
     text-align: center;
     }
     .img_captions > img{
-        max-height: 202px;
-        width: 100%;
+        max-height: 240px;
+        width: 80%;
     }
     #conclusion {
         & #con_block_group{
