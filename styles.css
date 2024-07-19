@@ -35,6 +35,7 @@
 *{
     margin: 0px;
     font-family: 'Poppins';
+    background: rgba(255, 0, 0, 0.377);
 }
 html{
     scroll-behavior: smooth;
@@ -1782,7 +1783,7 @@ span{
   position: relative;
   width: 80px;
   height: 80px;
-  left: 25%;
+  left: 42%;
 }
 .lds-ellipsis div {
   position: absolute;
@@ -2241,6 +2242,7 @@ span{
     }
     .wave_background{
         min-height: 395px;
+        width: 100%;
     }
     .foreground{
         height: 269.13px;
@@ -2347,7 +2349,7 @@ span{
     }
     .contact_info{
         width: 100%;
-        padding: 18px 3px 12px 12px;
+        padding: 0px;
         & h3{
             margin-bottom: 16px;
             font-size: 16px;
@@ -2361,7 +2363,7 @@ span{
         grid-template-columns: repeat(2,1fr);
         padding: 0px;
         column-gap: 8px;
-        max-width: 290px;
+        justify-items: center;
     }
     .info_block > h4{
         font-size: 12px;
@@ -2793,8 +2795,9 @@ span{
         top: 15%;
     }
     .loading_icon_wrapper{
-        left: 22%;
-        top: 60%;
+        left: 0%;
+        top: 57%;
+        width: 90%;
     }
     picture{
         max-width: 327px;
