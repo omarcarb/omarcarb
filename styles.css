@@ -967,12 +967,13 @@ section{
     z-index: 20;
     display: flex;
     position: relative;
+    justify-content: center;
 }
 #aboutme_hero_section_container{
     display: flex;
     justify-content: center;
     & >*{
-        width: 50%;
+        width: 100%;
         text-align: center;
     }
 }
