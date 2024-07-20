@@ -248,13 +248,13 @@ function ProjectRedirect(button){
     const screenWidth = window.screen.width;
     
     if(screenWidth < 480){
-        //if the user is on a device less than 480px wide, play an animation on the project images and delay for 1.5 seconds
+        //if the user is on a device less than 480px wide, play an animation on the project images and delay for 1 seconds
         animatedPage.setAttribute('data-animated',true)
-        delay = 1500;
+        delay = 1000;
     }
     else{
-        //if the user is on a device more than 480px wide, delay for 1 seconds
-        delay = 1000;
+        //if the user is on a device more than 480px wide, delay for 300 milliseconds
+        delay = 300;
     }
 
     

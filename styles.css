@@ -1487,6 +1487,7 @@ span{
     align-items: center;
     border-radius: 8px;
     font-size: 16px;
+    color: var(--level2Gray);
 }
 #right_typography{
     & img{
@@ -1523,6 +1524,7 @@ span{
     font-family: "Plus Jakarta Sans";
     position: relative;
     transform: translate(30%, 30%);
+    color: var(--level2Gray);
 }
 #grid_screens{
     display: grid;
@@ -1580,7 +1582,7 @@ span{
     gap: 19px;
     padding-block: 1rem;
     flex-wrap: nowrap;
-    animation: scrolling 80s linear infinite;
+    animation: scrolling 60s linear infinite;
     & img{
         max-height: 383px;
         border-radius: 8px;
@@ -2881,4 +2883,7 @@ span{
     .remove{
         display: none;
     }
+    .lds-ellipsis {
+        left: 40%;
+      }
 }
