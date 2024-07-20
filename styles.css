@@ -963,6 +963,11 @@ section{
     justify-content: center;
     align-items: center;
 }
+#aboutme_hero_section{
+    z-index: 20;
+    display: flex;
+    position: relative;
+}
 #aboutme_hero_section_container{
     display: flex;
     justify-content: center;
