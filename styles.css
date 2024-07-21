@@ -2566,6 +2566,10 @@ span{
             align-items: start;
             grid-template-columns: repeat(2,1fr);
         }
+        & .desktop#ca_app_images {
+            width: 100%;
+            grid-template-columns: repeat(1,1fr);
+          }
         & #ca_app_list{
             width: 100%;
         }
