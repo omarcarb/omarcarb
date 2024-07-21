@@ -1227,6 +1227,12 @@ span{
         width: 55%;
         grid-template-columns: repeat(3,1fr);
     }
+    & .desktop#ca_app_images{
+        display: grid;
+        gap: 16px;
+        width: 55%;
+        grid-template-columns: repeat(2,1fr);
+    }
     & #ca_app_list{
         display: flex;
         flex-direction: column;
