@@ -432,7 +432,7 @@ section{
 }
 .hero_text{
     width: 50%;
-    align-items: center;
+    align-items: start;
     & h1{
         margin-bottom: 8px;
         text-align: center;
@@ -443,7 +443,7 @@ section{
         text-align: center;
     }
     & p{
-        text-align: center;
+        text-align: left;
     }
 }
 .hero_image{
@@ -574,7 +574,7 @@ section{
     }
     & button:hover{
         box-shadow: var(--shadowHoverButtonBlue);
-        border-radius: 4px;
+        border-radius: var(--mainBorderRadius);
 
         transition: box-shadow 300ms ease-out, transform 300ms ease-out, border-radius 300ms ease-out, background-color 300ms ease-in;
     }
@@ -849,6 +849,8 @@ section{
     & p{
         margin: 0px;
         padding: 0px;
+        color: var(--level2Gray);
+        font-weight: var(--header2Fontweight);
     }
     & p:not(.not_underlined){
         text-decoration: underline;
@@ -1374,8 +1376,6 @@ span{
 }
 .persona_description{
     width: 70%;
-    display: flex;
-    flex-direction: column;
     gap: 32px;
     padding: 24px;
     box-shadow: var(--boxShadow);
@@ -1390,6 +1390,9 @@ span{
         flex-direction: column;
         gap: 8px;
     }
+    & .description_bottom > p{
+        margin-top: 24px;
+    }
 }
 .persona_wants{
     display: flex;
@@ -1397,8 +1400,6 @@ span{
     gap: 8px;
 }
 .list_group{
-    display: flex;
-    flex-direction: column;
     gap: 16px;
     & img{
         width: 36px;
@@ -1450,7 +1451,7 @@ span{
 .color_item_grid{
     height: 187.5px;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: var(--mainBorderRadius);
     box-shadow: var(--neutralShadowButton);
     & .color_background{
         height: 60%;
@@ -2281,8 +2282,6 @@ span{
     }
     .hero_text{
         width: 100%;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         & h1{
             font-size: 24px;
@@ -2327,7 +2326,7 @@ span{
         grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
     }
     .project_container{
-        border-radius: 16px;
+        border-radius: var(--mainBorderRadius);
     }
     .project_tags{
         flex-wrap: wrap;
@@ -2445,8 +2444,6 @@ span{
         }
     }
     #aboutme_hero_text{
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 32px 0px 0px 0px;
@@ -2659,7 +2656,7 @@ span{
     }
     .color_item_grid{
         height: 141px;
-        border-radius: 8px;
+        border-radius: var(--mainBorderRadius);
         & .color_text{
             padding: 12px 6px;;
         }
