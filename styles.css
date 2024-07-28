@@ -531,7 +531,6 @@ section{
 }
 
 #project_grid{
-    display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(450px, .75fr));
