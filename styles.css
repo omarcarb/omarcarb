@@ -664,7 +664,7 @@ section{
         transform: rotate(0deg) translate(0px 0px) scale(.75);
     }
     to{
-        transform: rotate(25deg) translate(120px, -40px) scale(.85);
+        transform: rotate(25deg) translate(100px, -40px) scale(.85);
     }
 }
 @keyframes rotateRight {
@@ -672,7 +672,7 @@ section{
         transform: rotate(0deg) translate(0px 0px) scale(.75);
     }
     to{
-        transform: rotate(-25deg) translate(-120px, -40px) scale(.85);
+        transform: rotate(-25deg) translate(-100px, -40px) scale(.85);
     }
 }
 @keyframes scaleUpReverse {
@@ -1288,8 +1288,6 @@ span{
     color: #C16576;
 }
 #conclusion{
-    display: flex;
-    flex-direction: column;
     gap: 16px;
     margin-top: 24px;
     & #con_block_group{
