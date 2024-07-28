@@ -2342,7 +2342,7 @@ span{
         padding: 4px 20px;
     }
     .project_button{
-        max-width: 90%;
+        max-width: 300px;
     }
     #aboutme_block{
         max-height: none;
