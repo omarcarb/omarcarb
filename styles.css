@@ -1312,7 +1312,6 @@ span{
     }
 }
 .question_header{
-    display: flex;
     gap: 9px;
     align-items: center;
 }
