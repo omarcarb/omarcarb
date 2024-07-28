@@ -1381,13 +1381,10 @@ span{
     box-shadow: var(--boxShadow);
     border-radius: var(--mainBorderRadius);
     & .description_top{
-        display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 24px;
     }
     & .description_bottom{
-        display: flex;
-        flex-direction: column;
         gap: 8px;
     }
     & .description_bottom > p{
