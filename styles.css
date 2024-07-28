@@ -26,11 +26,11 @@
     --inputFocusShadow: -4px -4px 8px #3D3E46, 4px 4px 8px #0F1012;
     --blueShadowButton: 4px 4px 8px hsla(229, 65%, 60%, 0.582), -4px -4px 8px rgba(181, 189, 221, 0.2);
     --blueShadowProjectButton: 2px 2px 4px hsla(229, 65%, 60%, 0.582), -2px -2px 4px rgba(181, 189, 221, 0.2);
-    --neutralShadowButton:-2px -2px 4px #383A41, 2px 2px 4px #141417;   
+    --neutralShadowButton:-2px -2px 4px #383A41, 2px 2px 4px #141417;
     --shadowButtonPressedBlue: inset -2px -2px 4px #5870DC, inset 2px 2px 4px #141417;
     --shadowButtonPressedNeutral: inset -2px -2px 4px #3F4252, inset 2px 2px 4px #141417;
     --shadowHoverButtonBlue: -2px -2px 4px #454851, 2px 2px 4px rgba(96, 121, 235, 0.6);
-    --shadowHoverButtonNeutral: -4px -4px 8px #383A41, 4px 4px 8px #04060C; 
+    --shadowHoverButtonNeutral: -4px -4px 8px #383A41, 4px 4px 8px #04060C;
 }
 *{
     margin: 0px;
@@ -57,7 +57,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10000000000000;
+    z-index: 1000000000;
     transition: opacity 0.75s, visibility 0.75s;
     & .icon_wrapper{
         position: absolute;
@@ -142,8 +142,18 @@ a{
 q{
     color: var(--level4Gray);
 }
-header{
+.flex_column{
     display: flex;
+    flex-direction: column;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}
+.grid{
+    display: grid;
+}
+header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -175,7 +185,6 @@ header{
     display: none;
 }
 footer{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -192,7 +201,6 @@ footer{
 }
 button{
     border-radius: 16px;
-    display: flex;
     align-items: center;
     justify-content: center;
     border: none;
@@ -266,14 +274,12 @@ label{
     transition: border-radius 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 #button_container{
-    display: flex;
     width: 100%;
     margin-top: 48px;
     gap: 24px;
     & button{
         width: 50%;
         padding: 16px 0px;
-        display: flex;
         justify-content: center;
         align-items: center;
         gap: 8px;
@@ -323,7 +329,6 @@ label{
     transition: box-shadow 300ms ease-out, transform 300ms ease-out;
 }
 #hero_section{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -2162,7 +2167,7 @@ span{
     }
     .mobile-paragraph{
         display: block;
-        text-align: center;
+        text-align: left;
     }
     header{
         position: sticky;
@@ -2342,7 +2347,6 @@ span{
     #aboutme_block{
         max-height: none;
         flex-direction: column;
-        border-radius: 16px;
     }
     #aboutme_image{
         height: 240px;
@@ -2367,7 +2371,7 @@ span{
     }
     .contact_info{
         width: 100%;
-        padding: 0px;
+        padding: 12px 4px;
         & h3{
             margin-bottom: 16px;
             font-size: 16px;
@@ -2375,6 +2379,7 @@ span{
     }
     .contact_area{
         flex-direction: column;
+        padding: 0px;
     }
     .contact_list{
         display: grid;

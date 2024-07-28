@@ -46,16 +46,16 @@
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
         </div>
     </div>
-    <header>
+    <header class="flex_row">
         <img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;">
         <button class= "mobile-toggle" aria-controls="primary_nav" aria-expanded="false">
             <span class="sr-only">Menu</span>
         </button>
         <nav>
             <div id="primary_nav" data-visible="false" aria-hidden="true">
-                <button class="menu_button" onclick="LinkViewMove(this)" data-value ="0">Work</button>
-                <button class="menu_button" onclick="LinkViewMove(this)" data-value ="1">About</button>
-                <button class="menu_button" id="button_standout" onclick="LinkViewMove(this)" data-value ="2">Contact</button>
+                <button class="menu_button flex_row" onclick="LinkViewMove(this)" data-value ="0">Work</button>
+                <button class="menu_button flex_row" onclick="LinkViewMove(this)" data-value ="1">About</button>
+                <button class="menu_button flex_row" id="button_standout" onclick="LinkViewMove(this)" data-value ="2">Contact</button>
                 <div class="mobile_contact_list" id="contact_list">
                     <p style="min-width: 100px; align-self: center; font-size: 12px; text-align: center;">Find Me Here</p>
                 <div id="divider_line"></div>
@@ -92,9 +92,9 @@
                 <h1>Omar Carbajal</h1>
                 <h2>UI / UX Designer and Front-End Developer</h2>
                 <p>I create striking, memorable designs that captivate users and elevate your brand</p>
-                <div id="button_container">
-                    <a href="assests/download-files/Cover Letter.pdf" download="omar's_resume" style="width: 50%;" class="remove"><button class="secondary_button" style="width: 100%;"><img src="assests/svg/download.svg" alt="">Resume</button></a>
-                    <button class="primary_button" id="email_button" onclick="EmailThis()"><img src="assests/svg/mail_icon.svg" alt="">Contact Me</button>
+                <div id="button_container" class="flex_row">
+                    <a href="assests/download-files/Cover Letter.pdf" download="omar's_resume" style="width: 50%;" class="remove"><button class="secondary_button flex_row" style="width: 100%;"><img src="assests/svg/download.svg" alt="">Resume</button></a>
+                    <button class="primary_button flex_row" id="email_button" onclick="EmailThis()"><img src="assests/svg/mail_icon.svg" alt="">Contact Me</button>
                 </div>
             </div>
             <div class="hero_image fade_in_animation" data-sequence="2">
@@ -128,7 +128,7 @@
                     </div>
                     <p>A mobile app designed for people with disabilities and the elderly</p>
                 </div>
-                <button class="project_button" onclick="ProjectRedirect(this)" data-text="free_roam">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
+                <button class="project_button flex_row" onclick="ProjectRedirect(this)" data-text="free_roam">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
             </div>
             <div class="project_container">
                 <div class="desktopapp img_background_parallax" data-animated="false">
@@ -147,7 +147,7 @@
                     </div>
                     <p>A website with endless filtering options for personalized rental searching</p>
                 </div>
-                <button class="project_button" onclick="ProjectRedirect(this)" data-text="shelter_finds">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
+                <button class="project_button flex_row" onclick="ProjectRedirect(this)" data-text="shelter_finds">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
             </div>
             <div class="project_container">
                 <div class="img_background_parallax" data-animated="false">
@@ -168,7 +168,7 @@
                         </div>
                         <p>A mobile app designed to alert users to potention weather related problems</p>
                     </div>
-                    <button class="project_button" onclick="ProjectRedirect(this)" data-text="weatherlerts">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
+                    <button class="project_button flex_row" onclick="ProjectRedirect(this)" data-text="weatherlerts">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
                 </div>
                 <div class="project_container">
                     <div class="desktopapp img_background_parallax" data-animated="false">
@@ -187,7 +187,7 @@
                         </div>
                         <p>A HTML, CSS and Javascript website made to host projects I have worked on</p>
                     </div>
-                    <button class="project_button" onclick="ProjectRedirect(this)" data-text="portfolio">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
+                    <button class="project_button flex_row" onclick="ProjectRedirect(this)" data-text="portfolio">Check Out Project <img src="assests/svg/cheveron_arrow_right.svg" alt=""></button>
                 </div>
             </div>
         </section>
@@ -252,7 +252,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="secondary_button"
+                    <button class="secondary_button flex_row"
                     onclick="SendToAboutPage()">Learn More About Me</button>
                 </div>
                 
@@ -342,7 +342,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="flex_row">
         <img src="assests/svg/logo.svg" alt="">
         <div class="footer_links">
             <h2 class="footer_text">Follow Me:</h2>
