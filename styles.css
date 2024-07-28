@@ -1481,14 +1481,11 @@ span{
 }
 #button_grid{
     width: 100%;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
     row-gap: 24px;
     padding: 16px 0px;
     & .button_grid_item{
-        display: flex;
-        flex-direction: column;
         gap: 8px;
     }
 }
