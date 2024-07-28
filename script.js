@@ -93,13 +93,13 @@ menuButton.addEventListener('click', function(){
 
     const menuVisibility = menuBackground.getAttribute('data-visible')
     
-
     if(menuVisibility=="false"){
         //only if the menu is not visible will the menu become visable when clicking on the menu button
         menuBackground.setAttribute('data-visible','true')
         menuButton.setAttribute('aria-expanded', 'true')
         document.body.style.overflow = 'hidden';
     }
+
     if(menuVisibility=="true"){
         //only if the menu is visible will the menu become go away when clicking on the close button
         menuBackground.setAttribute('data-visible','false')
@@ -107,6 +107,7 @@ menuButton.addEventListener('click', function(){
         document.body.style.overflow = '';
     }
 })
+
 function LinkViewMove(button){
     const menuVisibility = menuBackground.getAttribute('data-visible');
 
