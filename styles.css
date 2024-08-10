@@ -743,7 +743,7 @@ section{
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 250px;
-    max-height: 500px;
+    max-height: 370px;
     width: 100%;
     box-shadow: var(--boxShadow);
     & .profile_image{
