@@ -42,11 +42,8 @@ html{
 }
 body{
     background-color: var(--mainBackgroundColor);
-
     margin: 0px 104px;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
