@@ -163,7 +163,6 @@ header{
     box-shadow: var(--boxShadow);
     z-index: 10000000;
     & #primary_nav {
-        display: flex;
         gap: 17px;
     }
     & a{
@@ -495,7 +494,6 @@ section{
     width: 48px; height: 48px;
     box-shadow: var(--boxShadow);
     border-radius: 48px;
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--mainBackgroundColor);
