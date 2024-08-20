@@ -37,7 +37,7 @@
 
     <title>Omar Carbajal</title>
 </head>
-<body>
+<body class="flex_column">
     <div id="preloader">
         <div class="icon_wrapper">
             <img src="assests/svg/logo_icon.svg" alt="">
@@ -52,7 +52,7 @@
             <span class="sr-only">Menu</span>
         </button>
         <nav>
-            <div id="primary_nav" data-visible="false" aria-hidden="true">
+            <div class="flex_row" id="primary_nav" data-visible="false" aria-hidden="true">
                 <button class="menu_button flex_row" onclick="LinkViewMove(this)" data-value ="0">Work</button>
                 <button class="menu_button flex_row" onclick="LinkViewMove(this)" data-value ="1">About</button>
                 <button class="menu_button flex_row" id="button_standout" onclick="LinkViewMove(this)" data-value ="2">Contact</button>
@@ -60,20 +60,20 @@
                     <p style="min-width: 100px; align-self: center; font-size: 12px; text-align: center;">Find Me Here</p>
                 <div id="divider_line"></div>
                 <div class="contact_icons flex_row">
-                <div class="icon_text">
-                    <div class="icon_background" id="dribbble" data-slowed="false">
+                <div class="icon_text flex_column">
+                    <div class="icon_background flex_row" id="dribbble" data-slowed="false">
                         <img src="assests/svg/dribbble.svg" alt="">
                     </div>
                     <p>Dribbble</p>
                 </div>
-                <div class="icon_text">
-                    <div class="icon_background" id="linkedin">
+                <div class="icon_text flex_column">
+                    <div class="icon_background flex_row" id="linkedin">
                         <img src="assests/svg/linkedin.svg" alt="">
                     </div>
                     <p>Linkedin</p>
                 </div>
-                <div class="icon_text">
-                    <div class="icon_background" id="github">
+                <div class="icon_text flex_column">
+                    <div class="icon_background flex_row" id="github">
                             <img src="assests/svg/github.svg" alt="">
                     </div>
                     <p>Github</p>

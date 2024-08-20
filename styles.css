@@ -16,7 +16,7 @@
     --header2Fontweight: 600;
     --header3Fontwieght: 500;
     --paragraphFontweight: 400;
-    --mainFontColor: #FFFFFF;
+    --mainFontColor: #fcfcff;
     --secondaryFontColor: #DBDBDB;
     --mainBorderRadius: 16px;
     --imageBorderRadius: 16px 16px 0px 0px;
@@ -42,11 +42,8 @@ html{
 }
 body{
     background-color: var(--mainBackgroundColor);
-
     margin: 0px 104px;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -163,7 +160,6 @@ header{
     box-shadow: var(--boxShadow);
     z-index: 10000000;
     & #primary_nav {
-        display: flex;
         gap: 17px;
     }
     & a{
@@ -215,7 +211,7 @@ input[type="text"], input[type="tel"], input[type="email"]{
     box-shadow: var(--innerBoxShadow);
     border-radius: var(--mainBorderRadius);
     padding: 0px 16px;
-    font-size: 16px;
+    font-size: var(--paragraphFontsize);
     color: #FFFFFF;
 
 }
@@ -228,7 +224,7 @@ textarea{
     box-shadow: var(--innerBoxShadow);
     border-radius: 16px;
     padding: 16px;
-    font-size: 16px;
+    font-size: var(--paragraphFontsize);
     color: #FFFFFF;
     border: none;
     resize: none;
@@ -484,8 +480,6 @@ section{
     padding-top: 24px;
 }
 .icon_text{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -497,7 +491,6 @@ section{
     width: 48px; height: 48px;
     box-shadow: var(--boxShadow);
     border-radius: 48px;
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--mainBackgroundColor);
@@ -743,7 +736,7 @@ section{
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 250px;
-    max-height: 500px;
+    max-height: 370px;
     width: 100%;
     box-shadow: var(--boxShadow);
     & .profile_image{

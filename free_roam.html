@@ -35,14 +35,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <title>Free Roam</title>
 </head>
-<body>
+<body class="flex_column">
     <header class="flex_row">
         <a href="index.html"><img src="assests/svg/logo.svg" alt="Omar Carbajal logo" style="height: 28px; margin-left: 12px;"></a>
         <button class= "mobile-toggle flex_row" aria-controls="primary_nav" aria-expanded="false">
             <span class="sr-only">Menu</span>
         </button>
         <nav>
-            <div id="primary_nav" data-visible="false" aria-hidden="true">
+            <div id="primary_nav" class="flex_row" data-visible="false" aria-hidden="true">
                 <button class="menu_button flex_row" onclick="LinkViewMoveBack(this)" data-ids="project_section">Work</button>
                 <button class="menu_button flex_row" onclick="LinkViewMoveBack(this)" data-ids="about">About</button>
                 <button class="menu_button flex_row" onclick="LinkViewMoveBack(this)" data-ids="contact_section">Contact</button>
@@ -50,20 +50,20 @@
                         <p style="min-width: 100px; align-self: center; font-size: 12px; text-align: center;">Find Me Here</p>
                     <div id="divider_line"></div>
                     <div class="contact_icons flex_row">
-                    <div class="icon_text">
-                        <div class="icon_background" id="dribbble" data-slowed="false">
+                    <div class="icon_text flex_column">
+                        <div class="icon_background flex_row" id="dribbble" data-slowed="false">
                             <img src="assests/svg/dribbble.svg" alt="">
                         </div>
                         <p>Dribbble</p>
                     </div>
-                    <div class="icon_text">
-                        <div class="icon_background" id="linkedin">
+                    <div class="icon_text flex_column">
+                        <div class="icon_background flex_row" id="linkedin">
                             <img src="assests/svg/linkedin.svg" alt="">
                         </div>
                         <p>Linkedin</p>
                     </div>
-                    <div class="icon_text">
-                        <div class="icon_background" id="github">
+                    <div class="icon_text flex_column">
+                        <div class="icon_background flex_row" id="github">
                                 <img src="assests/svg/github.svg" alt="">
                         </div>
                         <p>Github</p>
@@ -436,7 +436,7 @@
             </div>
             <picture>
                 <source media="(max-width: 480px)" srcset="assests/svg/free_roam_flow_diagram_mobile.svg">
-                <img src="assests/svg/free_roam_flow_diagram.svg" alt="">
+                <img src="assests/svg/free_roam_flow_diagram.svg" alt="" style="width: 100%;">
             </picture>
             
         </section>
@@ -780,7 +780,7 @@
             <img src="assests/png/free-roam/free_roam_preview_image_1.png" alt="">
         </picture></span>
     </main>
-    <footer>
+    <footer class="flex_row">
         <img src="assests/svg/logo.svg" alt="" style="height: 28px;">
         <div class="footer_links">
             <h2 class="footer_text">Follow Me:</h2>

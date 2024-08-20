@@ -33,6 +33,12 @@ function DisplayProjectDetails(){
         break 
         case "Evike Design Audit":
             projectHeaders.title = ""
+        break
+        case "E-commervce Site":
+            projectHeaders.title = "E-commerce Site";
+            projectHeaders.subheading = "A prime e-commerce site designed for easy access to goods";
+            projectHeaders.tags = ["React", "HTML 5", "CSS 3", "Wireframs", "Figma", "High Fidelity Interfaces", "Prototype", "Market Research", "Flow Diagrams"];
+        break
         default: return
     }
 
