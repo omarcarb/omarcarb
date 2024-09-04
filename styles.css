@@ -1037,7 +1037,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 64px 0px;
+    padding: 64px 128px;
     & .section_header > h3{
         text-transform: none;
     }
