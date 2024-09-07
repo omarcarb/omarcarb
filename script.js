@@ -413,9 +413,3 @@ contactForm.addEventListener('submit', (e)=>{
         console.log(error);
     })
 })
-
-
-
-
-
-
