@@ -413,3 +413,20 @@ contactForm.addEventListener('submit', (e)=>{
         console.log(error);
     })
 })
+
+const revolvingWords = document.getElementById("revolving_words");
+const wordsArray = ["Websites", "Apps", "Graphics", "Software Designs", "Mobile Apps"]
+
+const revolveContainer = document.createElement('div')
+revolveContainer.setAttribute("id", "word_container")
+revolvingWords.appendChild(revolveContainer);
+
+wordsArray.forEach( (wordArray, index) => {
+    var wordFragment = document.createElement('h1')
+    wordFragment.innerHTML = wordsArray[index];
+    revolveContainer.appendChild(wordFragment)
+})
+
+const firstWord = document.createElement('h1');
+firstWord.innerHTML = wordsArray[0];
+revolveContainer.appendChild(firstWord)

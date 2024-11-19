@@ -3,7 +3,7 @@
 :root{
     --mainAccentColor: #1e72b3;
     --mainBackgroundColor: #121212;
-    --secondaryBackgroundColor: #282828;
+    --secondaryBackgroundColor: #101010;
     --mainContainerGradientColor: linear-gradient(145deg, #131313, #101010);
     --level2Gray: #ecedf1;
     --level3Gray: #cecfd6;
@@ -21,7 +21,7 @@
     --mainBorderRadius: 16px;
     --imageBorderRadius: 16px 16px 0px 0px;
     --pillBorderRadius: 48px;
-    --boxShadow: 9px 9px 18px #070707, -9px -9px 18px #1d1d1d;
+    --boxShadow: 4px 4px 8px #070707, -4px -4px 8px #1d1d1d;
     --innerBoxShadow: inset -4px -4px 8px #070707, inset 4px 4px 8px #1d1d1d;
     --inputFocusShadow: 9px 9px 18px #070707, -9px -9px 18px #1d1d1d;
     --blueShadowButton: 4px 4px 8px hsla(229, 65%, 60%, 0.582), -4px -4px 8px hsla(228, 37%, 79%, 0.2);
@@ -332,79 +332,6 @@ label{
     position: relative;
     z-index: 40;
 }
-.wave_background{
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    background-color: #3D3E46;
-    min-height: 600px;
-    top: 0;
-    width:100vw;
-    overflow: hidden;
-}
-.wave{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-repeat: repeat-x;
-}
-.foreground{
-    background-image: url(assests/svg/wave_foreground1.svg);
-    height: 529.13px;
-    transform: translateY(700px);
-
-    animation: bottom_wave 40000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2100ms forwards;
-}
-.foreground2{
-    background-image: url(assests/svg/wave_foreground2.svg);
-    height: 327.5px;
-    transform: translateY(700px);
-
-    animation: middle_wave 35000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.4) 2150ms forwards;
-}
-.foreground3{
-    background-image: url(assests/svg/wave_foreground3.svg);
-    height: 126.53px;
-    transform: translateY(700px);
-    animation: top_wave 30000ms infinite linear, move_up 1s cubic-bezier(0.3, 0.2, 0.2, 1.05) 2150ms forwards;
-}
-@keyframes bottom_wave {
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: -1440px;
-    }
-}
-@keyframes middle_wave {
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: 1440px;
-    }
-}
-@keyframes top_wave {
-    0%{
-        background-position-x: 0;
-    }    
-    100%{
-        background-position-x: -1440px
-    }
-}
-@keyframes move_up {
-    0%{
-        transform: translateY(700px);
-    }
-    70%{
-        animation-timing-function: ease-in;
-        transform: translateY(10px);
-    }
-    100%{
-        animation-timing-function: ease-out;
-        transform: translateY(0px);
-    }
-}
 section{
     margin: 104px 0px;
 }
@@ -441,6 +368,56 @@ section{
     & p{
         text-align: left;
     }
+}
+#hero_subtitle{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    text-wrap: nowrap;
+}
+#revolving_words{
+    height:72px;
+    overflow: hidden;
+}
+#word_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: revolve 10s infinite;
+}
+@keyframes revolve {
+    0%{
+        transform: translateY(0px);
+    }
+    5%{
+        transform: translateY(-79px);
+    }
+    15%{
+        transform: translateY(-79px);
+    }
+    20%{
+        transform: translateY(-158px);
+    }
+    35%{
+        transform: translateY(-158px);
+    }
+    40%{
+        transform: translateY(-238px);
+    }
+    55%{
+        transform: translateY(-238px);
+    }
+    60%{
+        transform: translateY(-320px);
+    }
+    75%{
+        transform: translateY(-320px);
+    }
+    80%{
+        transform: translateY(-400px);
+    }
+    100%{
+        transform: translateY(-400px)    }
 }
 .hero_image{
     position: relative;
