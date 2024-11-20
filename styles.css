@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600,700|Poppins:400');
 
 :root{
-    --mainAccentColor: #1e72b3;
+    --mainAccentColor: hsl(206, 70%, 36%);
     --mainBackgroundColor: #121212;
     --secondaryBackgroundColor: #101010;
     --mainContainerGradientColor: linear-gradient(145deg, #131313, #101010);
@@ -284,7 +284,6 @@ label{
 }
 .primary_button{
     background-color: var(--mainAccentColor);
-    box-shadow: var(--blueShadowButton);
     & img{
         width: 20px;
         height: 16px;
