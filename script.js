@@ -57,37 +57,103 @@ function DisplayProjectDetails(){
     })
 }
 
+const Sections = document.querySelectorAll('.project_section');
+const screenWidth = window.screen.width;
+let thresholdValue = 0;
+
+if(screenWidth < 480){
+    thresholdValue = .01;
+}
+else{
+    thresholdValue = .25;
+}
+
+const options = {
+    root: null,
+    threshold: thresholdValue,
+    rootMargin: "",
+};
+
+let observer = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            entry.target.setAttribute("data-animated", true)
+        } 
+    })
+}, options)
+
+Sections.forEach(section =>{
+    observer.observe(section)
+})
+
+const indexSection = document.querySelectorAll('.project_container');
+
+const options1 = {
+    root: null,
+    threshold: .3,
+    rootMargin: "",
+};
+
+let indexObserver = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry =>{
+        const screenWidth = window.screen.width;
+        let sequenceSet
+        
+        if(screenWidth<480){
+            sequenceSet = 0;
+        }
+        else{
+            sequenceSet = parseFloat(entry.target.getAttribute('data-animation-sequence'))
+        }
+        
+        
+        entry.target.style.animationDelay = (sequenceSet * 150)+ 'ms'
+        
+        if(entry.isIntersecting){
+            entry.target.setAttribute("data-animated", true)
+        }
+    })
+}, options1)
+
+indexSection.forEach(section =>{
+    indexObserver.observe(section)
+})
 
 const path = document.querySelector('#wave path');
 
-let offset = 0;
+if(path){
+    let offset = 0;
 
+    function animateWave() {
+      offset += .00125; // Speed of wave movement
+      const newPath = generateWavePath(offset);
+      path.setAttribute('d', newPath);
+      requestAnimationFrame(animateWave);
+    }
 
-function animateWave() {
-  offset += .00125; // Speed of wave movement
-  const newPath = generateWavePath(offset);
-  path.setAttribute('d', newPath);
-  requestAnimationFrame(animateWave);
+    // Function to generate the wave path
+    function generateWavePath(offset) {
+      const width = 1440;
+      const height = 320;
+      const waveHeight = 60;
+      const points = 10;
+
+      let path = `M0,${height / 2} `;
+      for (let i = 0; i <= points; i++) {
+        const x = (i / points) * width;
+        const y = height / 2 + Math.sin(i * 2 * Math.PI / points + offset) * waveHeight;
+        path += `L${x},${y} `;
+      }
+      path += `L${width},${height} L0,${height} Z`;
+      return path;
+    }
+
+    animateWave();
+}
+else{
+    console.log("no wave animation found")
 }
 
-// Function to generate the wave path
-function generateWavePath(offset) {
-  const width = 1440;
-  const height = 320;
-  const waveHeight = 60;
-  const points = 10;
-
-  let path = `M0,${height / 2} `;
-  for (let i = 0; i <= points; i++) {
-    const x = (i / points) * width;
-    const y = height / 2 + Math.sin(i * 2 * Math.PI / points + offset) * waveHeight;
-    path += `L${x},${y} `;
-  }
-  path += `L${width},${height} L0,${height} Z`;
-  return path;
-}
-
-animateWave();
 
 
 const aniamtionSet = document.querySelectorAll(".fade_in_animation")
@@ -285,68 +351,6 @@ function ProjectRedirect(button){
 DisplayProjectDetails();
 
 
-
-const Sections = document.querySelectorAll('.project_section');
-const screenWidth = window.screen.width;
-let thresholdValue = 0;
-
-if(screenWidth < 480){
-    thresholdValue = .01;
-}
-else{
-    thresholdValue = .25;
-}
-
-const options = {
-    root: null,
-    threshold: thresholdValue,
-    rootMargin: "",
-};
-
-let observer = new IntersectionObserver(function(entries, observer){
-    entries.forEach(entry =>{
-        if(entry.isIntersecting){
-            entry.target.setAttribute("data-animated", true)
-        } 
-    })
-}, options)
-
-Sections.forEach(section =>{
-    observer.observe(section)
-})
-
-const indexSection = document.querySelectorAll('.project_container');
-
-const options1 = {
-    root: null,
-    threshold: .3,
-    rootMargin: "",
-};
-
-let indexObserver = new IntersectionObserver(function(entries, observer){
-    entries.forEach(entry =>{
-        const screenWidth = window.screen.width;
-        let sequenceSet
-        
-        if(screenWidth<480){
-            sequenceSet = 0;
-        }
-        else{
-            sequenceSet = parseFloat(entry.target.getAttribute('data-animation-sequence'))
-        }
-        
-        
-        entry.target.style.animationDelay = (sequenceSet * 150)+ 'ms'
-        
-        if(entry.isIntersecting){
-            entry.target.setAttribute("data-animated", true)
-        }
-    })
-}, options1)
-
-indexSection.forEach(section =>{
-    indexObserver.observe(section)
-})
 
 const outsideLinks = document.querySelectorAll('.icon_background')
 
