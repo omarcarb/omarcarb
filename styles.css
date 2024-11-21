@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600,700|Poppins:400');
 
 :root{
-    --mainAccentColor: hsl(206, 70%, 36%);
+    --mainAccentColor: #3047bb;
     --mainBackgroundColor: #121212;
     --secondaryBackgroundColor: #101010;
     --mainContainerGradientColor: linear-gradient(145deg, #131313, #101010);
