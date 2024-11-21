@@ -334,6 +334,11 @@ label{
 section{
     margin: 104px 0px;
 }
+#wave_background{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+}
 .section_header{
     margin-bottom: 42px;
     & h3{

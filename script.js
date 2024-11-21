@@ -58,29 +58,37 @@ function DisplayProjectDetails(){
 }
 
 
-// for parallax scroll effect
-let foreground = document.getElementsByClassName("wave")[0];
-let foreground1 = document.getElementsByClassName("wave")[1];
-let foreground2 = document.getElementsByClassName("wave")[2];
+const path = document.querySelector('#wave path');
 
-const wavePages = ['index.html', 'about.html']
-
-var path = window.location.pathname
-var page = path.split("/").pop();
+let offset = 0;
 
 
-if(wavePages.includes(page)){
-    window.addEventListener("scroll", function(){
-        let value = window.scrollY;
-        
-        //as the user scrolls, change the top value of each element by a the scroll position times a set value in pixels
-        if(foreground) foreground.style.bottom = value * .4 + 'px';
-        if(foreground1) foreground1.style.bottom = value * .125 + 'px';
-        if(foreground2) foreground2.style.bottom = value * 0 + 'px';
-    })
+function animateWave() {
+  offset += .00125; // Speed of wave movement
+  const newPath = generateWavePath(offset);
+  path.setAttribute('d', newPath);
+  requestAnimationFrame(animateWave);
 }
 
-// Get the star element by its ID
+// Function to generate the wave path
+function generateWavePath(offset) {
+  const width = 1440;
+  const height = 320;
+  const waveHeight = 60;
+  const points = 10;
+
+  let path = `M0,${height / 2} `;
+  for (let i = 0; i <= points; i++) {
+    const x = (i / points) * width;
+    const y = height / 2 + Math.sin(i * 2 * Math.PI / points + offset) * waveHeight;
+    path += `L${x},${y} `;
+  }
+  path += `L${width},${height} L0,${height} Z`;
+  return path;
+}
+
+animateWave();
+
 
 const aniamtionSet = document.querySelectorAll(".fade_in_animation")
 
@@ -430,3 +438,4 @@ wordsArray.forEach( (wordArray, index) => {
 const firstWord = document.createElement('h1');
 firstWord.innerHTML = wordsArray[0];
 revolveContainer.appendChild(firstWord)
+

@@ -82,7 +82,22 @@
         </nav>
     </header>
     <main>
+        <div id="wave_background">
+            <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <defs>
+                    <linearGradient id="wave-gradient" x1="0%" x2="0%" y1="0%" y2="100%">
+                        <stop offset="0%" stop-color="#3f3f3f" />
+                        <stop offset="100%" stop-color="var(--mainBackgroundColor)" />
+                    </linearGradient>
+                </defs>
+                <path
+                  d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"
+                  fill="url(#wave-gradient)">
+                </path>
+            </svg>
+        </div>
         <section id="hero_section" class="flex_row">
+            
             <div class="hero_text flex_column">
                 <h3>Omar Carbajal</h3>
                 <h1 id="hero_subtitle">I create &nbsp;<div id="revolving_words"></div></h1>
