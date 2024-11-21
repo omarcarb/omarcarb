@@ -1076,7 +1076,7 @@ span{
     pointer-events: none;
 }
 #hero_section_image_project{
-    height: 75vh;
+    height: 65%;
     width: 100%;
     object-fit: cover;
     position: absolute;
@@ -1127,9 +1127,11 @@ span{
 }
 .line_border::before{
     top: -64px;
+    left: 0;
 }
 .line_border::after{
     bottom: -64px;
+    left: 0;
 }
 .line_border::after, .line_border::before{
     content: '';
