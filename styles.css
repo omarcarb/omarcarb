@@ -3,21 +3,38 @@
 :root{
     /* primary colors */
     --primary-color-main: #3047bb;
+    --primary-color-100: #F3F2FF;
+    --primary-color-200: #C6C5FE;
+    --primary-color-300: #959AF6;
+    --primary-color-400: #6270E2;
+    --primary-color-600: #163295;
+    --primary-color-700: #0A2770;
+    --primary-color-800: #051D4B;
+    --primary-color-900: #021126;
 
     /* background colors */
     --background-main: #121212;
-    --secondaryBackgroundColor: #101010;
-    --level2Gray: #ecedf1;
-    --level3Gray: #cecfd6;
-    --level4Gray: #9fa0ad;
-    --mainFontColor: #fcfcff;
-    --secondaryFontColor: #DBDBDB;
+    --background-surface-01: #282828;
+    --background-surface-02: #3f3f3f;
+    --background-surface-03: #575757;
+    --background-surface-04: #717171;
+    --background-surface-05: #8b8b8b;
+    --background-surface-06: #DBDBDB;
+    --background-surface-07: #f8f8f8;
 
     /* accent colors */
-
+    --accent-color-main: #B51680;
+    --accent-color-100: #FFF2F8;
+    --accent-color-200: #FEBCDD;
+    --accent-color-300: #F683C2;
+    --accent-color-400: #E049A5;
+    --accent-color-600: #91076B;
+    --accent-color-700: #6E0256;
+    --accent-color-800: #4A003E;
+    --accent-color-900: #260022;
 
     /* gradient colors */
-    --mainContainerGradientColor: linear-gradient(145deg, #131313, #101010);
+    --mainContainerGradientColor: linear-gradient(145deg, var(--background-main), var(--background-surface-01));
     
     /* font sizes */
     --header1Fontsize: 48px;
@@ -66,7 +83,7 @@ body{
     align-items: center;
 }
 #preloader{
-    background-color: var(--secondaryBackgroundColor);
+    background-color: var(--background-surface-01);
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -134,17 +151,17 @@ h1{
 h2{
     font-size: var(--header2Fontsize);
     font-weight: var(--header2Fontweight);
-    color: var(--level2Gray);
+    color: var(--background-surface-02);
 }
 h3{
     font-size: var(--paragraphFontsize);
     font-weight: var(--header3Fontwieght);
-    color: var(--level3Gray);
+    color: var(--background-surface-03);
 }
 h4{
     font-size: var(--paragraphFontsize);
     font-weight: 300;
-    color: var(--level3Gray);
+    color: var(--background-surface-03);
 }
 p{
     font-size: var(--paragraphFontsize);
@@ -252,12 +269,12 @@ textarea:focus{
     outline: none;
 }
 label{
-    color: var(--level2Gray);
+    color: var(--background-surface-02);
 }
 .menu_button{
     padding: 12px 42px;
     background-color: var(--background-main);
-    color: var(--level2Gray);
+    color: var(--background-surface-02);
     position: relative;
 }
 .menu_button:not(#button_standout)::after{
@@ -843,7 +860,7 @@ section{
     & p{
         margin: 0px;
         padding: 0px;
-        color: var(--level2Gray);
+        color: var(--background-surface-02);
         font-weight: var(--header2Fontweight);
     }
     & p:not(.not_underlined){
@@ -1127,7 +1144,7 @@ span{
     align-items: center;
     box-shadow: var(--boxShadow);
     max-width: max-content;
-    color: var(--level3Gray);
+    color: var(--background-surface-03);
 }
 #p_quick_descriptors{
     margin-top: 33px;
@@ -1239,7 +1256,7 @@ span{
     gap: 2px;
     justify-content: center;
     align-items: center;
-    color: var(--level3Gray);
+    color: var(--background-surface-03);
     & img{
         max-height: 366px;
         width: 85%;
@@ -1479,7 +1496,7 @@ span{
     align-items: center;
     border-radius: 8px;
     font-size: 16px;
-    color: var(--level2Gray);
+    color: var(--background-surface-02);
 }
 #right_typography{
     & img{
@@ -1516,7 +1533,7 @@ span{
     font-family: "Plus Jakarta Sans";
     position: relative;
     transform: translate(30%, 30%);
-    color: var(--level2Gray);
+    color: var(--background-surface-02);
 }
 #grid_screens{
     display: grid;
@@ -1786,7 +1803,7 @@ span{
   width: 13.33333px;
   height: 13.33333px;
   border-radius: 50%;
-  background: var(--level2Gray);
+  background: var(--background-surface-02);
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .lds-ellipsis div:nth-child(1) {
@@ -2782,7 +2799,7 @@ span{
         & #left_text > p{
             font-size: 12px;
             font-weight: 300;
-            color: var(--secondaryFontColor);
+            color: var(--background-surface-06);
         }
     }
     .accessibility_rating_right {
