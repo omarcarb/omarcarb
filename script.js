@@ -125,17 +125,17 @@ if(path){
     let offset = 0;
 
     function animateWave() {
-      offset += .00125; // Speed of wave movement
+      offset += .0025; // change this value to change the speed of the wave
       const newPath = generateWavePath(offset);
       path.setAttribute('d', newPath);
       requestAnimationFrame(animateWave);
     }
 
-    // Function to generate the wave path
+    
     function generateWavePath(offset) {
       const width = 1440;
       const height = 320;
-      const waveHeight = 60;
+      const waveHeight = 80;
       const points = 10;
 
       let path = `M0,${height / 2} `;
