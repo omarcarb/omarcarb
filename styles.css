@@ -148,33 +148,33 @@ main{
 h1{
     font-size: var(--h1-font-size);
     font-weight: var(--h1-font-weight);
-    color: white;
+    color: var(--background-surface-07);
 }
 h2{
     font-size: var(--h2-font-size);
     font-weight: var(--h2-font-weight);
-    color: var(--background-surface-02);
+    color: var(--background-surface-06);
 }
 h3{
     font-size: var(--pa-font-size);
     font-weight: var(--h3-font-weight);
-    color: var(--background-surface-03);
+    color: var(--background-surface-06);
 }
 h4{
     font-size: var(--pa-font-size);
     font-weight: 300;
-    color: var(--background-surface-03);
+    color: var(--background-surface-05);
 }
 p{
     font-size: var(--pa-font-size);
     font-weight: var(--pa-font-weight);
-    color: var(--level4Gray);
+    color: var(--background-surface-05);
 }
 a{
     text-decoration: none;
 }
 q{
-    color: var(--level4Gray);
+    color: var(--background-surface-06);
 }
 .flex_column{
     display: flex;
@@ -202,6 +202,7 @@ header{
     & a{
         display: flex;
         align-items: center;
+        color: var(--background-surface-07);
     }
 }
 .mobile-toggle{
@@ -233,7 +234,7 @@ footer{
     }
 }
 button{
-    border-radius: 16px;
+    border-radius: var(--border-radius-main);
     align-items: center;
     justify-content: center;
     border: none;
@@ -334,7 +335,7 @@ label{
     transition: box-shadow 300ms ease-out, transform 300ms ease-out;
 }
 .primary_button:active{
-    background-color: #3449A6;
+    background-color: var(--primary-color-main);
     box-shadow: var(--box-shadow-button-pressed-blue);
 
     transition: box-shadow 300ms ease-out, transform 300ms ease-out, background-color 300ms ease-out;
