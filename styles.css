@@ -250,7 +250,7 @@ input[type="text"], input[type="tel"], input[type="email"]{
     border-radius: var(--border-radius-main);
     padding: 0px 16px;
     font-size: var(--pa-font-size);
-    color: #FFFFFF;
+    color: var(--background-surface-07);
 
 }
 input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus{
@@ -263,7 +263,7 @@ textarea{
     border-radius: 16px;
     padding: 16px;
     font-size: var(--pa-font-size);
-    color: #FFFFFF;
+    color: var(--background-surface-07);
     border: none;
     resize: none;
 }
@@ -285,7 +285,7 @@ label{
     position: absolute;
     width: 0%;
     height: 3px;
-    background-color: #fcfcfc;
+    background-color: var(--background-surface-07);
     border-radius: 48px;
     bottom: 0%;
 
@@ -354,7 +354,7 @@ label{
     box-shadow: var(--box-shadow-button-hover-neutral) transform 300ms ease-out;
 }
 .secondary_button:active{
-    box-shadow: inset -2px -2px 4px #3F4252, inset 2px 2px 4px #141417;
+    box-shadow: var(--box-shadow-button-hover-neutral);
     transition: box-shadow 300ms ease-out, transform 300ms ease-out;
 }
 #hero_section{
@@ -1802,7 +1802,7 @@ span{
   width: 13.33333px;
   height: 13.33333px;
   border-radius: 50%;
-  background: var(--background-surface-02);
+  background: var(--background-surface-07);
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .lds-ellipsis div:nth-child(1) {
