@@ -277,7 +277,7 @@ label{
 .menu_button{
     padding: 12px 42px;
     background-color: var(--background-main);
-    color: var(--background-surface-02);
+    color: var(--background-surface-06);
     position: relative;
 }
 .menu_button:not(#button_standout)::after{
