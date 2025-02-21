@@ -1,33 +1,12 @@
-let projectData = []
+let projectData = [];
 
 fetch("projects.json")
-    .then(response => response.json()) // Fixed spelling & fetch path
+    .then(response => response.json())
     .then(data => {
-        projectData = data
-        CreateProjectCard();
-        DisplayProjectDetails();
-        })
+        projectData = data;
+        ProjectGrid(); // Call this AFTER data is loaded
+    })
     .catch(error => console.error("Error loading JSON:", error));
-
-function DisplayProjectDetails() {
-    // Get the first project (or modify to loop through multiple projects)
-    if (projectData.length === 0) return;
-    
-    const project = projectData[0]; // Assuming you want to display the first project
-
-    document.getElementById('title').innerHTML = project.title || "Unknown";
-    document.getElementById('subheader').innerHTML = project.subheading || "Unknown";
-
-    const tagElements = document.getElementById("p_tags_group");
-    tagElements.innerHTML = ""; // Clear previous tags
-
-    project.tags.forEach(tag => {
-        const div = document.createElement('div');
-        div.className = "p_tags";
-        div.innerText = tag;
-        tagElements.appendChild(div);
-    });
-}
 
 const Sections = document.querySelectorAll('.project_section');
 const screenWidth = window.screen.width;
@@ -290,11 +269,6 @@ function addAnimation(){
 
     })
 }
-
-DisplayProjectDetails();
-
-
-
 const outsideLinks = document.querySelectorAll('.icon_background')
 
 outsideLinks.forEach(function(object){
@@ -387,25 +361,43 @@ firstWord.innerHTML = wordsArray[0];
 revolveContainer.appendChild(firstWord)
 
 
+function ProjectGrid(){
+    let projectGrid = document.querySelector('#project_grid');
+    if (!projectGrid) {
+        console.error("Error: #project_grid not found in the DOM.");
+        return;
+    }
 
+    projectData.forEach(project => {
+        CreateProjectCard(projectGrid, project);
+    });
+}
 
-{/* <div class="project_container" onclick="ProjectRedirect(this)" data-text="free_roam">
-    <div class="img_background_parallax" data-animated="false">
-        <img src="assests/svg/test_background.svg" alt="" class="container_bakcground_img">
-        <div class="img_set">
-            <img src="assests/png/free-roam/preview_free_roam2.png" alt="A mockup image of apps and web designs" class="img_left">
-            <img src="assests/png/free-roam/preview_free_roam1.png" alt="A mockup image of apps and web designs" class="img_center">
-            <img src="assests/png/free-roam/preview_free_roam3.png" alt="A mockup image of apps and web designs" class="img_right">
+function CreateProjectCard(grid, project){
+    let projectCard = document.createElement('div');
+    projectCard.classList.add('project_container');
+
+    let content = document.createRange().createContextualFragment(`
+        <div class="img_background_parallax" data-animated="false">
+            <img src= ${project.thumbnail_background} alt="" class="container_background_img">
+            <div class="img_set">
+                <img src=${project.thumbnail_images[0]} alt="A mockup image of apps and web designs" class="img_left">
+                <img src=${project.thumbnail_images[1]} alt="A mockup image of apps and web designs" class="img_center">
+                <img src=${project.thumbnail_images[2]} alt="A mockup image of apps and web designs" class="img_right">
+            </div>
         </div>
-    </div>
-    <div class="project_text">
-        <h3>Free Roam</h3>
-        <div class="project_tags">
-            <p>UI Design</p>
-            <p>UX Design</p>
-            <p>Project</p>
-            <p class="remove">Mobile App</p>
+        <div class="project_text">
+            <h3>${project.title || "No Title"}</h3>
+            <div class="project_tags">
+                ${project.tags?.slice(0, 3).map(tag => `<p>${tag}</p>`).join("") || ""}
+            </div>
+            <p>${project.description || "No description available"}</p>
         </div>
-        <p>A mobile app designed for people with disabilities and the elderly</p>
-    </div>
-</div> */}
+    `);
+
+    console.log("Card Created for:", project.title);
+    projectCard.appendChild(content);
+    grid.appendChild(projectCard);
+}
+
+{/*  */}

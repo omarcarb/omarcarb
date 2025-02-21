@@ -5,6 +5,7 @@
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "thumbnail_background": "assests/svg/test_background.svg",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
 },
 {
@@ -14,6 +15,7 @@
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "thumbnail_background": "assests/svg/test_background.svg",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"] 
 },
 {
@@ -23,6 +25,7 @@
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "thumbnail_background": "assests/svg/test_background.svg",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
 },
 {
@@ -32,6 +35,7 @@
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "thumbnail_background": "assests/svg/test_background.svg",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
 },
 {
@@ -41,6 +45,7 @@
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "thumbnail_background": "assests/svg/test_background.svg",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
 },
 {
@@ -50,6 +55,7 @@
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "thumbnail_background": "assests/svg/test_background.svg",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
 },
 {
@@ -59,8 +65,9 @@
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "thumbnail_background": "assetss/svg/test_background.svg",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
 },
 {
-    
+
 }]
