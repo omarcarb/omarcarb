@@ -1,60 +1,32 @@
-//An object for project headers
-const projectHeaders= {
-    title: "unknown",
-    subheading: "unknown",
-    tags: []
-}
+let projectData = []
 
-function DisplayProjectDetails(){
-    //extract the title of the webpage the user is in
-    const pageTitle = document.title;
+fetch("projects.json")
+    .then(response => response.json()) // Fixed spelling & fetch path
+    .then(data => {
+        projectData = data
+        CreateProjectCard();
+        DisplayProjectDetails();
+        })
+    .catch(error => console.error("Error loading JSON:", error));
 
-    //based on the webpage, the object projectHeaders changes its property values.
-    switch(pageTitle){
-        case "Free Roam": 
-            projectHeaders.title = "Free Roam"
-            projectHeaders.subheading = "Movement for you at the tap of a button"
-            projectHeaders.tags = ["Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"];
-        break
-        case "Shelter Finds": 
-            projectHeaders.title = "Shelter Finds"
-            projectHeaders.subheading = "A Rental Search Website for Those With Specific Tastes"
-            projectHeaders.tags = ["Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study"];
-        break 
-        case "Weatherlerts": 
-            projectHeaders.title = "Weatherlerts"
-            projectHeaders.subheading = "Reliable Weather Disaster Tracking and Forecasting App"
-            projectHeaders.tags = ["Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study"];
-        break 
-        case "Omar's Portfolio Site": 
-            projectHeaders.title = "Personal Portfolio Site"
-            projectHeaders.subheading = "To Showcase My Latest Work"
-            projectHeaders.tags = ["HTML 5", "CSS 3", "Javascript", "Wireframes", "High Fidelity Interfaces", "Prototype", "Github", "Figma"];
-        break 
-        case "Evike Design Audit":
-            projectHeaders.title = ""
-        break
-        case "E-commervce Site":
-            projectHeaders.title = "E-commerce Site";
-            projectHeaders.subheading = "A prime e-commerce site designed for easy access to goods";
-            projectHeaders.tags = ["React", "HTML 5", "CSS 3", "Wireframs", "Figma", "High Fidelity Interfaces", "Prototype", "Market Research", "Flow Diagrams"];
-        break
-        default: return
-    }
+function DisplayProjectDetails() {
+    // Get the first project (or modify to loop through multiple projects)
+    if (projectData.length === 0) return;
+    
+    const project = projectData[0]; // Assuming you want to display the first project
 
-    //display the object values onto the page
-    document.getElementById('title').innerHTML = projectHeaders.title;
-    document.getElementById('subheader').innerHTML = projectHeaders.subheading;
+    document.getElementById('title').innerHTML = project.title || "Unknown";
+    document.getElementById('subheader').innerHTML = project.subheading || "Unknown";
 
     const tagElements = document.getElementById("p_tags_group");
-    
-    //take the tags array and display the indiviual tags based on the array size
-    projectHeaders.tags.forEach(tag => {
+    tagElements.innerHTML = ""; // Clear previous tags
+
+    project.tags.forEach(tag => {
         const div = document.createElement('div');
-        div.className = "p_tags"
+        div.className = "p_tags";
         div.innerText = tag;
         tagElements.appendChild(div);
-    })
+    });
 }
 
 const Sections = document.querySelectorAll('.project_section');
@@ -319,35 +291,6 @@ function addAnimation(){
     })
 }
 
-function ProjectRedirect(button){
-    const webpageName = button.getAttribute('data-text');
-    const parentElement = button.closest(".project_container");
-    const animatedPage = parentElement.querySelector('.img_background_parallax')
-    let delay;
-
-    //check to see if the user is on mobile
-    const screenWidth = window.screen.width;
-    
-    if(screenWidth < 480){
-        //if the user is on a device less than 480px wide, play an animation on the project images and delay for 1 seconds
-        animatedPage.setAttribute('data-animated',true)
-        delay = 1000;
-    }
-    else{
-        //if the user is on a device more than 480px wide, delay for 300 milliseconds
-        delay = 300;
-    }
-
-    
-
-    setTimeout(function(){
-        //set the animation attribute back to false
-        animatedPage.setAttribute('data-animated',false)
-        //send to project page after "delay" seconds
-        window.location.href = webpageName + ".html";
-    }, delay)
-    
-}
 DisplayProjectDetails();
 
 
@@ -443,3 +386,26 @@ const firstWord = document.createElement('h1');
 firstWord.innerHTML = wordsArray[0];
 revolveContainer.appendChild(firstWord)
 
+
+
+
+{/* <div class="project_container" onclick="ProjectRedirect(this)" data-text="free_roam">
+    <div class="img_background_parallax" data-animated="false">
+        <img src="assests/svg/test_background.svg" alt="" class="container_bakcground_img">
+        <div class="img_set">
+            <img src="assests/png/free-roam/preview_free_roam2.png" alt="A mockup image of apps and web designs" class="img_left">
+            <img src="assests/png/free-roam/preview_free_roam1.png" alt="A mockup image of apps and web designs" class="img_center">
+            <img src="assests/png/free-roam/preview_free_roam3.png" alt="A mockup image of apps and web designs" class="img_right">
+        </div>
+    </div>
+    <div class="project_text">
+        <h3>Free Roam</h3>
+        <div class="project_tags">
+            <p>UI Design</p>
+            <p>UX Design</p>
+            <p>Project</p>
+            <p class="remove">Mobile App</p>
+        </div>
+        <p>A mobile app designed for people with disabilities and the elderly</p>
+    </div>
+</div> */}
