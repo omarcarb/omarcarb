@@ -379,11 +379,16 @@ function CreateProjectCard(grid, project){
 
     let content = document.createRange().createContextualFragment(`
         <div class="img_background_parallax" data-animated="false">
-            <img src= ${project.thumbnail_background} alt="" class="container_background_img">
+            <img src="${project.thumbnail_background}" alt="" class="container_background_img">
             <div class="img_set">
-                <img src=${project.thumbnail_images[0]} alt="A mockup image of apps and web designs" class="img_left">
-                <img src=${project.thumbnail_images[1]} alt="A mockup image of apps and web designs" class="img_center">
-                <img src=${project.thumbnail_images[2]} alt="A mockup image of apps and web designs" class="img_right">
+                ${project.has_multiple_images 
+                    ? `
+                        <img src="${project.thumbnail_images[0]}" alt="A mockup image of apps and web designs" class="img_left">
+                        <img src="${project.thumbnail_images[1]}" alt="A mockup image of apps and web designs" class="img_center">
+                        <img src="${project.thumbnail_images[2]}" alt="A mockup image of apps and web designs" class="img_right">
+                    ` 
+                    : `<img src="${project.thumbnail_images[0]}" alt="A mockup image of an app or web design" class="img_center">`
+                }
             </div>
         </div>
         <div class="project_text">
@@ -393,11 +398,16 @@ function CreateProjectCard(grid, project){
             </div>
             <p>${project.description || "No description available"}</p>
         </div>
-    `);
+`);
 
     console.log("Card Created for:", project.title);
     projectCard.appendChild(content);
     grid.appendChild(projectCard);
+
+    projectCard.addEventListener("click", function(){
+        window.location.href = project.page_url
+    })
+
 }
 
 {/*  */}

@@ -6,68 +6,72 @@
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
     "thumbnail_background": "assests/svg/test_background.svg",
+    "page_url": "./free_roam.html",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
 },
 {
    "title" : "Shelter Finds",
     "description" : "A website with endless filtering options for personalized rental searching",
     "subheading" : "A Rental Search Website for Those With Specific Tastes",
-    "has_multiple_images": true,
+    "has_multiple_images": false,
     "thumnail_image": null,
-    "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png"],
     "thumbnail_background": "assests/svg/test_background.svg",
+    "page_url": "./shelter_finds.html",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"] 
 },
 {
-    "title" : "Shelter Finds",
-    "description" : "A website with endless filtering options for personalized rental searching",
-    "subheading" : "A Rental Search Website for Those With Specific Tastes",
+    "title": "Weatherts",
+    "description": "A mobile app that provides real-time weather notifications and alerts.",
+    "subheading": "Stay ahead of the weather with instant updates.",
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
     "thumbnail_background": "assests/svg/test_background.svg",
+    "page_url": "./free_roam.html",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
 },
 {
-    "title" : "Shelter Finds",
-    "description" : "A website with endless filtering options for personalized rental searching",
-    "subheading" : "A Rental Search Website for Those With Specific Tastes",
+    "title": "Portfolio Website",
+    "description": "A UI design project for my personal portfolio, showcasing my UI design and front-end development work.",
+    "subheading": "A reflection of my work and passion for design.",
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
     "thumbnail_background": "assests/svg/test_background.svg",
-    "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
+    "page_url": "./free_roam.html",
+    "tags": ["UI Design", "UX Design", "Front-End Development", "Figma", "Design System", "Responsive Design", "Portfolio", "Personal Branding", "High Fidelity Interfaces"]
 },
 {
-    "title" : "Shelter Finds",
-    "description" : "A website with endless filtering options for personalized rental searching",
-    "subheading" : "A Rental Search Website for Those With Specific Tastes",
+    "title": "Train Block",
+    "description": "A Webflow eCommerce project for model train enthusiasts, designed for seamless shopping and product discovery.",
+    "subheading": "Bringing model train collections to life with a smooth eCommerce experience.",
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
     "thumbnail_background": "assests/svg/test_background.svg",
-    "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
+    "page_url": "./free_roam.html",
+    "tags": ["UI Design", "Webflow", "Ecommerce", "UX Design", "Wireframes", "Product Listings", "Payment Integration", "Responsive Design", "User Testing"]
 },
 {
-    "title" : "Shelter Finds",
-    "description" : "A website with endless filtering options for personalized rental searching",
-    "subheading" : "A Rental Search Website for Those With Specific Tastes",
+    "title": "Animated Login Screen",
+    "description": "A front-end coding project featuring an interactive, animated login screen for a smooth and engaging user experience.",
+    "subheading": "Seamless and interactive login experience.",
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
     "thumbnail_background": "assests/svg/test_background.svg",
-    "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
+    "page_url": "./free_roam.html",
+    "tags": ["Front-End Development", "Motion Design", "CSS Animations", "JavaScript", "Microinteractions", "User Interaction", "Prototype"]
 },
 {
-    "title" : "Shelter Finds",
-    "description" : "A website with endless filtering options for personalized rental searching",
-    "subheading" : "A Rental Search Website for Those With Specific Tastes",
+    "title": "Eco Skin",
+    "description": "A front-end coding project creating a sleek and modern landing page for the Eco Skin skincare brand.",
+    "subheading": "Sustainable skincare, beautifully presented.",
     "has_multiple_images": true,
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
-    "thumbnail_background": "assetss/svg/test_background.svg",
-    "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
-},
-{
-
+    "thumbnail_background": "assests/svg/test_background.svg",
+    "page_url": "https://omarcarb.github.io/Animated-Landing-Page/",
+    "tags": ["Front-End Development", "UI Design", "UX Design", "Landing Page", "Branding", "Figma", "Responsive Design", "HTML", "CSS", "JavaScript"]
 }]

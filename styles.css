@@ -580,16 +580,6 @@ section{
 
         transition: box-shadow 300ms ease-out, transform 300ms ease-out, border-radius 300ms ease-in, background-color 400ms ease-in;
     }
-    & button:hover{
-        box-shadow: var(--box-shadow-button-hover-blue);
-        border-radius: var(--border-radius-main);
-
-        transition: box-shadow 300ms ease-out, transform 300ms ease-out, border-radius 300ms ease-out, background-color 300ms ease-in;
-    }
-    & button:active{
-        box-shadow: var(--box-shadow-button-pressed-blue);
-        transition: box-shadow 300ms ease-in;
-    }
 }
 .project_container:hover{
     outline: 2px solid #595C67;
