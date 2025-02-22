@@ -408,5 +408,3 @@ function CreateProjectCard(grid, project){
     })
 
 }
-
-{/*  */}
