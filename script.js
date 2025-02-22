@@ -1,9 +1,12 @@
 let projectData = []
+//fetch project json data
 fetch("projects.json")
     .then(response => response.json())
     .then(data => {
         projectData = data;
+        //display data to a grid
         ProjectGrid();
+        //display the data to its respective webpage
         DisplayPageData();
     })
     .catch(error => console.error("Error loading JSON:", error));
