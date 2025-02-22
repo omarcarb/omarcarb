@@ -565,22 +565,6 @@ section{
     & .project_text >h3{
         font-weight: 700;
     }
-    & button{
-        background-color: var(--primary-color-main);
-        font-family: 'Poppins';
-        margin: 0px 12px 24px 12px;
-        border-radius: var(--border-radius-pill);
-        padding: 14px 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-        font-weight: 600;
-        box-shadow: var(--box-shadow-blue-project);
-        width: 95%;
-
-        transition: box-shadow 300ms ease-out, transform 300ms ease-out, border-radius 300ms ease-in, background-color 400ms ease-in;
-    }
 }
 .project_container:hover{
     outline: 2px solid #595C67;
