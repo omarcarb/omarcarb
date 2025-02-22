@@ -4,7 +4,7 @@ fetch("projects.json")
     .then(data => {
         projectData = data;
         ProjectGrid();
-        ProejctHeader();
+        DisplayPageData();
     })
     .catch(error => console.error("Error loading JSON:", error));
 const Sections = document.querySelectorAll('.project_section');
@@ -401,5 +401,44 @@ function CreateProjectCard(grid, project){
     projectCard.addEventListener("click", function(){
         window.location.href = project.page_url
     })
+}
+function DisplayPageData() {
+    console.log(window.location.href);
 
+    const currentUrl = window.location.href;
+    const pageUrl = './' + currentUrl.substring(currentUrl.lastIndexOf('/') + 1);
+    console.log(pageUrl);
+
+    const pageData = projectData.find(item => item.page_url === pageUrl);
+
+    if (pageData) {
+
+        const titleElement = document.querySelector('#title');
+        const subheaderElement = document.querySelector('#subheader');
+        const tagsArray = document.querySelector('#p_tags_group')
+        const tagsList = pageData.tags
+
+        console.log(pageData.tags)
+
+        if (titleElement && subheaderElement && tagsArray) {
+            titleElement.innerHTML = pageData.title;
+            subheaderElement.innerHTML = pageData.description;
+            tagsList.forEach(tag=>{
+                let tagContainer = document.createElement('div')
+                tagContainer.textContent = tag;
+                tagContainer.classList.add('p_tags')
+                tagsArray.appendChild(tagContainer)
+            })
+        } else {
+            console.error('Elements .title or .subheader not found.');
+        }
+    } else {
+        const titleElement = document.querySelector('#title');
+        const subheaderElement = document.querySelector('#subheader');
+
+        if (titleElement && subheaderElement) {
+            titleElement.innerHTML = 'Page Not Found';
+            subheaderElement.innerHTML = 'Sorry, we couldn\'t find the page you were looking for.';
+        }
+    }
 }
