@@ -15,7 +15,7 @@
     "subheading" : "A Rental Search Website for Those With Specific Tastes",
     "has_multiple_images": false,
     "thumnail_image": null,
-    "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png"],
+    "thumbnail_images": ["assests/png/shelter-finds/shelter_finds_preview1.png"],
     "thumbnail_background": "assests/svg/test_background.svg",
     "page_url": "./shelter_finds.html",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"] 
@@ -26,20 +26,20 @@
     "subheading": "Stay ahead of the weather with instant updates.",
     "has_multiple_images": true,
     "thumnail_image": null,
-    "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "thumbnail_images": ["assests/png/weatherlerts/preview_weatherlerts1.png", "assests/png/weatherlerts/preview_weatherlerts2.png", "assests/png/weatherlerts/preview_weatherlerts3.png"],
     "thumbnail_background": "assests/svg/test_background.svg",
-    "page_url": "./free_roam.html",
+    "page_url": "./weatherlerts.html",
     "tags": ["UI Design", "UX Design", "Figma", "Mobile App", "Market Research", "Competitive Analysis", "User Survey", "Personas", "Wireframes", "Flow Diagrams", "High Fidelity Interfaces", "Prototype", "Mini Usability Study", "Accessibility Evaluation"]
 },
 {
     "title": "Portfolio Website",
     "description": "A UI design project for my personal portfolio, showcasing my UI design and front-end development work.",
     "subheading": "A reflection of my work and passion for design.",
-    "has_multiple_images": true,
+    "has_multiple_images": false,
     "thumnail_image": null,
-    "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "thumbnail_images": ["assests/png/website_porfolio_preview.png"],
     "thumbnail_background": "assests/svg/test_background.svg",
-    "page_url": "./free_roam.html",
+    "page_url": "./portfolio.html",
     "tags": ["UI Design", "UX Design", "Front-End Development", "Figma", "Design System", "Responsive Design", "Portfolio", "Personal Branding", "High Fidelity Interfaces"]
 },
 {

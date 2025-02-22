@@ -603,7 +603,7 @@ section{
 }
 .img_background_parallax.desktopapp > .img_set{
     & img{
-        left: 35%;
+        left: 0;
     }
     & img:nth-child(1){
         animation: scaleUpReverse 200ms ease-out forwards;
