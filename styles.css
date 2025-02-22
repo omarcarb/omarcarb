@@ -553,6 +553,7 @@ section{
     height: fit-content;
     background: var(--mainContainerGradientColor);
     outline: 2px solid #595c6713;
+    overflow: hidden;
 
     transition: outline 400ms ease-out;
     & .project_text{
@@ -602,7 +603,7 @@ section{
 }
 .img_background_parallax.desktopapp > .img_set{
     & img{
-        left: 0;
+        left: 35%;
     }
     & img:nth-child(1){
         animation: scaleUpReverse 200ms ease-out forwards;
@@ -654,7 +655,7 @@ section{
         transform: scale(0.75) translate(0px, 0px);
     }
     to{
-        transform: scale(1.05) translate(0px, -20px);
+        transform: scale(.85) translate(0px, -20px);
     }
 }
 @keyframes rotateLeft {
@@ -675,7 +676,7 @@ section{
 }
 @keyframes scaleUpReverse {
     from{
-        transform: scale(1.05) translate(0px, -20px);
+        transform: scale(.85) translate(0px, -20px);
     }
     to{
         transform: scale(0.75) translate(0px, 0px);

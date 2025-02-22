@@ -1,30 +1,25 @@
-let projectData = [];
-
+let projectData = []
 fetch("projects.json")
     .then(response => response.json())
     .then(data => {
         projectData = data;
-        ProjectGrid(); // Call this AFTER data is loaded
+        ProjectGrid();
     })
     .catch(error => console.error("Error loading JSON:", error));
-
 const Sections = document.querySelectorAll('.project_section');
 const screenWidth = window.screen.width;
-let thresholdValue = 0;
-
+let thresholdValue;
 if(screenWidth < 480){
     thresholdValue = .01;
 }
 else{
     thresholdValue = .25;
 }
-
 const options = {
     root: null,
     threshold: thresholdValue,
     rootMargin: "",
 };
-
 let observer = new IntersectionObserver(function(entries, observer){
     entries.forEach(entry =>{
         if(entry.isIntersecting){
@@ -378,19 +373,23 @@ function CreateProjectCard(grid, project){
     projectCard.classList.add('project_container');
 
     let content = document.createRange().createContextualFragment(`
-        <div class="img_background_parallax" data-animated="false">
-            <img src="${project.thumbnail_background}" alt="" class="container_background_img">
-            <div class="img_set">
-                ${project.has_multiple_images 
-                    ? `
+        ${project.has_multiple_images
+            ? `<div class="img_background_parallax" data-animated="false">
+                    <img src="${project.thumbnail_background}" alt="" class="container_background_img">
+                    <div class="img_set">
                         <img src="${project.thumbnail_images[0]}" alt="A mockup image of apps and web designs" class="img_left">
                         <img src="${project.thumbnail_images[1]}" alt="A mockup image of apps and web designs" class="img_center">
                         <img src="${project.thumbnail_images[2]}" alt="A mockup image of apps and web designs" class="img_right">
-                    ` 
-                    : `<img src="${project.thumbnail_images[0]}" alt="A mockup image of an app or web design" class="img_center">`
-                }
-            </div>
-        </div>
+                    </div>
+                </div>`
+            :
+            `<div class="img_background_parallax desktopapp" data-animated="false">
+                    <img src="${project.thumbnail_background}" alt="" class="container_background_img">
+                    <div class="img_set">
+                        <img src="${project.thumbnail_images[0]}" alt="A mockup image of apps and web designs" class="img_center">
+                    </div>
+                </div>`
+        }
         <div class="project_text">
             <h3>${project.title || "No Title"}</h3>
             <div class="project_tags">

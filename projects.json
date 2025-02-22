@@ -61,7 +61,7 @@
     "thumnail_image": null,
     "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
     "thumbnail_background": "assests/svg/test_background.svg",
-    "page_url": "./free_roam.html",
+    "page_url": "https://omarcarb.github.io/Login-Screen/",
     "tags": ["Front-End Development", "Motion Design", "CSS Animations", "JavaScript", "Microinteractions", "User Interaction", "Prototype"]
 },
 {
