@@ -1121,7 +1121,7 @@ span{
     align-items: center;
     box-shadow: var(--box-shadow-main);
     max-width: max-content;
-    color: var(--background-surface-03);
+    color: var(--background-surface-06);
 }
 #p_quick_descriptors{
     margin-top: 33px;
@@ -1330,7 +1330,6 @@ span{
     flex-direction: row-reverse;
 }
 .persona_bio{
-    height: 100%;
     width: 30%;
     box-shadow: var(--box-shadow-main);
     border-radius: var(--border-radius-main);

@@ -293,10 +293,11 @@ outsideLinks.forEach(function(object){
 
 window.addEventListener("load", function(){
     const loader = document.querySelector("#preloader");
-    setTimeout(function(){
-        loader.classList.add("hidden");
-    }, 2000)
-    
+    if(loader){
+        setTimeout(function(){
+            loader.classList.add("hidden");
+        }, 2000)
+    }
 })
 
 function EmailThis(){
@@ -313,35 +314,43 @@ const serviceID = 'service_gpvqb7n';
 const templeteID = 'template_6x11r8b'
 const publicIDkey = 'D153c5R-mnvwvFCTI'
 
-emailjs.init(publicIDkey);
+if(fnameInput){
+    InputCheck()
+}
 
-contactForm.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    const inputData = {
-        firstName: fnameInput.value,
-        lastName: lnameInput.value,
-        emailID: emailInput.value,
-        phoneID: phoneInput.value,
-        message: messageAreaInput.value
-    };
-    emailjs.send(serviceID, templeteID, inputData).then(()=>{
-        fnameInput.value = '';
-        lnameInput.value = '';
-        emailInput.value = '';
-        phoneInput.value = '';
-        messageAreaInput.value = '';
-        console.log("success")
-    }, (error)=> {
-        console.log(error);
+function InputCheck(){
+    emailjs.init(publicIDkey);
+
+    contactForm.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const inputData = {
+            firstName: fnameInput.value,
+            lastName: lnameInput.value,
+            emailID: emailInput.value,
+            phoneID: phoneInput.value,
+            message: messageAreaInput.value
+        };
+        emailjs.send(serviceID, templeteID, inputData).then(()=>{
+            fnameInput.value = '';
+            lnameInput.value = '';
+            emailInput.value = '';
+            phoneInput.value = '';
+            messageAreaInput.value = '';
+            console.log("success")
+        }, (error)=> {
+            console.log(error);
+        })
     })
-})
-
+}
 const revolvingWords = document.getElementById("revolving_words");
 const wordsArray = ["Websites", "Apps", "Graphics", "Software Designs", "Mobile Apps"]
 
 const revolveContainer = document.createElement('div')
 revolveContainer.setAttribute("id", "word_container")
-revolvingWords.appendChild(revolveContainer);
+if(revolvingWords){
+    revolvingWords.appendChild(revolveContainer);
+}
+
 
 wordsArray.forEach( (wordArray, index) => {
     var wordFragment = document.createElement('h1')
