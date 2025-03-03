@@ -382,7 +382,7 @@ function CreateProjectCard(grid, project){
     let content = document.createRange().createContextualFragment(`
         ${project.has_multiple_images
             ? `<div class="img_background_parallax" data-animated="false">
-                    <img src="${project.thumbnail_background}" alt="" class="container_background_img">
+                    
                     <div class="img_set">
                         <img src="${project.thumbnail_images[0]}" alt="A mockup image of ${project.title}" class="img_left">
                         <img src="${project.thumbnail_images[1]}" alt="A mockup image of ${project.title}" class="img_center">
@@ -391,7 +391,7 @@ function CreateProjectCard(grid, project){
                 </div>`
             :
             `<div class="img_background_parallax desktopapp" data-animated="false">
-                    <img src="${project.thumbnail_background}" alt="" class="container_background_img">
+                    
                     <div class="img_set">
                         <img src="${project.thumbnail_image}" alt="A mockup image of ${project.title}" class="img_center">
                     </div>

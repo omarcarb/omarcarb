@@ -13,8 +13,8 @@
     --primary-color-900: #021126;
 
     /* background colors */
-    --background-main: #121212;
-    --background-surface-01: #282828;
+    --background-main: #0c0c0c;
+    --background-surface-01: #131313;
     --background-surface-02: #3f3f3f;
     --background-surface-03: #575757;
     --background-surface-04: #717171;
@@ -34,7 +34,7 @@
     --accent-color-900: #260022;
 
     /* gradient colors */
-    --mainContainerGradientColor: linear-gradient(145deg, #101010, #131313);
+    --mainContainerGradientColor: linear-gradient(180deg, var(--background-surface-01), var(--background-main) 75% );
     
     /* font sizes */
     --h1-font-size: 3.25rem;
@@ -54,8 +54,8 @@
     --border-radius-pill: 3rem;
 
     /* shadows */
-    --dark-shadow: #070707;
-    --light-shadow: #1d1d1d9a;
+    --dark-shadow: #000000;
+    --light-shadow: #2423239a;
     --box-shadow-main: 0.313rem 0.313rem 0.625rem var(--dark-shadow), -0.313rem -0.313rem 0.625rem var(--light-shadow);
     --box-shadow-inner: inset -0.313rem -0.313rem 0.625rem var(--light-shadow), inset 0.313rem 0.313rem 0.625rem var(--dark-shadow);
     --box-shadow-input: 0.313rem 0.313rem 0.625rem var(--dark-shadow), -0.313rem -0.313rem 0.625rem var(--light-shadow);
