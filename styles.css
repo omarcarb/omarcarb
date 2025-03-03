@@ -2112,18 +2112,7 @@ span{
         --h1-font-size: 24px;
         --h2-font-size: 16px;
         --h3-font-size: 16px;
-        --pa-font-size: 12px;
-        --box-shadow-main: -2px -2px 4px #3D3E46, 2px 2px 4px #0F1012;
-        --box-shadow-inner: inset -1px -1px 2px #3D3E46, inset 1px 1px 2px #0F1012;
-        --box-shadow-input: -1px -1px 2px #3D3E46, 1px 1px 2px #0F1012;
-        --border-radius-main: 8px;
-        --border-radius-image: 8px 8px 0px 0px;
-        --box-shadow-main: -1px -1px 2px #3D3E46, 1px 1px 2px #0F1012;
-        --box-shadow-inner: inset -2px -2px 4px #3D3E46, inset 2px 2px 4px #0F1012;
-        --box-shadow-input: -2px -2px 4px #3D3E46, 2px 2px 4px #0F1012;
-        --box-shadow-button-blue: 2px 2px 4px hsla(229, 65%, 60%, 0.582), -2px -2px 4px rgba(181, 189, 221, 0.2);
-        --box-shadow-blue-project: 1px 1px 2px hsla(229, 65%, 60%, 0.582), -1px -1px 2px rgba(181, 189, 221, 0.2);
-        --box-shadow-neutral:-1px -1px 2px #383A41, 1px 1px 2px #141417;    
+        --pa-font-size: 12px;   
     }
     *{
         margin: 0px;
