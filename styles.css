@@ -691,6 +691,9 @@ section{
         background-color: var(--background-main);
         box-shadow: -2px -2px 4px #3d3e4599,
                     2px 2px 4px #0F1012;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 }
 #aboutme_block{
