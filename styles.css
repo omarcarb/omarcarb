@@ -85,7 +85,7 @@ body{
     align-items: center;
 }
 #preloader{
-    background-color: var(--background-surface-01);
+    background-color: var(--background-main);
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -538,8 +538,8 @@ section{
 #project_grid{
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(450px, .75fr));
-    column-gap: 64px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    column-gap: 2rem;
     row-gap: 32px;
     position: relative;
     z-index: 40;
@@ -550,7 +550,6 @@ section{
     height: fit-content;
     background: var(--mainContainerGradientColor);
     outline: 2px solid #595c6713;
-    overflow: hidden;
 
     transition: outline 400ms ease-out;
     & .project_text{
@@ -585,6 +584,8 @@ section{
 .img_background_parallax.desktopapp > .img_set{
     & img{
         left: 0;
+        height: 100%;
+        object-fit: contain;
     }
     & img:nth-child(1){
         animation: scaleUpReverse 200ms ease-out forwards;
@@ -598,7 +599,7 @@ section{
     & img{
         position: absolute;
         transform: scale(0.75);
-        left: 35%;
+        left: 30%;
     }
     & img:nth-child(1){
         animation: rotateLeftReverse 200ms ease-out forwards;
@@ -636,7 +637,7 @@ section{
         transform: scale(0.75) translate(0px, 0px);
     }
     to{
-        transform: scale(.85) translate(0px, -20px);
+        transform: scale(.95) translate(0px, -20px);
     }
 }
 @keyframes rotateLeft {
