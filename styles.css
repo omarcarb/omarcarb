@@ -2217,6 +2217,7 @@ span{
     span {
         display: flex;
         max-width: 100%;
+        justify-content: center;
         & img{
             width: 100%;
         }
