@@ -416,15 +416,11 @@ function CreateProjectCard(grid, project){
 }
 function DisplayPageData() {
     console.log(window.location.href);
-
     const currentUrl = window.location.href;
     const pageUrl = './' + currentUrl.substring(currentUrl.lastIndexOf('/') + 1);
     console.log(pageUrl);
-
     const pageData = projectData.find(item => item.page_url === pageUrl);
-
     if (pageData) {
-
         const titleElement = document.querySelector('#title');
         const subheaderElement = document.querySelector('#subheader');
         const tagsArray = document.querySelector('#p_tags_group')

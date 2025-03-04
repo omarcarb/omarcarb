@@ -500,7 +500,7 @@ section{
     }
 }
 .icon_background{
-    width: 48px; height: 48px;
+    width: 32px; height: 32px;
     box-shadow: var(--box-shadow-main);
     border-radius: 48px;
     align-items: center;
@@ -550,6 +550,7 @@ section{
     height: fit-content;
     background: var(--mainContainerGradientColor);
     outline: 2px solid #595c6713;
+    cursor: pointer;
 
     transition: outline 400ms ease-out;
     & .project_text{
@@ -1097,7 +1098,7 @@ span{
     z-index: -1;
     top: 0px;
     pointer-events: none;
-    -webkit-user-select: none;
+    --webkit-user-select: none;
     left: 0%;
 }
 #project_description{
@@ -1186,7 +1187,7 @@ span{
     box-shadow: var(--box-shadow-main);
     background: var(--mainContainerGradientColor);
     border-radius: 16px;
-    -webkit-user-select: none;
+    --webkit-user-select: none;
     & img{
         object-fit: contain;
         max-height: 300px;

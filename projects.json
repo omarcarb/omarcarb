@@ -57,9 +57,9 @@
     "title": "Animated Login Screen",
     "description": "A front-end coding project featuring an interactive, animated login screen for a smooth and engaging user experience.",
     "subheading": "Seamless and interactive login experience.",
-    "has_multiple_images": true,
-    "thumbnail_image": null,
-    "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "has_multiple_images": false,
+    "thumbnail_image": "assests/png/login-in-animated-screen/login-animated-screen.png",
+    "thumbnail_images": null,
     "thumbnail_background": "assests/svg/test_background.svg",
     "page_url": "https://omarcarb.github.io/Login-Screen/",
     "tags": ["Front-End Development", "Motion Design", "CSS Animations", "JavaScript", "Microinteractions", "User Interaction", "Prototype"]
