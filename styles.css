@@ -631,7 +631,7 @@ section{
 .desktopapp.img_background_parallax:hover:not(.dont_hover) > .img_set, .desktopapp.img_background_parallax[data-animated="true"]:not(.dont_hover)> .img_set{
     & img:nth-child(1){
         transform: rotate3d(0, 0, 0, 0deg);
-        animation: scaleUp 200ms ease-out forwards, skewRight 400ms ease-out forwards 300ms;
+        animation: skewRight 400ms ease-out forwards;
     }
 }
 @keyframes scaleUp {
@@ -684,10 +684,10 @@ section{
 }
 @keyframes skewRight{
     0%{
-        transform: rotate3d(0, 0, 0, 0deg);
+        transform: rotate3d(0, 0, 0, 0deg) scale(.85);
     }
     100%{
-        transform: rotate3d(0, 3, 1, -15deg);
+        transform: rotate3d(0, 3, 1, -15deg) scale(.95);
     }
 }
 .project_tags{
