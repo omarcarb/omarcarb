@@ -68,9 +68,9 @@
     "title": "Eco Skin",
     "description": "A front-end coding project creating a sleek and modern landing page for the Eco Skin skincare brand.",
     "subheading": "Sustainable skincare, beautifully presented.",
-    "has_multiple_images": true,
-    "thumbnail_image": null,
-    "thumbnail_images": ["assests/png/free-roam/preview_free_roam2.png", "assests/png/free-roam/preview_free_roam1.png", "assests/png/free-roam/preview_free_roam3.png"],
+    "has_multiple_images": false,
+    "thumbnail_image": "assests/png/eco-skin-mock-website/eco-skin-landing-page.png",
+    "thumbnail_images": null,
     "thumbnail_background": "assests/svg/test_background.svg",
     "page_url": "https://omarcarb.github.io/Animated-Landing-Page/",
     "tags": ["Front-End Development", "UI Design", "UX Design", "Landing Page", "Branding", "Figma", "Responsive Design", "HTML", "CSS", "JavaScript"]
