@@ -72,7 +72,6 @@
 *{
     margin: 0px;
     font-family: 'Poppins';
-
 }
 html{
     scroll-behavior: smooth;
@@ -114,7 +113,6 @@ body{
         animation: jumpUp 1s ease-in-out forwards;
     }
 }
-
 @keyframes jumpUp {
     0%{
         transform: translateY(400px);
@@ -136,7 +134,6 @@ body{
         transform: translateY(200px) scale(1, 1);
     }
 }
-
 .hidden{
     opacity: 0;
     visibility: hidden;
@@ -251,7 +248,6 @@ input[type="text"], input[type="tel"], input[type="email"]{
     padding: 0px 16px;
     font-size: var(--pa-font-size);
     color: var(--background-surface-07);
-
 }
 input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus{
     box-shadow: var(--box-shadow-input);
@@ -381,7 +377,6 @@ section{
     transform: translateY(300px);
     animation: fade_up_start 1s cubic-bezier(0.165, 0.84, 0.44, 1) 2250ms forwards;
 }
-
 @keyframes fade_up_start{
     to{
         opacity: 100%;
@@ -534,7 +529,6 @@ section{
         transform: scale(1); 
     }
 }
-
 #project_grid{
     align-items: center;
     justify-content: center;
@@ -612,7 +606,6 @@ section{
     & img:nth-child(3){
         animation: rotateRightReverse 200ms ease-out forwards;
     }
-    
 }
 .img_background_parallax:hover:not(.dont_hover) > .img_set, .img_background_parallax[data-animated="true"]:not(.dont_hover) > .img_set{
     transition: opacity 100ms;
@@ -1058,7 +1051,6 @@ section{
 .project_section[data-direction="up"][data-animated="true"] > *{
     animation: slideup 800ms cubic-bezier(0, 0.86, 0.36, 1) forwards;
 }
-
 @keyframes slideup {
     to{
         transform: translateY(0px);
@@ -1066,8 +1058,6 @@ section{
         filter: blur(0);
     }
 }
-
-
 span{
     & img{
         max-height: 477px;
@@ -1999,7 +1989,6 @@ span{
     #aboutme_block {
         flex-direction: column;
     }
-    
     .contact_area{
         flex-direction: column;
         gap: 32px;
@@ -2267,7 +2256,6 @@ span{
             margin-bottom: 13px;
             text-align: center;
         }
-        
     }
     #revolving_words{
         height: 40px;
